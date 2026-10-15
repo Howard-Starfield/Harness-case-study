@@ -1,0 +1,30 @@
+=== CLAIM 1: any fail-open to unsandboxed renderer? ===
+
+  /no-sandbox/gi  -> 0 occurrence(s)
+
+  /webSecurity\s*:\s*!1/g  -> 0 occurrence(s)
+
+  /webSecurity\s*:\s*false/g  -> 0 occurrence(s)
+
+  /nodeIntegration\s*:\s*!0/g  -> 0 occurrence(s)
+
+  /contextIsolation\s*:\s*!1/g  -> 0 occurrence(s)
+
+  /sandbox\s*:\s*!1/g  -> 0 occurrence(s)
+
+
+=== CLAIM 2: isDeveloperApprovedDevUrlOverrideEnabled setter ===
+
+  ASSIGNMENT in .vite/build/index.pre.js @898232:
+    __dirname,B8,(e=>{try{return p.default.readdirSync(e)}catch{return[]}}),(e=>{try{return p.default.readFileSync(e)}catch{return}})),process.env.CLAUDE_USER_DATA_DIR){let e=process.env.CLAUDE_USER_DATA_DIR;T.app.setPath("userData",e),T.app.setPath("logs",h.default.resolve(e,"Logs"))}if(process.env.CLAUDE_AI_URL)try{let e=new URL(process.env.CLAUDE_AI_URL);(e.host.endsWith(".ant.dev")||e.hostname==="localhost")&&QZ()&&(globalThis.isDeveloperApprovedDevUrlOverrideEnabled=!0)}catch{}var V8=!1;process.on("uncaughtException",(e=>{V8||T6(e)}));var H8=!1;if(!process.env.CLAUDE_USER_DATA_DIR){if(QQ(Y),i0(V1())){let e=KQ();if(T.app.getPath("userData")!==e){T.app.setPath("userData",e
+
+  assignment sites found: 1
+  total textual occurrences (all files): 24
+
+
+=== CLAIM 3: sandbox:!0 window identity ===
+
+  --- index.chunk-B2twxM5X.js @1395 ---
+    or(e){super(`silent authorize ended: ${e}`),this.ending=e,this.name="SilentAuthorizeEnded"}},r="[custom-3p:idp] silent authorize:",i=new Map,a=!1;e.n1({name:"silent-authorize-views",beforeInstall:!0,fn:async()=>{a=!0;for(let e of[...i.values()])e()}});function o(e){let n=`silent-authorize:${e}`,r=t.session.fromPartition(n,{cache:!1});return r.setPermissionRequestHandler(((e,t,n)=>n(!1))),r.setPermissionCheckHandler((()=>!1)),{name:n,ses:r}}function s(n,s){let c=new URL(n).searchParams.get("redirect_uri"),l=e=>c!==null&&e.startsWith(c),u=new Set(s.allowedOrigins),d=o(s.partitionKey),f=e=>e.preventDefault();d.ses.on("will-download",f);let p=new t.WebContentsView({webPreferences:{session:d.ses,sandbox:!0,contextIsolation:!0,nodeIntegration:!1,devTools:!1,disableDialogs:!0,webviewTag:!1,spellcheck:!1,backgroundThrottling:!1}}),m=p.webContents,h=!1,g=!1,_=!1;m.once("dom-ready",(()=>{_=!0}));let v=setTimeout((()=>_?y("page_timeout"):y("load_failed",{ca
+
+  total 'sandbox:!0' in this file: 1

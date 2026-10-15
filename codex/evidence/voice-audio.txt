@@ -1,0 +1,160 @@
+﻿
+============================================================================
+== A. audio capture in MAIN (is the mic opened here?)
+============================================================================
+
+----------------------------------------------------------------------------
+-- microphone
+
+  [main-BklS_2Y2.js @1854533] Microphone
+    1},onStateChanged:t=()=>void 0}={}){let n={...e},r=null,i=null,a=n.isCapturingUserMedia?Date.now():null,o=!1,s=t,c=()=>{r!=null&&(clearTimeout(r),r=null)},l=()=>{i!=null&&(clearTimeout(i),i=null)},u=()=>{c(),l(),a=null,n.isAudible=!1,n.isCapturingUserMedia=!1,n.isCapturingCamera=void 0,n.isCapturingMicrophone=void 0};return{state:n,dispose(){o||(u(),o=!0,s=()=>void 0)},reset:u,updateAudible(e){if(!o){if(e){c(),n.isAudible||(n.isAudible=!0,s());return}n.isAudible&&r==null&&(r=setTimeout(()=>{r=null,!o&&n.isAudible&&(n.isAudible=!1,s())},uAe),r.unref())}},updateUserMediaCapture({isCapturingCamer
+
+  [main-BklS_2Y2.js @1854848] Microphone
+     0};return{state:n,dispose(){o||(u(),o=!0,s=()=>void 0)},reset:u,updateAudible(e){if(!o){if(e){c(),n.isAudible||(n.isAudible=!0,s());return}n.isAudible&&r==null&&(r=setTimeout(()=>{r=null,!o&&n.isAudible&&(n.isAudible=!1,s())},uAe),r.unref())}},updateUserMediaCapture({isCapturingCamera:e,isCapturingMicrophone:t,isCapturingUserMedia:r}){if(o)return;if(r){l(),a??=Date.now(),(!n.isCapturingUserMedia||n.isCapturingCamera!==e||n.isCapturingMicrophone!==t)&&(n.isCapturingUserMedia=!0,n.isCapturingCamera=e,n.isCapturingMicrophone=t,s());return}if(!n.isCapturingUserMedia||i!=null)return;let c=Math.max
+
+  [main-BklS_2Y2.js @1854987] Microphone
+    }n.isAudible&&r==null&&(r=setTimeout(()=>{r=null,!o&&n.isAudible&&(n.isAudible=!1,s())},uAe),r.unref())}},updateUserMediaCapture({isCapturingCamera:e,isCapturingMicrophone:t,isCapturingUserMedia:r}){if(o)return;if(r){l(),a??=Date.now(),(!n.isCapturingUserMedia||n.isCapturingCamera!==e||n.isCapturingMicrophone!==t)&&(n.isCapturingUserMedia=!0,n.isCapturingCamera=e,n.isCapturingMicrophone=t,s());return}if(!n.isCapturingUserMedia||i!=null)return;let c=Math.max(fAe,dAe-(Date.now()-(a??Date.now())));a=null,i=setTimeout(()=>{i=null,!o&&n.isCapturingUserMedia&&(n.isCapturingUserMedia=!1,n.isCapturing
+
+  [main-BklS_2Y2.js @1855066] Microphone
+    !1,s())},uAe),r.unref())}},updateUserMediaCapture({isCapturingCamera:e,isCapturingMicrophone:t,isCapturingUserMedia:r}){if(o)return;if(r){l(),a??=Date.now(),(!n.isCapturingUserMedia||n.isCapturingCamera!==e||n.isCapturingMicrophone!==t)&&(n.isCapturingUserMedia=!0,n.isCapturingCamera=e,n.isCapturingMicrophone=t,s());return}if(!n.isCapturingUserMedia||i!=null)return;let c=Math.max(fAe,dAe-(Date.now()-(a??Date.now())));a=null,i=setTimeout(()=>{i=null,!o&&n.isCapturingUserMedia&&(n.isCapturingUserMedia=!1,n.isCapturingCamera=void 0,n.isCapturingMicrophone=void 0,s())},c),i.unref()}}}function nJ(e
+
+  [main-BklS_2Y2.js @1855314] Microphone
+    ringUserMedia=!0,n.isCapturingCamera=e,n.isCapturingMicrophone=t,s());return}if(!n.isCapturingUserMedia||i!=null)return;let c=Math.max(fAe,dAe-(Date.now()-(a??Date.now())));a=null,i=setTimeout(()=>{i=null,!o&&n.isCapturingUserMedia&&(n.isCapturingUserMedia=!1,n.isCapturingCamera=void 0,n.isCapturingMicrophone=void 0,s())},c),i.unref()}}}function nJ(e,t){let n=e.siteToolsAvailability,r=oJ(e,n.webMcp,t.length>0);return(0,U.default)(e.webMcpTools,t)&&n.webMcp===r?!1:(e.webMcpTools=t,e.webMcpToolsRevision+=1,e.siteToolsAvailability={...n,webMcp:r},!0)}function rJ(e,t){let n=e.siteToolsAvailability
+
+----------------------------------------------------------------------------
+-- mic token
+
+  [src-CP7XXlpZ.js @20964] MIC
+    l`:case`awaiting-response`:return 16739584;case`error`:return 16711731;case`off`:return 0}}t.d([`ACT06`,`ACT07`,`ACT08`,`ACT09`,`ACT10`,`ACT11`,`ACT10_ACT11`,`ACT12`]);var dn=t.d(`FAST.APPR.REJ.SPLIT.MIC.MIC1.CODEX.BUG.OAI.TERM.DWN.DEL.NEW.NAV.MAGIC.DIFF.PLAY.GIT.BRCH.BRANCH.MRG.PR.PAINT.LAB.PARTY.TIME.MIND+.MIND-.EMPT1.EMPT2.EMPT3.EMPT4.SETUP.FOLD.UPL.APPS.YOLO.YEET.EMPT5`.split(`.`)),fn=t.O({typ
+
+  [src-CP7XXlpZ.js @22589] MIC
+    ault(!1)}),En={version:1,slots:{ACT06:{keycapId:`FAST`},ACT07:{keycapId:`APPR`},ACT08:{keycapId:`REJ`},ACT09:{keycapId:`SPLIT`},ACT10:{keycapId:`MIC1`},ACT11:{keycapId:`EMPT1`},ACT10_ACT11:{keycapId:`MIC`},ACT12:{keycapId:`CODEX`}},analogStick:bn,encoder:xn,encoderMode:Cn,voiceButtonMode:wn,separateMicrophoneKeys:!1},Dn=[`enter`,`cmdIfMultiline`,`cmdAlways`],On=`in-app-browser`,kn=e.t(((e,t)=>{var
+
+  [worker.js @721945] mic
+    maximum.toString()} ${r.unit??`elemente`}`:`Prea mare: așteptat ca ${e.origin??`valoarea`} să fie ${n}${e.maximum.toString()}`}case`too_small`:{let n=e.inclusive?`>=`:`>`,r=t(e.origin);return r?`Prea mic: așteptat ca ${e.origin} ${r.verb} ${n}${e.minimum.toString()} ${r.unit}`:`Prea mic: așteptat ca ${e.origin} să fie ${n}${e.minimum.toString()}`}case`invalid_format`:{let t=e;return t.format===`st
+
+  [worker.js @722029] mic
+    area`} să fie ${n}${e.maximum.toString()}`}case`too_small`:{let n=e.inclusive?`>=`:`>`,r=t(e.origin);return r?`Prea mic: așteptat ca ${e.origin} ${r.verb} ${n}${e.minimum.toString()} ${r.unit}`:`Prea mic: așteptat ca ${e.origin} să fie ${n}${e.minimum.toString()}`}case`invalid_format`:{let t=e;return t.format===`starts_with`?`Șir invalid: trebuie să înceapă cu "${t.prefix}"`:t.format===`ends_with`
+
+----------------------------------------------------------------------------
+-- audio encoding hints
+
+  [bootstrap-487kJHw_.js @43357] pcM
+    cess.platform!==`darwin`&&process.platform!==`win32`?`unsupported platform`:`disabled for build flavor (${this.options.buildFlavor})`,this.inAppUpdatesLaunchPolicyResolution.resolve(void 0);return}f.ipcMain.handle(`codex_desktop:check-for-updates`,async e=>{this.options.isTrustedIpcEvent(e)&&await this.checkForUpdates()}),this.logger.info(`in_app_updates_policy_wait_started`,{safe:{timeoutMs:zn}})
+
+  [bootstrap-487kJHw_.js @43357] pcM
+    cess.platform!==`darwin`&&process.platform!==`win32`?`unsupported platform`:`disabled for build flavor (${this.options.buildFlavor})`,this.inAppUpdatesLaunchPolicyResolution.resolve(void 0);return}f.ipcMain.handle(`codex_desktop:check-for-updates`,async e=>{this.options.isTrustedIpcEvent(e)&&await this.checkForUpdates()}),this.logger.info(`in_app_updates_policy_wait_started`,{safe:{timeoutMs:zn}})
+
+  [bootstrap-487kJHw_.js @43357] pcM
+    cess.platform!==`darwin`&&process.platform!==`win32`?`unsupported platform`:`disabled for build flavor (${this.options.buildFlavor})`,this.inAppUpdatesLaunchPolicyResolution.resolve(void 0);return}f.ipcMain.handle(`codex_desktop:check-for-updates`,async e=>{this.options.isTrustedIpcEvent(e)&&await this.checkForUpdates()}),this.logger.info(`in_app_updates_policy_wait_started`,{safe:{timeoutMs:zn}})
+
+  [bootstrap-487kJHw_.js @43357] pcM
+    cess.platform!==`darwin`&&process.platform!==`win32`?`unsupported platform`:`disabled for build flavor (${this.options.buildFlavor})`,this.inAppUpdatesLaunchPolicyResolution.resolve(void 0);return}f.ipcMain.handle(`codex_desktop:check-for-updates`,async e=>{this.options.isTrustedIpcEvent(e)&&await this.checkForUpdates()}),this.logger.info(`in_app_updates_policy_wait_started`,{safe:{timeoutMs:zn}})
+
+  [bootstrap-487kJHw_.js @43357] pcM
+    cess.platform!==`darwin`&&process.platform!==`win32`?`unsupported platform`:`disabled for build flavor (${this.options.buildFlavor})`,this.inAppUpdatesLaunchPolicyResolution.resolve(void 0);return}f.ipcMain.handle(`codex_desktop:check-for-updates`,async e=>{this.options.isTrustedIpcEvent(e)&&await this.checkForUpdates()}),this.logger.info(`in_app_updates_policy_wait_started`,{safe:{timeoutMs:zn}})
+
+  [bootstrap-487kJHw_.js @43357] pcM
+    cess.platform!==`darwin`&&process.platform!==`win32`?`unsupported platform`:`disabled for build flavor (${this.options.buildFlavor})`,this.inAppUpdatesLaunchPolicyResolution.resolve(void 0);return}f.ipcMain.handle(`codex_desktop:check-for-updates`,async e=>{this.options.isTrustedIpcEvent(e)&&await this.checkForUpdates()}),this.logger.info(`in_app_updates_policy_wait_started`,{safe:{timeoutMs:zn}})
+
+============================================================================
+== B. dictation stream internals
+============================================================================
+
+----------------------------------------------------------------------------
+-- connect-info handler (full)
+
+  [main-BklS_2Y2.js @688165] dictation-stream-connect-info
+    platform!==`win32`&&(0,y.accessSync)(e,y.constants.X_OK),!0):!1}catch{return!1}}function Tv(e,t){return`${e} ${Kp(t)??`<invalid-url>`}`}var Ev=f.i(`electron-fetch-wrapper`);function Fde(e){let t=new URL(e);return t.searchParams.get(`include_checkpoint_cdn`)===`true`?/^\/(?:backend-api|api)\/pages$/u.test(t.pathname)||/^\/(?:backend-api|api)\/spaces\/v2$/u.test(t.pathname)||/^\/(?:backend-api|api)\/spaces\/[A-Za-z0-9._~-]{1,200}\/pages$/u.test(t.pathname):!1}var Dv=class extends Error{status;errorCode;constructor(e,t){super(`Authenticated desktop fetch failed (${e})`),this.status=e,this.errorCode=t}},Ide=class extends Error{status;constructor(e){super(`File download failed with status ${e}`),this.status=e}},Lde=`vscode://codex/`,Rde=`/codex/dictation-stream-connect-info`,zde=`chatgpt-dictation`,Bde=`codex-desktop`,Vde=`openai-bearer.`,Hde=12e4,Ude=class{fetchHandler;options;abortControllers=new Map;traceExportEnabled=null;constructor(e,t){this.fetchHandler=e,this.options=t}async fetchAuthenticatedJson(e,t){let n={[r.Bn]:`1`,[r.Hn]:`1`,"Content-Type":`application/json`};t.surface!=null&&(n[r.Wn]=t.surface);let i=t.requestProfile;i!=null&&(n[`OAI-Language`]=i.language,i.kind===`codex`?n.originator=`Codex Desktop`:(n[`oai-did`]=i.deviceId,i.accountId!=null&&(n[`ChatGPT-Account-ID`]=i.accountId),i.kind===`chatgpt-native`?n[r.Vn]=`1`:(n.originator=`Codex Browser`,n[`User-Agent`]=i.userAgent,n[`sec-ch-ua`]=i.userAgentClientHints,n[`sec-ch-ua-mobile`]=`?0`,n[`sec-ch-ua-platform`]=i.p
+
+----------------------------------------------------------------------------
+-- backend auth
+
+  [bootstrap-487kJHw_.js @12490] getBackendRequestAuth
+    ait t.getAuthToken({refreshToken:i});if(!a)throw Error(`Sign in to ChatGPT to ${e}.`);let o={...r};return on(o,a,{desktopOriginator:n}),o}async function nn({action:e,appServerClient:t,desktopApiOptions:n,path:r,request:a={},beforeSend:o},s=f.net.fetch.bind(f.net)){a.signal?.throwIfAborted();let c=t.getBackendRequestAuth({refreshToken:!1}),l=await(a.signal==null?c:i.xi(c,a.signal));if(l==null)throw new Qt(e);let u=a.signal==null?l.signal:AbortSignal.any([l.signal,a.signal]),d=async e=>{let t=Object.fromEntries(new Headers(a.headers));an(t.authorization?.replace(/^Bearer /i,``),e),on(t,e.token,n
+
+  [bootstrap-487kJHw_.js @13028] getBackendRequestAuth
+    ;an(t.authorization?.replace(/^Bearer /i,``),e),on(t,e.token,n);let i=rn(en(n,r),t,e);await o?.(e),u.throwIfAborted();let c=await s(i,{...a,headers:t,signal:u,redirect:`error`});return u.throwIfAborted(),c},p=await d(l);if(p.status===401){await p.body?.cancel(),u.throwIfAborted();let n=await i.xi(t.getBackendRequestAuth({refreshToken:!0}),u);if(u.throwIfAborted(),n==null)throw new Qt(e);p=await d(n)}return new Response(p.body?.pipeThrough(new TransformStream,{signal:u})??null,{status:p.status,statusText:p.statusText,headers:p.headers})}function rn(e,t,n){n.signal.throwIfAborted();for(let e of 
+
+  [main-BklS_2Y2.js @514145] getBackendRequestAuth
+    arkUnread(e){i.x(e,null)&&this.broadcaster.inboxItemsChanged(r.po.CHANGED)}markAllAutomationRunsRead(e){i.b(e)>0&&this.broadcaster.inboxItemsChanged(r.po.CHANGED)}},ng=[1e3,5e3],tue=n.t.object({token:n.t.string().nullable()});async function nue({appServerClient:e,desktopApiOptions:t}){let n=await e.getBackendRequestAuth({refreshToken:!1});if(n==null)throw Error(`Sign in to ChatGPT to register push notifications.`);let r={"Content-Type":`application/json`};g.it(r,n.token,t);let i=g.at(g.dt(t,`/notifications/subscription/register`),r,n);for(let e=0;;e+=1){let t;try{let e=await _.pushNotification
+
+----------------------------------------------------------------------------
+-- chatgpt-dictation subprotocol
+
+  [main-BklS_2Y2.js @688201] chatgpt-dictation
+    ticated desktop fetch failed (${e})`),this.status=e,this.errorCode=t}},Ide=class extends Error{status;constructor(e){super(`File download failed with status ${e}`),this.status=e}},Lde=`vscode://codex/`,Rde=`/codex/dictation-stream-connect-info`,zde=`chatgpt-dictation`,Bde=`codex-desktop`,Vde=`openai-bearer.`,Hde=12e4,Ude=class{fetchHandler;options;abortControllers=new Map;traceExportEnabled=null;constructor(e,t){this.fetchHandler=e,this.options=t}async fetchAuthenticatedJson(e,t){let n={[r.Bn]:`
+
+  [main-BklS_2Y2.js @1100392] chatgpt-dictation
+    getPreferredSystemLanguages()[0];a!=null&&(r[`Accept-Language`]=a),g.it(r,n.token,e.desktopApiOptions);let o=g.at(g.dt(e.desktopApiOptions,`/dictation/stream?dictation_surface=${t}`),r,n);e.applicationNetwork.assertAllowed(o);let s=new c.A(i.Jt(o),[`chatgpt-dictation`,`codex-desktop`],{headers:r,maxPayload:8388608,followRedirects:!1});this.#e=s;let l=()=>{this.#i({type:`close`,code:1006,reason:``}),this[Symbol.dispose]()};n.signal.addEventListener(`abort`,l,{once:!0}),this.#n=()=>n.signal.remove
+
+============================================================================
+== C. realtimeVoice feature surface
+============================================================================
+
+----------------------------------------------------------------------------
+-- realtimeVoice*
+
+  [main-BklS_2Y2.js @68066] realtimeVoice
+    lCheck:n._(),messages:n._(),recordAndReplay:n._(),skysight:n._(),sites:n._(),control:n._(),deviceAttestation:n._(),dil:n._(),multiWindow:n._(),pageCreation:n._(),unifiedTabStrip:n._(),sidebarCollapsible:n._(),spotlight:n._(),realtimeVoice:n._(),screenshotSelection:n._(),remoteControlClientScopedEnvironments:n._(),webMcp:n._(),webMcpMaxTools:n.D().int().positive(),codeReviewPlugin:n._(),deepResearch:n._(),visualizeLive:n._(),visualizeTreatment:n._
+
+  [main-BklS_2Y2.js @69239] realtimeVoice
+    UseAutoInstall:!1,nodeReplEnforceModelCheck:!1,messages:!1,recordAndReplay:!1,skysight:!1,sites:!1,control:!1,deviceAttestation:ci(),dil:!1,multiWindow:!1,pageCreation:!1,unifiedTabStrip:!1,sidebarCollapsible:!0,spotlight:!1,realtimeVoice:!1,screenshotSelection:!1,remoteControlClientScopedEnvironments:!1,webMcp:!1,webMcpMaxTools:100,codeReviewPlugin:!1,deepResearch:!1,visualizeLive:!1,visualizeTreatment:!1,workspaceDir:!1},xi=Object.keys(bi),Si={
+
+  [main-BklS_2Y2.js @1394851] realtimeVoiceHotkeyController
+    bitatAutomationsService;isHostedAutomationAppAvailable;prepareCronTurnReadState;customInstructions;regionScreenshotHotkeys;syncSpotlightHotkey;pinnedThreadsService;automationsService;bundledSkillsRoot;realtimeSessionRecorder;realtimeVoiceHotkeyController;voiceActivationController;queuedFollowUpSendLocks=new Cee;getInitialSidebarWorkspaceState(){let e=this.shouldUseWslPaths();return{workspaceRootOptions:this.projectsManager.getLocalWorkspaceRootOp
+
+  [main-BklS_2Y2.js @1397084] realtimeVoiceHotkeyController
+    new AL(T,(e,t)=>{this.applySettingSideEffects(e,t),Oc(e)&&Ac({settingsStore:T,repoRoot:this.repoRoot})},I),this.automationsService=new z_e(e,r,L),this.pinnedThreadsService=new aL(e,r,u,ne),this.realtimeSessionRecorder=D,this.realtimeVoiceHotkeyController=k,this.bundledSkillsRoot=dR(),i.u({refresh:!1,preferWsl:KL,bundledRepoRoot:this.bundledSkillsRoot,appServerClient:this.appServerClient}).catch(e=>{qL().warning(`Failed to warm recommended skills 
+
+  [main-BklS_2Y2.js @1407635] realtimeVoice
+    ybinding(EI(`hotkeyWindow`,a).hotkey),this.globalDictationHotkeyController.syncCommandKeybindings({holdHotkey:EI(`globalDictationHold`,a).hotkey,toggleHotkey:EI(`globalDictationSingleTap`,a).hotkey,initiatingCommand:e}),e===`realtimeVoice`&&this.realtimeVoiceHotkeyController?.syncCommandKeybinding(EI(e,a).hotkey),(e===`openAvatarOverlay`||e===`notchVoice`||e===`notchDictation`)&&this.syncAvatarOverlayHotkey(s),c&&s!=null&&this.syncAvatarOverlayHo
+
+  [main-BklS_2Y2.js @1407656] realtimeVoiceHotkeyController
+    ndow`,a).hotkey),this.globalDictationHotkeyController.syncCommandKeybindings({holdHotkey:EI(`globalDictationHold`,a).hotkey,toggleHotkey:EI(`globalDictationSingleTap`,a).hotkey,initiatingCommand:e}),e===`realtimeVoice`&&this.realtimeVoiceHotkeyController?.syncCommandKeybinding(EI(e,a).hotkey),(e===`openAvatarOverlay`||e===`notchVoice`||e===`notchDictation`)&&this.syncAvatarOverlayHotkey(s),c&&s!=null&&this.syncAvatarOverlayHotkey(s),this.syncSpot
+
+  [main-BklS_2Y2.js @1408661] realtimeVoiceHotkeyController
+    his.syncAvatarOverlayHotkey(uR(e)),this.globalDictationHotkeyController.syncCommandKeybindings({holdHotkey:EI(`globalDictationHold`,e).hotkey,toggleHotkey:EI(`globalDictationSingleTap`,e).hotkey,initiatingCommand:null}),this.realtimeVoiceHotkeyController!=null&&this.realtimeVoiceHotkeyController.syncCommandKeybinding(EI(`realtimeVoice`,e).hotkey),this.syncSpotlightHotkey?.(),this.windowManager.refreshAppShellCommandAccelerators(),this.regionScree
+
+  [main-BklS_2Y2.js @1408703] realtimeVoiceHotkeyController
+    obalDictationHotkeyController.syncCommandKeybindings({holdHotkey:EI(`globalDictationHold`,e).hotkey,toggleHotkey:EI(`globalDictationSingleTap`,e).hotkey,initiatingCommand:null}),this.realtimeVoiceHotkeyController!=null&&this.realtimeVoiceHotkeyController.syncCommandKeybinding(EI(`realtimeVoice`,e).hotkey),this.syncSpotlightHotkey?.(),this.windowManager.refreshAppShellCommandAccelerators(),this.regionScreenshotHotkeys?.syncKeybindings(),this.refre
+
+============================================================================
+== D. chunked message sender (streaming transport)
+============================================================================
+
+----------------------------------------------------------------------------
+-- chunkedMessageSender
+
+  [main-BklS_2Y2.js @270532] chunkedMessageSender
+    sDestroyed()||this.sender.sendInline(e,{channel:t,payload:n})}sendCritical(e,t,n){e.isDestroyed()||this.sender.sendCritical(e,{channel:t,payload:n})}sendInlineMessageForView(e,t){this.sendInline(e,g.bt,t)}acknowledge(e,t,n){this.sender.acknowledge(e,t,n)}},gie=n.F([n.N(),n.D().int()]);function _ie({chunkedMessageSender:e,isTrustedIpcEvent:t}){_.ipcMain.on(g.pt,(n,r,i)=>{if(!t(n))return;let a=gie.safeParse([r,i]);a.success&&e.acknowledge(n.sender,...a.data)})}var Tf=f.i(`codex-app-config`),vie=`codex-app`,yie=`config.json`,Ef=1,bie=n.O({version:n.D().int().optional()}),xie=n.O({remotePath:n.N()
+
+  [main-BklS_2Y2.js @704103] chunkedMessageSender
+    JSON.parse(t.body):void 0,r.In(t.headers?.[`x-codex-git-source`])?t.headers[r.jn]:null,n),o={type:`fetch-response`,responseType:`success`,requestId:t.requestId,status:200,headers:{"content-type":`application/json`},bodyJsonString:JSON.stringify(a??null)};t.responsePriority===`critical`?this.options.chunkedMessageSender.sendCritical(e,g.bt,o):this.options.chunkedMessageSender.send(e,g.bt,o)}catch(n){let r=kv(n),i={type:`fetch-response`,responseType:`error`,requestId:t.requestId,status:432,error:n instanceof Error?n.message:`VS Code bridge request failed`,errorCode:r};t.responsePriority===`criti
+
+  [main-BklS_2Y2.js @704160] chunkedMessageSender
+    ource`])?t.headers[r.jn]:null,n),o={type:`fetch-response`,responseType:`success`,requestId:t.requestId,status:200,headers:{"content-type":`application/json`},bodyJsonString:JSON.stringify(a??null)};t.responsePriority===`critical`?this.options.chunkedMessageSender.sendCritical(e,g.bt,o):this.options.chunkedMessageSender.send(e,g.bt,o)}catch(n){let r=kv(n),i={type:`fetch-response`,responseType:`error`,requestId:t.requestId,status:432,error:n instanceof Error?n.message:`VS Code bridge request failed`,errorCode:r};t.responsePriority===`critical`?this.options.chunkedMessageSender.sendCritical(e,g.b
+
+  [main-BklS_2Y2.js @704421] chunkedMessageSender
+    er.sendCritical(e,g.bt,o):this.options.chunkedMessageSender.send(e,g.bt,o)}catch(n){let r=kv(n),i={type:`fetch-response`,responseType:`error`,requestId:t.requestId,status:432,error:n instanceof Error?n.message:`VS Code bridge request failed`,errorCode:r};t.responsePriority===`critical`?this.options.chunkedMessageSender.sendCritical(e,g.bt,i):this.options.chunkedMessageSender.sendInlineMessageForView(e,i)}}async handleDictationStreamConnectInfoRequest(e,t){try{let n=await this.getAppServerConnection(l.h).getBackendRequestAuth({refreshToken:!1});if(n==null)throw Error(`Sign in to ChatGPT to use 
+
+----------------------------------------------------------------------------
+-- sendCritical
+
+  [main-BklS_2Y2.js @270294] sendCritical
+    stener?.(`did-start-loading`,t.onLoading),e.removeListener?.(`did-stop-loading`,t.onLoaded)})})}send(e,t,n){e.isDestroyed()||this.sender.send(e,{channel:t,payload:n})}sendInline(e,t,n){e.isDestroyed()||this.sender.sendInline(e,{channel:t,payload:n})}sendCritical(e,t,n){e.isDestroyed()||this.sender.sendCritical(e,{channel:t,payload:n})}sendInlineMessageForView(e,t){this.sendInline(e,g.bt,t)}acknowledge(e,t,n){this.sender.acknowledge(e,t,n)}},gie=n.F([n.N(),n.D().int()]);function _ie({chunkedMessa
+
+  [main-BklS_2Y2.js @270343] sendCritical
+    eListener?.(`did-stop-loading`,t.onLoaded)})})}send(e,t,n){e.isDestroyed()||this.sender.send(e,{channel:t,payload:n})}sendInline(e,t,n){e.isDestroyed()||this.sender.sendInline(e,{channel:t,payload:n})}sendCritical(e,t,n){e.isDestroyed()||this.sender.sendCritical(e,{channel:t,payload:n})}sendInlineMessageForView(e,t){this.sendInline(e,g.bt,t)}acknowledge(e,t,n){this.sender.acknowledge(e,t,n)}},gie=n.F([n.N(),n.D().int()]);function _ie({chunkedMessageSender:e,isTrustedIpcEvent:t}){_.ipcMain.on(g.p
+
+  [main-BklS_2Y2.js @704124] sendCritical
+    ders[r.jn]:null,n),o={type:`fetch-response`,responseType:`success`,requestId:t.requestId,status:200,headers:{"content-type":`application/json`},bodyJsonString:JSON.stringify(a??null)};t.responsePriority===`critical`?this.options.chunkedMessageSender.sendCritical(e,g.bt,o):this.options.chunkedMessageSender.send(e,g.bt,o)}catch(n){let r=kv(n),i={type:`fetch-response`,responseType:`error`,requestId:t.requestId,status:432,error:n instanceof Error?n.message:`VS Code bridge request failed`,errorCode:r
+
+----------------------------------------------------------------------------
+-- host chunked protocol id
+
+  [preload.js @1076] codex-host-chunked-message-v1
+    t=>e.ipcRenderer.send(r.createKey(`status`),t),sendStructuredLog:t=>e.ipcRenderer.send(r.createKey(`structured-log`),t),sendMetric:t=>e.ipcRenderer.send(r.createKey(`metric`),t)};if(window.__SENTRY_IPC__[r.namespace]=t,e.contextBridge)try{e.contextBridge.exposeInMainWorld(`__SENTRY_IPC__`,window.__SENTRY_IPC__)}catch{}}}r();function i(e){return typeof e!=`object`||!e||!(`marker`in e)||e.marker!==`codex-host-chunked-message-v1`||!(`transferId`in e)||typeof e.transferId!=`string`||!(`sequence`in e)||typeof e.sequence!=`number`||!Number.isSafeInteger(e.sequence)||!(`kind`in e)?!1:e.kind===`chunk`?`tokens`in e&&Array.isArray(e.tokens)&&e.tokens.every(a):e.kind===`start`||e.kind===`end`}function a(e){return typeof e!=`object`||!e||!(`type`in e)?!1:e.type===`array-start`||e.type===`object-start`
+
+  [src-BJv5Mk7n.js @3506] codex-host-chunked-message-v1
+    ction oe(e){return e.patch>=I&&se(e.major,String(e.minor))}function se(e,t){let n=ce(t);if(n==null)return!1;let r=2e3+e,i=new Date(Date.UTC(r,n.month,0)).getUTCDate();return n.day<=i}function ce(e){if(!/^[0-9]{3,4}$/.test(e))return null;let t=e.length===3?e.slice(0,1):e.slice(0,2),n=e.length===3?e.slice(1):e.slice(2),r=Number(t),i=Number(n);return r<1||r>12||i<1||i>31?null:{day:i,month:r}}var le=`codex-host-chunked-message-v1`;function U(){let e=()=>{},t=()=>{};return{promise:new Promise((n,r)=>{e=n,t=r}),resolve:e,reject:t}}function ue(e,t){return t.aborted?(e.catch(()=>{}),Promise.reject(de(t))):new Promise((n,r)=>{let i=()=>{r(de(t))};t.addEventListener(`abort`,i,{once:!0}),e.then(n,r).finally(()=>{t.removeEventListener(`abort`,i)})})}function de(e){if(e.reason instanceof Error)return e

@@ -1,0 +1,76 @@
+﻿total files in extracted tree: 20980
+extensions present: js=15027  svg=2367  json=998  webp=937  png=694  css=317  ts=136  (noext)=113  md=62  wasm=34  h=31  woff2=25  txt=23  woff=22  ttf=20  wav=19  mjs=18  c=12
+
+==========================================================================
+== ANGLE 1 - lift the exclusions: .json / .wasm / .c / .h / .wasm / .node / no-ext
+==========================================================================
+  json (locales+data)      files=   998  bytes=     14182808  hits=0
+  wasm                     files=    34  bytes=     37773171  hits=0
+  c/h (shipped sources)    files=    43  bytes=      1478237  hits=0
+  no-extension             files=   113  bytes=      1263859  hits=0
+  data                     files=     2  bytes=     11582346  hits=0
+
+==========================================================================
+== ANGLE 2 - indirect + encoded constructions (JS corpus only)
+==========================================================================
+  JS corpus: 14816 files
+  plain literal (control)                   0  files=0
+  case-insensitive literal (control)        0  files=0
+  base64 standard                           0  files=0
+  base64url                                 0  files=0
+  hex-escaped, no separators                0  files=0
+  hex-escaped, any separators               0  files=0
+  char-code sequence                        0  files=0
+  split literal  elevat + ion_service       0  files=0
+  split literal  elevation + _service       0  files=0
+  template concat via var                   0  files=0
+  elevator (alt spelling)                   1  files=1
+  ShellExecuteEx                            0  files=0
+  runas verb (\brunas\b)                    5  files=3
+  CONTROL: ipcRenderer                     41  files=3
+  CONTROL: codex-windows-sandbox            3  files=2
+
+==========================================================================
+== ANGLE 3 - every *.exe literal in the JS corpus (what can JS even name?)
+==========================================================================
+  distinct .exe literals: 465
+    inbox.automations.exe                         390
+    localconversation.mcptoolactivity.sites.exe   390
+    this.exe                                      223
+    chatgpt.appblock.exe                          195
+    sidebar.thread.hovercard.exe                  132
+    gizmoinformation.audiosummary.exe             130
+    restricted.aeoncreationtarget.exe             130
+    tron.onboarding.conversationalonboarding.exe  67
+    settings.usage.surface.exe                    66
+    inbox.automations.habitatmigration.exe        65
+    notebookpreview.exe                           65
+    onboarding.health_department.exe              65
+    ings.automations.savetooltip.requirement.exe  65
+    process.exe                                   32
+    wsl.exe                                       29
+    cmd.exe                                       21
+    powershell.exe                                19
+    vk.exe                                        19
+    wa.exe                                        18
+    this.options.exe                              14
+    git-bash.exe                                  13
+    chrome.exe                                    12
+    msedge.exe                                    12
+    brave.exe                                     12
+    opera.exe                                     12
+    vivaldi.exe                                   12
+    this.db.exe                                   12
+    git.exe                                       10
+    wt.exe                                        10
+    githubdesktop.exe                             10
+    pwsh.exe                                      9
+    codex.exe                                     9
+    this.rules.block.lheading.exe                 9
+    iu.exe                                        9
+    document.exe                                  9
+    ct.exe                                        9
+    codex.browser.exe                             8
+    e._keyboardmanager.exe                        8
+    a.keywordpatternre.exe                        8
+    e.xmlreplacer.exe                             7

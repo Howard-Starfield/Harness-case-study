@@ -1,0 +1,45 @@
+
+----- $A (host allowlist used by Rya)  [.vite/build/index.chunk-1xGiXs9t.js] -----
+function $A(e,t){if(!e.includes("{{skillsDir}}/skills/"))return e;let n=/\{\{skillsDir\}\}\/skills\/([^/\s]+)\/SKILL\.md/g,r=e=>{for(let r of e.matchAll(n))if(!t.has(r[1]))return!0;return!1},i=e.split(`\n`),a=Array(i.length).fill(!1);for(let e=0;e<i.length;e++)r(i[e])&&(a[e]=!0,/^\s*Claude:/.test(i[e])&&/^\s*User:/.test(i[e-1]??"")&&(a[e-1]=!0,e>=2&&i[e-2].trim()===""&&(a[e-2]=!0)));return i.filter(((e,t)=>!a[t])).join(`\n`)}
+
+----- $A (host allowlist used by Rya)  [.vite/build/index.chunk-D6Q00DJz.js] -----
+function $A(e,t){if(process.platform!=="win32")return[t];let n=/^([A-Za-z]):[\\/]+(.*)$/s.exec(e);if(n===null)return[t];let[,r="",i=""]=n,a=i.replace(/[\\/]+$/,""),o=a===""?[]:a.split(/[\\/]+/),s=t.replace(/[\\/]+$/,"").split(/[\\/]+/),c=s.length-o.length,l=(e,t)=>e!==void 0&&t!==void 0&&e.length===t.length&&e.toLowerCase()===t.toLowerCase();return c<1||!o.every(((e,t)=>l(e,s[c+t])))||c===1&&l(s[0],`${r}:`)?[t]:[t,`${r}:\\${o.join("\\")}`]}
+
+----- GUARD tv (full)  [.vite/build/index.chunk-D7ye_MQA.js] -----
+function tv(e,n,r){let i=(0,Y.resolve)(r,e),a=ev(i),o=e=>(0,Y.basename)(e).normalize("NFC").toLowerCase(),s=n.map((e=>(0,Y.resolve)(r,e))).filter((e=>o(e)===o(i)));if(s.some((e=>ev(e)===a)))return!0;if(s.length===0)return!1;let c=async e=>!t.b3(e)&&t.Uq(e,t.Bw),[l,...u]=await Promise.all([i,...s].map(c));return l!==!1&&u.includes(l)}
+
+----- $A (host allowlist used by Rya)  [.vite/build/index.chunk-D7ye_MQA.js] -----
+function $A(e){let n;try{n=t.uz(e.toString("utf8"),"installed_plugins.json")}catch{return}if(!XA(n)||!XA(n.plugins))return YA(ZA(n));let r=Object.fromEntries(Object.entries(n.plugins).map((([e,t])=>[e,QA(t)])));return YA(ZA({...n,plugins:r}))}
+
+----- GUARD tv (full)  [.vite/build/index.chunk-EzXl5k4A.js] -----
+function tv(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return!!(e.senderFrame?.parent===null&&((t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="app://localhost"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin).endsWith(".ant.dev")))}
+
+----- $A (host allowlist used by Rya)  [.vite/build/index.chunk-EzXl5k4A.js] -----
+function $A(e){let t=new URL(NO()).host;return e===t||the()&&e==="claude-ai.staging.ant.dev"?!0:t.endsWith(".ai")?e===t.replace(/\.ai$/,".com"):t.endsWith(".com")?e===t.replace(/\.com$/,".ai"):!1}
+
+----- isDeveloperApprovedDevUrlOverrideEnabled : first definition [.vite/build/index.chunk-EzXl5k4A.js] -----
+"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="app://localhost"||globalThis.isDeveloperApprovedDevUrlOv
+
+----- distinct claude.* origins seen in corpus -----
+  https://assets.claude.ai
+  https://beacon.claude-ai.staging.ant.dev
+  https://claude-ai.staging.ant.dev
+  https://claude-sessions.example.com
+  https://claude-staging.fedstart.com
+  https://claude.ai
+  https://claude.com
+  https://claude.fedstart.com
+  https://code.claude.com
+  https://downloads.claude.ai
+  https://microsoft365.mcp.claude.com
+  https://pivot.claude.ai
+  https://platform.claude.com
+  https://preview.claude-ai.staging.ant.dev
+  https://preview.claude.ai
+  https://preview.claude.com
+  https://support.claude.com
+
+----- custom scheme origins -----
+  app://localhost
+  http://localhost
+  https://localhost

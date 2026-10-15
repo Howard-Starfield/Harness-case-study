@@ -1,0 +1,72 @@
+=== SANDBOX / UPDATE CENSUS ===
+corpus: 408 .js/.mjs files under %TEMP%\claude-src (extracted from app.asar)
+method: raw-text regex; occurrences counted, not lines (G6)
+
+
+----- commandLine appendSwitch (--no-sandbox etc): 8 occurrences -----
+      1x  "enable-features",t.join(","   [.vite/build/index.pre.js]
+      1x  t,r.join(","   [.vite/build/index.pre.js]
+      1x  "blink-settings",[...n.values(   [.vite/build/index.pre.js]
+      1x  a0   [.vite/build/index.pre.js]
+      1x  "disable-gpu"   [.vite/build/index.pre.js]
+      1x  t.name   [.vite/build/index.pre.js]
+      1x  t.name,t.value   [.vite/build/index.pre.js]
+      1x  t,n   [.vite/build/index.pre.js]
+
+----- app.commandLine flags: 11 occurrences -----
+      4x  commandLine.hasSwitch("disable-gpu")   [.vite/build/index.chunk-EzXl5k4A.js, .vite/build/index.pre.js]
+      1x  commandLine.hasSwitch(ICr)   [.vite/build/index.chunk-EzXl5k4A.js]
+      1x  commandLine.getSwitchValue("enable-features")   [.vite/build/index.pre.js]
+      1x  commandLine.appendSwitch("enable-features",t.join(",")   [.vite/build/index.pre.js]
+      1x  commandLine.appendSwitch("disable-gpu")   [.vite/build/index.pre.js]
+      1x  commandLine.appendSwitch(t.name)   [.vite/build/index.pre.js]
+      1x  commandLine.appendSwitch(t.name,t.value)   [.vite/build/index.pre.js]
+      1x  commandLine.appendSwitch(t,n)   [.vite/build/index.pre.js]
+
+----- sandbox: literal: 16 occurrences -----
+     16x  !0   [.vite/build/index.chunk-B2twxM5X.js, .vite/build/index.chunk-Bzq45kP5.js, .vite/build/index.chunk-CTra3bwp.js +2]
+
+----- webSecurity literal: 0 occurrences -----
+   (0 occurrences in the .js corpus — scope: code only, locales excluded)
+
+----- contextIsolation literal: 17 occurrences -----
+     17x  !0   [.vite/build/index.chunk-B2twxM5X.js, .vite/build/index.chunk-Bzq45kP5.js, .vite/build/index.chunk-CTra3bwp.js +2]
+
+----- nodeIntegration literal: 17 occurrences -----
+     17x  !1   [.vite/build/index.chunk-B2twxM5X.js, .vite/build/index.chunk-Bzq45kP5.js, .vite/build/index.chunk-CTra3bwp.js +2]
+
+----- allowRunningInsecureContent: 0 occurrences -----
+   (0 occurrences in the .js corpus — scope: code only, locales excluded)
+
+----- webviewTag: 2 occurrences -----
+      2x  webviewTag:!1   [.vite/build/index.chunk-B2twxM5X.js, .vite/build/index.chunk-EzXl5k4A.js]
+
+----- Content-Security-Policy: 19 occurrences -----
+     16x  Content-Security-Policy   [.vite/build/index.chunk-CTra3bwp.js, .vite/build/index.chunk-EzXl5k4A.js, resources/office365-mcp/office365-mcp-stdio.mjs]
+      1x  Content-Security-Policy.Content-Security-Policy-Report-Only.Content-Type.Cookie.Cro   [.vite/build/index.chunk-DcP6Ha83.js]
+      1x  content-security-policy   [.vite/build/index.chunk-EzXl5k4A.js]
+      1x  Content-Security-Policy-Report-Only   [resources/office365-mcp/office365-mcp-stdio.mjs]
+
+----- setPermissionRequestHandler: 5 occurrences -----
+      5x  setPermissionRequestHandler   [.vite/build/index.chunk-B2twxM5X.js, .vite/build/index.chunk-EzXl5k4A.js]
+
+----- setWindowOpenHandler: 21 occurrences -----
+     21x  setWindowOpenHandler   [.vite/build/index.chunk-B2twxM5X.js, .vite/build/index.chunk-BCRMWNYy.js, .vite/build/index.chunk-CTra3bwp.js +3]
+
+----- will-navigate: 13 occurrences -----
+     13x  will-navigate   [.vite/build/index.chunk-CTra3bwp.js, .vite/build/index.chunk-CxVFbWaN.js, .vite/build/index.chunk-EzXl5k4A.js]
+
+----- update / signature: 430 occurrences -----
+    199x  msix   [.vite/build/index.chunk-1xGiXs9t.js, .vite/build/index.chunk-7Y3k7jQ7.js, .vite/build/index.chunk-BeqXJNqE.js +6]
+     51x  autoUpdater   [.vite/build/index.chunk-cY4e9TAk.js, .vite/build/index.chunk-DfKSomSf.js, .vite/build/index.chunk-DO9Jf2JU.js +3]
+     46x  releaseS   [.vite/build/index.chunk-BeqXJNqE.js, .vite/build/index.chunk-CHStVsmm.js, .vite/build/index.chunk-CrdXqIcE.js +5]
+     31x  releases   [.vite/build/file-index-worker/fileIndexWorker.js, .vite/build/index.chunk-B-Jr77jd.js, .vite/build/index.chunk-BuKMQXYZ.js +4]
+     20x  Msix   [.vite/build/index.chunk-7Y3k7jQ7.js, .vite/build/index.chunk-BeqXJNqE.js, .vite/build/index.chunk-DasZ5UKR.js +1]
+     19x  squirrel   [.vite/build/index.chunk-EzXl5k4A.js]
+     17x  AutoUpdater   [.vite/build/index.chunk-EzXl5k4A.js, .vite/build/mainView.js]
+     15x  AUTOUPDATER   [.vite/build/file-index-worker/fileIndexWorker.js, .vite/build/index.chunk-D6Q00DJz.js, .vite/build/index.chunk-DcP6Ha83.js +1]
+     15x  MSIX   [.vite/build/index.chunk-EzXl5k4A.js, .vite/build/index.pre.js]
+     10x  appinstaller   [.vite/build/file-index-worker/fileIndexWorker.js, .vite/build/index.chunk-D6Q00DJz.js, .vite/build/index.chunk-DcP6Ha83.js +2]
+      4x  Releases   [.vite/build/index.chunk-DcP6Ha83.js, node_modules/ws/lib/permessage-deflate.js]
+      2x  Squirrel   [.vite/build/index.chunk-EzXl5k4A.js]
+      1x  MSIx   [.vite/renderer/main_window/assets/clawdQuestEngine-B9DWL_V0.js]

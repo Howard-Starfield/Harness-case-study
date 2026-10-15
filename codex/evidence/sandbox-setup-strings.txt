@@ -1,0 +1,414 @@
+
+########## codex-windows-sandbox-setup.exe  (17,725,744 bytes) ##########
+method: ASCII printable-run sweep >= 4 chars; raw text, no encoded string pool; 27491 distinct runs
+
+  --- RUST SOURCE MODULES (crate paths): 20 ---
+    0000000000000000000000000000000000000000000000000000000000000000/rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library\core\src\fmt\mod.rs
+    ResolveBuildTaskotel\src\network_policy.rs
+    execpolicy\src\executable_name.rs
+    execpolicy\src\parser.rs
+    execpolicy\src\rule.rs
+    http-client\src\client.rs
+    http-client\src\custom_ca.rs
+    http-client\src\network_policy.rs
+    http-client\src\outbound_proxy.rs
+    http-client\src\request_builder.rs
+    http-client\src\response.rs
+    http-client\src\route_aware_client_pool.rs
+    http-client\src\route_aware_client_pool\execution.rs
+    otel\src\metrics\client.rs
+    otel\src\network_policy.rs
+    otel\src\otlp.rs
+    utils\rustls-provider\src\lib.rs
+    utils\string\src\lib.rs
+    windows-sandbox-rs\src\setup_provisioning.rs
+    wsshttp-client\src\outbound_proxy.rs
+
+  --- SANDBOX MECHANISM: 0 ---
+
+  --- ACL / ACE / SECURITY DESCRIPTOR: 7 ---
+    ConvertStringSecurityDescriptorToSecurityDescriptorW
+    Local\CodexSandboxReadAcl
+    SetNamedSecurityInfoW
+    SetNamedSecurityInfoWSetSecurityInfo
+    WSACleanup
+    gKstruct PersistentDenyReadAclStateinternal error: entered unreachable code
+    principalsstruct PersistentDenyReadAclState with 1 element
+
+  --- FIREWALL / NETWORK: 13 ---
+    .INetFwPolicy2::LocalPolicyModifyState failed: 
+    3cast existing firewall rule to INetFwRule3 failed: 
+    8offline firewall rule user scope mismatch: expected SID 
+    INetFwPolicy2::Rules failed: 
+    NetworkPolicy
+    ResolveBuildTaskotel\src\network_policy.rs
+    application network policy lock poisonedhttp-client\src\network_policy.rs
+    firewall rule configured name=
+    firewall rule removed name=
+    http-client\src\network_policy.rs
+    ilocal firewall policy modifications do not apply to every current profile: LocalPolicyModifyState result=
+    network_policyauthapiotherReqwestDefaultRespectSystemProxy
+    otel\src\network_policy.rs
+
+  --- USERS / GROUPS: 1224 ---
+      C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde_json-1.0.149\src\ser.rs
+      notifying taskinvalid initial receive windowC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\h2-0.4.19\src\proto\streams\stream.rs
+     ```C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\starlark-0.14.2\src\values\types\dict\methods.rs
+     ```elemsC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\starlark-0.14.2\src\values\types\tuple\globals.rs
+     at line C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde_json-1.0.149\src\error.rs
+     for sandbox users
+     provision sandbox users failed: 
+     serialize sandbox users failed: 
+    #internal error: entered unreachable codeC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-0.23.45\src\crypto\aws_lc_rs\sign.rs
+    &ZZZZZZZZZZZZZZZZC:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\core\src\slice\index.rs
+    ()C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\util\alphabet.rs
+    ()C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\http-1.4.0\src\header\map.rs
+    ()C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\opentelemetry-otlp-0.31.0\src\logs.rs
+    ()C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-0.23.45\src\crypto\tls13.rs
+    ()Future polled twiceC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-1.8.1\src\proto\h2\client.rs
+    ()already calledC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-util-0.1.20\src\service\oneshot.rs
+    ()future polled after completionC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-native-tls-0.3.1\src\lib.rs
+    (ArcStaticCallEnterC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\starlark-0.14.2\src\values\typing\iter.rs
+    *IdnaErrorsC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\lib.rs
+    -binfilled must not become larger than initializedC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-1.8.1\src\common\io\compat.rs
+    -hide users: failed to set UserList value for 
+    .chatgpt-stagingC:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\core\src\str\pattern.rs
+    /*event C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\h2-0.4.19\src\frame\headers.rs:158
+    //index.htmlhttphttpsgzip, deflateC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\h2-0.4.19\src\hpack\decoder.rs
+    /[validity] non-relative IRI must have a schemeC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\iri-string-0.7.10\src\normalize.rs
+    /slash is a valid pathC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-util-0.1.20\src\client\legacy\client.rs
+    0123456789abcdefC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\indexmap-2.14.0\src\inner.rs
+    0123456789abcdefErrorInvalid tonic headersC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\opentelemetry-otlp-0.31.0\src\exporter\tonic\mod.rs
+    0123456789abcdefGetComputerNameExW did not provide buffer sizeC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gethostname-1.1.0\src\lib.rs
+    0hide users: failed to update Winlogon UserList: 
+    7/a Display implementation returned an error unexpectedlyC:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\alloc\src\string.rs
+    :C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\host.rs
+    ; AllowDenyC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\lib.rs
+    <<>>C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\starlark-0.14.2\src\values\traits.rs
+    ?C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\num-bigint-0.4.6\src\biguint\subtraction.rs
+    ?C:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\core\src\slice\index.rs
+    @C:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\std\src\sync\mpmc\waker.rs
+    A Tokio 1.x context was found, but it is being shutdown.C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-1.52.3\src\runtime\park.rs
+    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+S-1-5-32-545LookupAccountSidW failed for Users SID; skipping Users group membership
+    AC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-1.52.3\src\io\poll_evented.rs
+    ... (+1184)
+
+  --- PIPE / IPC: 2 ---
+    NamedPipe was not previously connecting
+    NtCreateNamedPipeFile
+
+  --- ELEVATION / TOKEN: 0 ---
+
+  --- REGISTRY: 10 ---
+    Jstruct CapSidsSOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList
+    RegCreateKeyExW
+    RegCreateKeyExW failed: 
+    RegCreateKeyTransactedW
+    RegOpenKeyExW
+    RegOpenKeyTransactedW
+    RegSetValueExW
+    Software\Microsoft\Windows\CurrentVersion\Internet SettingsProxyEnableProxyServerProxyOverride,*.
+    os_info::imp::winapiRegOpenKeyExW(HKEY_LOCAL_MACHINE, ...) failedntdll
+    x86_64ia64armaarch64i386SOFTWARE\Microsoft\Windows NT\CurrentVersionProductNameEditionID
+
+  --- FAIL-OPEN SIGNALS: 7 ---
+    HTTP client switched to rustls after a TLS protocol negotiation failurecodex.http_client.tls_backend_fallback
+    INAPPROPRIATE_FALLBACK
+    TLSV1_ALERT_INAPPROPRIATE_FALLBACK
+    codex.http_client.custom_ca_fallback
+    codex.http_client.tls_backend_fallback
+    failed to build fallback HTTP client
+    outbound_proxy_policysystem_proxy_fallback
+
+  --- COMMAND EXEC POLICY: 143 ---
+     `eval_type()` converts `list` value into prepared type matcher.
+     deny-read ACLs
+    !failed to create deny-write path 
+    #CoCreateInstance NetFwRule failed: 
+    $expected example to not match rule `
+    'ensure offline proxy allowlist failed: 
+    , 2certificate does not allow extended key usage for 
+    , allows 
+    - expression is not allowed in type expression
+    .INetFwPolicy2::LocalPolicyModifyState failed: 
+    /.type` is not allowed in type expression, use `
+    3cast existing firewall rule to INetFwRule3 failed: 
+    6String literals are not allowed in type expressions: `
+    8 is both a start and a match state, which is not allowed
+    8offline firewall rule user scope mismatch: expected SID 
+    :expected every example to match at least one rule. rules: 
+    ; AllowDenyC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\lib.rs
+    ?denyt[A
+    AllowDenyC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\base64-0.22.1\src\encode.rs
+    AppPolicyGetProcessTerminationMethod
+    AppPolicyGetShowDeveloperDiagnostic
+    AppPolicyGetWindowingModel
+    CONNECT is not allowed for HTTP/1.0
+    CallEnterfunctionDummyTypeMatcher
+    Cannot drop a runtime in a context where blocking is not allowed. This happens when a runtime is dropped from within an asynchronous context.
+    CertVerifyCertificateChainPolicy
+    DummyTypeMatcher
+    Empty list is not allowed in type expressionOnly dot expression of form `ident.ident` is allowed in type expressionExpecting path like `a.b.c`
+    Evaluator.extra must contain a PolicyBuilder
+    ExampleDidMatchruleexampleStarlark
+    ExampleDidNotMatchrulesexampleslocation
+    GetSecurityInfo5refusing to apply a deny-read ACE to filesystem root 
+    GlobalsBcSlotOutStructMatcher
+    INCORRECT_POLICY_SYNTAX_TAG
+    INVALID_POLICY_EXTENSION
+    INVALID_POLICY_IDENTIFIER
+    INVALID_PROXY_POLICY_SETTING
+    INetFwPolicy2::Rules failed: 
+    IncorrectParameterTypeWithExpectedPositional arguments not allowed
+    InvalidDecisionInvalidPatternInvalidExampleInvalidRule
+    ... (+103)
+
+  --- CLI SUBCOMMANDS: 0 ---
+
+########## codex-windows-sandbox-service.exe  (55,824,688 bytes) ##########
+method: ASCII printable-run sweep >= 4 chars; raw text, no encoded string pool; 45812 distinct runs
+
+  --- RUST SOURCE MODULES (crate paths): 93 ---
+    0000000000000000000000000000000000000000000000000000000000000000/rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library\core\src\fmt\mod.rs
+    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789network-proxy\src\credential_broker\providers.rs
+    CODEX_AUTHAPI_BASE_URLlogin\src\auth\personal_access_token.rs
+    Errorconfig\src\cloud_config_bundle.rs
+    GETHEADOPTIONSnetwork-proxy\src\policy.rs
+    Jutils\string\src\lib.rs
+    RetryableAgentIdentityRegistrationErrormessagelogin\src\auth\agent_identity.rs
+    TMPDIRprotocol\src\config_types.rs
+    backend-client\src\client.rs
+    cloud-config\src\backend.rs
+    cloud-config\src\bundle_loader.rs
+    cloud-config\src\cache.rs
+    codex-api\src\auth.rs
+    config\src\cloud_config_bundle.rs
+    config\src\config_requirements.rs
+    config\src\diagnostics.rs
+    config\src\loader\layer_io.rs
+    config\src\loader\managed_requirements.rs
+    config\src\loader\mod.rs
+    config\src\thread_config.rs
+    core\src\config\mod.rs
+    deniednot_allowed_localnetwork-proxy\src\runtime.rs
+    domainbaseline_policymode_guarddeciderasknetwork-proxy\src\brokered_tunnel.rs
+    errorcodeexec-server\src\no_follow\mod.rs
+    exec-server\src\fs_sandbox.rs
+    exec-server\src\local_file_system.rs
+    exec-server\src\no_follow\windows.rs
+    exec-server\src\regular_file.rs
+    exec-server\src\sandboxed_file_open.rs
+    exec-server\src\sandboxed_file_system.rs
+    execpolicy\src\executable_name.rs
+    execpolicy\src\parser.rs
+    execpolicy\src\rule.rs
+    features\src\legacy.rs
+    features\src\lib.rs
+    file-system\src\lib.rs
+    git-utils\src\trust.rs
+    grant_typerefresh_tokenclient_idresourcelogin\src\oauth\client.rs
+    http-client\src\client.rs
+    http-client\src\custom_ca.rs
+    ... (+53)
+
+  --- SANDBOX MECHANISM: 2 ---
+    CreateRestrictedToken
+    CreateRestrictedToken failed: 
+
+  --- ACL / ACE / SECURITY DESCRIPTOR: 14 ---
+                $security.SetSecurityDescriptorSddlForm('D:P(A;;GA;;;SY)(A;;GA;;;BA)')
+    =ConvertStringSecurityDescriptorToSecurityDescriptorW failed: 
+    AddAccessAllowedAceEx
+    ConvertStringSecurityDescriptorToSecurityDescriptorW
+    IsValidAcl
+    Local\CodexSandboxReadAcl
+    SetNamedSecurityInfoW
+    SetNamedSecurityInfoWSetSecurityInfo
+    SetSecurityDescriptorControl
+    SetSecurityDescriptorDacl
+    WSACleanup
+    invalid token group result sizeinvalid token group sizeS-1-3-4.SetTokenInformation(TokenDefaultDacl) failed: 
+    principalsstruct PersistentDenyReadAclState with 1 element
+    sandbox binary directory needs elevated repairinterrupted sandbox cleanup requires repaircreate provisioning pipe DACLcreate provisioning pipe
+
+  --- FIREWALL / NETWORK: 20 ---
+    .INetFwPolicy2::LocalPolicyModifyState failed: 
+    0offline firewall settings changed (stored_ports=
+    3cast existing firewall rule to INetFwRule3 failed: 
+    8offline firewall rule user scope mismatch: expected SID 
+    CODEX_NETWORK_POLICY_VIOLATION
+    INetFwPolicy2::Rules failed: 
+    NetworkPolicy
+    application network policy lock poisonedhttp-client\src\network_policy.rs
+    codex_network_proxy::network_policynetwork-proxy\src\network_policy.rs
+    evaluate network proxy targetread network proxy confighttps_connectsocks5_tcpsocks5_udpnetwork-proxy\src\network_policy.rs
+    firewall rule configured name=
+    firewall rule removed name=
+    http-client\src\network_policy.rs
+    ilocal firewall policy modifications do not apply to every current profile: LocalPolicyModifyState result=
+    network-proxy\src\network_policy.rs
+    network_policyauthapiotherReqwestDefaultRespectSystemProxy
+    noneotel\src\network_policy.rs
+    otel\src\network_policy.rs
+    remove WFP filtersremove firewall rulesCodexSandboxOfflineCodexSandboxOnline
+    remove sandbox firewall rule 
+
+  --- USERS / GROUPS: 2259 ---
+                    $status = [CleanupNative]::NetLocalGroupDel($null, 'CodexSandboxUsers')
+                try { if ($plan.group_sid) { $groupSid = ([Security.Principal.NTAccount]::new('CodexSandboxUsers')).Translate([Security.Principal.SecurityIdentifier]).Value } }
+      C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde_json-1.0.149\src\ser.rs
+      notifying taskevent C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rama-http-core-0.3.0-alpha.4\src\h2\proto\streams\stream.rs:226
+      notifying taskinvalid initial receive windowC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\h2-0.4.19\src\proto\streams\stream.rs
+     C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\age-core-0.12.0\src\format.rs
+     C:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\std\src\thread\local.rs
+     ```C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\starlark-0.14.2\src\values\types\dict\methods.rs
+     ```elemsC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\starlark-0.14.2\src\values\types\tuple\globals.rs
+     at line C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde_json-1.0.149\src\error.rs
+     for sandbox users
+     provision sandbox users failed: 
+     serialize sandbox users failed: 
+    !mid > lenC:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\core\src\slice\sort\stable\quicksort.rs
+    #internal error: entered unreachable codeC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-0.23.45\src\crypto\aws_lc_rs\sign.rs
+    $serde_json::private::Number$serde_json::private::RawValueC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\indexmap-2.14.0\src\inner.rs
+    &ZZZZZZZZZZZZZZZZC:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\core\src\slice\index.rs
+    &b%V0C:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\std\src\sync\once.rs
+    ()C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\util\alphabet.rs
+    ()C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\http-1.4.0\src\header\map.rs
+    ()C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-0.23.45\src\crypto\tls13.rs
+    ()Future polled twiceC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-1.8.1\src\proto\h2\client.rs
+    ()already calledC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-util-0.1.20\src\service\oneshot.rs
+    ()event C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rama-http-core-0.3.0-alpha.4\src\h2\client.rs:1635rama_http_core::h2::clientmessage
+    ()future polled after completionC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-native-tls-0.3.1\src\lib.rs
+    (ArcStaticCallEnterC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\starlark-0.14.2\src\values\typing\iter.rs
+    (proxy) I/O stream forwarderC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\futures-channel-0.3.34\src\mpsc\mod.rs
+    )mid > lenC:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\core\src\slice\sort\stable\quicksort.rs
+    *IdnaErrorsC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\lib.rs
+    ---log_n < 64C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\age-0.12.1\src\native\scrypt.rs
+    -binfilled must not become larger than initializedC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hyper-1.8.1\src\common\io\compat.rs
+    -hide users: failed to set UserList value for 
+    .C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\const-oid-0.9.6\src\lib.rs
+    .chatgpt-stagingC:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\core\src\str\pattern.rs
+    /*event C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\h2-0.4.19\src\frame\headers.rs:158
+    /*event C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rama-http-types-0.3.0-alpha.4\src\proto\h2\frame\headers.rs:244
+    ///%00/bad/path/file:///%00/bad/C:\Users\runneradmin\.rustup\toolchains\1.95.0-x86_64-pc-windows-msvc\lib/rustlib/src/rust\library\core\src\str\pattern.rs
+    //index.htmlhttphttpsgzip, deflateC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\h2-0.4.19\src\hpack\decoder.rs
+    //index.htmlhttphttpsgzip, deflateC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rama-http-types-0.3.0-alpha.4\src\proto\h2\hpack\decoder.rs
+    /[validity] non-relative IRI must have a schemeC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\iri-string-0.7.10\src\normalize.rs
+    ... (+2219)
+
+  --- PIPE / IPC: 11 ---
+    CodexSandboxService\\.\pipe\OpenAI.CodexSandbox
+    ConnectNamedPipe
+    CreateNamedPipeW
+    DisconnectNamedPipe
+    GetNamedPipeClientProcessId
+    GetNamedPipeServerProcessId
+    ImpersonateNamedPipeClient
+    NamedPipe was not previously connecting
+    NtCreateNamedPipeFile
+    PeekNamedPipe
+    WaitNamedPipeW
+
+  --- ELEVATION / TOKEN: 20 ---
+     [DllImport("advapi32.dll",SetLastError=true)] static extern bool AdjustTokenPrivileges(IntPtr t,bool d,ref Priv p,int len,IntPtr old,IntPtr ret);
+    .failed to launch setup helper (non-elevated): 
+    .sandbox'failed to serialize elevation payload: 
+    AdjustTokenPrivileges
+    AdjustTokenPrivileges error 
+    AdjustTokenPrivileges failed: 
+    SetTokenInformation
+    ShellExecuteExW
+    WindowsSandboxImplementationTomlelevatedunelevated
+    WindowsSandboxModeTomlelevatedunelevatedmxc
+    disabledrestricted-tokenelevated provider auth cwd must resolve: 
+    elevatedH
+    err-excessive-work = Parametro di lavoro per la passphrase troppo elevato.
+    invalid token group result sizeinvalid token group sizeS-1-3-4.SetTokenInformation(TokenDefaultDacl) failed: 
+    registered Core requires the sandbox service; retry service setup%failed to determine elevation state: 
+    runas/ShellExecuteExW failed to launch setup helper: 
+    sandbox binary directory needs elevated repairinterrupted sandbox cleanup requires repaircreate provisioning pipe DACLcreate provisioning pipe
+    systemsleep_toolhookstyperesponsesdenyserverlocalelevated
+    unelevatH
+    unelevatedmxc
+
+  --- REGISTRY: 11 ---
+                    $profileKey = [Microsoft.Win32.Registry]::LocalMachine.OpenSubKey("SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\$sid")
+    RegCreateKeyExW
+    RegCreateKeyExW failed: 
+    RegCreateKeyTransactedW
+    RegOpenKeyExW
+    RegOpenKeyTransactedW
+    RegSetValueExW
+    Software\Microsoft\Windows\CurrentVersion\Internet SettingsProxyEnableProxyServerProxyOverride,*.
+    os_info::imp::winapiRegOpenKeyExW(HKEY_LOCAL_MACHINE, ...) failedntdll
+    struct CapSidsfield identifierstruct SetupMarkerstruct SandboxUsersFilestruct SandboxUserRecordSOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList
+    x86_64ia64armaarch64i386SOFTWARE\Microsoft\Windows NT\CurrentVersionProductNameEditionID
+
+  --- FAIL-OPEN SIGNALS: 20 ---
+    )failed to remove CLI auth fallback file: 
+    Afail to create system HickoryDns client: fallback to cloudflare: 
+    CodeModeHostConfigTomldisable_in_process_fallback
+    HTTP client switched to rustls after a TLS protocol negotiation failurecodex.http_client.tls_backend_fallback
+    INAPPROPRIATE_FALLBACK
+    TLSV1_ALERT_INAPPROPRIATE_FALLBACK
+    TokenBudgetConfigTomluse_history_notes_extensionreminder_threshold_tokensreminder_message_templateguidance_messageauto_compact_fallback_promptauto_compact_fallback_buffer_tokens
+    codex.http_client.custom_ca_fallback
+    codex.http_client.tls_backend_fallback
+    disable_in_process_fallback
+    disable_in_process_fallbackstruct CodeModeHostConfigToml with 2 elements
+    disable_in_process_fallbackstruct CodeModeHostConfigToml with 2 elementsS
+    failed to build fallback HTTP client
+    internal error: entered unreachable code: URL-safe base64 always produces a valid fallback path URI
+    north socket: fatal error,north socket: non-fatal error: retry again: 
+    opaque fallback path URI `
+    outbound_proxy_policysystem_proxy_fallback
+    project_doc_fallback_filenames = []
+    south socket: fatal error,south socket: non-fatal error: retry again: 
+    use_history_notes_extensionreminder_threshold_tokensreminder_message_templateguidance_messageauto_compact_fallback_promptauto_compact_fallback_buffer_tokens
+
+  --- COMMAND EXEC POLICY: 378 ---
+     (IPv4 address is not allowed)
+     (IPv6 address is not allowed)
+     [StructLayout(LayoutKind.Sequential, CharSet=CharSet.Unicode)] public struct Profile { public int size,flags; public string user,path,def,server,policy; public IntPtr handle; }
+     `eval_type()` converts `list` value into prepared type matcher.
+     deny-read ACLs
+     has decision 'allow', which is not permitted in requirements.toml: Codex merges these rules with other config and uses the most restrictive result (use 'prompt' or 'forbidden')
+    !failed to create deny-write path 
+    "failed to evaluate method policy: 
+    "invalid argument matcher at index 
+    #CoCreateInstance NetFwRule failed: 
+    $MITM blocked by method policy (host=
+    $expected example to not match rule `
+    %, allowed_methods=GET, HEAD, OPTIONS)
+    &CoCreateInstance NetFwPolicy2 failed: 
+    &invalid rules in requirements (set by 
+    'ensure offline proxy allowlist failed: 
+    )request blocked by method policy (client=
+    *unable to resolve deny-read glob pattern `
+    , 2certificate does not allow extended key usage for 
+    , allows 
+    , desired_allow_local_binding=
+    , stored_allow_local_binding=
+    - expression is not allowed in type expression
+    --sandbox-policy-cwd--permission-profile--use-legacy-landlock--managed-networkcommand cwd must be valid UTF-8sandboxing\src\landlock.rs
+    .INetFwPolicy2::LocalPolicyModifyState failed: 
+    /.type` is not allowed in type expression, use `
+    /managed policy does not permit HTTP proxy port 
+    0managed policy does not permit SOCKS proxy port 
+    3, mode=limited, allowed_methods=GET, HEAD, OPTIONS)
+    3cast existing firewall rule to INetFwRule3 failed: 
+    6String literals are not allowed in type expressions: `
+    7managed policy does not permit unclassified proxy port 
+    8 is both a start and a match state, which is not allowed
+    8denyt
+    8denyu
+    8offline firewall rule user scope mismatch: expected SID 
+    :deny
+    :denyt
+    :expected every example to match at least one rule. rules: 
+    ; AllowDenyC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\lib.rs
+    ... (+338)
+
+  --- CLI SUBCOMMANDS: 2 ---
+    --launch-payload-env
+    status

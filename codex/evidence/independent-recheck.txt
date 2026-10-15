@@ -1,0 +1,35 @@
+﻿MAIN corpus: 34 files
+
+==========================================================================
+== 1. IPC REGISTRATION COUNT - method A (indexOf scan) vs method B (split scan)
+==========================================================================
+  ipcMain.handle(          indexOf=   7  split=   7  files=2/2   AGREE
+  ipcMain.on(              indexOf=  17  split=  17  files=2/2   AGREE
+  ipcMain.handleOnce(      indexOf=   0  split=   0  files=0/0   AGREE
+  ipcMain.removeHandler(   indexOf=   1  split=   1  files=1/1   AGREE
+
+  TOTAL ipcMain registrations = 7 + 17 = 24
+  C-D trap check: 34 is the file count; the totals must NOT equal it.  clear.
+
+==========================================================================
+== 2. F3 - verify the quoted update-catch snippet is byte-exact
+==========================================================================
+  file: bootstrap-487kJHw_.js  (461533 chars)
+  hresult literal 2147958056        present @ 24482
+  allowServiceInstallElevation fieldpresent @ 21465
+  stagePackage call                 present @ 24345
+  discardPreparedUpdate             present @ 22228
+  throw on non-matching error       present @ 24493
+
+==========================================================================
+== 2b. exact catch block as it appears in the file
+==========================================================================
+catch(e){if(!this.options.allowServiceInstallElevation||!(e instanceof Error)||!(`hresult`in e)||e.hresult!==2147958056)throw await this.discardPreparedUpdate(),e}let o=this.getStageStatePath();return await m.default.writeFile(`${o}.tmp`,JSON.stringify(a,null,2)),await m.default.rename(`${o}.tmp`,o),this.options.allowed()?(this.setUpdateR
+
+==========================================================================
+== 3. Sandbox constants re-derived from the literal block
+==========================================================================
+  (constant block not matched)
+
+  `r.fail(Error(co))` present @ 294351
+  `fail` is defined as n.reject(...) : YES -> timeout REJECTS

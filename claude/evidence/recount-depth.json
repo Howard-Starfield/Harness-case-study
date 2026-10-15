@@ -1,0 +1,73 @@
+{
+  "sites": 94,
+  "tuples": 1294,
+  "unique": 1294,
+  "guards": [
+    {
+      "guard": "Ixe",
+      "n": 14
+    },
+    {
+      "guard": "Xh",
+      "n": 111
+    },
+    {
+      "guard": "Qot",
+      "n": 29
+    },
+    {
+      "guard": "$lt",
+      "n": 3
+    },
+    {
+      "guard": "tv",
+      "n": 985
+    },
+    {
+      "guard": "nHn",
+      "n": 2
+    },
+    {
+      "guard": "PMr",
+      "n": 7
+    },
+    {
+      "guard": "$di",
+      "n": 1
+    },
+    {
+      "guard": "twi",
+      "n": 14
+    },
+    {
+      "guard": "owi",
+      "n": 1
+    },
+    {
+      "guard": "vTi",
+      "n": 14
+    },
+    {
+      "guard": "yTi",
+      "n": 4
+    },
+    {
+      "guard": "XLi",
+      "n": 25
+    },
+    {
+      "guard": "$0i",
+      "n": 6
+    },
+    {
+      "guard": "Zua",
+      "n": 56
+    },
+    {
+      "guard": "nba",
+      "n": 22
+    }
+  ],
+  "topFrameOnly": 57,
+  "yjrChannels": 0
+}

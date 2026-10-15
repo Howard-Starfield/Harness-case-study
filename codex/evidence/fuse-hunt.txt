@@ -1,0 +1,18 @@
+﻿
+==========================================================================
+== SCANNING 34 PE/.node candidates for the fuse sentinel
+==========================================================================
+
+  app/chrome.dll
+      sentinel @ 0x10e22af0
+      u32@ -8 = 1917811060   u32@ -4 = 6646084   -> NOT a wire
+      context:
+            69 6e 67 20 61 6c 67 6f 72 69 74 68 6d 20 69 6e 
+            20 56 61 6c 69 64 61 74 65 49 6e 74 65 67 72 69 
+            74 79 4f 72 44 69 65 00 64 4c 37 70 4b 47 64 6e 
+            4e 7a 37 39 36 50 62 62 6a 51 57 4e 4b 6d 48 58 
+            42 5a 61 42 39 74 73 58 01 09 30 31 
+      ascii   : ing algorithm in ValidateIntegrityOrDie.dL7pKGdnNz796PbbjQWNKmHXBZaB9tsX..01
+
+  TOTAL sentinel occurrences: 1
+  TOTAL valid fuse wires    : 0

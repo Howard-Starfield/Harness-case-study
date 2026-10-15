@@ -1,0 +1,38 @@
+﻿
+==========================================================================
+== IPC REGISTRATION CENSUS (corrected: occurrences, not files)
+==========================================================================
+  ipcMain.handle                  7   files: bootstrap-487kJHw_.js, main-BklS_2Y2.js
+  ipcMain.on                     17   files: bootstrap-487kJHw_.js, main-BklS_2Y2.js
+  ipcMain.handleOnce              0   files: -
+  ipcMain.removeHandler           1   files: main-BklS_2Y2.js
+  ipcMain.removeAllListeners      0   files: -
+  ipcRenderer.send               10   files: browser-page-preload.js, preload.js
+  ipcRenderer.invoke             11   files: browser-page-preload.js, preload.js
+  ipcRenderer.sendSync            8   files: browser-page-preload.js, preload.js
+  ipcRenderer.postMessage         2   files: preload.js, sandbox-preload.js
+  webContents.send                1   files: main-BklS_2Y2.js
+  webContents.sendSync            0   files: -
+
+==========================================================================
+== IPC CHANNEL NAMES (string literals passed to ipcMain)
+==========================================================================
+distinct literal channels: 1
+  codex_desktop:check-for-updates               bootstrap-487kJHw_.js
+
+--------------------------------------------------------------------------
+-- minified channel constants (X.y passed to ipcMain) --
+  bootstrap-487kJHw_.js: t.createKey
+  main-BklS_2Y2.js: g.pt, g.Ct, g.jt, g.wt, g.St, g.xt, g.Et, g.Ft, g.vt, g.Ot, g.Tt, g.kt, g.Dt, g.Mt, g.Nt, g.zt, g.At
+
+==========================================================================
+== .node FILE RECONCILIATION
+==========================================================================
+asar index .node entries: 6
+  node_modules/@worklouder/device-kit-oai/node_modules/@serialport/bindings-cpp/build/Release/bindings.node  size=862208
+  node_modules/@worklouder/device-kit-oai/node_modules/node-hid/build/Release/HID.node  size=1868800
+  node_modules/better-sqlite3/build/Release/better_sqlite3.node  size=3099648
+  node_modules/node-pty/build/Release/conpty.node  size=1821696
+  node_modules/node-pty/build/Release/conpty_console_list.node  size=842752
+  node_modules/node-pty/build/Release/pty.node  size=1794048
+extracted tree .node files: 0

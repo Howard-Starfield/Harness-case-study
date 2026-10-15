@@ -1,0 +1,94 @@
+﻿=== CODEX SIGNATURE POSTURE ===
+checked: 15 binaries
+
+BINARY                                         STATUS    TIMES   SUBJECT
+----------------------------------------------------------------------------------------------------------------------
+app\Codex.exe                                  Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\ChatGPT.exe                                Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\elevation_service.exe                      Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\elevated_tracing_service.exe               Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\chrome.dll                                 Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\chrome_elf.dll                             Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\resources\codex.exe                        Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\resources\codex                            UnknownError 96      
+    timestamp: n/a
+
+app\resources\codex-code-mode-host.exe         Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\resources\codex-code-mode-host             UnknownError 96      
+    timestamp: n/a
+
+app\resources\codex-windows-sandbox-service.exe Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\resources\codex-windows-sandbox-setup.exe  Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\resources\codex-command-runner.exe         Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\resources\rg.exe                           Valid     19      CN="OpenAI OpCo, LLC", O="OpenAI OpCo, L...
+    timestamp: CN=Microsoft Public RSA Time S...
+    issuer   : CN=Microsoft ID Verified CS AOC CA 03, O=Microsoft Corporation, C=US
+    notAfter : 10/09/2026 16:21:37   thumbprint: 0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F
+    sig alg  : sha384RSA
+
+app\resources\rg                               UnknownError 96      
+    timestamp: n/a
+
+=== MSIX PACKAGE IDENTITY ===
+Name          : OpenAI.Codex
+Version       : 26.1007.2314.0
+Publisher     : CN=50BDFD77-8903-4850-9FFE-6E8522F64D5B
+PackageFull   : OpenAI.Codex_26.1007.2314.0_x64__2p2nqsd0c76g0
+InstallLoc    : C:\Program Files\WindowsApps\OpenAI.Codex_26.1007.2314.0_x64__2p2nqsd0c76g0
+SignatureKind : Store
+Status        : Ok

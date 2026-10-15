@@ -1,0 +1,10 @@
+﻿
+==========================================================================
+== ELECTRON FUSE WIRE - chrome.dll
+==========================================================================
+  sentinel occurrences : 1   first at 0x10e22af0
+
+  --- candidate at 0x10e22af0 ---
+  preceding uint32 (wire version?) : 1917811060
+  preceding uint32 (wire length?)  : 6646084
+  -> does not look like a fuse wire; skipping

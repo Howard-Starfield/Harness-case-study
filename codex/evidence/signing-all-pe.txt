@@ -1,0 +1,18 @@
+﻿=== CODEX PACKAGE-WIDE AUTHENTICODE CENSUS ===
+enumerated by MZ magic bytes (not by file extension)
+PE files found: 60
+
+--- results ---
+Valid        : 60
+NotSigned    : 0
+Other/Unknown: 0
+
+--- by (status, signer) ---
+       59  Valid|"OpenAI OpCo
+        1  Valid|Microsoft Windows
+
+--- every NON-Valid file, with its real magic bytes ---
+
+--- distinct signers ---
+  0C6C3CA94B5A2DDA98357A1176470AB7B85ADF8F, "OpenAI OpCo   x59
+  BAC13DF18B37E808208A39D3A54CCE975FAC8C1D, Microsoft Windows   x1

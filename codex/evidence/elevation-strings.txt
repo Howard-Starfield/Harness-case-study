@@ -1,0 +1,646 @@
+
+########## elevation_service.exe  (3,905,840 bytes) ##########
+method: ASCII+UTF16LE printable-run sweep, runs >= 5 chars; raw text, no encoded string pool
+ascii runs: 6717   utf16 runs: 626
+
+  --- NAMED PIPES: 4 ---
+    Broken pipe
+    graphics.pipeline
+    toplevel,graphics.pipeline,viz
+    viz,benchmark,graphics.pipeline
+
+  --- PIPE NAME LITERALS: 0 ---
+
+  --- SOCKETS / LISTEN: 0 ---
+
+  --- RPC / NAMED PIPE PROTO: 1 ---
+    Cannot create impersonation token.
+
+  --- IPC MECHANISMS: 11 ---
+    .?AV<lambda_0>@?0??UpdateCommitDataRequest@SharedMemoryArbiterImpl@perfetto@@AEAAXVChunk@SharedMemoryABI@3@GIPEAVPatchList@3@@Z@
+    .?AV<lambda_1>@?0??FlushPendingCommitDataRequests@SharedMemoryArbiterImpl@perfetto@@UEAAXV?$function@$$A6AXXZ@__Cr@std@@@Z@
+    .?AV<lambda_2>@?0??AbortStartupTracingForReservation@SharedMemoryArbiterImpl@perfetto@@UEAAXG@Z@
+    .?AV<lambda_3>@?0??TakePendingFlushCallbacksLocked@SharedMemoryArbiterImpl@perfetto@@AEAA?AV?$function@$$A6AXXZ@__Cr@std@@XZ@
+    .?AV<lambda_4>@?0??NotifyFlushComplete@SharedMemoryArbiterImpl@perfetto@@UEAAX_K@Z@
+    .?AV<lambda_6>@?0??ReleaseWriterID@SharedMemoryArbiterImpl@perfetto@@AEAAXG@Z@
+    CreateFileA
+    CreateFileMappingW
+    CreateFileW
+    PERFETTO_CHECK(ptr <= chunk.end() - SharedMemoryABI::kPacketHeaderSize)
+    The in-process SharedMemoryArbiter can only be used when CreateProducer has been called with in_process=true and after tracing has started. (errno: %d, %s)
+
+  --- ELEVATION: 45 ---
+    ..\..\chrome\elevation_service\caller_validation.cc
+    ..\..\chrome\elevation_service\elevated_recovery_impl.cc
+    ..\..\chrome\elevation_service\elevator.cc
+    85SIElevator2WW 
+    8Z~IElevator2ChromiumWW
+    CreateProcessAsUserW
+    DuplicateTokenEx
+    Elevator 1.0 Type LibraryW
+    Felevator-clsid-for-testing
+    IElevator InterfaceWWW
+    IElevator2 InterfaceWW
+    IElevator2Chrome Interface
+    IElevator2ChromeBeta Interface
+    IElevator2ChromeCanary InterfaceWW
+    IElevator2ChromeCanaryWW
+    IElevator2ChromeDev InterfaceW 
+    IElevator2ChromeL
+    IElevator2Chromium InterfaceWW
+    IElevatorChrome InterfaceW
+    IElevatorChromeBeta InterfaceW
+    IElevatorChromeCanary InterfaceWWW
+    IElevatorChromeDev InterfaceWW
+    IElevatorChromeDevWW
+    IElevatorChromeW
+    IElevatorChromium InterfaceWWW
+    IElevatorChromiumWWW
+    KIElevator2ChromeBeta
+    LaunchElevatedProcess
+    RunRecoveryCRXElevatedWW
+    ShellExecuteExW
+    W..\..\chrome\elevation_service\elevation_service_delegate.cc
+    do-not-de-elevate
+    elevation_service.exe
+    elevation_service.exe.pdb
+    elevation_service_exe
+    elevator-allow-untrusted-path-for-testing
+    elevator-allow-untrusted-recovery-hash-for-testing
+    elevator-allow-untrusted-switches-for-testing
+    elevator-fake-reencrypt-for-testing
+    hIElevator2ChromeDevW
+    kIElevatorWWWd
+    nElevatorLibW
+    runas
+    wIElevatorChromeBetaWX
+    {IElevatorChromeCanaryWWW 
+
+  --- TOKEN / AUTH: 19 ---
+    ,Microsoft Public RSA Time Stamping Authority
+    ,Microsoft Public RSA Time Stamping Authority0
+    ?Microsoft Identity Verification Root Certificate Authority 20200
+    AuthentiH1
+    Cannot create impersonation token.
+    CheckTokenMembership
+    DuplicateTokenEx
+    Failed to authenticate caller process: 
+    GetSidSubAuthority
+    GetTokenInformation
+    Microsoft\EnterpriseCertificates
+    Microsoft\SystemCertificates
+    OpenProcessToken
+    OpenThreadToken
+    SHA256 block transform for x86_64, CRYPTOGAMS by <appro@openssl.org>
+    kDisallowEocdRecord64TokensInCrx
+    shttp://www.microsoft.com/pkiops/crl/Microsoft%20Identity%20Verification%20Root%20Certificate%20Authority%202020.crl0
+    uhttp://www.microsoft.com/pkiops/certs/Microsoft%20Identity%20Verification%20Root%20Certificate%20Authority%202020.crt0
+    uhttp://www.microsoft.com/pkiops/certs/Microsoft%20Identity%20Verification%20Root%20Certificate%20Authority%202020.crt0-
+
+  --- SERVICE: 4 ---
+    OpenSCManagerW
+    RegisterServiceCtrlHandler failed
+    RegisterServiceCtrlHandlerW
+    StartServiceCtrlDispatcherW
+
+  --- COM / RPC: 17 ---
+    Classes\Interface
+    CoCreateInstance
+    Created by MIDL version 8.xx.xxxx at a redacted point in time
+    IElevator InterfaceWWW
+    IElevator2 InterfaceWW
+    IElevator2Chrome Interface
+    IElevator2ChromeBeta Interface
+    IElevator2ChromeCanary InterfaceWW
+    IElevator2ChromeDev InterfaceW 
+    IElevator2Chromium InterfaceWW
+    IElevatorChrome InterfaceW
+    IElevatorChromeBeta InterfaceW
+    IElevatorChromeCanary InterfaceWWW
+    IElevatorChromeDev InterfaceWW
+    IElevatorChromium InterfaceWWW
+    Interface
+    ole32.dll
+
+  --- SANDBOX: 1 ---
+    AssignProcessToJobObject
+
+########## elevated_tracing_service.exe  (4,549,936 bytes) ##########
+method: ASCII+UTF16LE printable-run sweep, runs >= 5 chars; raw text, no encoded string pool
+ascii runs: 7895   utf16 runs: 669
+
+  --- NAMED PIPES: 38 ---
+                                HANDLE_pipe,
+          --pipe-name=PIPE        communicate with the client over PIPE
+    --initial-client-data and --pipe-name are incompatible
+    --initial-client-data or --pipe-name is required
+    ..\..\mojo\public\cpp\system\data_pipe_drainer.cc
+    ::GetNamedPipeClientProcessId
+    Broken pipe
+    CHROME_CRASHPAD_PIPE_NAME
+    ConnectNamedPipe
+    CreateNamedPipe
+    CreateNamedPipeW
+    DataPipeDrainer
+    DisconnectNamedPipe
+    GetNamedPipeClientProcessId
+    GetNamedPipeClientProcessId failed
+    GetNamedPipeServerProcessId
+    GetNamedPipeServerProcessId failed
+    ImpersonateNamedPipeClient
+    PeekNamedPipe
+    PipeControlMessageProxy
+    PostDispatchNextMessageFromPipe
+    SetNamedPipeHandleState
+    TransactNamedPipe
+    TransactNamedPipe: expected 
+    WaitNamedPipe
+    WaitNamedPipeW
+    [primary] PipeControlMessageHandler
+    \\.\pipe
+    \\.\pipe\crashpad_%lu_
+    graphics.pipeline
+    kFixDataPipeTrapBug
+    mojo/data_pipe_consumer
+    mojo/data_pipe_producer
+    mojo/message_pipe
+    pipe-name
+    toplevel,graphics.pipeline,viz
+    unknown tag in RunOrClosePipeInput
+    viz,benchmark,graphics.pipeline
+
+  --- PIPE NAME LITERALS: 2 ---
+    \\.\pipe
+    \\.\pipe\crashpad_%lu_
+
+  --- SOCKETS / LISTEN: 0 ---
+
+  --- RPC / NAMED PIPE PROTO: 9 ---
+    ConnectNamedPipe
+    CreateNamedPipe
+    CreateNamedPipeW
+    DisconnectNamedPipe
+    ImpersonateNamedPipeClient
+    TransactNamedPipe
+    TransactNamedPipe: expected 
+    WaitNamedPipe
+    WaitNamedPipeW
+
+  --- IPC MECHANISMS: 19 ---
+    .?AV<lambda_0>@?0??UpdateCommitDataRequest@SharedMemoryArbiterImpl@perfetto@@AEAAXVChunk@SharedMemoryABI@3@GIPEAVPatchList@3@@Z@
+    .?AV<lambda_1>@?0??FlushPendingCommitDataRequests@SharedMemoryArbiterImpl@perfetto@@UEAAXV?$function@$$A6AXXZ@__Cr@std@@@Z@
+    .?AV<lambda_2>@?0??AbortStartupTracingForReservation@SharedMemoryArbiterImpl@perfetto@@UEAAXG@Z@
+    .?AV<lambda_3>@?0??TakePendingFlushCallbacksLocked@SharedMemoryArbiterImpl@perfetto@@AEAA?AV?$function@$$A6AXXZ@__Cr@std@@XZ@
+    .?AV<lambda_4>@?0??NotifyFlushComplete@SharedMemoryArbiterImpl@perfetto@@UEAAX_K@Z@
+    .?AV<lambda_6>@?0??ReleaseWriterID@SharedMemoryArbiterImpl@perfetto@@AEAAXG@Z@
+    ClientDiscardableSharedMemoryManager
+    CreateFile
+    CreateFile 
+    CreateFileMappingW
+    CreateFileW
+    DiscardableSharedMemoryManager
+    PERFETTO_CHECK(ptr <= chunk.end() - SharedMemoryABI::kPacketHeaderSize)
+    SharedMemoryRegionCreationFailure
+    SharedMemoryTracker
+    The in-process SharedMemoryArbiter can only be used when CreateProducer has been called with in_process=true and after tracing has started. (errno: %d, %s)
+    \\.\pipe
+    \\.\pipe\crashpad_%lu_
+    kRetryCreateFileMappingOnCommitLimit
+
+  --- ELEVATION: 10 ---
+    ..\..\chrome\windows_services\elevated_tracing_service\process_watcher.cc
+    ..\..\chrome\windows_services\elevated_tracing_service\session_registry.cc
+    ..\..\chrome\windows_services\elevated_tracing_service\system_tracing_session.cc
+    DuplicateTokenEx
+    \ProtectedPrefix\Administrators
+    elevated-tracing-service
+    elevated_tracing_service
+    elevated_tracing_service.exe
+    elevated_tracing_service.exe.pdb
+    elevated_tracing_service_exe
+
+  --- TOKEN / AUTH: 25 ---
+    ,Microsoft Public RSA Time Stamping Authority
+    ,Microsoft Public RSA Time Stamping Authority0
+    ?Microsoft Identity Verification Root Certificate Authority 20200
+    AuthentiH1
+    AuthenticAMD
+    Bad CodeView signature in module
+    CheckTokenMembership
+    CodeView record in module too small to contain signature
+    Copyright 2018 The Crashpad Authors
+    DuplicateTokenEx
+    GetSidSubAuthority
+    GetTokenInformation
+    Microsoft\EnterpriseCertificates
+    Microsoft\SystemCertificates
+    OpenProcessToken
+    SHA256 block transform for x86_64, CRYPTOGAMS by <appro@openssl.org>
+    Session name is not an UnguessableToken
+    VerifyVersionInfoW
+    invalid signature 0x
+    invalid signature in nt headers of 
+    minidump signature mismatch
+    shttp://www.microsoft.com/pkiops/crl/Microsoft%20Identity%20Verification%20Root%20Certificate%20Authority%202020.crl0
+    uhttp://www.microsoft.com/pkiops/certs/Microsoft%20Identity%20Verification%20Root%20Certificate%20Authority%202020.crt0
+    uhttp://www.microsoft.com/pkiops/certs/Microsoft%20Identity%20Verification%20Root%20Certificate%20Authority%202020.crt0-
+    unexpected crashpad info signature 0x%x, version %u in %s
+
+  --- SERVICE: 4 ---
+    OpenSCManagerW
+    RegisterServiceCtrlHandler failed
+    RegisterServiceCtrlHandlerW
+    StartServiceCtrlDispatcherW
+
+  --- COM / RPC: 18 ---
+     rejected by interface 
+    ..\..\mojo\public\cpp\bindings\lib\interface_endpoint_client.cc
+    ..\..\mojo\public\cpp\bindings\lib\scoped_interface_endpoint_handle.cc
+    .?AV<lambda_0>@?0??ReadExactly@FileReaderInterface@crashpad@@QEAA_NPEAX_K@Z@
+    Classes\Interface
+    CoCreateInstance
+    Created by MIDL version 8.xx.xxxx at a redacted point in time
+    ISystemTraceSession InterfaceW%
+    ISystemTraceSessionChrome InterfaceWWW'
+    ISystemTraceSessionChromeBeta InterfaceWWW&
+    ISystemTraceSessionChromeCanary InterfaceW
+    ISystemTraceSessionChromeDev Interface)
+    ISystemTraceSessionChromium InterfaceW#
+    Interface
+    InterfaceEndpointClient
+    VALIDATION_ERROR_ILLEGAL_INTERFACE_ID
+    VALIDATION_ERROR_UNEXPECTED_INVALID_INTERFACE_ID
+    ole32.dll
+
+  --- SANDBOX: 0 ---
+
+########## codex-windows-sandbox-service.exe  (55,824,688 bytes) ##########
+method: ASCII+UTF16LE printable-run sweep, runs >= 5 chars; raw text, no encoded string pool
+ascii runs: 28875   utf16 runs: 703
+
+  --- NAMED PIPES: 41 ---
+    -tried to unwrap alt pipe from HirFrame, got: 
+    /: connect: connection established, serve pipe: 
+    /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library\std\src\sys\process\windows\child_pipe.rs
+    9: connect: reply sent, start serving source-target pipe: 
+    ; utilisez un pipe, une redirection ou {-flag-output} pour d
+    BROKEN_PIPE
+    C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mio-1.2.0\src\sys\windows\named_pipe.rs
+    C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\opentelemetry_sdk-0.31.0\src\metrics\pipeline.rs
+    C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-1.52.3\src\net\windows\named_pipe.rs
+    CodexSandboxService\\.\pipe\OpenAI.CodexSandbox
+    ConnectNamedPipe
+    CreateNamedPipeW
+    DisconnectNamedPipe
+    Failed to lock pipeline
+    GetNamedPipeClientProcessId
+    GetNamedPipeServerProcessId
+    ImpersonateNamedPipeClient
+    Invalid Server Nameconnect local must have pipe path
+    NamedPipe was not previously connecting
+    NtCreateNamedPipeFile
+    OtherConfigInvalidInstrumentConfigurationPipeline
+    PeekNamedPipe
+    The pipeline is already registered to the Reader. Registering pipeline multiple times is not allowed.
+    WaitNamedPipeW
+    \??\PIPE\
+    cli-truncated-tty = troncato; usa una pipe, una redirezione, o {-flag-output} per decifrare l'intero file
+    cli-truncated-tty = truncado; use un pipe, una redirecci
+    cli-truncated-tty = truncated; use a pipe, a redirect, or {-flag-output} to decrypt the entire file
+    connection closed because of a broken pipeStreams::recv_eofCconnection error PROTOCOL_ERROR -- recv_data: stream not found; id=
+    h2::pipe
+    kCpDpJpHpIpEpFp
+    opentelemetry_sdk::metrics::pipelineC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\opentelemetry_sdk-0.31.0\src\metrics\pipeline.rs
+    pipelineH
+    reader is shut down or not registeredFailed to lock pipeline
+    refreshed sandbox service pipe is unavailable
+    sandbox binary directory needs elevated repairinterrupted sandbox cleanup requires repaircreate provisioning pipe DACLcreate provisioning pipe
+    stream closed because of a broken pipeevent C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\h2-0.4.19\src\proto\streams\state.rs:151
+    stream closed because of a broken pipeevent C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rama-http-core-0.3.0-alpha.4\src\h2\proto\streams\state.rs:184
+    windows_named_pipe() set, proxies are ignoredreqwest::connect
+    write server reply: connect failedserve connect pipe
+    ~NzP}P\PGPCPLPZPIPePvPNPUPuPtPwPOP
+
+  --- PIPE NAME LITERALS: 1 ---
+    CodexSandboxService\\.\pipe\OpenAI.CodexSandbox
+
+  --- SOCKETS / LISTEN: 15 ---
+     * Create values of this type with `MyRecord(host="localhost", port=80)`. It is a runtime error if any arguments are missed, of the wrong type, or if any unexpected arguments are given.
+     * Get the fields of the record. For example, `v = MyRecord(host="localhost", port=80)` will provide `v.host == "localhost"` and `v.port == 80`. Similarly, `dir(v) == ["host", "port"]`.
+     Now the `port` field can be omitted, defaulting to `80` is not present (for example, `MyRecord(host="localhost").port == 80`).
+     rec = rec_type(host="localhost", port=80)
+    0.0.0.0-126.255.255.255,128.0.0.0-255.255.255.255,::,::2-ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffffCodex Sandbox Offline - Block Non-Loopback OutboundCodex Sandbox Offline - Block Non-Loopback Inbound
+    1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\hickory-proto-0.25.2\src\rr\domain\usage.rs
+    127.0.0.1:0C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mio-1.2.0\src\sys\windows\selector.rs
+    127.0.0.1:34254could not resolve to any addresses
+    OTEL_EXPORTER_OTLP_ENDPOINThttp://localhost:4317LogsTonicChannelBuilding
+    WSASocketW
+    Y: connect: failed to retrieve local addr from established conn, use default '0.0.0.0:0': 
+    curlwgethttp://127.0.0.1:9localhost,127.0.0.1,::1.COM;.EXE;.BAT;.CMD;windows-sandbox-rs\src\env.rs
+    localhost,127.0.0.1,::1,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
+    localhost.
+    windowsinternal error: entered unreachable code: validated file URLs can remove a localhost authorityutils\path-uri\src\lib.rs
+
+  --- RPC / NAMED PIPE PROTO: 12 ---
+                        if (![CleanupNative]::ImpersonateLoggedOnUser($entry.token)) { throw 'Cleanup impersonation failed' }
+     [DllImport("advapi32.dll",SetLastError=true)] public static extern bool ImpersonateLoggedOnUser(IntPtr t);
+     public static void Revert() { if(!RevertToSelf())Environment.FailFast("Cleanup impersonation revert failed"); }
+    ConnectNamedPipe
+    CreateNamedPipeW
+    DisconnectNamedPipe
+    ImpersonateLoggedOnUser
+    ImpersonateNamedPipeClient
+    NtCreateNamedPipeFile
+    WaitNamedPipeW
+    configuration runtime worker failed to impersonate the provisioning client
+    enforce managed provisioning requirementsKfailed to impersonate provisioning client on configuration runtime thread: 
+
+  --- IPC MECHANISMS: 4 ---
+    .git\Device\HarddiskVolumeno-reparse path is too longNtCreateFile returned an invalid handlepath contains a reparse pointNtCreateFilegenerate sandbox directory guard name
+    CodexSandboxService\\.\pipe\OpenAI.CodexSandbox
+    CreateFileW
+    NtCreateFile
+
+  --- ELEVATION: 23 ---
+     [DllImport("advapi32.dll",SetLastError=true)] static extern bool AdjustTokenPrivileges(IntPtr t,bool d,ref Priv p,int len,IntPtr old,IntPtr ret);
+    .failed to launch setup helper (non-elevated): 
+    .sandbox'failed to serialize elevation payload: 
+    AdjustTokenPrivileges
+    AdjustTokenPrivileges error 
+    AdjustTokenPrivileges failed: 
+    SYSTEMAdministrators
+    SetTokenInformation
+    ShellExecuteExW
+    WindowsSandboxImplementationTomlelevatedunelevated
+    WindowsSandboxModeTomlelevatedunelevatedmxc
+    disabledrestricted-tokenelevated provider auth cwd must resolve: 
+    elevatedH
+    err-excessive-work = Parametro di lavoro per la passphrase troppo elevato.
+    h, update its trust setting. If that setting is managed by your organization, contact your administrator.
+    invalid token group result sizeinvalid token group sizeS-1-3-4.SetTokenInformation(TokenDefaultDacl) failed: 
+    registered Core requires the sandbox service; retry service setup%failed to determine elevation state: 
+    requested sandbox settings violate administrator-controlled machine policyprovisioning requests must contain exactly one IPC frameprovisioning request exceeds size limit
+    runas/ShellExecuteExW failed to launch setup helper: 
+    sandbox binary directory needs elevated repairinterrupted sandbox cleanup requires repaircreate provisioning pipe DACLcreate provisioning pipe
+    systemsleep_toolhookstyperesponsesdenyserverlocalelevated
+    unelevatH
+    unelevatedmxc
+
+  --- TOKEN / AUTH: 717 ---
+                        if (![CleanupNative]::ImpersonateLoggedOnUser($entry.token)) { throw 'Cleanup impersonation failed' }
+                        if (![CleanupNative]::UnloadUserProfile($entry.token, $entry.profile.handle)) { throw [ComponentModel.Win32Exception]::new([Runtime.InteropServices.Marshal]::GetLastWin32Error()) }
+            $identity = [Security.Principal.WindowsIdentity]::new($token)
+            $profiles += @{ token = $token; profile = $profile; sid = $target.sid }
+            $token = [IntPtr][long]$target.handle
+            if (![CleanupNative]::LoadUserProfile($token, [ref]$profile)) { throw [ComponentModel.Win32Exception]::new([Runtime.InteropServices.Marshal]::GetLastWin32Error()) }
+            try { if ($identity.User.Value -cne $target.sid) { throw 'Cleanup token SID mismatch' } }
+            while (![CleanupNative]::UnloadUserProfile($entry.token, $entry.profile.handle)) {
+        Authenficateur physique SSH non support
+        Unsupported SSH Hardware Authenticator
+        {-openssh} version 8.2p1 added support for {-fido-u2f} hardware authenticators,
+     Failed to register certificate #
+     LocalUserAuthorizedList=
+     [DllImport("advapi32.dll",SetLastError=true)] static extern bool AdjustTokenPrivileges(IntPtr t,bool d,ref Priv p,int len,IntPtr old,IntPtr ret);
+     [DllImport("advapi32.dll",SetLastError=true)] static extern bool OpenProcessToken(IntPtr p,uint a,out IntPtr t);
+     from authority as host header
+     le support pour les authentificateurs physique {-fido-u2f}
+     tokens
+    !Failed to resolve external auth: 
+    !TWCA Root Certification Authority0
+    "COMODO ECC Certification Authority0
+    "COMODO RSA Certification Authority0
+    "HKDF_SHA256HKDF_SHA384HKDF_SHA512
+    "_entry_tokens must not exceed max_
+    #Failed to read CA certificate file 
+    #SetLocalUserAuthorizedList failed: 
+    $Failed to load CA certificates from 
+    $serde_json::private::NumberAuthTimeoutRequestFailedInvalidBundleInternalCustomCa
+    %USERTrust ECC Certification Authority0
+    %USERTrust RSA Certification Authority0
+    %invalid certificate revocation list: 
+    &Client certificate decompressed using 
+    &Server certificate decompressed using 
+    ' has an invalid pattern token at index 
+    'China Financial Certification Authority1
+    'certificate expired: verification time 
+    (Go Daddy Root Certificate Authority - G20
+    (SSL.com Root Certification Authority ECC0
+    (SSL.com Root Certification Authority RSA0
+    (Trustwave Global Certification Authority0
+    (malformed headers: malformed authority (
+    ) which was declared optional in signature
+    )GUANG DONG CERTIFICATE AUTHORITY CO.,LTD.1
+    )GetTokenInformation(TokenGroups) failed: 
+    )NAVER Global Root Certification Authority0
+    ... (+672)
+
+  --- SERVICE: 3 ---
+    OpenSCManagerW
+    RegisterServiceCtrlHandlerExW
+    StartServiceCtrlDispatcherW
+
+  --- COM / RPC: 5 ---
+    #CoCreateInstance NetFwRule failed: 
+    &CoCreateInstance NetFwPolicy2 failed: 
+    CoCreateInstance
+    Partial headerruntime dropped the dispatch taskuser code panickedLibraryRemoteNoneSomeStreamIdLength
+    ole32.dll
+
+  --- SANDBOX: 224 ---
+                    $status = [CleanupNative]::NetLocalGroupDel($null, 'CodexSandboxUsers')
+                    [CleanupNative]::DeleteUser(('CodexSandbox' + $account.account), $sid)
+                    [CleanupNative]::Log($plan.service_name, 4, 3004, "Removed $($account.account) sandbox profile and account")
+                    if ($groupSid -cne $plan.group_sid) { throw 'Sandbox group was replaced' }
+                $mutex = [Threading.Mutex]::new($false, 'Global\CodexSandboxSetup', [ref]$created, $security)
+                [CleanupNative]::Log($plan.service_name, 4, 3003, 'Sandbox uninstall cleanup finished, including registered runtimes, profiles, and accounts')
+                if (!$locked) { throw 'Sandbox setup is still active' }
+                try { if ($plan.group_sid) { $groupSid = ([Security.Principal.NTAccount]::new('CodexSandboxUsers')).Translate([Security.Principal.SecurityIdentifier]).Value } }
+     CodexSandboxDesktop-shared private desktop cache was poisoned
+     for sandbox users
+     for sandbox writable root: 
+     for sandbox_group: 
+     provision sandbox users failed: 
+     sandbox dir failed: 
+     serialize sandbox users failed: 
+    "sandbox setup marker read failed: 
+    #inspect registered sandbox account 
+    #invalid fs sandbox helper request: 
+    #sandbox setup marker parse failed: 
+    % for sandbox group and capability SID
+    %SetEntriesInAclW sandbox dir failed: 
+    %fs sandbox helper failed with status 
+    %sandbox provisioning request failed: 
+    (sandbox launch payload must contain 1..=
+    *read sandbox logon session for uninstall: 
+    --sandbox-policy-cwd--permission-profile--use-legacy-landlock--managed-networkcommand cwd must be valid UTF-8sandboxing\src\landlock.rs
+    -NoLogo-NoProfile-NonInteractive-Commandstart Windows package cleanupSOFTWARE\OpenAI\Codex\WindowsSandboxService\RegisteredCore6
+    -sandboxH
+    .git\Device\HarddiskVolumeno-reparse path is too longNtCreateFile returned an invalid handlepath contains a reparse pointNtCreateFilegenerate sandbox directory guard name
+    .sandbox account changed after being disabled: 
+    .sandbox'failed to serialize elevation payload: 
+    .sandbox.sandbox-secrets.sandbox-bin
+    .sandboxworkspace-write sandbox has no writable root capability SIDsunterminated package nameinvalid package name
+    0.0.0.0-126.255.255.255,128.0.0.0-255.255.255.255,::,::2-ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffffCodex Sandbox Offline - Block Non-Loopback OutboundCodex Sandbox Offline - Block Non-Loopback Inbound
+    0convert sandbox users group SID to PSID failed: 
+    0enumerate sandbox logon sessions for uninstall: 
+    127.0.0.0/8,::/127Codex Sandbox Offline - Block Loopback UDPCodex Sandbox Offline - Block Loopback TCP (Except Proxy),Qlocal firewall policy modifications will not take effect: LocalPolicyModifyState=
+    6failed to encode or decode fs sandbox helper message: 
+    ://CODEX_SANDBOX_LAUNCH_COUNTCODEX_SANDBOX_LAUNCH_BYTESCODEX_SANDBOX_LAUNCH_
+    ; 'open sandbox hidden-user registry key: 
+    ; refusing to run unsandboxed
+    AgentsOverviewGroupingprojectstatusWindowsSandboxModeTomlmxc
+    BuildSecurityDescriptorWcodex_wfp_icmp_connect_v4Block sandbox-account ICMP connect v4
+    C:\Program FilesC:\Program Files (x86)setup_marker.json.sandbox-secretsCODEX_WINDOWS_SANDBOX_PROXY_PORTS setup helper exited with status 
+    CODEX_NETWORK_PROXY_ATTRIBUTIONCODEX_WINDOWS_SANDBOX_PROXY_PORTS,codex_network_proxy::proxynetwork-proxy\src\proxy.rsnetwork-proxy\src\proxy.rs
+    ... (+179)
+
+########## codex-windows-sandbox-setup.exe  (17,725,744 bytes) ##########
+method: ASCII+UTF16LE printable-run sweep, runs >= 5 chars; raw text, no encoded string pool
+ascii runs: 16305   utf16 runs: 696
+
+  --- NAMED PIPES: 19 ---
+    -tried to unwrap alt pipe from HirFrame, got: 
+    /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860/library\std\src\sys\process\windows\child_pipe.rs
+    BROKEN_PIPE
+    C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\mio-1.2.0\src\sys\windows\named_pipe.rs
+    C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\opentelemetry_sdk-0.31.0\src\metrics\pipeline.rs
+    C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tokio-1.52.3\src\net\windows\named_pipe.rs
+    Failed to lock pipeline
+    Invalid Server Nameconnect local must have pipe path
+    NamedPipe was not previously connecting
+    NtCreateNamedPipeFile
+    OtherConfigInvalidInstrumentConfigurationPipeline
+    The pipeline is already registered to the Reader. Registering pipeline multiple times is not allowed.
+    \??\PIPE\
+    connection closed because of a broken pipeStreams::recv_eofCconnection error PROTOCOL_ERROR -- recv_data: stream not found; id=
+    opentelemetry_sdk::metrics::pipelineC:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\opentelemetry_sdk-0.31.0\src\metrics\pipeline.rs
+    pipelineH
+    reader is shut down or not registeredFailed to lock pipeline
+    stream closed because of a broken pipeevent C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\h2-0.4.19\src\proto\streams\state.rs:151
+    windows_named_pipe() set, proxies are ignoredreqwest::connect
+
+  --- PIPE NAME LITERALS: 0 ---
+
+  --- SOCKETS / LISTEN: 7 ---
+     * Create values of this type with `MyRecord(host="localhost", port=80)`. It is a runtime error if any arguments are missed, of the wrong type, or if any unexpected arguments are given.
+     * Get the fields of the record. For example, `v = MyRecord(host="localhost", port=80)` will provide `v.host == "localhost"` and `v.port == 80`. Similarly, `dir(v) == ["host", "port"]`.
+     Now the `port` field can be omitted, defaulting to `80` is not present (for example, `MyRecord(host="localhost").port == 80`).
+     rec = rec_type(host="localhost", port=80)
+    127.0.0.1:34254could not resolve to any addresses
+    OTEL_EXPORTER_OTLP_ENDPOINThttp://localhost:4317LogsTonicChannelBuilding
+    WSASocketW
+
+  --- RPC / NAMED PIPE PROTO: 1 ---
+    NtCreateNamedPipeFile
+
+  --- IPC MECHANISMS: 3 ---
+    CreateFileW
+    NtCreateFile
+    USERPROFILE\Device\HarddiskVolumeno-reparse path is too longNtCreateFile returned an invalid handlepath contains a reparse pointNtCreateFilewindows-sandbox-rs\src\no_reparse_dir.rs
+
+  --- ELEVATION: 1 ---
+    SYSTEMAdministrators
+
+  --- TOKEN / AUTH: 355 ---
+     Failed to register certificate #
+     LocalUserAuthorizedList=
+    !TWCA Root Certification Authority0
+    "COMODO ECC Certification Authority0
+    "COMODO RSA Certification Authority0
+    "HKDF_SHA256HKDF_SHA384HKDF_SHA512
+    #Failed to read CA certificate file 
+    #SetLocalUserAuthorizedList failed: 
+    $Failed to load CA certificates from 
+    %USERTrust ECC Certification Authority0
+    %USERTrust RSA Certification Authority0
+    %invalid certificate revocation list: 
+    &Server certificate decompressed using 
+    'China Financial Certification Authority1
+    'certificate expired: verification time 
+    (Go Daddy Root Certificate Authority - G20
+    (SSL.com Root Certification Authority ECC0
+    (SSL.com Root Certification Authority RSA0
+    (Trustwave Global Certification Authority0
+    (malformed headers: malformed authority (
+    ) which was declared optional in signature
+    )GUANG DONG CERTIFICATE AUTHORITY CO.,LTD.1
+    )NAVER Global Root Certification Authority0
+    )Starfield Root Certificate Authority - G20
+    +SSL.com EV Root Certification Authority ECC0
+    , (UNIX), but certificate is not valid after 
+    , 2certificate does not allow extended key usage for 
+    ,LocalUserAuthorizedList (read-back) failed: 
+    ,Microsoft Public RSA Time Stamping Authority
+    ,Microsoft Public RSA Time Stamping Authority0
+    - (UNIX), but certificate is not valid before 
+    -Microsoft ECC Root Certificate Authority 20170
+    -Microsoft RSA Root Certificate Authority 20170
+    -Sectigo Public Server Authentication Root E460
+    -Sectigo Public Server Authentication Root R460
+    -certificate not valid yet: verification time 
+    .SSL.com EV Root Certification Authority RSA R20
+    1Trustwave Global ECC P256 Certification Authority0
+    1Trustwave Global ECC P384 Certification Authority0
+    2Starfield Services Root Certificate Authority - G20
+    7certificate revocation list expired: verification time 
+    ; certificate 
+    ;Hellenic Academic and Research Institutions Cert. Authority1@0>
+    ;Hellenic Academic and Research Institutions Cert. Authority1D0B
+    ?Microsoft Identity Verification Root Certificate Authority 20200
+    ... (+310)
+
+  --- SERVICE: 0 ---
+
+  --- COM / RPC: 4 ---
+    #CoCreateInstance NetFwRule failed: 
+    CoCreateInstance
+    Partial headerruntime dropped the dispatch taskuser code panickedLibraryRemoteNoneSomeStreamIdLength
+    ole32.dll
+
+  --- SANDBOX: 48 ---
+     for sandbox users
+     for sandbox_group: 
+     provision sandbox users failed: 
+     sandbox dir failed: 
+     serialize sandbox users failed: 
+    % for sandbox group and capability SID
+    %SetEntriesInAclW sandbox dir failed: 
+    (sandbox launch payload must contain 1..=
+    --launch-payloadBOX_LAUNCH_COUNTCODEX_SANDBOX_LABOX_LAUNCH_BYTES
+    .sandbox.sandbox-bin.sandbox-secretssandboxlog
+    127.0.0.0/8,::/127Codex Sandbox Offline - Block Loopback UDPCodex Sandbox Offline - Block Loopback TCP (Except Proxy),Qlocal firewall policy modifications will not take effect: LocalPolicyModifyState=
+    BuildSecurityDescriptorWcodex_wfp_icmp_connect_v4Block sandbox-account ICMP connect v4
+    CodexSandboxUsers
+    CodexSandboxUsersCodex sandbox internal group (managed)
+    D:P(A;;GA;;;SY)(A;;GA;;;BA)create sandbox setup mutex securityGlobal\CodexSandboxSetupopen sandbox setup mutex0timed out waiting for sandbox setup mutex after 
+    FwpmProviderAdd0Persistent WFP sublayer for Codex Windows sandbox filtersFwpmSubLayerAdd0
+    FwpmTransactionCommit0Codex Windows Sandbox WFPPersistent WFP provider for Codex Windows sandbox filters
+    Local\CodexSandboxReadAcl
+    SOFTWARE\OpenAI\Codex\WindowsSandboxService\RegisteredCoreCore installation record is missing runtime stateSOFTWARE\OpenAI\Codex\WindowsSandboxServiceProvisionedInstallationlegacyregistered
+    USERPROFILE\Device\HarddiskVolumeno-reparse path is too longNtCreateFile returned an invalid handlepath contains a reparse pointNtCreateFilewindows-sandbox-rs\src\no_reparse_dir.rs
+    codex_wfp_dns_53_v6Block sandbox-account DNS TCP or UDP port 53 v6codex_wfp_dns_853_v4Block sandbox-account DNS-over-TLS port 853 v4
+    codex_wfp_dns_853_v6Block sandbox-account DNS-over-TLS port 853 v6codex_wfp_smb_445_v4Block sandbox-account SMB port 445 v4
+    codex_wfp_icmp_connect_v6Block sandbox-account ICMP connect v6
+    codex_wfp_smb_139_v6Block sandbox-account SMB port 139 v6
+    codex_wfp_smb_445_v6Block sandbox-account SMB port 445 v6codex_wfp_smb_139_v4Block sandbox-account SMB port 139 v4
+    codex_windows_sandbox_setup.exe
+    codex_windows_sandbox_setup.pdb
+    convert deny capability SID failedconvert write root capability SID failed(resolve sandbox users group SID failed: 
+    create sandbox dir 
+    ensuring sandbox users offline=
+    failed to create sandbox dir 
+    lock sandbox bin dir 
+    lock sandbox dir 
+    lock sandbox secrets dir 
+    open daily sandbox logapply deny-read ACLs
+    read local sandbox user 
+    registered Core owns these sandbox accounts; helper provisioning is not permittedregistered Core requires service-owned provisioning
+    sandbox launch payload contains a NUL
+    sandbox user 
+    sandbox-
+    sandbox_group
+    sandbox_users.json
+    set local sandbox user 
+    setup refresh had errors0convert sandbox users group SID to PSID failed: 
+    versionoffline_usernameonline_usernameproxy_portsallow_local_bindinggenerate sandbox output name
+    ... (+3)

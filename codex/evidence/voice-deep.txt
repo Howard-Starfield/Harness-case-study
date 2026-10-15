@@ -1,0 +1,165 @@
+﻿
+============================================================================
+== 1. AGENTS.md  - the MD record of what needs doing
+============================================================================
+
+----------------------------------------------------------------------------
+-- AGENTS.md literals
+
+  [main-BklS_2Y2.js @845055] AGENTS.md
+     t=f?.files.find(e=>e.fileId===i.fileId&&vx(e.name)),c=C.default.join(u,i.name);if(t!=null&&await dx(C.default.join(a,ex,t.name),c,t.sha256)){s.push({...i,sha256:t.sha256});continue}try{let t=await lx(c,i.fileId,r+1,n,e);s.push({...i,sha256:t})}catch(e){if(!(e instanceof Zb)||e.stage===`filesystem`)throw e;await(0,x.rm)(c,{force:!0}),o.push({fileOrdinal:e.fileOrdinal??r+1,stage:e.stage,status:e.status})}}if(await(0,x.writeFile)(C.default.join(c,`AGENTS.md`),bx(i,r,o.length),{encoding:`utf8`,mode:292}),await(0,x.mkdir)(a,{recursive:!0}),!(await(0,x.lstat)(a)).isDirectory())throw Error(`Project workspace is not a directory`);await(0,x.mkdir)(l);let p=[ex,`AGENTS.md`].map(e=>({name:e,backedUp:!1,published:!1}));try{for(let e of p){try{await(0,x.rename)(C.default.join(a,e.name),C.default.join(l,e.name)),e.backedUp=!0}catch(e){if(!xx(e,`ENOENT`))throw e}await(0,x.rename)(C.default.join(c,e.na
+
+  [main-BklS_2Y2.js @845267] AGENTS.md
+    r+1,n,e);s.push({...i,sha256:t})}catch(e){if(!(e instanceof Zb)||e.stage===`filesystem`)throw e;await(0,x.rm)(c,{force:!0}),o.push({fileOrdinal:e.fileOrdinal??r+1,stage:e.stage,status:e.status})}}if(await(0,x.writeFile)(C.default.join(c,`AGENTS.md`),bx(i,r,o.length),{encoding:`utf8`,mode:292}),await(0,x.mkdir)(a,{recursive:!0}),!(await(0,x.lstat)(a)).isDirectory())throw Error(`Project workspace is not a directory`);await(0,x.mkdir)(l);let p=[ex,`AGENTS.md`].map(e=>({name:e,backedUp:!1,published:!1}));try{for(let e of p){try{await(0,x.rename)(C.default.join(a,e.name),C.default.join(l,e.name)),e.backedUp=!0}catch(e){if(!xx(e,`ENOENT`))throw e}await(0,x.rename)(C.default.join(c,e.name),C.default.join(a,e.name)),e.published=!0}}catch(e){let t=[e];for(let e of p.toReversed())try{e.published&&await(0,x.rename)(C.default.join(a,e.name),C.default.join(c,e.name)),e.backedUp&&await(0,x.rename)(C.d
+
+  [main-BklS_2Y2.js @1140926] AGENTS.md
+    erra`:e.startsWith(`claude-sonnet`)||e.startsWith(`claude-haiku`)?`gpt-5.6-luna`:e}function eye(e){return e===`acceptEdits`?`workspace-write`:e===`readOnly`?`read-only`:null}function pD(e){return Bve.exec(e)?.[1]??null}function tye(e){return Vve.exec(e)?.[1]??null}function nye(e,t){if(KE(e[t]))return e[t];let n={};return e[t]=n,n}var rye=`## Claude Cowork Migration`;async function iye({projectImport:e}){let t=C.default.join(e.project.sourceRoot,`AGENTS.md`),n=await bE(t);if(mD(n,`## Imported Claude Cowork project instructions`)||mD(n,rye))return null;let r=e.project.instructions,i=r==null||r.trim()===``?null:r.trim(),a=i==null?FE:[FE,``,i].join(` `),o=` `;return n==null||n===``||n.endsWith(` `)?o=``:n.endsWith(` `)&&(o=` `),await(0,x.writeFile)(t,`${n??``}${o}${a}\n`,`utf8`),t}function mD(e,t){return e?.split(` `).some(e=>e.trim()===t)===!0}function hD(e){return e.trim().toLowerCase().
+
+  [src-BJv5Mk7n.js @30740] AGENTS.md
+    nction Xt(e,t=1/0){let n=[],r=e.getReader(),i=0;try{for(;i<t;){let{done:e,value:a}=await r.read();if(e)break;let o=Buffer.from(a),s=Number.isFinite(t)?o.subarray(0,t-i):o;n.push(s),i+=s.byteLength}return Buffer.concat(n)}finally{r.releaseLock(),i>=t&&await e.cancel()}}async function Zt(e){let t=n.Bi(e.appServerClient.hostConfig)?await e.appServerClient.codexHome():o.ot({preferWsl:e.preferWsl}),r=await e.appServerClient.platformPath(),i=r.join(t,`AGENTS.md`);await G.mkdir(r.dirname(i),{recursive:!0},e.appServerClient);try{await G.stat(i,e.appServerClient)}catch{await G.writeFile(i,``,e.appServerClient)}return i}async function Qt(e){let t=await Zt(e),n=await G.readFile(t,e.appServerClient),r=await e.appServerClient.platformPath(),i=r.join(r.dirname(t),`AGENTS.override.md`),a=!1;try{a=!!(await G.readFile(i,e.appServerClient)).trim()}catch(e){if(!Ce(e))throw e}return{path:t,contents:n,hasOve
+
+============================================================================
+== 2. memory md/json references
+============================================================================
+
+----------------------------------------------------------------------------
+-- memory.md / memory.json
+
+  [main-BklS_2Y2.js @188712] memory.md
+    ;return{isDirectory:r.isDirectory(),isSymlink:r.isSymbolicLink()}}}}var al=`Response MUST end with a remark-directive block.\r \r ## Responding\r \r - Answer the user normally and concisely. Explain what you found, what you did, and what the user should focus on now.\r - Automations: use the memory file at \`$CODEX_HOME/automations/<automation_id>/memory.md\` (create it if missing).\r - Read it first (if present) to avoid repeating recent work, especially for "changes since last run" tasks.\r - Memory is important: some tasks must build on prior work, and others must avoid duplicating prior focus.\r - Before returning the directive, write a concise summary of what you did/decided plus 
+
+  [main-BklS_2Y2.js @208892] memory.md
+    ])}catch(e){ce.type===`dangerFullAccess`&&(le=oe),xl().warning(`Failed to prepare visualization directory for automation run`,{safe:{automationId:a.id},sensitive:{error:e}})}let ue=a.lastRunAt==null?`never`:`${new Date(a.lastRunAt).toISOString()} (${a.lastRunAt})`,de=`${C}\nAutomation ID: ${a.id}\nAutomation memory: $CODEX_HOME/automations/${a.id}/memory.md\nLast run: ${ue}\n\n${a.prompt}`,fe={threadId:re,turnTrigger:`automation_cron_${e}`,input:[{type:`text`,text:de,text_elements:[]}],cwd:B.cwd,approvalPolicy:se.approvalPolicy,approvalsReviewer:se.approvalsReviewer,sandboxPolicy:ce,runtimeWorkspaceRoots:le,model:_.model,effort:_.reasoningEffort,serviceTier:null,summary:r.s,personality:null,
+
+  [src-BJv5Mk7n.js @1065893] memory.md
+    p(({id:e})=>e)??[]}function zF(e,t,n,r){if(!hF(e)||!hF(t.id))return null;let i=uF(t.id)?.status===`DELETED`?{...t,status:`DELETED`,nextRunAt:null}:t,a=new Map,o=MF(e,a),s=()=>r==null||MF(e,a)!=null&&a.get(e)===r,c=q();if(o==null||c==null||!s())return null;let l=gF(e),u=gF(t.id);try{if(e!==t.id){(0,f.mkdirSync)(u,{recursive:!0});let e=(0,m.join)(l,`memory.md`),n=(0,m.join)(u,`memory.md`);(0,f.existsSync)(e)&&(!(0,f.existsSync)(n)||uF(t.id)?.accountId==null)&&(0,f.copyFileSync)(e,n)}c.prepare(`BEGIN`).run();try{let r=uF(e)??uF(t.id);if(!dF({automation:{...i,nextRunNominalAt:r==null?i.nextRunNominalAt:r.nextRunNominalAt},nextRunAt:r==null?i.nextRunAt:r.nextRunAt,lastRunAt:r==null?i.lastRunAt:r.
+
+  [src-BJv5Mk7n.js @1065921] memory.md
+    zF(e,t,n,r){if(!hF(e)||!hF(t.id))return null;let i=uF(t.id)?.status===`DELETED`?{...t,status:`DELETED`,nextRunAt:null}:t,a=new Map,o=MF(e,a),s=()=>r==null||MF(e,a)!=null&&a.get(e)===r,c=q();if(o==null||c==null||!s())return null;let l=gF(e),u=gF(t.id);try{if(e!==t.id){(0,f.mkdirSync)(u,{recursive:!0});let e=(0,m.join)(l,`memory.md`),n=(0,m.join)(u,`memory.md`);(0,f.existsSync)(e)&&(!(0,f.existsSync)(n)||uF(t.id)?.accountId==null)&&(0,f.copyFileSync)(e,n)}c.prepare(`BEGIN`).run();try{let r=uF(e)??uF(t.id);if(!dF({automation:{...i,nextRunNominalAt:r==null?i.nextRunNominalAt:r.nextRunNominalAt},nextRunAt:r==null?i.nextRunAt:r.nextRunAt,lastRunAt:r==null?i.lastRunAt:r.lastRunAt,owner:n,legacyAuto
+
+----------------------------------------------------------------------------
+-- memoryPipeline
+
+  [src-BJv5Mk7n.js @886926] memoryPipeline
+    s:ao})),L=A||F==null?s:`project`,te=L===`projectless`,R=u==null||F==null||F===`/`||j!=null||u.sandboxPolicy.type!==`workspaceWrite`?u:{...u,sandboxPolicy:{...u.sandboxPolicy,writableRoots:[F]}},z=P?.[0]?.runtimeWorkspaceRoots??(F==null?o:[F]),ne;ne=d==null?R==null?{permissionsConfig:null}:{permissionsConfig:R}:{permissionsConfig:null,permissionSelection:d};let re=te&&!O?o[0]??null:null,B=e.inputs.memoryPipeline==null&&e.inputs.projectId==null&&b===`user`&&!D&&!O&&w==="default"&&T==="default"&&m==null&&_==null&&(y==null||Object.keys(y).length===0)&&(S==null||Object.keys(S).length===0)&&R!=null&&(R.activePermissionProfile==null||R.activePermissionProfile.id.startsWith(`:`))&&p==null,ie=te&&F==null&&!O?Ee({cwd:f,projectlessOutputDirectory:c,projectlessWorkspaceBrowserRoot:re}):null,V=ie!=null
+
+  [src-BJv5Mk7n.js @890141] memoryPipeline
+    s:g,...t.realtimeVoiceDynamicTools==null?{}:{realtimeVoiceDynamicTools:t.realtimeVoiceDynamicTools},mode:w,threadStartKind:T,threadSource:y,dynamicToolFeatureOverrides:x,requestedHistoryMode:C});_!=null&&(O.serviceName=_),e.inputs.projectId!=null&&(O.projectId=e.inputs.projectId);let k=p==null?null:{"memories.generate_memories":p.generateMemories,"memories.use_memories":p.useMemories};if(e.inputs.memoryPipeline!=null&&(O.config={...O.config,"memories.version":e.inputs.memoryPipeline.version,"memories.dual_write":e.inputs.memoryPipeline.dualWrite}),v!=null&&(O.config={...O.config,...v}),r!=null&&(O.config={...O.config,model_reasoning_effort:r}),l&&(O.ephemeral=!0),D){let t=cM(O.config);if(w===`durable`&&T===`aeon`){let n=Kw(O.config,e.inputs.hasDesktopRuntime,e.inputs.isBrowserRuntime);O.se
+
+  [src-BJv5Mk7n.js @890214] memoryPipeline
+    realtimeVoiceDynamicTools},mode:w,threadStartKind:T,threadSource:y,dynamicToolFeatureOverrides:x,requestedHistoryMode:C});_!=null&&(O.serviceName=_),e.inputs.projectId!=null&&(O.projectId=e.inputs.projectId);let k=p==null?null:{"memories.generate_memories":p.generateMemories,"memories.use_memories":p.useMemories};if(e.inputs.memoryPipeline!=null&&(O.config={...O.config,"memories.version":e.inputs.memoryPipeline.version,"memories.dual_write":e.inputs.memoryPipeline.dualWrite}),v!=null&&(O.config={...O.config,...v}),r!=null&&(O.config={...O.config,model_reasoning_effort:r}),l&&(O.ephemeral=!0),D){let t=cM(O.config);if(w===`durable`&&T===`aeon`){let n=Kw(O.config,e.inputs.hasDesktopRuntime,e.inputs.isBrowserRuntime);O.serviceName=O.serviceName??n,t={...t,apps:qw(O.config)},n!=null&&(t.network
+
+  [src-BJv5Mk7n.js @890268] memoryPipeline
+    readSource:y,dynamicToolFeatureOverrides:x,requestedHistoryMode:C});_!=null&&(O.serviceName=_),e.inputs.projectId!=null&&(O.projectId=e.inputs.projectId);let k=p==null?null:{"memories.generate_memories":p.generateMemories,"memories.use_memories":p.useMemories};if(e.inputs.memoryPipeline!=null&&(O.config={...O.config,"memories.version":e.inputs.memoryPipeline.version,"memories.dual_write":e.inputs.memoryPipeline.dualWrite}),v!=null&&(O.config={...O.config,...v}),r!=null&&(O.config={...O.config,model_reasoning_effort:r}),l&&(O.ephemeral=!0),D){let t=cM(O.config);if(w===`durable`&&T===`aeon`){let n=Kw(O.config,e.inputs.hasDesktopRuntime,e.inputs.isBrowserRuntime);O.serviceName=O.serviceName??n,t={...t,apps:qw(O.config)},n!=null&&(t.network_requirements=Jw(O.config))}O={...O,config:t,ephemeral
+
+============================================================================
+== 3. Orb component
+============================================================================
+
+----------------------------------------------------------------------------
+-- Orb<Cap>
+
+  [main-BklS_2Y2.js @443011] OrbPicker
+    =(0,Wse.default)(u.tray.left,r.left+16,r.left+r.width-u.tray.width-16)}if(this.isQuickChatPresentation){r&&(u.mascot.left+=t.x-u.anchor.x,u.anchor.x=t.x);let i=n.x+n.width/2-(e.bounds.x+e.bounds.width/2),a;i<-.5?a=`left`:i>.5&&(a=`right`),u.quickChat={restingWidth:this.getQuickChatRestingWidth(),hasOrbPicker:this.quickChatControls?.hasOrbPicker,nearestStashEdge:a,stashedEdge:this.quickChatStashedEdge??void 0,workArea:nh(u.windowBounds,e.workArea)}}return u}setRemoteHostedPIPContentLayoutState(e){if((0,U.default)(this.remoteHostedPIPContentLayoutState,e))return;let t=this.remoteHostedPIPContent
+
+  [main-BklS_2Y2.js @443048] OrbPicker
+    6,r.left+r.width-u.tray.width-16)}if(this.isQuickChatPresentation){r&&(u.mascot.left+=t.x-u.anchor.x,u.anchor.x=t.x);let i=n.x+n.width/2-(e.bounds.x+e.bounds.width/2),a;i<-.5?a=`left`:i>.5&&(a=`right`),u.quickChat={restingWidth:this.getQuickChatRestingWidth(),hasOrbPicker:this.quickChatControls?.hasOrbPicker,nearestStashEdge:a,stashedEdge:this.quickChatStashedEdge??void 0,workArea:nh(u.windowBounds,e.workArea)}}return u}setRemoteHostedPIPContentLayoutState(e){if((0,U.default)(this.remoteHostedPIPContentLayoutState,e))return;let t=this.remoteHostedPIPContentLayoutState?.currentHostID===hh,n=t?M
+
+  [main-BklS_2Y2.js @1444585] OrbPhysics
+    te-request`:r({type:`avatar-overlay-open-state-changed`,isOpen:e.isOpen()});return;case`avatar-overlay-drag-start`:{let r=_R(n),i=r==null?{pointerWindowX:n.pointerWindowX,pointerWindowY:n.pointerWindowY}:{...r,pointerWindowX:n.pointerWindowX,pointerWindowY:n.pointerWindowY};e.startDrag(t.id,i,n.usesOrbPhysics);return}case`avatar-overlay-drag-move`:{let r=_R(n);r?e.moveDrag(t.id,r):e.moveDrag(t.id);return}case`avatar-overlay-drag-end`:{let r=_R(n);e.endDrag(t.id,r??void 0,n.altKey);return}case`avatar-overlay-drag-release`:e.throwWithVelocity(t.id,n.velocityX,n.velocityY,n.shouldBounce);return;c
+
+============================================================================
+== 4. voice-mode
+============================================================================
+
+----------------------------------------------------------------------------
+-- voice-mode
+
+  [src-BJv5Mk7n.js @1357283] VoiceMode
+    :[{key:`Ctrl+Command+M`}],default:[{key:`Alt+M`}]}}},{id:`composer.openProjectPicker`,titleIntlId:`codex.command.composer.openProjectPicker`,descriptionIntlId:`codex.commandDescription.composer.openProjectPicker`,availableIn:[`browser`,`electron`],shortcutScope:`app`,electron:{defaultKeybindings:[{key:`CmdOrCtrl+Alt+Shift+O`}]}},{id:`composer.startVoiceMode`,titleIntlId:`codex.command.composer.startVoiceMode`,descriptionIntlId:`codex.commandDescription.composer.startVoiceMode`,shortcutScope:`app`,electron:{platformDefaultKeybindings:{macOS:[{key:`Ctrl+Shift+V`}],default:[]}}},{id:`realtimeVoice.toggleMicrophoneMute`,titleIntlId:`codex.command.realtimeVoice.toggleMicrophoneMute`,descriptionIn
+
+  [src-BJv5Mk7n.js @1357335] VoiceMode
+    ,{id:`composer.openProjectPicker`,titleIntlId:`codex.command.composer.openProjectPicker`,descriptionIntlId:`codex.commandDescription.composer.openProjectPicker`,availableIn:[`browser`,`electron`],shortcutScope:`app`,electron:{defaultKeybindings:[{key:`CmdOrCtrl+Alt+Shift+O`}]}},{id:`composer.startVoiceMode`,titleIntlId:`codex.command.composer.startVoiceMode`,descriptionIntlId:`codex.commandDescription.composer.startVoiceMode`,shortcutScope:`app`,electron:{platformDefaultKeybindings:{macOS:[{key:`Ctrl+Shift+V`}],default:[]}}},{id:`realtimeVoice.toggleMicrophoneMute`,titleIntlId:`codex.command.realtimeVoice.toggleMicrophoneMute`,descriptionIntlId:`codex.commandDescription.realtimeVoice.toggleM
+
+  [src-BJv5Mk7n.js @1357404] VoiceMode
+    .openProjectPicker`,descriptionIntlId:`codex.commandDescription.composer.openProjectPicker`,availableIn:[`browser`,`electron`],shortcutScope:`app`,electron:{defaultKeybindings:[{key:`CmdOrCtrl+Alt+Shift+O`}]}},{id:`composer.startVoiceMode`,titleIntlId:`codex.command.composer.startVoiceMode`,descriptionIntlId:`codex.commandDescription.composer.startVoiceMode`,shortcutScope:`app`,electron:{platformDefaultKeybindings:{macOS:[{key:`Ctrl+Shift+V`}],default:[]}}},{id:`realtimeVoice.toggleMicrophoneMute`,titleIntlId:`codex.command.realtimeVoice.toggleMicrophoneMute`,descriptionIntlId:`codex.commandDescription.realtimeVoice.toggleMicrophoneMute`,availableIn:[`electron`],shortcutScope:`app`},{id:`rea
+
+  [worker.js @1624422] VoiceMode
+    :[{key:`Ctrl+Command+M`}],default:[{key:`Alt+M`}]}}},{id:`composer.openProjectPicker`,titleIntlId:`codex.command.composer.openProjectPicker`,descriptionIntlId:`codex.commandDescription.composer.openProjectPicker`,availableIn:[`browser`,`electron`],shortcutScope:`app`,electron:{defaultKeybindings:[{key:`CmdOrCtrl+Alt+Shift+O`}]}},{id:`composer.startVoiceMode`,titleIntlId:`codex.command.composer.startVoiceMode`,descriptionIntlId:`codex.commandDescription.composer.startVoiceMode`,shortcutScope:`app`,electron:{platformDefaultKeybindings:{macOS:[{key:`Ctrl+Shift+V`}],default:[]}}},{id:`realtimeVoice.toggleMicrophoneMute`,titleIntlId:`codex.command.realtimeVoice.toggleMicrophoneMute`,descriptionIn
+
+  [worker.js @1624474] VoiceMode
+    ,{id:`composer.openProjectPicker`,titleIntlId:`codex.command.composer.openProjectPicker`,descriptionIntlId:`codex.commandDescription.composer.openProjectPicker`,availableIn:[`browser`,`electron`],shortcutScope:`app`,electron:{defaultKeybindings:[{key:`CmdOrCtrl+Alt+Shift+O`}]}},{id:`composer.startVoiceMode`,titleIntlId:`codex.command.composer.startVoiceMode`,descriptionIntlId:`codex.commandDescription.composer.startVoiceMode`,shortcutScope:`app`,electron:{platformDefaultKeybindings:{macOS:[{key:`Ctrl+Shift+V`}],default:[]}}},{id:`realtimeVoice.toggleMicrophoneMute`,titleIntlId:`codex.command.realtimeVoice.toggleMicrophoneMute`,descriptionIntlId:`codex.commandDescription.realtimeVoice.toggleM
+
+  [worker.js @1624543] VoiceMode
+    .openProjectPicker`,descriptionIntlId:`codex.commandDescription.composer.openProjectPicker`,availableIn:[`browser`,`electron`],shortcutScope:`app`,electron:{defaultKeybindings:[{key:`CmdOrCtrl+Alt+Shift+O`}]}},{id:`composer.startVoiceMode`,titleIntlId:`codex.command.composer.startVoiceMode`,descriptionIntlId:`codex.commandDescription.composer.startVoiceMode`,shortcutScope:`app`,electron:{platformDefaultKeybindings:{macOS:[{key:`Ctrl+Shift+V`}],default:[]}}},{id:`realtimeVoice.toggleMicrophoneMute`,titleIntlId:`codex.command.realtimeVoice.toggleMicrophoneMute`,descriptionIntlId:`codex.commandDescription.realtimeVoice.toggleMicrophoneMute`,availableIn:[`electron`],shortcutScope:`app`},{id:`rea
+
+============================================================================
+== 5. dictation - the voice feature
+============================================================================
+
+----------------------------------------------------------------------------
+-- dictation tokens
+
+  [main-BklS_2Y2.js @221630] dictation
+    {if(process.platform!==`darwin`||e.length===0&&r==null)return null;let i=ju();return i==null?null:ku(Ou(i,e,n,r),t,n)}function vu(e,t=process.platform){return t===`darwin`&&Su(e)!=null}function yu(e){return e.length===1||/^(f([1-9]|1[0-9]|20)|space|tab|enter|return|escape|esc|backspace|delete|insert|home|end|pageup|pagedown|up|down|left|right|plus|dictation)$/i.test(e)}function bu(e,t=process.platform){return t===`darwin`&&Cu(e)!=null}function xu(e){let t=wu(e);return Cu(e)!=null||t.split(`+`).includes(`fn`)}function Su(e){let t=e.split(`+`).map(e=>e.trim()),n=t.filter(e=>!uu.has(e.toLowerCase())),r=n[0];if(n.length!==1||r==null||!yu(r)||r.toLowerCase()!==`dictation`&&!t.some(e=>e.toLowerCas
+
+  [main-BklS_2Y2.js @221945] dictation
+    p|pagedown|up|down|left|right|plus|dictation)$/i.test(e)}function bu(e,t=process.platform){return t===`darwin`&&Cu(e)!=null}function xu(e){let t=wu(e);return Cu(e)!=null||t.split(`+`).includes(`fn`)}function Su(e){let t=e.split(`+`).map(e=>e.trim()),n=t.filter(e=>!uu.has(e.toLowerCase())),r=n[0];if(n.length!==1||r==null||!yu(r)||r.toLowerCase()!==`dictation`&&!t.some(e=>e.toLowerCase()===`fn`))return null;let i=t.flatMap(e=>uu.get(e.toLowerCase())??[]);return[...[`Ctrl`,`Command`,`Alt`,`Shift`,`Fn`].filter(e=>i.includes(e)),r.toLowerCase()===`dictation`?`Dictation`:r.toUpperCase()].join(`+`)}function Cu(e){let t=wu(e),n=lu.get(t);if(n!=null)return n;let r=t.split(`+`).map(e=>uu.get(e));retur
+
+  [main-BklS_2Y2.js @222144] dictation
+    function Su(e){let t=e.split(`+`).map(e=>e.trim()),n=t.filter(e=>!uu.has(e.toLowerCase())),r=n[0];if(n.length!==1||r==null||!yu(r)||r.toLowerCase()!==`dictation`&&!t.some(e=>e.toLowerCase()===`fn`))return null;let i=t.flatMap(e=>uu.get(e.toLowerCase())??[]);return[...[`Ctrl`,`Command`,`Alt`,`Shift`,`Fn`].filter(e=>i.includes(e)),r.toLowerCase()===`dictation`?`Dictation`:r.toUpperCase()].join(`+`)}function Cu(e){let t=wu(e),n=lu.get(t);if(n!=null)return n;let r=t.split(`+`).map(e=>uu.get(e));return new Set(r).size<2||r.some(e=>e==null)?null:[`Ctrl`,`Command`,`Alt`,`Shift`,`Fn`].filter(e=>r.includes(e)).join(`+`)}function wu(e){return e.replace(/[\s_-]/g,``).toLowerCase()}function Tu(e,t,n,r){
+
+  [main-BklS_2Y2.js @222156] Dictation
+    e){let t=e.split(`+`).map(e=>e.trim()),n=t.filter(e=>!uu.has(e.toLowerCase())),r=n[0];if(n.length!==1||r==null||!yu(r)||r.toLowerCase()!==`dictation`&&!t.some(e=>e.toLowerCase()===`fn`))return null;let i=t.flatMap(e=>uu.get(e.toLowerCase())??[]);return[...[`Ctrl`,`Command`,`Alt`,`Shift`,`Fn`].filter(e=>i.includes(e)),r.toLowerCase()===`dictation`?`Dictation`:r.toUpperCase()].join(`+`)}function Cu(e){let t=wu(e),n=lu.get(t);if(n!=null)return n;let r=t.split(`+`).map(e=>uu.get(e));return new Set(r).size<2||r.some(e=>e==null)?null:[`Ctrl`,`Command`,`Alt`,`Shift`,`Fn`].filter(e=>r.includes(e)).join(`+`)}function wu(e){return e.replace(/[\s_-]/g,``).toLowerCase()}function Tu(e,t,n,r){let i=!1,a=n
+
+  [main-BklS_2Y2.js @688165] dictation
+    /spaces\/[A-Za-z0-9._~-]{1,200}\/pages$/u.test(t.pathname):!1}var Dv=class extends Error{status;errorCode;constructor(e,t){super(`Authenticated desktop fetch failed (${e})`),this.status=e,this.errorCode=t}},Ide=class extends Error{status;constructor(e){super(`File download failed with status ${e}`),this.status=e}},Lde=`vscode://codex/`,Rde=`/codex/dictation-stream-connect-info`,zde=`chatgpt-dictation`,Bde=`codex-desktop`,Vde=`openai-bearer.`,Hde=12e4,Ude=class{fetchHandler;options;abortControllers=new Map;traceExportEnabled=null;constructor(e,t){this.fetchHandler=e,this.options=t}async fetchAuthenticatedJson(e,t){let n={[r.Bn]:`1`,[r.Hn]:`1`,"Content-Type":`application/json`};t.surface!=null
+
+  [main-BklS_2Y2.js @688209] dictation
+    st(t.pathname):!1}var Dv=class extends Error{status;errorCode;constructor(e,t){super(`Authenticated desktop fetch failed (${e})`),this.status=e,this.errorCode=t}},Ide=class extends Error{status;constructor(e){super(`File download failed with status ${e}`),this.status=e}},Lde=`vscode://codex/`,Rde=`/codex/dictation-stream-connect-info`,zde=`chatgpt-dictation`,Bde=`codex-desktop`,Vde=`openai-bearer.`,Hde=12e4,Ude=class{fetchHandler;options;abortControllers=new Map;traceExportEnabled=null;constructor(e,t){this.fetchHandler=e,this.options=t}async fetchAuthenticatedJson(e,t){let n={[r.Bn]:`1`,[r.Hn]:`1`,"Content-Type":`application/json`};t.surface!=null&&(n[r.Wn]=t.surface);let i=t.requestProfile
+
+  [main-BklS_2Y2.js @704721] dictation
+    e:r};t.responsePriority===`critical`?this.options.chunkedMessageSender.sendCritical(e,g.bt,i):this.options.chunkedMessageSender.sendInlineMessageForView(e,i)}}async handleDictationStreamConnectInfoRequest(e,t){try{let n=await this.getAppServerConnection(l.h).getBackendRequestAuth({refreshToken:!1});if(n==null)throw Error(`Sign in to ChatGPT to use dictation.`);if(n.routing.kind===`workspace`)throw Error(`Use HTTP transcription for this workspace.`);n.signal.throwIfAborted(),this.options.chunkedMessageSender.sendInlineMessageForView(e,{type:`fetch-response`,responseType:`success`,requestId:t.requestId,status:200,headers:{"content-type":`application/json`},bodyJsonString:JSON.stringify({websoc
+
+  [main-BklS_2Y2.js @705360] dictation
+    pe":`application/json`},bodyJsonString:JSON.stringify({websocketUrl:this.getDictationStreamWebsocketUrl(),protocols:[zde,`${Vde}${n.token}`,Bde]})})}catch(n){this.options.chunkedMessageSender.sendInlineMessageForView(e,{type:`fetch-response`,responseType:`error`,requestId:t.requestId,status:432,error:n instanceof Error?n.message:`Failed to prepare dictation stream connection.`})}}getDictationStreamWebsocketUrl(){let e=new URL(g.dt(this.options,`/dictation/stream`));return e.protocol=e.protocol===`https:`?`wss:`:`ws:`,e.toString()}};function Ov(e){return Math.round(performance.now()-e)}function Wde(e){let t={};return e.headers.forEach((e,n)=>{t[n]=e}),t}function kv(e){return typeof e==`object
+
+============================================================================
+== 6. turn queueing / routing
+============================================================================
+
+----------------------------------------------------------------------------
+-- followUp
+
+  [main-BklS_2Y2.js @723802] followup
+    mStateChanged:({targetClientIds:e,...t})=>this.session.service.threadStreamStateChanged({params:t,targetClientIds:e})},this.queuedMessages={broadcast:t=>this.session.service.threadQueuedFollowUpsChanged({...t,hostId:e}),registerBroadcastHandler:t=>this.bridge.registerBroadcastHandler(`thread-queued-followups-changed`,n=>{n.params.hostId===e&&t(n)})}}bind(e){let t=e.getHostId(),n=async(n,r=t)=>(this.assertCurrent(),r===t&&e.getStreamRole(n)?.role===`owner`);this.removeThreadOwner=i.g({hostId:t,ipcClient:this.session.client,canHandle:({conversationId:e},t)=>n(e,t),discoverOwner:n,requestThreadFo
+
+  [main-BklS_2Y2.js @739391] followUp
+    >e===`local`?c.buildMcpCodexConfig(t):Promise.resolve(null),readShellEnvironment:t=>c.readWorktreeShellEnvironment(t,e),readDeveloperInstructions:async t=>({instructions:await c.getProjectAwareDeveloperInstructions({...t,hostId:e})}),async readFollowUpQueueMode(){return p(),await n.getEffective(r.H.followUpQueueMode.key)===`queue`?`queue`:`send-now`},async readPermissionRefreshEnabled(){p();let e=await o.readExecutionAssignments();return p(),e?.values.permissionRefresh??null},subscribeExecutionSettingsChanged(e){let t=!1,i=o.onDidChange(()=>{e(),o.getClient().then(()=>{t||e()},()=>void 0)}),a=
+
+  [main-BklS_2Y2.js @1421647] follow-up
+    lobalState.updateAndPersist(e,()=>t);try{this.windowManager.sendMessageToAllWindows({type:`global-state-updated`,keys:[e]})}catch(e){qL().warning(`Failed to broadcast committed queue update`,{safe:{},sensitive:{error:e}})}return{success:!0}}return this.setGlobalStateValue(e,t),{success:!0}},"queued-follow-up-send-lock-acquire":async({conversationId:e,messageId:t,lockId:n})=>({acquired:this.queuedFollowUpSendLocks.tryAcquire({conversationId:e,messageId:t,lockId:n})}),"queued-follow-up-send-lock-release":async({conversationId:e,messageId:t,lockId:n,sent:r})=>{this.queuedFollowUpSendLocks.release
+
+  [main-BklS_2Y2.js @1421826] follow-up
+    eue update`,{safe:{},sensitive:{error:e}})}return{success:!0}}return this.setGlobalStateValue(e,t),{success:!0}},"queued-follow-up-send-lock-acquire":async({conversationId:e,messageId:t,lockId:n})=>({acquired:this.queuedFollowUpSendLocks.tryAcquire({conversationId:e,messageId:t,lockId:n})}),"queued-follow-up-send-lock-release":async({conversationId:e,messageId:t,lockId:n,sent:r})=>{this.queuedFollowUpSendLocks.release({conversationId:e,messageId:t,lockId:n,sent:r})},"get-configuration":async({key:e})=>({value:this.getConfigurationValue(e)}),"set-configuration":async({key:e,value:t})=>{if(JL.ha
+
+  [src-BJv5Mk7n.js @8660] follow-up
+    ower-edit-last-user-turn":2,"thread-follower-command-approval-decision":1,"thread-follower-file-approval-decision":1,"thread-follower-permissions-request-approval-response":1,"thread-follower-submit-user-input":1,"thread-follower-submit-mcp-server-elicitation-response":1,"thread-follower-set-queued-follow-ups-state":1,"thread-follower-remove-queued-message":1,"thread-follower-clear-queued-messages":1,"thread-queued-followups-changed":2};function Oe(e){let t=De[e];return t===void 0?0:t}function ke(e,t,n){if(n!=null&&e.startsWith(`thread-follower-`))return(De[e]??0)+1;if(e===`thread-follower-int
+
+----------------------------------------------------------------------------
+-- steer
+
+  [conversation-turn-mutations-szl89rld.js @31271] steer
+    message?.text??t.text)}let d=o.join(` `),f=s.join(` `);return c>0&&l?.message==null&&(f=nn(f)),r&&l?.message==null&&(d=_n(d,{allowAdjacentPlaceholders:n}),f=_n(f,{allowAdjacentPlaceholders:n})),{rawText:d,displayRawText:f,imageCount:c,appInput:l,appInputPlaceholder:u}}var yn=`Interrupted before the steer was accepted.`;function bn(e,t,n,{attachments:r=[],clientUserMessageId:i=null,shouldStripImageDisplayPlaceholderLines:a=!1,targetTurnId:o=null,targetTurnStartedAtMs:s=null}={}){let c=vn({input:t,commentAttachments:n.context.commentAttachments,shouldStripImageDisplayPlaceholderLines:a});return{
+
+  [conversation-turn-mutations-szl89rld.js @31577] steeringUserMessage
+    was accepted.`;function bn(e,t,n,{attachments:r=[],clientUserMessageId:i=null,shouldStripImageDisplayPlaceholderLines:a=!1,targetTurnId:o=null,targetTurnStartedAtMs:s=null}={}){let c=vn({input:t,commentAttachments:n.context.commentAttachments,shouldStripImageDisplayPlaceholderLines:a});return{type:`steeringUserMessage`,id:e,targetTurnId:o,targetTurnStartedAtMs:s,status:`pending`,serverUserMessageId:null,clientUserMessageId:i,input:t,attachments:r,restoreMessage:n,compareKey:{rawText:c.rawText,imageCount:c.imageCount}}}function xn(e,t,{acceptMissingImageInputs:n=!1,commentAttachments:r=e.restor
+
+  [conversation-turn-mutations-szl89rld.js @33603] steeringUserMessage
+    a=_(e.items)?P(e.items):e.items;for(let e=0;e<t;e+=1){let t=a[e];if(t!=null&&t.type!==`automaticApprovalReview`&&t.type!==`contextCompaction`&&t.type!==`forkedFromConversation`&&t.type!==`modelChanged`&&t.type!==`modelRerouted`&&t.type!==`personalityChanged`&&t.type!==`remoteTaskCreated`&&t.type!==`steeringUserMessage`&&t.type!==`worktreeInit`)return!1}return!0}var En=t.O({aeon:t.O({version:t.w(1),sourceId:t.N().min(1).max(256),sourceChannel:t.w(`chatgpt`),threadId:t.N().min(1)})});function Dn(e){if(`messageMetadata`in e)return En.safeParse(e.messageMetadata).data}function On(e,t){return e.typ
+
+  [conversation-turn-mutations-szl89rld.js @35647] steered
+    Metadata?.fileAttachmentCount??0)+s.fileAttachmentCount});let r={...s.item,status:`accepted`,serverUserMessageId:t.id,serverClientUserMessageId:t.clientId},c=e.items.indexOf(s.item);e.items=e.items.slice(),e.items[c]=r,o>=0&&c>o&&e.items.splice(o,0,...e.items.splice(c,1)),i===e.turnId&&W(e,I({type:`steered`,id:t.id}));return}}i===e.turnId&&W(e,I(t))}function Pn({turn:e,targetTurnId:t,input:n,clientUserMessageId:r,modelProvider:i}){let a=wn(e.items.filter(G),n,t,e.turnStartedAtMs,!1,r);if(a==null)return null;let{context:o}=a.restoreMessage;return{item:a,fileAttachmentCount:(o.fileAttachments?.l
+
+  [conversation-turn-mutations-szl89rld.js @36101] steeringUserMessage
+    lter(G),n,t,e.turnStartedAtMs,!1,r);if(a==null)return null;let{context:o}=a.restoreMessage;return{item:a,fileAttachmentCount:(o.fileAttachments?.length??0)+(o.pastedTextAttachments?.length??0)+(o.uploadedFileAttachments?.length??0)+(o.addedFiles?.filter(u).length??0)}}function G(e){return e.type===`steeringUserMessage`}function Fn(e,t,n,r){let i=new Map,a=[];for(let e of t){let t=r(e);if(t!=null&&n.has(t)){if(a.length===0)continue;let e=i.get(t);if(e==null)i.set(t,a);else for(let t of a)e.push(t);a=[];continue}a.push(e)}let o=[];for(let t of e){let e=r(t),n=e==null?void 0:i.get(e);if(n!=null&&

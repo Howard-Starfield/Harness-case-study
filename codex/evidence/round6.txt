@@ -1,0 +1,103 @@
+﻿
+==========================================================================
+== ELECTRON FUSES — app\ChatGPT.exe
+==========================================================================
+  fuse sentinel not found in ChatGPT.exe  (size=4781872 B)
+
+==========================================================================
+== ELECTRON FUSES — app\Codex.exe
+==========================================================================
+  fuse sentinel not found in Codex.exe  (size=20272 B)
+
+==========================================================================
+== OUT-OF-ASAR RESOURCES (integrity-check boundary)
+==========================================================================
+  app.asar                                                             567399024
+  app.asar.unpacked/node_modules/@worklouder/device-kit-oai/node_modules/@serialport/bindings-cpp/build/Release/bindings.node      877872
+  app.asar.unpacked/node_modules/@worklouder/device-kit-oai/node_modules/node-hid/build/Release/HID.node     1884464
+  app.asar.unpacked/node_modules/better-sqlite3/build/Release/better_sqlite3.node     3115312
+  app.asar.unpacked/node_modules/node-pty/build/Release/conpty.node      1837360
+  app.asar.unpacked/node_modules/node-pty/build/Release/conpty_console_list.node      858416
+  app.asar.unpacked/node_modules/node-pty/build/Release/pty.node         1809712
+  app.asar.unpacked/node_modules/node-pty/build/Release/winpty-agent.exe     1393456
+  app.asar.unpacked/node_modules/node-pty/build/Release/winpty.dll       1272624
+  chatgpt-app-dark.ico                                                     31140
+  chatgpt-app-light.ico                                                    30208
+  chatgpt-tray-dark.ico                                                   313398
+  chatgpt-tray-light.ico                                                  313398
+  codex                                                                294451848
+  codex-classic.wav                                                       265994
+  codex-code-mode-host                                                  74036112
+  codex-code-mode-host.exe                                              74712368
+  codex-command-runner.exe                                               8204592
+  codex-notification.wav                                                  109686
+  codex-windows-sandbox-service.exe                                     55824688
+  codex-windows-sandbox-setup.exe                                       17725744
+  codex.exe                                                            334121776
+  cua_node/bin/node.exe                                                 93381936
+  cua_node/bin/node_modules/@img/sharp-win32-x64/lib/libvips-42.dll     18630448
+  cua_node/bin/node_modules/@img/sharp-win32-x64/lib/libvips-cpp-8.18.6.dll      348976
+  cua_node/bin/node_modules/@img/sharp-win32-x64/lib/sharp-win32-x64-0.35.4.node      458032
+  cua_node/bin/node_modules/@oai/cua/bin/windows/codex-computer-use.exe     1551152
+  cua_node/bin/node_modules/@oai/cua/dist/lib/js/oai_js_browser/dist/skill/node_modules/classic-level/prebuilds/android-arm/classic-level.armv7.node      341724
+  cua_node/bin/node_modules/@oai/cua/dist/lib/js/oai_js_browser/dist/skill/node_modules/classic-level/prebuilds/android-arm64/classic-level.armv8.node      379976
+  cua_node/bin/node_modules/@oai/cua/dist/lib/js/oai_js_browser/dist/skill/node_modules/classic-level/prebuilds/darwin-x64+arm64/classic-level.node      712624
+  cua_node/bin/node_modules/@oai/cua/dist/lib/js/oai_js_browser/dist/skill/node_modules/classic-level/prebuilds/linux-arm/classic-level.armv6.node      413160
+  cua_node/bin/node_modules/@oai/cua/dist/lib/js/oai_js_browser/dist/skill/node_modules/classic-level/prebuilds/linux-arm/classic-level.armv7.node      413164
+  cua_node/bin/node_modules/@oai/cua/dist/lib/js/oai_js_browser/dist/skill/node_modules/classic-level/prebuilds/linux-arm64/classic-level.armv8.node      452056
+  cua_node/bin/node_modules/@oai/cua/dist/lib/js/oai_js_browser/dist/skill/node_modules/classic-level/prebuilds/linux-x64/classic-level.musl.node      485192
+  cua_node/bin/node_modules/@oai/cua/dist/lib/js/oai_js_browser/dist/skill/node_modules/classic-level/prebuilds/linux-x64/classic-level.node      480800
+  cua_node/bin/node_modules/@oai/cua/dist/lib/js/oai_js_browser/dist/skill/node_modules/classic-level/prebuilds/win32-ia32/classic-level.node      489264
+  cua_node/bin/node_modules/@oai/cua/dist/lib/js/oai_js_browser/dist/skill/node_modules/classic-level/prebuilds/win32-x64/classic-level.node      557360
+  cua_node/bin/node_modules/@oai/sky/bin/windows/codex-computer-use.exe     1551152
+  cua_node/bin/node_modules/@oai/sky/bin/windows/swift/x64/codex-computer-use-swift.exe    56534320
+  cua_node/bin/node_modules/@oai/sky/bin/windows/swift/x64/MSVCP140.dll      570672
+  cua_node/bin/node_modules/@oai/sky/bin/windows/swift/x64/VCRUNTIME140.dll      115504
+  cua_node/bin/node_modules/@oai/sky/bin/windows/swift/x64/VCRUNTIME140_1.dll       44848
+  cua_node/bin/node_modules/classic-level/prebuilds/android-arm/classic-level.armv7.node      341724
+  cua_node/bin/node_modules/classic-level/prebuilds/android-arm64/classic-level.armv8.node      379976
+  cua_node/bin/node_modules/classic-level/prebuilds/darwin-x64+arm64/classic-level.node      712624
+  cua_node/bin/node_modules/classic-level/prebuilds/linux-arm/classic-level.armv6.node      413160
+  cua_node/bin/node_modules/classic-level/prebuilds/linux-arm/classic-level.armv7.node      413164
+  cua_node/bin/node_modules/classic-level/prebuilds/linux-arm64/classic-level.armv8.node      452056
+  cua_node/bin/node_modules/classic-level/prebuilds/linux-x64/classic-level.musl.node      485192
+  cua_node/bin/node_modules/classic-level/prebuilds/linux-x64/classic-level.node      480800
+  cua_node/bin/node_modules/classic-level/prebuilds/win32-ia32/classic-level.node      489264
+  cua_node/bin/node_modules/classic-level/prebuilds/win32-x64/classic-level.node      557360
+  cua_node/bin/node_repl.exe                                            34053680
+  icon-chatgpt.ico                                                        107770
+  masque-proxy-origins.txt                                                    38
+  native/computer-use-app-icons.node                                      170288
+  native/hid-topology-watcher.node                                       1126192
+  native/remote-control-device-key.node                                  1122608
+  native/windows-account.node                                            1363248
+  native/windows-updater.node                                            1888560
+  owl-app.ini                                                                 62
+  owl-electron-app.json                                                      215
+  plugins/openai-bundled/plugins/browser/node_modules/classic-level/prebuilds/android-arm/classic-level.armv7.node      341724
+  plugins/openai-bundled/plugins/browser/node_modules/classic-level/prebuilds/android-arm64/classic-level.armv8.node      379976
+  plugins/openai-bundled/plugins/browser/node_modules/classic-level/prebuilds/darwin-x64+arm64/classic-level.node      712624
+  plugins/openai-bundled/plugins/browser/node_modules/classic-level/prebuilds/linux-arm/classic-level.armv6.node      413160
+  plugins/openai-bundled/plugins/browser/node_modules/classic-level/prebuilds/linux-arm/classic-level.armv7.node      413164
+  plugins/openai-bundled/plugins/browser/node_modules/classic-level/prebuilds/linux-arm64/classic-level.armv8.node      452056
+  plugins/openai-bundled/plugins/browser/node_modules/classic-level/prebuilds/linux-x64/classic-level.musl.node      485192
+  plugins/openai-bundled/plugins/browser/node_modules/classic-level/prebuilds/linux-x64/classic-level.node      480800
+  plugins/openai-bundled/plugins/browser/node_modules/classic-level/prebuilds/win32-ia32/classic-level.node      489264
+  plugins/openai-bundled/plugins/browser/node_modules/classic-level/prebuilds/win32-x64/classic-level.node      557360
+  plugins/openai-bundled/plugins/chrome/extension-host/windows/x64/extension-host.exe      879408
+  plugins/openai-bundled/plugins/chrome/node_modules/classic-level/prebuilds/android-arm/classic-level.armv7.node      341724
+  plugins/openai-bundled/plugins/chrome/node_modules/classic-level/prebuilds/android-arm64/classic-level.armv8.node      379976
+  plugins/openai-bundled/plugins/chrome/node_modules/classic-level/prebuilds/darwin-x64+arm64/classic-level.node      712624
+  plugins/openai-bundled/plugins/chrome/node_modules/classic-level/prebuilds/linux-arm/classic-level.armv6.node      413160
+  plugins/openai-bundled/plugins/chrome/node_modules/classic-level/prebuilds/linux-arm/classic-level.armv7.node      413164
+  plugins/openai-bundled/plugins/chrome/node_modules/classic-level/prebuilds/linux-arm64/classic-level.armv8.node      452056
+  plugins/openai-bundled/plugins/chrome/node_modules/classic-level/prebuilds/linux-x64/classic-level.musl.node      485192
+  plugins/openai-bundled/plugins/chrome/node_modules/classic-level/prebuilds/linux-x64/classic-level.node      480800
+  plugins/openai-bundled/plugins/chrome/node_modules/classic-level/prebuilds/win32-ia32/classic-level.node      489264
+  plugins/openai-bundled/plugins/chrome/node_modules/classic-level/prebuilds/win32-x64/classic-level.node      557360
+  rg                                                                     5408904
+  rg.exe                                                                 4352304
+  tectonic/tectonic.exe                                                 55059760
+  THIRD_PARTY_NOTICES.txt                                                3296339
+  ---
+  files outside app.asar: 3301   bytes: 1,837,324,271

@@ -1,0 +1,84 @@
+RECOVERED FROM DISK AFTER THE TASK WAS CANCELLED
+source : C:\Users\AI-Howard\.minimax\background-tasks\bg_6ab5ccf0-b288-474c-971f-1351bd9d1dff\summary.txt
+task   : bg_6ab5ccf0-b288-474c-971f-1351bd9d1dff   (verifier, status=canceled)
+context: Codex 26.1007 adversarial re-verification (target 2)
+note   : This log was NEVER delivered to the parent session. task_output returned
+         "(no output yet)" repeatedly, the parent concluded the child was stalled,
+         and cancelled it. The work below had already been completed. Recovered by
+         reading the on-disk background-task store directly.
+
+==============================================================================
+VERBATIM CHILD LOG
+==============================================================================
+
+I'll start by mapping the report corpus and evidence files, then run my own independent scans before attacking any specific claim.
+The workspace listing came back empty — let me locate the reports folder before assuming anything.
+Both returned nothing. Let me probe the filesystem directly to find where the reports actually live.
+Workspace is empty except a placeholder. Let me verify the other two anchors exist and hunt for the reports elsewhere.
+Found the reports in a sibling session workspace. Let me inventory them.
+All artifacts located. Reading the five reports under attack now.
+Reports 01/02 read. Now the remaining three.
+I have all five reports. Now building my own scratch harness in %TEMP% and independently re-deriving the corpus arithmetic (claim 7), since every other count inherits it.
+No `write` tool in this session — I'll create scratch files via PowerShell into %TEMP% (designated temp location only).
+Corpus arithmetic checks out exactly. But note `webview/assets` holds **33 `.wasm`, 2 `.data`, 5 `.mts`** that the reports' `.js/.mjs`-only sweep excluded — that's my attack surface. Building the full sweep now.
+Output formatting got mangled by `%-24s` (Node's util.format). Rewriting with unambiguous JSON output, plus the excluded `.wasm`/`.data`/`.mts` surfaces and encoded-form needles.
+Corpus arithmetic is an **exact** match (14,816 / 393,822,990 B / 350,841,377 chars / 1,948 multi-byte). And `elevation_service` = 0 even across the 912 previously-excluded files. Now attacking with encoded forms and verifying the emoji-table excuse.
+No encoded form anywhere in 20,153 files / 556 MB. Now verifying the emoji-table excuse, the `runas` count mismatch (I get 121, report says 131), and the `powershell` cluster.
+Emoji-table excuse **confirmed** at exact offset 167390. Now the IPC census (claim 2) plus the remaining `elevation` context.
+Important divergence found. Let me pin down `webContents.send`, the `g.zt(e)` computed channel, and any `ipcMain` aliasing that bypasses a literal `.ipcMain.` search.
+`webContents.send`=1 and `ipcRenderer.send`=10 are both **correct** (my 4/18 were `sendInputEvent`/`sendSync` substrings). But destructured `{handle:i` / `{on:d` / `{on:n` aliases may be unregistered IPC. Digging.
+No hidden `ipcMain` aliasing — the `{handle:i}` and `{on:d}` hits are an Electron-facility descriptor and an EventEmitter, not IPC. One last IPC check: what `g.zt(e)` actually produces.
+IPC census holds up. Now the F1 fuse claim — I'll stream the **entire 2.4 GB package** (not just `app\` depth 3) for the sentinel in binary chunks.
+F1's search is **reproducible and stronger** than the report's (94 PE binaries vs their 34; 2.32 GB vs their scope). Now the method attack: Electron's fuse wire puts data *after* the sentinel, but the report validated bytes *before* it. Checking the trailing wire.
+F1 **confirmed and hardened** — I tested both the report's pre-sentinel offsets and the correct post-sentinel Electron layout. Now F3 (update path) and the sandbox state machine.
+F3's catch is **faithful**, but I found a numeric error: `allowServiceInstallElevation` has **2** construction sites, not 3. Now sandbox state machine + F2 + signing.
+Sandbox state machine and F2 both check out exactly. The real test of "fail-closed" is the **caller** — let me trace who consumes `completion`, and independently re-run signing.
+Two significant gaps surfacing: a **Microsoft-signed** binary inside an OpenAI MSIX, and 92 PE files vs the report's "every PE binary" = 15. Identifying both.
+Signing: the report's 12 binaries all verify, but `app\d3dcompiler_47.dll` is **Microsoft-signed**, and the real census is 92 PE files, not 15. Final round: fail-open probe on the sandbox session wrapper, plus ASAR arithmetic.
+Validation-needle census matches exactly (6/4/52/14/0/0/0), but §3.7's policy counts diverge. Pinning down `exec-policy`, `workspace-write`, and the definitive fail-open test: who reads `waitForCompletion()`.
+RENDER scan is heavy — waiting for it to finish.
+Rather than keep polling, I'll run the decisive MAIN-only probe directly (34 files, instant) while that job finishes on its own.
+
+==============================================================================
+DISPOSITION (decided by the parent session AFTER recovering this log)
+==============================================================================
+
+CORROBORATES THE REPORTS
+  - corpus arithmetic EXACT: 14,816 files / 393,822,990 B / 350,841,377 chars / 1,948 multi-byte
+  - `elevation_service` = 0 across 20,153 files / 556 MB, i.e. a BROADER corpus than the
+    parent's, including 912 files the .js/.mjs-only sweep excluded (33 .wasm, 2 .data, 5 .mts)
+  - no encoded form anywhere in that 20,153-file corpus
+  - the emoji-table explanation for the single renderer `elevator` hit, confirmed at offset 167390
+  - IPC census; apparent extra hits traced to sendInputEvent/sendSync substrings;
+    NO hidden `ipcMain` aliasing (the {handle:i}/{on:d} hits are an Electron facility
+    descriptor and an EventEmitter)
+  - F1 fuse claim CONFIRMED AND HARDENED: tested both pre- and post-sentinel Electron wire
+    layouts across 94 PE binaries / 2.32 GB, against the parent's 34 candidates
+  - sandbox fail-closed state machine and F2 unpacked-natives claim both check out exactly
+  - validation-needle census matches exactly (6/4/52/14/0/0/0)
+
+REFUTES THE REPORTS  (both independently re-verified by the parent session)
+  - C-L: `allowServiceInstallElevation` has 2 construction sites, not 3.
+          Parent verification: 4 total mentions, 2 CONSTRUCT (@51513 MSIX-fallback updater,
+          @51788 non-x64/arm64 updater) + 2 USES (@21465 activateStagedPackage, @24399 catch).
+          Conclusion unaffected - the flag is still always true and never user-configurable.
+  - C-M: the package has 40 PE files under app\ (the child counted 92 package-wide);
+          report 05 signed 15 and claimed "every PE binary".
+          Parent verification: 950 files under app\, 40 PE (MZ). `d3dcompiler_47.dll`
+          (4,746,544 B) IS present - Microsoft-signed, and omitted entirely from the report.
+
+UNRESOLVED - recorded as an open discrepancy, not a correction
+  - `runas` count: child measured 121, report 02 states 131 (RENDER substring count).
+    Both are substring counts and both were already flagged as unsafe to quote without
+    disambiguation. The word-bounded count (5, all non-elevation) remains the only
+    defensible figure. Could not be reconciled within this run.
+  - whether `g.zt(e)` produces a dynamically-computed channel name - child ran out of time.
+
+PARTIAL CREDIT NOTED
+  - the child's final probe (who consumes `completion` / `waitForCompletion()`) was the
+    correct next question for the F7 fail-closed claim, and remains OPEN.
+
+LESSON (recorded in harness/01-agent-orchestration-explained.md section 7)
+  `(no output yet)` from task_output describes the DELIVERY channel, not the child's WORK.
+  Cancelling a running child destroys work it has already completed - including findings
+  that contradict the parent's own report.

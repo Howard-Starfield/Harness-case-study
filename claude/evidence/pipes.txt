@@ -1,0 +1,9 @@
+
+----- .vite/build/heavy-work-worker/heavyWorkWorker.js @653561 : cowork-service -----
+(e),i=r?.translateToString(!0)??"";r?.isWrapped&&n.length>0?n[n.length-1]+=i:n.push(i)}let a=n.map((e=>e.trimEnd()));for(;a.at(-1)==="";)a.pop();let o=a.join(`\n`);return{lines:o.length>JA?o.slice(-262144).split(`\n`):a}}finally{i.dispose()}}var XA=[{service:"cowork-service.log",daemonDir:"coworkd"},{service:"cowork-service-store.log",daemonDir:"coworkd-store"}],ZA=e=>`${e.daemonDir}-user.log`,QA=["cowork_vm_swift.log","cowork_vm_swift.log.1"],$A=["coworkd.log","coworkd.log.1"],ej=[...QA,...$A],tj=[...ej,"swift.log
+
+----- .vite/build/index.chunk-EzXl5k4A.js @2924883 : cowork-vm-service -----
+empt as failed: %o`,e),{probe:Zk(r,"failed",Fbn(e)),startIssued:i,pendingStart:a}}}async function Lbn(e,t){for(;;){let n=e();if(n==="running")return"running";if(n==="stopped")return"exited";if(Date.now()>=t)return"timeout";await sm(ubn)}}var Rbn="\\\\.\\pipe\\cowork-vm-service";function zbn(e){return obn(Rbn,{connectTimeoutMs:Kbn(),onSocketCreated:e}).then((e=>(Sbn(),e)))}var Bbn=10485760,Qk=class{constructor(){this.chunks=[],this.buffered=0}push(e){this.chunks.push(e),this.buffered+=e.length}next(){if(this.buffere
+
+----- .vite/build/index.chunk-EzXl5k4A.js @4208973 : smol-bin.vhdx -----
+e instanceof Error?e.message:String(e);super(t),this.name="VMDownloadError",this.cause=e,this.code=e?.code}},$Wr=class extends Error{constructor(e,t){super(e),this.guestReady=t,this.name="VMConnectionTimeoutError"}},eGr=".cowork-adopted",tGr="efivars.fd",nGr="smol-bin.vhdx",RG=null,zG=null,BG=null,rGr=null,VG=null,HG=!1,UG=null;function iGr(){return VG}function aGr(){return zG===null?null:UG}function oGr(){return zG?.promise??null}function sGr(e){B?.webContents&&!B.webContents.isDestroyed()&&nv.getDispatcher(B.webC

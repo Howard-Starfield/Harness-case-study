@@ -1,0 +1,115 @@
+﻿
+==========================================================================
+== FUSE SENTINEL CALIBRATION across app/ binaries
+==========================================================================
+
+  ChatGPT.exe  (4,781,872 B)
+      Electron marker 'Electron'=ABSENT
+      Chromium marker 'Chrome/'=ABSENT
+      asar sentinel sentinel: 'app.asar'=0x4882d5
+      fuse SENTINEL=ABSENT
+      fuse sentinel 8-byte prefix=ABSENT
+      fuse sentinel 4-byte prefix=ABSENT
+
+  Codex.exe  (20,272 B)
+      Electron marker 'Electron'=ABSENT
+      Chromium marker 'Chrome/'=ABSENT
+      asar sentinel sentinel: 'app.asar'=ABSENT
+      fuse SENTINEL=ABSENT
+      fuse sentinel 8-byte prefix=ABSENT
+      fuse sentinel 4-byte prefix=ABSENT
+
+  chrome.dll  (329,411,888 B)
+      Electron marker 'Electron'=0x3432649
+      Chromium marker 'Chrome/'=0x1c3cd98
+      asar sentinel sentinel: 'app.asar'=0x34c4162
+      fuse SENTINEL=0x10e22af0
+      fuse sentinel 8-byte prefix=0x10e22af0
+      fuse sentinel 4-byte prefix=0x10e22af0
+
+  chrome_elf.dll  (2,826,544 B)
+      Electron marker 'Electron'=ABSENT
+      Chromium marker 'Chrome/'=ABSENT
+      asar sentinel sentinel: 'app.asar'=ABSENT
+      fuse SENTINEL=ABSENT
+      fuse sentinel 8-byte prefix=ABSENT
+      fuse sentinel 4-byte prefix=ABSENT
+
+  elevation_service.exe  (3,905,840 B)
+      Electron marker 'Electron'=ABSENT
+      Chromium marker 'Chrome/'=ABSENT
+      asar sentinel sentinel: 'app.asar'=ABSENT
+      fuse SENTINEL=ABSENT
+      fuse sentinel 8-byte prefix=ABSENT
+      fuse sentinel 4-byte prefix=ABSENT
+
+  elevated_tracing_service.exe  (4,549,936 B)
+      Electron marker 'Electron'=ABSENT
+      Chromium marker 'Chrome/'=ABSENT
+      asar sentinel sentinel: 'app.asar'=ABSENT
+      fuse SENTINEL=ABSENT
+      fuse sentinel 8-byte prefix=ABSENT
+      fuse sentinel 4-byte prefix=ABSENT
+
+==========================================================================
+== OWL SHELL CONFIG FILES
+==========================================================================
+
+  --- owl-shell-runtime.json  (104 B) ---
+      {
+        "schemaVersion": 1,
+        "platform": "win32",
+        "arch": "x64",
+        "msixPackageDependencies": []
+      }
+
+  owl-electron-app.json: ABSENT
+
+  owl-app.ini: ABSENT
+
+  --- 155.0.8059.40.manifest  (226 B) ---
+      <assembly
+        xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+        <assemblyIdentity
+            name='155.0.8059.40'
+            version='155.0.8059.40'
+            type='win32'/>
+        <file name='chrome_elf.dll'/>
+      </assembly>
+
+  --- resources\owl-electron-app.json  (215 B) ---
+      {
+        "packagedFrom": "D:\\codex-apps-workspace\\codex\\codex-apps\\electron\\out\\Codex-win32-x64",
+        "runtimeArchiveSha": "7b8fe683aa175cb3a63e942792c833569466f95d237e527b765e03b5fba4ecdc",
+        "runtimeName": "owl"
+      }
+
+  --- resources\owl-app.ini  (62 B) ---
+      [Owl]
+      UserDataDirectoryName=Codex
+      AppVersion=26.1007.21434
+
+  --- resources\masque-proxy-origins.txt  (38 B) ---
+      https://codex-portals.api.openai.com
+
+==========================================================================
+== Is this Chromium or Electron? package markers
+==========================================================================
+
+  ChatGPT.exe
+      Electron/           ABSENT
+      Chrome/             ABSENT
+      Electron            ABSENT
+      NSBundle Electron   ABSENT
+      node::              ABSENT
+      v8::                ABSENT
+      Chromium            0x38fe5a
+
+  chrome.dll
+      Electron/           ABSENT
+      Chrome/             0x1c3cd98
+      Electron            0x1066b2d9
+      NSBundle Electron   ABSENT
+      node::              0x101673d4
+      v8::                0x109d0948
+      Chromium            0xf207c

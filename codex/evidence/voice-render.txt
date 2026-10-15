@@ -1,0 +1,65 @@
+﻿RENDER corpus: 14,782 files, 383,489,825 bytes
+  SpeechRecognition               0   files=0
+  speechSynthesis                11   files=6
+        webview/assets/frame-d44e7ffc5015.js                      3
+        webview/assets/mathlive.min-c4bd9636f76e.js               3
+        webview/assets/tooltip-488ac6933afd.js                    2
+        webview/assets/response-cfc145e05eec.js                   1
+        webview/assets/runtime-8ddc720cafd5.js                    1
+  SpeechSynthesisUtterance        2   files=1
+        webview/assets/mathlive.min-c4bd9636f76e.js               2
+  MediaRecorder                   7   files=4
+        webview/assets/app-initial-b8e1c8014bb4.js                2
+        webview/assets/app-shared-737655e1fb23.js                 2
+        webview/assets/CompilerIntrinsics-87ea46a69911.js         2
+        webview/assets/global-dictation-page-c8089ca3bf40.js      1
+  getUserMedia                   30   files=10
+        webview/assets/app-initial-b8e1c8014bb4.js                9
+        webview/assets/CompilerIntrinsics-87ea46a69911.js         5
+        webview/assets/avatar-overlay-native-page-c254d4864d6b.js 3
+        webview/assets/voice-dsp-209836305db2.js                  3
+        webview/assets/action-7c319f3bb1b6.js                     2
+  AudioContext                   24   files=12
+        webview/assets/app-initial-b8e1c8014bb4.js                7
+        webview/assets/three.module-859594e5f29f.js               3
+        webview/assets/CompilerIntrinsics-87ea46a69911.js         2
+        webview/assets/login-route-e7a6d253afaf.js                2
+        webview/assets/visualization-79293203ec0b.js              2
+  createMediaStream               9   files=5
+        webview/assets/app-initial-b8e1c8014bb4.js                5
+        webview/assets/CompilerIntrinsics-87ea46a69911.js         1
+        webview/assets/mark-session-create-fcfa163e4e36.js        1
+        webview/assets/three.module-859594e5f29f.js               1
+        webview/assets/voice-dsp-209836305db2.js                  1
+  continuous/interim             87   files=56
+        webview/assets/visualization-24a13129a954.js              13
+        webview/assets/jsxgraph-2d-renderer-b9e4088f57d4.js       8
+        webview/assets/visualization-ea2c25ddfbc9.js              5
+        webview/assets/visualization-816918428f64.js              3
+        webview/assets/es-9658ddc25670.js                         2
+  dictation                    4579   files=109
+        webview/assets/app-initial-b8e1c8014bb4.js                313
+        webview/assets/app-primary-19fe57fd8c00.js                135
+        webview/assets/voice-settings-b01c053349a0.js             86
+        webview/assets/tl-4614d59bf204.js                         85
+        webview/assets/ml-2e0bff9a91d9.js                         59
+  voice                       15854   files=293
+        webview/assets/app-initial-b8e1c8014bb4.js                420
+        webview/assets/tl-4614d59bf204.js                         380
+        webview/assets/voice-session-82332de4a122.js              341
+        webview/assets/fr-FR-c8896d04a499.js                      219
+        webview/assets/da-DK-aa64329579f1.js                      213
+  audio                        3967   files=280
+        webview/assets/app-shared-737655e1fb23.js                 240
+        webview/assets/register-D_wXyC5O-2b843b1b4b84.js          187
+        webview/assets/app-initial-b8e1c8014bb4.js                155
+        webview/assets/i18n-2370d3a2abf6.js                       116
+        webview/assets/it-IT-10496c681795.js                      107
+  CONTROL ipcBridge              24   files=1
+        webview/assets/app-shared-737655e1fb23.js                 24
+  CONTROL react               10951   files=1234
+        webview/assets/app-initial-b8e1c8014bb4.js                959
+        webview/assets/app-primary-19fe57fd8c00.js                444
+        webview/assets/register-D_wXyC5O-2b843b1b4b84.js          418
+        webview/assets/app-shared-737655e1fb23.js                 334
+        webview/assets/content-2bf9ea38a12a.js                    251

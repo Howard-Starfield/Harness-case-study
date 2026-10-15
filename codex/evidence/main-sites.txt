@@ -1,0 +1,133 @@
+﻿### CONTROL NEEDLES (calibration) — MAIN 34 files
+
+==============================================================================
+== CONTROL: __dirname (must be > 0)
+==============================================================================
+
+[1] .vite/build/application-network-startup-CfAQmSYg.js  @char 177069
+    ..._:require;t.exports=typeof n.addon==`function`?n.addon.bind(n):So()})),wo=e.t(((e,t)=>{t.exports={mask:(e,t,n,r,i)=>{for(var a=0;a<i;a++)n[r+a]=e[a]^t[a&3]},unmask:(e,t)=>{let n=e.length;for(var r=0;r<n;r++)e[r]^=t[r&3]}}})),To=e.t(((e,t)=>{try{t.exports=Co()(__dirname)}catch{t.exports=wo()}})),Eo=e.t(((e,t)=>{var{EMPTY_BUFFER:n}=$(),r=Buffer[Symbol.species];function i(e,t){if(e.length===0)return n;if(e.length===1)return e[0];let i=Buffer.allocUnsafe(t),a=0;for(let t=0;t<e.length;t++){let n=e[t];i.set(n,a),a+=n.len...
+  ... truncated at 1
+
+==============================================================================
+== CONTROL: ipcRenderer (must be > 0)
+==============================================================================
+
+[1] .vite/build/browser-page-preload.js  @char 518014
+    ...lect:!1,canUseSiteAnnotationApi:!1,isDesignModifierPressed:!1,isTweaksEditorOpen:!1,comments:[],intlConfig:Gs,viewportScale:1,zoomPercent:100},pS=!1,mS=null,hS=null,gS=!1,_S=!1,vS=!1,yS=!1,bS=!1,xS=!1,SS=null,CS=null,wS=null,TS=null,ES=null;function DS(){if(d.ipcRenderer.on(Ad,jS),globalThis.isSecureContext===!0&&window===window.top){let e=d.ipcRenderer.sendSync(Nd);_S=e.enabled,xS=e.siteAnnotationPermissionGranted,fS={...fS,canUseSiteAnnotationApi:e.enabled&&e.siteAnnotationFeaturesEnabled,isAgentControllingBrowse...
+  ... truncated at 1
+
+==============================================================================
+== codex-windows-sandbox-setup
+==============================================================================
+
+[1] .vite/build/application-network-startup-CfAQmSYg.js  @char 43482
+    ...re_runtime_component_resolved`,{safe:{component:e,consumer:i,source:u,appPackageCoreActive:a!=null,coreGateEnabledAtStartup:At,copiedRuntimeLocation:l,architecture:process.arch},sensitive:{executablePath:t}}))}var Pt=`cua_node`,Ft=[`codex-code-mode-host.exe`,`codex-windows-sandbox-setup.exe`,`codex-command-runner.exe`],It=new Map([[`codex.exe`,`codex`],[`codex-code-mode-host.exe`,`code-mode-host`],[`codex-windows-sandbox-setup.exe`,`sandbox-setup`],[`codex-command-runner.exe`,`command-runner`],[`rg.exe`,`ripgrep`]]...
+
+[2] .vite/build/application-network-startup-CfAQmSYg.js  @char 43625
+    ...ation:l,architecture:process.arch},sensitive:{executablePath:t}}))}var Pt=`cua_node`,Ft=[`codex-code-mode-host.exe`,`codex-windows-sandbox-setup.exe`,`codex-command-runner.exe`],It=new Map([[`codex.exe`,`codex`],[`codex-code-mode-host.exe`,`code-mode-host`],[`codex-windows-sandbox-setup.exe`,`sandbox-setup`],[`codex-command-runner.exe`,`command-runner`],[`rg.exe`,`ripgrep`]]),Lt=new Map,Rt=new Map,H=null,zt=new Set;function Bt(e){let t=[];if(e!=null)try{t=(0,a.readdirSync)((0,s.join)(e,`plugins`),{withFileTypes:!0}...
+
+[3] .vite/build/src-BJv5Mk7n.js  @char 1265580
+    ...unction a(e,t){return e&&e.length?i(e,r(t,2)):[]}t.exports=a})),YB=e.a(JB()),XB=u.r(`chrome-plugin-app-server-runtime`),ZB=(0,g.promisify)(_.execFile),QB=`.plugin-appserver`,$B=n.Cr.production,eV=[0,100,200,400,800],tV=5e3,nV=8388608,rV=`codex-resources`,iV=[`codex-windows-sandbox-setup.exe`,`codex-command-runner.exe`];async function aV(e){let t=o.kt();if(process.platform===`win32`&&t!=null&&(0,m.relative)(t,e.codexCliPath)===`codex.exe`)return e.codexCliPath;let n=sV(e);if(await lV(n))return n.codexCliPath;await o...
+
+  TOTAL 3 occurrence(s) in MAIN (34 files)
+
+==============================================================================
+== sandbox-setup
+==============================================================================
+
+[1] .vite/build/application-network-startup-CfAQmSYg.js  @char 43496
+    ...ponent_resolved`,{safe:{component:e,consumer:i,source:u,appPackageCoreActive:a!=null,coreGateEnabledAtStartup:At,copiedRuntimeLocation:l,architecture:process.arch},sensitive:{executablePath:t}}))}var Pt=`cua_node`,Ft=[`codex-code-mode-host.exe`,`codex-windows-sandbox-setup.exe`,`codex-command-runner.exe`],It=new Map([[`codex.exe`,`codex`],[`codex-code-mode-host.exe`,`code-mode-host`],[`codex-windows-sandbox-setup.exe`,`sandbox-setup`],[`codex-command-runner.exe`,`command-runner`],[`rg.exe`,`ripgrep`]]),Lt=new Map,R...
+
+[2] .vite/build/application-network-startup-CfAQmSYg.js  @char 43639
+    ...ecture:process.arch},sensitive:{executablePath:t}}))}var Pt=`cua_node`,Ft=[`codex-code-mode-host.exe`,`codex-windows-sandbox-setup.exe`,`codex-command-runner.exe`],It=new Map([[`codex.exe`,`codex`],[`codex-code-mode-host.exe`,`code-mode-host`],[`codex-windows-sandbox-setup.exe`,`sandbox-setup`],[`codex-command-runner.exe`,`command-runner`],[`rg.exe`,`ripgrep`]]),Lt=new Map,Rt=new Map,H=null,zt=new Set;function Bt(e){let t=[];if(e!=null)try{t=(0,a.readdirSync)((0,s.join)(e,`plugins`),{withFileTypes:!0}).filter(e=>e....
+
+[3] .vite/build/application-network-startup-CfAQmSYg.js  @char 43659
+    ...,sensitive:{executablePath:t}}))}var Pt=`cua_node`,Ft=[`codex-code-mode-host.exe`,`codex-windows-sandbox-setup.exe`,`codex-command-runner.exe`],It=new Map([[`codex.exe`,`codex`],[`codex-code-mode-host.exe`,`code-mode-host`],[`codex-windows-sandbox-setup.exe`,`sandbox-setup`],[`codex-command-runner.exe`,`command-runner`],[`rg.exe`,`ripgrep`]]),Lt=new Map,Rt=new Map,H=null,zt=new Set;function Bt(e){let t=[];if(e!=null)try{t=(0,a.readdirSync)((0,s.join)(e,`plugins`),{withFileTypes:!0}).filter(e=>e.isDirectory()).map(e...
+
+[4] .vite/build/src-BJv5Mk7n.js  @char 1265594
+    ...{return e&&e.length?i(e,r(t,2)):[]}t.exports=a})),YB=e.a(JB()),XB=u.r(`chrome-plugin-app-server-runtime`),ZB=(0,g.promisify)(_.execFile),QB=`.plugin-appserver`,$B=n.Cr.production,eV=[0,100,200,400,800],tV=5e3,nV=8388608,rV=`codex-resources`,iV=[`codex-windows-sandbox-setup.exe`,`codex-command-runner.exe`];async function aV(e){let t=o.kt();if(process.platform===`win32`&&t!=null&&(0,m.relative)(t,e.codexCliPath)===`codex.exe`)return e.codexCliPath;let n=sV(e);if(await lV(n))return n.codexCliPath;await oV({executableP...
+
+  TOTAL 4 occurrence(s) in MAIN (34 files)
+
+==============================================================================
+== elevat (all MAIN)
+==============================================================================
+
+[1] .vite/build/bootstrap-487kJHw_.js  @char 21484
+    ...stall?.(),!this.options.allowed()){this.setInstallProgressPercent(null),this.setUpdateLifecycleState(`idle`);return}throw await this.options.nativeAddon.activateStagedPackage(e.packagePath,e=>{this.setInstallProgressPercent(e)},this.options.allowServiceInstallElevation===!0),Error(`Windows completed the update without restarting the app.`)}catch(e){throw await this.reconcileLocalPreparedState(),this.setInstallProgressPercent(null),this.setUpdateLifecycleState(this.isUpdateReady?`ready`:`idle`),e}}async showManualCh...
+
+[2] .vite/build/bootstrap-487kJHw_.js  @char 24418
+    ...cardPreparedUpdate(),this.setUpdateLifecycleState(`idle`),`up-to-date`;let a={buildVersion:t,packagePath:i.packagePath,length:i.length,sha256:i.sha256};try{await this.options.nativeAddon.stagePackage(a.packagePath)}catch(e){if(!this.options.allowServiceInstallElevation||!(e instanceof Error)||!(`hresult`in e)||e.hresult!==2147958056)throw await this.discardPreparedUpdate(),e}let o=this.getStageStatePath();return await m.default.writeFile(`${o}.tmp`,JSON.stringify(a,null,2)),await m.default.rename(`${o}.tmp`,o),this...
+
+[3] .vite/build/bootstrap-487kJHw_.js  @char 51532
+    ...(),packageIdentity:t,checkIntervalMs:e?0:o,checkOnInitialize:!e,...s,onUpdateReadyChanged:e?void 0:s.onUpdateReadyChanged});c=e?new Nn({checkIntervalMs:o,storeUpdater:i,onUpdateReadyChanged:s.onUpdateReadyChanged,msixFallbackUpdater:new wn({allowServiceInstallElevation:!0,manifestUrl:n.storeUpdateManifestUrl,buildVersion:this.resolveWindowsStoreBuildVersion(),packageIdentity:t,packagePublisher:r,checkIntervalMs:0,checkForUpdatesOnInitialize:!1,...s,onUpdateReadyChanged:void 0})}):i}else c=new wn({manifestUrl:i,allo...
+
+[4] .vite/build/bootstrap-487kJHw_.js  @char 51807
+    ...nifestUrl:n.storeUpdateManifestUrl,buildVersion:this.resolveWindowsStoreBuildVersion(),packageIdentity:t,packagePublisher:r,checkIntervalMs:0,checkForUpdatesOnInitialize:!1,...s,onUpdateReadyChanged:void 0})}):i}else c=new wn({manifestUrl:i,allowServiceInstallElevation:!0,buildVersion:this.resolveBuildVersion(),packageIdentity:t,packagePublisher:r,checkIntervalMs:o,...s});if(await c.initialize(),!c.hasUpdater()){this.lastUnavailableReason=c.getUnavailableReason();return}this.lastUnavailableReason=null,this.updater=...
+
+[5] .vite/build/bootstrap-487kJHw_.js  @char 458984
+    ...s_runtime_framework_identity_unavailable`,{safe:{buildFlavor:$,appVersion:f.app.getVersion(),architecture:process.arch,failureReason:e==null?`native-addon-unavailable`:`no-package-identity`,appContainedCoreBuild:r,shouldUseWindowsRuntimeFrameworks:i,hasDoNotDeElevateSwitch:f.app.commandLine.hasSwitch(`do-not-de-elevate`)}}),t&&r&&(process.env.CODEX_WINDOWS_SANDBOX_PACKAGE_FAMILY=t);let n=fT(uT(o.ot()),await dk()!=null);a=t!=null&&n.core,o.Nt(n.core),Ck(n.primary)}catch(e){o.Nt(null),Ck(!1),c.n().warning(`windows_ru...
+
+[6] .vite/build/bootstrap-487kJHw_.js  @char 459037
+    ...dFlavor:$,appVersion:f.app.getVersion(),architecture:process.arch,failureReason:e==null?`native-addon-unavailable`:`no-package-identity`,appContainedCoreBuild:r,shouldUseWindowsRuntimeFrameworks:i,hasDoNotDeElevateSwitch:f.app.commandLine.hasSwitch(`do-not-de-elevate`)}}),t&&r&&(process.env.CODEX_WINDOWS_SANDBOX_PACKAGE_FAMILY=t);let n=fT(uT(o.ot()),await dk()!=null);a=t!=null&&n.core,o.Nt(n.core),Ck(n.primary)}catch(e){o.Nt(null),Ck(!1),c.n().warning(`windows_runtime_framework_gate_hydration_failed`,{safe:{buildFl...
+
+[7] .vite/build/src-BJv5Mk7n.js  @char 296101
+    ...ndowsSandbox/setupCompleted for wrong mode`,{safe:{expectedMode:i.mode,mode:t,success:n},sensitive:{error:r}});return}i.complete({mode:t,success:n,error:r});return}}}clearExpiredWindowsSandboxTimeouts(){if(this.timedOutWindowsSandboxSetup!=null){for(let e of[`elevated`,`unelevated`]){let t=this.timedOutWindowsSandboxSetup[e];t==null||Date.now()<t||delete this.timedOutWindowsSandboxSetup[e]}Object.keys(this.timedOutWindowsSandboxSetup).length===0&&(this.timedOutWindowsSandboxSetup=void 0)}}clearTimedOutWindowsSandbo...
+
+[8] .vite/build/src-BJv5Mk7n.js  @char 296114
+    ...setupCompleted for wrong mode`,{safe:{expectedMode:i.mode,mode:t,success:n},sensitive:{error:r}});return}i.complete({mode:t,success:n,error:r});return}}}clearExpiredWindowsSandboxTimeouts(){if(this.timedOutWindowsSandboxSetup!=null){for(let e of[`elevated`,`unelevated`]){let t=this.timedOutWindowsSandboxSetup[e];t==null||Date.now()<t||delete this.timedOutWindowsSandboxSetup[e]}Object.keys(this.timedOutWindowsSandboxSetup).length===0&&(this.timedOutWindowsSandboxSetup=void 0)}}clearTimedOutWindowsSandboxSetupMode(e)...
+
+[9] .vite/build/src-CP7XXlpZ.js  @char 50412
+    ...aa,profilePath:t.N().trim().min(1),importCookies:t._().optional().default(!0),importPasswords:t._().optional().default(!0),importHistory:t._().optional().default(!1),importExtensions:t._().optional().default(!1),allowUnverifiedExtensions:t._().optional(),allowElevatedChromeDecryption:t._().optional(),cookieDomainAllowlist:t.h(t.N().trim().min(1)).optional()}),ma=`/settings/browser-use/downloads`,ha=`persist:codex-browser-app`,ga=`chrome://extensions/`,_a=ha,va=`/settings/browser-use/history`,ya=[`chrome://settings/...
+
+[10] .vite/build/worker.js  @char 861735
+    ...),G({source:vP,profilePath:B().trim().min(1),importCookies:H().optional().default(!0),importPasswords:H().optional().default(!0),importHistory:H().optional().default(!1),importExtensions:H().optional().default(!1),allowUnverifiedExtensions:H().optional(),allowElevatedChromeDecryption:H().optional(),cookieDomainAllowlist:W(B().trim().min(1)).optional()});var bP=[25,33,50,67,75,80,90,100,110,125,150,175,200,250,300,400,500];bP[0],bP[bP.length-1];var rhe=1024,xP=4096,SP=16384;function ihe(e){return typeof e==`string`&...
+
+  TOTAL 10 occurrence(s) in MAIN (34 files)
+
+==============================================================================
+== runas (all MAIN)
+==============================================================================
+
+[1] .vite/build/main-BklS_2Y2.js  @char 328355
+    ...tePath:i}=Ip(e);return t==null||n==null||r==null||i==null?[]:[{hostId:t,id:n,label:r,remotePath:i}]}):[]}function Lp(e){return Toe.safeParse(e).data??null}function Rp(e){return typeof e==`string`?e:void 0}var Aoe=[{id:`2026-07-13-string-based-remote-projects`,runAsync:async e=>{Eoe(e)}},{id:`2026-07-13-automation-project-targets`,runAsync:async e=>{await goe(e)}},{id:`2026-07-13-local-projects`,runAsync:async e=>{noe(e)}},{id:`2026-07-13-remap-legacy-automation-project-targets`,runAsync:async e=>{_oe(e)}},{id:`2026...
+
+[2] .vite/build/main-BklS_2Y2.js  @char 328427
+    ...id:n,label:r,remotePath:i}]}):[]}function Lp(e){return Toe.safeParse(e).data??null}function Rp(e){return typeof e==`string`?e:void 0}var Aoe=[{id:`2026-07-13-string-based-remote-projects`,runAsync:async e=>{Eoe(e)}},{id:`2026-07-13-automation-project-targets`,runAsync:async e=>{await goe(e)}},{id:`2026-07-13-local-projects`,runAsync:async e=>{noe(e)}},{id:`2026-07-13-remap-legacy-automation-project-targets`,runAsync:async e=>{_oe(e)}},{id:`2026-07-13-clear-legacy-browser-download-history`,runAsync:async e=>{zp(e)}}...
+
+[3] .vite/build/main-BklS_2Y2.js  @char 328493
+    ...se(e).data??null}function Rp(e){return typeof e==`string`?e:void 0}var Aoe=[{id:`2026-07-13-string-based-remote-projects`,runAsync:async e=>{Eoe(e)}},{id:`2026-07-13-automation-project-targets`,runAsync:async e=>{await goe(e)}},{id:`2026-07-13-local-projects`,runAsync:async e=>{noe(e)}},{id:`2026-07-13-remap-legacy-automation-project-targets`,runAsync:async e=>{_oe(e)}},{id:`2026-07-13-clear-legacy-browser-download-history`,runAsync:async e=>{zp(e)}},{id:`2026-07-14-repair-metadata-local-projects`,runAsync:async e=...
+
+[4] .vite/build/main-BklS_2Y2.js  @char 328578
+    ...-07-13-string-based-remote-projects`,runAsync:async e=>{Eoe(e)}},{id:`2026-07-13-automation-project-targets`,runAsync:async e=>{await goe(e)}},{id:`2026-07-13-local-projects`,runAsync:async e=>{noe(e)}},{id:`2026-07-13-remap-legacy-automation-project-targets`,runAsync:async e=>{_oe(e)}},{id:`2026-07-13-clear-legacy-browser-download-history`,runAsync:async e=>{zp(e)}},{id:`2026-07-14-repair-metadata-local-projects`,runAsync:async e=>{xoe(e)}}];async function joe(e){zp(e)&&await e.flushOrThrow()}async function Moe(e,...
+
+[5] .vite/build/main-BklS_2Y2.js  @char 328661
+    ...tomation-project-targets`,runAsync:async e=>{await goe(e)}},{id:`2026-07-13-local-projects`,runAsync:async e=>{noe(e)}},{id:`2026-07-13-remap-legacy-automation-project-targets`,runAsync:async e=>{_oe(e)}},{id:`2026-07-13-clear-legacy-browser-download-history`,runAsync:async e=>{zp(e)}},{id:`2026-07-14-repair-metadata-local-projects`,runAsync:async e=>{xoe(e)}}];async function joe(e){zp(e)&&await e.flushOrThrow()}async function Moe(e,t){let n=new Set(e.get(`electron-completed-local-data-migration-ids`)??[]);for(let ...
+
+[6] .vite/build/main-BklS_2Y2.js  @char 328736
+    ...-local-projects`,runAsync:async e=>{noe(e)}},{id:`2026-07-13-remap-legacy-automation-project-targets`,runAsync:async e=>{_oe(e)}},{id:`2026-07-13-clear-legacy-browser-download-history`,runAsync:async e=>{zp(e)}},{id:`2026-07-14-repair-metadata-local-projects`,runAsync:async e=>{xoe(e)}}];async function joe(e){zp(e)&&await e.flushOrThrow()}async function Moe(e,t){let n=new Set(e.get(`electron-completed-local-data-migration-ids`)??[]);for(let r of t)n.has(r.id)||(await r.runAsync(e),n.add(r.id),e.set(l.w,[...n]),awai...
+
+[7] .vite/build/main-BklS_2Y2.js  @char 328950
+    ...d:`2026-07-14-repair-metadata-local-projects`,runAsync:async e=>{xoe(e)}}];async function joe(e){zp(e)&&await e.flushOrThrow()}async function Moe(e,t){let n=new Set(e.get(`electron-completed-local-data-migration-ids`)??[]);for(let r of t)n.has(r.id)||(await r.runAsync(e),n.add(r.id),e.set(l.w,[...n]),await e.flushOrThrow())}function zp(e){return e.getStored(`electron-browser-download-history`)!=null&&(e.delete(l.A),!0)}var Bp=new Set,Vp=new Set,Hp=new Map,Up=!1;function Noe(){return Up}function Poe(){return Bp.size...
+
+  TOTAL 7 occurrence(s) in MAIN (34 files)
+
+==============================================================================
+== ShellExecute / exec (elev-ish)
+==============================================================================
+
+[1] .vite/build/application-network-startup-CfAQmSYg.js  @char 18049
+    ...:null}function o(e,t){return n&&e===1&&!t.file?r(t.original,`spawnSync`):null}t.exports={hookChildProcess:i,verifyENOENT:a,verifyENOENTSync:o,notFoundError:r}})),Le=e.t(((e,t)=>{var n=require("child_process"),r=Fe(),i=Ie();function a(e,t,a){let o=r(e,t,a),s=n.spawn(o.command,o.args,o.options);return i.hookChildProcess(s,o),s}function o(e,t,a){let o=r(e,t,a),s=n.spawnSync(o.command,o.args,o.options);return s.error=s.error||i.verifyENOENTSync(s.status,o),s}t.exports=a,t.exports.spawn=a,t.exports.sync=o,t.exports._par...
+
+[2] .vite/build/application-network-startup-CfAQmSYg.js  @char 35412
+    ...in32`&&n.basename(e,`.exe`)===`cmd`&&t.unshift(`/q`),{file:e,args:t,options:r,parsed:a}},D=(e,t,n)=>typeof t!=`string`&&!Buffer.isBuffer(t)?n===void 0?void 0:``:e.stripFinalNewline?a(t):t,O=(e,t,n)=>{let i=E(e,t,n),a=x(e,t),o=C(e,t);p(i.options);let l;try{l=r.spawn(i.file,i.args,i.options)}catch(e){return y(new r.ChildProcess,Promise.reject(c({error:e,stdout:``,stderr:``,all:``,command:a,escapedCommand:o,parsed:i,timedOut:!1,isCanceled:!1,killed:!1})))}let v=b(l),S=f(l,i.options,v),w=m(l,i.options,S),T={isCanceled:...
+
+[3] .vite/build/application-network-startup-CfAQmSYg.js  @char 56575
+    ...null}:e.availability}async function Kn(e=!1){let t=await Un(e);return t===void 0?{status:`failed`}:{status:`success`,availability:await qn(t)}}async function qn(e){if(e==null)return{available:!1,distro:null};let t=performance.now();return new Promise(n=>{(0,h.execFile)(`wsl.exe`,[`-d`,e,`--`,An,`-lc`,`exit 0`],{encoding:`utf8`,env:G(process.env),timeout:jn,windowsHide:!0},(i,a,o)=>{if(i!=null){r.n().debug(`WSL bash availability check failed`,{safe:{stage:`bash`,mode:`async`,elapsedMs:Math.round(performance.now()-t)...
+
+[4] .vite/build/application-network-startup-CfAQmSYg.js  @char 59948
+    ...trim();if(!i){n.warning(`WSL command returned empty output`,{safe:{context:t},sensitive:{}});return}return i}catch(e){n.warning(`WSL command unexpected error`,{safe:{context:t},sensitive:{error:e}});return}}async function sr(e,t,n){return new Promise(r=>{(0,h.execFile)(`wsl.exe`,e,{encoding:`utf8`,env:G(process.env),timeout:jn,windowsHide:!0},(e,i,a)=>{if(e!=null){n.debug(`WSL command error`,{safe:{context:t},sensitive:{error:e,stderr:a??``}}),r(void 0);return}let o=i.trim();if(!o){n.warning(`WSL command returned e...
+
+[5] .vite/build/application-network-startup-CfAQmSYg.js  @char 62600
+    ...{error:r}});return}}function ur(e,t){return _r(e)||(t.split(` `).map(e=>e.trim()).find(e=>e.toLowerCase().startsWith(`ubuntu`))??null)}function dr(e,t,n){return n.debug(`[execWindowsCommand] executing`,{safe:{command:e,args:t.join(` `)},sensitive:{}}),pr((0,h.execFileSync)(e,t,{timeout:Mn,env:G(process.env),windowsHide:!0,encoding:`buffer`,maxBuffer:10240}))}async function fr(e,t,n){return n.debug(`[execWindowsCommand] executing`,{safe:{command:e,args:t.join(` `)},sensitive:{}}),new Promise((n,r)=>{(0,h.execFile)(e...
+  ... truncated at 5

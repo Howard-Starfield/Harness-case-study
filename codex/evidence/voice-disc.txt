@@ -1,0 +1,55 @@
+﻿MAIN corpus: 34 files, 10,333,165 bytes / 10,250,479 chars
+
+============================================================================
+== VOICE / STT
+============================================================================
+  SpeechRecognition (api)          0   files=0
+  speechSynthesis (api)            0   files=0
+  SpeechSynthesisUtterance         0   files=0
+  MediaRecorder                    0   files=0
+  getUserMedia                     0   files=0
+  AudioContext                     0   files=0
+  transcri*                      164   files=5  [application-network-startup-CfAQmSYg.js, main-BklS_2Y2.js, src-BJv5Mk7n.js]
+  whisper                          0   files=0
+  dictation                      251   files=4  [main-BklS_2Y2.js, src-BJv5Mk7n.js, src-CP7XXlpZ.js]
+  voice*                         102   files=8  [browser-background-switches-Zzmx0u5p.js, core-B-w7xKIn.js, core-DlTZhmo0.js]
+  microphone                      19   files=3  [main-BklS_2Y2.js, src-CP7XXlpZ.js, worker.js]
+  audio                          727   files=11  [browser-background-switches-Zzmx0u5p.js, browser-page-preload.js, capture-Bk2D_sBl.js]
+
+============================================================================
+== ORB / UI
+============================================================================
+  orb (word)                       0   files=0
+  Orb<Cap>                         3   files=1  [main-BklS_2Y2.js]
+  voice-mode                       6   files=2  [src-BJv5Mk7n.js, worker.js]
+  handsfree                        0   files=0
+
+============================================================================
+== QUEUE / TURN
+============================================================================
+  queued/queue*                  241   files=8  [application-network-startup-CfAQmSYg.js, bootstrap-487kJHw_.js, browser-page-preload.js]
+  enqueue*                       184   files=12  [application-network-startup-CfAQmSYg.js, bootstrap-487kJHw_.js, browser-page-preload.js]
+  turn/started                    27   files=4  [main-BklS_2Y2.js, src-BJv5Mk7n.js, src-CP7XXlpZ.js]
+  turn/completed                  31   files=4  [main-BklS_2Y2.js, src-BJv5Mk7n.js, src-CP7XXlpZ.js]
+  interrupt*                     172   files=8  [application-network-startup-CfAQmSYg.js, conversation-turn-mutations-szl89rld.js, core-B-w7xKIn.js]
+  steer*                          77   files=6  [conversation-turn-mutations-szl89rld.js, main-BklS_2Y2.js, src-BJv5Mk7n.js]
+  followUp                        81   files=6  [browser-page-preload.js, main-BklS_2Y2.js, src-BJv5Mk7n.js]
+
+============================================================================
+== MEMORY / MD
+============================================================================
+  AGENTS.md                        4   files=2  [main-BklS_2Y2.js, src-BJv5Mk7n.js]
+  MEMORY.md                        0   files=0
+  memory.md/json                   4   files=2  [main-BklS_2Y2.js, src-BJv5Mk7n.js]
+  todo/plan.md                     0   files=0
+  memoryPipeline                   4   files=1  [src-BJv5Mk7n.js]
+  memory<Cap>                     48   files=5  [bootstrap-487kJHw_.js, conversation-turn-mutations-szl89rld.js, main-BklS_2Y2.js]
+
+============================================================================
+== STREAMING
+============================================================================
+  agentMessage/delta              16   files=4  [main-BklS_2Y2.js, src-BJv5Mk7n.js, src-CP7XXlpZ.js]
+  reasoning/textDelta              6   files=3  [src-BJv5Mk7n.js, src-CP7XXlpZ.js, worker.js]
+  outputDelta                     32   files=4  [main-BklS_2Y2.js, src-BJv5Mk7n.js, src-CP7XXlpZ.js]
+  turn/diff/updated                5   files=3  [src-BJv5Mk7n.js, src-CP7XXlpZ.js, worker.js]
+  chunk*                         181   files=10  [application-network-startup-CfAQmSYg.js, bootstrap-487kJHw_.js, chunk-D4ZOuLf6.js]

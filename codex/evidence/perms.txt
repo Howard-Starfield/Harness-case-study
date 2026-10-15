@@ -1,0 +1,238 @@
+﻿
+============================================================================
+== 1. approvalPolicy enum - every distinct value used in MAIN
+============================================================================
+  values assigned to approvalPolicy: [["never",10],["on-request",16]]
+  backticked tokens appearing within 120 chars of an 'approval' keyword:
+    app-approval-requested, auto, danger-full-access, failed, full, full-access, invalid-request, never, on-request, read-only, untrusted, workspace-write
+
+============================================================================
+== 2. sandboxPolicy shape + writable roots
+============================================================================
+
+----------------------------------------------------------------------------
+-- sandboxPolicy object literals
+
+  [src-BJv5Mk7n.js @886666] sandboxPolicy:{
+    ent:A,allowSavedEnvironmentConfig:A||k||e.inputs.isBrowserRuntime})):N={environments:[j],usesDeferredEnvironment:!1};let P=N?.environments??null,ee=N?.usesDeferredEnvironment===!0,F=P?.[0]?.cwd,I=await Mw(a,e.logger,()=>e.requestClient.sendRequest(`configRequirements/read`,void 0,{priority:`critical`,timeoutMs:ao})),L=A||F==null?s:`project`,te=L===`projectless`,R=u==null||F==null||F===`/`||j!=null||u.sandboxPolicy.type!==`workspaceWrite`?u:{...u,sandboxPolicy:{...u.sandboxPolicy,writableRoots:[F]}},z=P?.[0]?.runtimeWorkspaceRoots??(F==null?o:[F]),ne;ne=d==null?R==null?{permissionsConfig:null}:{permissionsConfig:R}:{permissionsConfig:null,permissionSelection:d};let re=te&&!O?o[0]??null:null,B=e.inputs.memoryPipeline==null&&e.inputs.projectId==null&&b===`user`&&!D&&!O&&w==="default"&&T==="default"&&m==null&&_==null&&(y==null||Object.keys(y).length===0)&&(S==null||Object.keys(S).length===0)
+
+  [src-CP7XXlpZ.js @26128] sandboxPolicy:{
+    ===!0;return!(o!=null&&r!=null&&!o.includes(r)&&!(Rn(r)&&s))}function qn(e){return Pn.filter(t=>Jn(t,e))}function Jn(e,t){if(t==null)return!0;let{permissionProfileId:n,sandboxMode:r,approvalPolicy:i,approvalsReviewer:a}=Bn[e];return t.allowedPermissionProfiles!=null&&t.allowedPermissionProfiles[n]!==!0?!1:Kn(t,r,i,a)}function Yn(e,t,n,r=`user`,i=t==null?{id:`:workspace`,extends:null}:null){return{activePermissionProfile:i,runtimeWorkspaceRoots:e,sandboxPolicy:{type:`workspaceWrite`,writableRoots:[...e,...t?.writable_roots??[]],excludeSlashTmp:t?.exclude_slash_tmp??!1,excludeTmpdirEnvVar:t?.exclude_tmpdir_env_var??!1,networkAccess:t?.network_access??!1},approvalPolicy:n??`on-request`,approvalsReviewer:r}}function Xn(e,t=`user`,n={id:`:read-only`,extends:null}){return{activePermissionProfile:n,sandboxPolicy:Fn,approvalPolicy:e??`on-request`,approvalsReviewer:t}}function Zn(e,t=`user`,n={id
+
+  [src-CP7XXlpZ.js @26649] sandboxPolicy:{
+    _roots??[]],excludeSlashTmp:t?.exclude_slash_tmp??!1,excludeTmpdirEnvVar:t?.exclude_tmpdir_env_var??!1,networkAccess:t?.network_access??!1},approvalPolicy:n??`on-request`,approvalsReviewer:r}}function Xn(e,t=`user`,n={id:`:read-only`,extends:null}){return{activePermissionProfile:n,sandboxPolicy:Fn,approvalPolicy:e??`on-request`,approvalsReviewer:t}}function Zn(e,t=`user`,n={id:`:danger-full-access`,extends:null}){return{activePermissionProfile:n,sandboxPolicy:{type:`dangerFullAccess`},approvalPolicy:e??`never`,approvalsReviewer:t}}function Qn(e,t){let n=er(t??void 0);switch(t?.sandbox_mode){case`danger-full-access`:return Zn(t.approval_policy,n,null);case`read-only`:return Xn(t.approval_policy,n,null);case`workspace-write`:return Yn(e,t.sandbox_workspace_write,t.approval_policy,n,null);case null:case void 0:return Xn(t?.approval_policy,n,null)}}function $n(e,t,n){switch(e){case`read-only
+
+----------------------------------------------------------------------------
+-- writableRoots / writable_roots
+
+  [main-BklS_2Y2.js @208461] writableRoots
+    ),ce=se.sandboxPolicy,le=null;if(V!=null&&(ce.type===`workspaceWrite`||ce.type===`dangerFullAccess`))try{let[e,t]=await Promise.all([s.workspaceDir?p.workspacesRoot():p.codexHome(),p.platformPath()]),n=t.join(jr(e,c.yt(p.hostConfig)),`visualizations`,...V.split(`/`),re);await p.createDirectory(n,{recursive:!0}),ce.type===`workspaceWrite`?ce={...ce,writableRoots:[...ce.writableRoots,n]}:ce.type===`dangerFullAccess`&&(le=[...oe,n])}catch(e){ce.type===`dangerFullAccess`&&(le=oe),xl().warning(`Failed to prepare visualization directory for automation run`,{safe:{automationId:a.id},sensitive:{error:e}})}let ue=a.lastRunAt==null?`never`:`${new Date(a.lastRunAt).toISOString()} (${a.lastRunAt})`,de=`
+
+  [main-BklS_2Y2.js @208482] writableRoots
+    ,le=null;if(V!=null&&(ce.type===`workspaceWrite`||ce.type===`dangerFullAccess`))try{let[e,t]=await Promise.all([s.workspaceDir?p.workspacesRoot():p.codexHome(),p.platformPath()]),n=t.join(jr(e,c.yt(p.hostConfig)),`visualizations`,...V.split(`/`),re);await p.createDirectory(n,{recursive:!0}),ce.type===`workspaceWrite`?ce={...ce,writableRoots:[...ce.writableRoots,n]}:ce.type===`dangerFullAccess`&&(le=[...oe,n])}catch(e){ce.type===`dangerFullAccess`&&(le=oe),xl().warning(`Failed to prepare visualization directory for automation run`,{safe:{automationId:a.id},sensitive:{error:e}})}let ue=a.lastRunAt==null?`never`:`${new Date(a.lastRunAt).toISOString()} (${a.lastRunAt})`,de=`${C}\nAutomation ID: 
+
+  [main-BklS_2Y2.js @3230487] writableRoots
+    .D().nonnegative()}),sandboxId:iYe,viewportSize:n.O({height:n.D().positive(),width:n.D().positive()})}).refine(({captureRect:e,viewportSize:t})=>e.x+e.width<=t.width&&e.y+e.height<=t.height),oYe=n.O({hostId:n.N().trim().min(1).optional(),path:n.N().min(1),sandboxPolicy:n.O({excludeSlashTmp:n._(),excludeTmpdirEnvVar:n._(),type:n.w(`workspaceWrite`),writableRoots:n.h(n.N().min(1))}).optional(),threadId:n.N().regex(/^[a-zA-Z0-9_-]+$/)}),sYe=class extends l.Pt{origin;getThreadWorkspaceRoots;getExecutionHost;constructor(e,t,n,r=t=>e.get(t)){super(),this.origin=t,this.getThreadWorkspaceRoots=n,this.getExecutionHost=r}async copyImage(e){let t=await x5(this.origin,e),n=process.platform===`win32`?_.n
+
+  [main-BklS_2Y2.js @3232214] writableRoots
+    malize(a);if(e!==a.replaceAll(`/`,f.sep))throw Error(`Invalid visualization read request`);let t=await this.getThreadWorkspaceRoots?.(l.id,s),n=[...o?.excludeSlashTmp===!1&&f.sep===`/`?[`/tmp`,`/private/tmp`]:[],...o?.excludeTmpdirEnvVar===!1&&l.isLocal?[(0,N.tmpdir)(),(0,y.realpathSync)((0,N.tmpdir)())]:[]];_=[await cYe(e,[...h,...[...t??[],...o?.writableRoots??[],...n].map(e=>({directory:e,boundary:e}))],l,f)]}else if(a!==g)throw Error(`Invalid visualization read request`);for(let[e,t]of _.entries())try{let e=r.i(f.dirname(t.path),t.boundary);if(e==null)throw Error(`Invalid visualization read request`);let[n,...i]=await Promise.all([l.stat(t.path,{bypassCache:!0,followSymlinks:!1}),...e.ma
+
+  [src-BJv5Mk7n.js @648966] writableRoots
+    t,workspaceBrowserRoot:r,workspaceKind:i}){if(i!==`projectless`)return e??t;let a=r==null||r===`~`?t:r;if(a==null||a===`~`)return e===`~`?null:e??null;let o=n.ui(a).replace(/\/+$/,``);if(o===``)return null;if(e==null)return a;let s=n.ui(e).replace(/\/+$/,``);return s===o||s.startsWith(`${o}/`)?e:a}function yw(e){return e?.type===`workspaceWrite`?e.writableRoots.find(e=>e!==`~`)??null:null}function bw({sandboxPolicy:e,workspaceKind:t}){return t!==`projectless`||e.type!==`workspaceWrite`||yw(e)!=null?e:n.ja().sandboxPolicy}var xw=`update_running_summary`,Sw=`The pet activity pill uses update_running_summary. Before starting substantial work, call it with a short statement of intent, then updat
+
+  [src-BJv5Mk7n.js @679226] writableRoots
+    t.set(o,l),l.finally(()=>{t.get(o)===l&&t.delete(o)})}async function pT(e,t,n,r){let i=r===void 0?await Rw(e,n):r,a=Te(i?.personality)??Te(i?.model_personality);if(a!=null)return a;let o=await t.readExperimentPersonality().catch(()=>null);return i==null?null:o}var mT=t.j(t.N(),t.h(t.N()));function hT(e){return mT.safeParse(e).data??{}}function gT({writableRootsByThread:e,conversationId:t,writableRoots:n}){return{...e,[t]:CT(e[t]??[],n)}}function _T(e,t){return t.some(t=>!e.includes(t))}function vT(e,t){if(e.type!==`workspaceWrite`)return e;let n=CT(e.writableRoots,t);return n.length===e.writableRoots.length?e:{...e,writableRoots:n}}function yT(e,t){return e.type===`workspaceWrite`&&_T(e.writ
+
+----------------------------------------------------------------------------
+-- workspace-write
+
+  [main-BklS_2Y2.js @195461] workspaceWrite
+    a(u,e,t),f=n?.allowedApprovalPolicies==null||n.allowedApprovalPolicies.includes(`never`),p=a&&f&&(n?.allowedApprovalsReviewers==null||n.allowedApprovalsReviewers.includes(`user`))?`user`:d.approvalsReviewer;return{approvalPolicy:f&&(a||u!==`granular`&&p===`user`)?`never`:d.approvalPolicy,approvalsReviewer:p,sandboxPolicy:a&&d.sandboxPolicy.type===`workspaceWrite`&&t.sandbox_mode===`workspace-write`&&t.sandbox_workspace_write?.network_access===!0?{...d.sandboxPolicy,networkAccess:!0}:d.sandboxPolicy}}function jl(e,t){let n=e.get(l.F)?.[r.Oa];if(typeof n!=`object`||!n||Array.isArray(n))return null;let i=Object.getOwnPropertyDescriptor(n,t)?.value,a=r.ka.safeParse(i);return a.success?a.data:nul
+
+  [main-BklS_2Y2.js @195496] workspace-write
+    es==null||n.allowedApprovalPolicies.includes(`never`),p=a&&f&&(n?.allowedApprovalsReviewers==null||n.allowedApprovalsReviewers.includes(`user`))?`user`:d.approvalsReviewer;return{approvalPolicy:f&&(a||u!==`granular`&&p===`user`)?`never`:d.approvalPolicy,approvalsReviewer:p,sandboxPolicy:a&&d.sandboxPolicy.type===`workspaceWrite`&&t.sandbox_mode===`workspace-write`&&t.sandbox_workspace_write?.network_access===!0?{...d.sandboxPolicy,networkAccess:!0}:d.sandboxPolicy}}function jl(e,t){let n=e.get(l.F)?.[r.Oa];if(typeof n!=`object`||!n||Array.isArray(n))return null;let i=Object.getOwnPropertyDescriptor(n,t)?.value,a=r.ka.safeParse(i);return a.success?a.data:null}function Ml(e,t,n){let i=r.Va(n,t
+
+  [main-BklS_2Y2.js @206192] workspace-write
+    pServerConnection:o,appVersion:t,desktopFeatureAvailability:s,cwd:e,isPackaged:x,repoRoot:S,shouldUseWslPaths:c.yt(n)}),a={model:_.model,modelProvider:null,cwd:e,approvalPolicy:I.approvalPolicy,approvalsReviewer:I.approvalsReviewer,sandbox:I.sandboxPolicy.type===`dangerFullAccess`?`danger-full-access`:I.sandboxPolicy.type===`readOnly`?`read-only`:`workspace-write`,config:{...i,...await Xc({hostConfig:n,appServerVersion:o.appServerVersion}),[r.hr(o.appServerVersion)]:v},developerInstructions:te,personality:null,ephemeral:null,threadSource:`automation`,dynamicTools:[],mockExperimentalField:null,experimentalRawEvents:!1,serviceTier:null};return o.startThread(a)},B=null,re=null,ie=null,ae=`pendi
+
+  [main-BklS_2Y2.js @208165] workspaceWrite
+    e}if(B==null||re==null)throw Error(`Automation thread start failed`);let oe;try{oe=await kl({sourceCwds:A,worktreeCwd:B.cwd,requestGitWorker:l,appServerClient:p,automationId:a.id,includeGitRoots:!T})}catch(e){throw i.Vr(re,`auto`),o.notifyAutomationRunsUpdated(),e}let se=Al(oe,ee,h,P,T),V=r.a(re),ce=se.sandboxPolicy,le=null;if(V!=null&&(ce.type===`workspaceWrite`||ce.type===`dangerFullAccess`))try{let[e,t]=await Promise.all([s.workspaceDir?p.workspacesRoot():p.codexHome(),p.platformPath()]),n=t.join(jr(e,c.yt(p.hostConfig)),`visualizations`,...V.split(`/`),re);await p.createDirectory(n,{recursive:!0}),ce.type===`workspaceWrite`?ce={...ce,writableRoots:[...ce.writableRoots,n]}:ce.type===`dang
+
+  [main-BklS_2Y2.js @208435] workspaceWrite
+    e=Al(oe,ee,h,P,T),V=r.a(re),ce=se.sandboxPolicy,le=null;if(V!=null&&(ce.type===`workspaceWrite`||ce.type===`dangerFullAccess`))try{let[e,t]=await Promise.all([s.workspaceDir?p.workspacesRoot():p.codexHome(),p.platformPath()]),n=t.join(jr(e,c.yt(p.hostConfig)),`visualizations`,...V.split(`/`),re);await p.createDirectory(n,{recursive:!0}),ce.type===`workspaceWrite`?ce={...ce,writableRoots:[...ce.writableRoots,n]}:ce.type===`dangerFullAccess`&&(le=[...oe,n])}catch(e){ce.type===`dangerFullAccess`&&(le=oe),xl().warning(`Failed to prepare visualization directory for automation run`,{safe:{automationId:a.id},sensitive:{error:e}})}let ue=a.lastRunAt==null?`never`:`${new Date(a.lastRunAt).toISOString
+
+----------------------------------------------------------------------------
+-- danger-full-access
+
+  [main-BklS_2Y2.js @191902] dangerFullAccess
+    ation_id>\r <current_time_iso>{{NOW_ISO}}</current_time_iso>\r <instructions>\r {{AUTOMATION_PROMPT}}\r </instructions>\r </heartbeat>\r `;function sl(e,t){let n=[e.approvalsReviewer,...t?.allowedApprovalsReviewers??[]],i=[e.approvalPolicy,...t?.allowedApprovalPolicies??[]],a=[e.sandboxPolicy,r.ja().sandboxPolicy];for(let o of a)if(o.type!==`dangerFullAccess`&&t?.allowedPermissionProfiles==null){for(let a of n)for(let n of i)if((n!==`never`||e.approvalPolicy===`never`)&&r.za(t,r.Fa(o),n,a))return{...e,activePermissionProfile:null,sandboxPolicy:o,approvalPolicy:n,approvalsReviewer:a}}throw Error(`No compatible automation permissions satisfy the managed requirements`)}function cl(e,t){if
+
+  [main-BklS_2Y2.js @206106] dangerFullAccess
+    =>{let n=p.hostConfig;Ac({settingsStore:f,isPackaged:x,repoRoot:S});let i=await _c({appServerConnection:o,appVersion:t,desktopFeatureAvailability:s,cwd:e,isPackaged:x,repoRoot:S,shouldUseWslPaths:c.yt(n)}),a={model:_.model,modelProvider:null,cwd:e,approvalPolicy:I.approvalPolicy,approvalsReviewer:I.approvalsReviewer,sandbox:I.sandboxPolicy.type===`dangerFullAccess`?`danger-full-access`:I.sandboxPolicy.type===`readOnly`?`read-only`:`workspace-write`,config:{...i,...await Xc({hostConfig:n,appServerVersion:o.appServerVersion}),[r.hr(o.appServerVersion)]:v},developerInstructions:te,personality:null,ephemeral:null,threadSource:`automation`,dynamicTools:[],mockExperimentalField:null,experimentalRa
+
+  [main-BklS_2Y2.js @206125] danger-full-access
+    ig;Ac({settingsStore:f,isPackaged:x,repoRoot:S});let i=await _c({appServerConnection:o,appVersion:t,desktopFeatureAvailability:s,cwd:e,isPackaged:x,repoRoot:S,shouldUseWslPaths:c.yt(n)}),a={model:_.model,modelProvider:null,cwd:e,approvalPolicy:I.approvalPolicy,approvalsReviewer:I.approvalsReviewer,sandbox:I.sandboxPolicy.type===`dangerFullAccess`?`danger-full-access`:I.sandboxPolicy.type===`readOnly`?`read-only`:`workspace-write`,config:{...i,...await Xc({hostConfig:n,appServerVersion:o.appServerVersion}),[r.hr(o.appServerVersion)]:v},developerInstructions:te,personality:null,ephemeral:null,threadSource:`automation`,dynamicTools:[],mockExperimentalField:null,experimentalRawEvents:!1,serviceT
+
+  [main-BklS_2Y2.js @208193] dangerFullAccess
+     Error(`Automation thread start failed`);let oe;try{oe=await kl({sourceCwds:A,worktreeCwd:B.cwd,requestGitWorker:l,appServerClient:p,automationId:a.id,includeGitRoots:!T})}catch(e){throw i.Vr(re,`auto`),o.notifyAutomationRunsUpdated(),e}let se=Al(oe,ee,h,P,T),V=r.a(re),ce=se.sandboxPolicy,le=null;if(V!=null&&(ce.type===`workspaceWrite`||ce.type===`dangerFullAccess`))try{let[e,t]=await Promise.all([s.workspaceDir?p.workspacesRoot():p.codexHome(),p.platformPath()]),n=t.join(jr(e,c.yt(p.hostConfig)),`visualizations`,...V.split(`/`),re);await p.createDirectory(n,{recursive:!0}),ce.type===`workspaceWrite`?ce={...ce,writableRoots:[...ce.writableRoots,n]}:ce.type===`dangerFullAccess`&&(le=[...oe,n]
+
+  [main-BklS_2Y2.js @208511] dangerFullAccess
+    ===`workspaceWrite`||ce.type===`dangerFullAccess`))try{let[e,t]=await Promise.all([s.workspaceDir?p.workspacesRoot():p.codexHome(),p.platformPath()]),n=t.join(jr(e,c.yt(p.hostConfig)),`visualizations`,...V.split(`/`),re);await p.createDirectory(n,{recursive:!0}),ce.type===`workspaceWrite`?ce={...ce,writableRoots:[...ce.writableRoots,n]}:ce.type===`dangerFullAccess`&&(le=[...oe,n])}catch(e){ce.type===`dangerFullAccess`&&(le=oe),xl().warning(`Failed to prepare visualization directory for automation run`,{safe:{automationId:a.id},sensitive:{error:e}})}let ue=a.lastRunAt==null?`never`:`${new Date(a.lastRunAt).toISOString()} (${a.lastRunAt})`,de=`${C}\nAutomation ID: ${a.id}\nAutomation memory: $
+
+----------------------------------------------------------------------------
+-- read-only
+
+  [application-network-startup-CfAQmSYg.js @177625] readOnly
+    i}function a(e,t,n,r,i){for(let a=0;a<i;a++)n[r+a]=e[a]^t[a&3]}function o(e,t){for(let n=0;n<e.length;n++)e[n]^=t[n&3]}function s(e){return e.length===e.buffer.byteLength?e.buffer:e.buffer.slice(e.byteOffset,e.byteOffset+e.length)}function c(e){if(c.readOnly=!0,Buffer.isBuffer(e))return e;let t;return e instanceof ArrayBuffer?t=new r(e):ArrayBuffer.isView(e)?t=new r(e.buffer,e.byteOffset,e.byteLength):(t=Buffer.from(e),c.readOnly=!1),t}if(t.exports={concat:i,mask:a,toArrayBuffer:s,toBuffer:c,unm
+
+  [application-network-startup-CfAQmSYg.js @177800] readOnly
+    ffer:e.buffer.slice(e.byteOffset,e.byteOffset+e.length)}function c(e){if(c.readOnly=!0,Buffer.isBuffer(e))return e;let t;return e instanceof ArrayBuffer?t=new r(e):ArrayBuffer.isView(e)?t=new r(e.buffer,e.byteOffset,e.byteLength):(t=Buffer.from(e),c.readOnly=!1),t}if(t.exports={concat:i,mask:a,toArrayBuffer:s,toBuffer:c,unmask:o},!process.env.WS_NO_BUFFER_UTIL)try{let e=To();t.exports.mask=function(t,n,r,i,o){o<48?a(t,n,r,i,o):e.mask(t,n,r,i,o)},t.exports.unmask=function(t,n){t.length<32?o(t,n):
+
+  [application-network-startup-CfAQmSYg.js @194366] readOnly
+    _===h&&(g===void 0&&(g=Buffer.alloc(h)),r(g,0,h),_=0),n[0]=g[_++],n[1]=g[_++],n[2]=g[_++],n[3]=g[_++]),o=(n[0]|n[1]|n[2]|n[3])===0,a=6);let s;typeof e==`string`?(!t.mask||o)&&t[p]!==void 0?s=t[p]:(e=Buffer.from(e),s=e.length):(s=e.length,i=t.mask&&t.readOnly&&!o);let c=s;s>=65536?(a+=8,c=127):s>125&&(a+=2,c=126);let l=Buffer.allocUnsafe(i?s+a:a);return l[0]=t.fin?t.opcode|128:t.opcode,t.rsv1&&(l[0]|=64),l[1]=c,c===126?l.writeUInt16BE(s,2):c===127&&(l[2]=l[3]=0,l.writeUIntBE(s,4,6)),!t.mask||(l[1
+
+============================================================================
+== 3. workspace root binding + path containment
+============================================================================
+  workspaceRoot                  187   files=3
+  cwd assignment                 603   files=7
+  path.isAbsolute / resolve      741   files=19
+  relative-to check              789   files=20
+  symlink / realpath               8   files=8
+
+----------------------------------------------------------------------------
+-- workspaceRoot usages
+
+  [main-BklS_2Y2.js @8924] workspaceRoot
+    eturn[...r,t];let i=r.indexOf(n);return i===-1?[...r,t]:[...r.slice(0,i),t,...r.slice(i)]}var _t=5;function vt({codexHome:e,path:t}){let n=e.replace(/[\\/]+$/,``);return t.basename(n)===`.codex`?t.dirname(n):n}function yt({configuredWorkspaceRoot:e,homeDirectory:t,path:n}){return e??n.join(t,`Documents`,`Codex`)}function bt({date:e=new Date,path:t,workspaceRoot:n}){return t.join(n,St(e))}function xt(e){let t=typeof e==`object`&&e?e.directoryName:null,n=typeof e==`object`&&e?e.prompt:e,r=(t??n)?.toLowerCase().match(/[a-z0-9]+/g);return r==null||r.length===0?`new-chat`:(t==null?r.slice(0,6):r).join(`-`).slice(0,80)}function St(e){let t=String(e.getMonth()+1).padStart(2,`0`),n=String(e.getDate(
+
+  [main-BklS_2Y2.js @9587] workspaceRoot
+    ).padStart(2,`0`),n=String(e.getDate()).padStart(2,`0`);return`${e.getFullYear()}-${t}-${n}`}async function Ct({configuredWorkspaceRoot:e,createSplitDirectories:t,directoryName:n,fileSystem:r,homeDirectory:i,path:a,prompt:o,uniqueDirectoryNameSuffix:s=Ot}){let c=await wt({configuredWorkspaceRoot:e,fileSystem:r,homeDirectory:i,path:a}),l=bt({path:a,workspaceRoot:c}),u=xt({directoryName:n,prompt:o});await r.createDirectory({path:l,recursive:!0}),await Tt(r,l);for(let e=0;e<100;e+=1){let n=await Et({createSplitDirectories:t,dateDirectory:l,fileSystem:r,path:a,threadDirectoryName:e===0?u:`${u}-${e+1}`,workspaceRoot:c});if(n!=null)return n}for(let e=0;e<_t;e+=1){let e=await Et({createSplitDirecto
+
+  [main-BklS_2Y2.js @9842] workspaceRoot
+    ){let c=await wt({configuredWorkspaceRoot:e,fileSystem:r,homeDirectory:i,path:a}),l=bt({path:a,workspaceRoot:c}),u=xt({directoryName:n,prompt:o});await r.createDirectory({path:l,recursive:!0}),await Tt(r,l);for(let e=0;e<100;e+=1){let n=await Et({createSplitDirectories:t,dateDirectory:l,fileSystem:r,path:a,threadDirectoryName:e===0?u:`${u}-${e+1}`,workspaceRoot:c});if(n!=null)return n}for(let e=0;e<_t;e+=1){let e=await Et({createSplitDirectories:t,dateDirectory:l,fileSystem:r,path:a,threadDirectoryName:`${u}-${s()}`,workspaceRoot:c});if(e!=null)return e}throw Error(`Unable to create a unique projectless thread directory`)}async function wt({configuredWorkspaceRoot:e,fileSystem:t,homeDirector
+
+  [main-BklS_2Y2.js @10014] workspaceRoot
+    ath:l,recursive:!0}),await Tt(r,l);for(let e=0;e<100;e+=1){let n=await Et({createSplitDirectories:t,dateDirectory:l,fileSystem:r,path:a,threadDirectoryName:e===0?u:`${u}-${e+1}`,workspaceRoot:c});if(n!=null)return n}for(let e=0;e<_t;e+=1){let e=await Et({createSplitDirectories:t,dateDirectory:l,fileSystem:r,path:a,threadDirectoryName:`${u}-${s()}`,workspaceRoot:c});if(e!=null)return e}throw Error(`Unable to create a unique projectless thread directory`)}async function wt({configuredWorkspaceRoot:e,fileSystem:t,homeDirectory:n,path:r}){let i=yt({configuredWorkspaceRoot:e,homeDirectory:n,path:r});return await t.createDirectory({path:i,recursive:!0}),await Tt(t,i),i}async function Tt(e,t){let n
+
+============================================================================
+== 4. auto-approval rule engine
+============================================================================
+
+----------------------------------------------------------------------------
+-- autoApproval tokens
+
+  [src-BJv5Mk7n.js @583134] autoApprovalReview
+    c.id]=e)}let l=a.pt(i.type===`contextCompaction`?{...i,completed:!0,source:s??`automatic`}:i);if(c.type===`hookPrompt`){a.w(r,l);return}Zx(c)&&(r.firstTurnWorkItemStartedAtMs=r.firstTurnWorkItemStartedAtMs??Date.now()),c.type,a.w(r,l)}),(c.type===`collabAgentToolCall`&&c.tool===`spawnAgent`||c.type===`subAgentActivity`&&c.kind===`started`)&&s.subagentTopology.discoverForSpawn(f,c);break}case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:Kx(t.params,o);break;case`autoApprovalReview/strictReviewRequired`:qx(t.params,o);break;case`guardianWarning`:Jx(t.params,o,()=>e.createId());break;case`item/fileChange/outputDelta`:return`handled`;case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/summaryTextDelta`:case`item/reasoning/summaryPartAdded`:case`i
+
+  [src-BJv5Mk7n.js @583172] autoApprovalReview
+    ompaction`?{...i,completed:!0,source:s??`automatic`}:i);if(c.type===`hookPrompt`){a.w(r,l);return}Zx(c)&&(r.firstTurnWorkItemStartedAtMs=r.firstTurnWorkItemStartedAtMs??Date.now()),c.type,a.w(r,l)}),(c.type===`collabAgentToolCall`&&c.tool===`spawnAgent`||c.type===`subAgentActivity`&&c.kind===`started`)&&s.subagentTopology.discoverForSpawn(f,c);break}case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:Kx(t.params,o);break;case`autoApprovalReview/strictReviewRequired`:qx(t.params,o);break;case`guardianWarning`:Jx(t.params,o,()=>e.createId());break;case`item/fileChange/outputDelta`:return`handled`;case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/summaryTextDelta`:case`item/reasoning/summaryPartAdded`:case`item/reasoning/textDelta`:case`item/com
+
+  [src-BJv5Mk7n.js @583228] autoApprovalReview
+    if(c.type===`hookPrompt`){a.w(r,l);return}Zx(c)&&(r.firstTurnWorkItemStartedAtMs=r.firstTurnWorkItemStartedAtMs??Date.now()),c.type,a.w(r,l)}),(c.type===`collabAgentToolCall`&&c.tool===`spawnAgent`||c.type===`subAgentActivity`&&c.kind===`started`)&&s.subagentTopology.discoverForSpawn(f,c);break}case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:Kx(t.params,o);break;case`autoApprovalReview/strictReviewRequired`:qx(t.params,o);break;case`guardianWarning`:Jx(t.params,o,()=>e.createId());break;case`item/fileChange/outputDelta`:return`handled`;case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/summaryTextDelta`:case`item/reasoning/summaryPartAdded`:case`item/reasoning/textDelta`:case`item/commandExecution/outputDelta`:case`item/commandExecution/te
+
+  [src-BJv5Mk7n.js @604880] autoApprovalReview
+    e`thread/archived`:case`thread/deleted`:case`thread/unarchived`:case`thread/tokenUsage/updated`:dS(e,s);break;case`turn/started`:case`turn/completed`:case`turn/diff/updated`:case`turn/plan/updated`:case`model/safetyBuffering/updated`:case`model/rerouted`:case`hook/started`:case`hook/completed`:case`error`:if(MS(e,s,c,a,o)===`deferred`)return;break;case`item/started`:case`item/completed`:case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:case`autoApprovalReview/strictReviewRequired`:case`guardianWarning`:case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/summaryTextDelta`:case`item/reasoning/summaryPartAdded`:case`item/reasoning/textDelta`:case`item/commandExecution/outputDelta`:case`item/commandExecution/terminalInteraction`:case`item/fileCha
+
+  [src-BJv5Mk7n.js @604918] autoApprovalReview
+    `:case`thread/unarchived`:case`thread/tokenUsage/updated`:dS(e,s);break;case`turn/started`:case`turn/completed`:case`turn/diff/updated`:case`turn/plan/updated`:case`model/safetyBuffering/updated`:case`model/rerouted`:case`hook/started`:case`hook/completed`:case`error`:if(MS(e,s,c,a,o)===`deferred`)return;break;case`item/started`:case`item/completed`:case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:case`autoApprovalReview/strictReviewRequired`:case`guardianWarning`:case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/summaryTextDelta`:case`item/reasoning/summaryPartAdded`:case`item/reasoning/textDelta`:case`item/commandExecution/outputDelta`:case`item/commandExecution/terminalInteraction`:case`item/fileChange/outputDelta`:case`item/fileChange/
+
+  [src-BJv5Mk7n.js @604953] autoApprovalReview
+    ad/tokenUsage/updated`:dS(e,s);break;case`turn/started`:case`turn/completed`:case`turn/diff/updated`:case`turn/plan/updated`:case`model/safetyBuffering/updated`:case`model/rerouted`:case`hook/started`:case`hook/completed`:case`error`:if(MS(e,s,c,a,o)===`deferred`)return;break;case`item/started`:case`item/completed`:case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:case`autoApprovalReview/strictReviewRequired`:case`guardianWarning`:case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/summaryTextDelta`:case`item/reasoning/summaryPartAdded`:case`item/reasoning/textDelta`:case`item/commandExecution/outputDelta`:case`item/commandExecution/terminalInteraction`:case`item/fileChange/outputDelta`:case`item/fileChange/patchUpdated`:case`item/mcpToolCall
+
+----------------------------------------------------------------------------
+-- autoApprovalReview notifications
+
+  [src-BJv5Mk7n.js @583134] autoApprovalReview/started
+    ype===`hookPrompt`){a.w(r,l);return}Zx(c)&&(r.firstTurnWorkItemStartedAtMs=r.firstTurnWorkItemStartedAtMs??Date.now()),c.type,a.w(r,l)}),(c.type===`collabAgentToolCall`&&c.tool===`spawnAgent`||c.type===`subAgentActivity`&&c.kind===`started`)&&s.subagentTopology.discoverForSpawn(f,c);break}case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:Kx(t.params,o);break;case`autoApprovalReview/strictReviewRequired`:qx(t.params,o);break;case`guardianWarning`:Jx(t.params,o,()=>e.createId());break;case`item/fileChange/outputDelta`:return`handled`;case`item/agentMessage/delta`:case
+
+  [src-BJv5Mk7n.js @583172] autoApprovalReview/completed
+    (c)&&(r.firstTurnWorkItemStartedAtMs=r.firstTurnWorkItemStartedAtMs??Date.now()),c.type,a.w(r,l)}),(c.type===`collabAgentToolCall`&&c.tool===`spawnAgent`||c.type===`subAgentActivity`&&c.kind===`started`)&&s.subagentTopology.discoverForSpawn(f,c);break}case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:Kx(t.params,o);break;case`autoApprovalReview/strictReviewRequired`:qx(t.params,o);break;case`guardianWarning`:Jx(t.params,o,()=>e.createId());break;case`item/fileChange/outputDelta`:return`handled`;case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/
+
+  [src-BJv5Mk7n.js @583228] autoApprovalReview/strictReviewRequired
+    StartedAtMs??Date.now()),c.type,a.w(r,l)}),(c.type===`collabAgentToolCall`&&c.tool===`spawnAgent`||c.type===`subAgentActivity`&&c.kind===`started`)&&s.subagentTopology.discoverForSpawn(f,c);break}case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:Kx(t.params,o);break;case`autoApprovalReview/strictReviewRequired`:qx(t.params,o);break;case`guardianWarning`:Jx(t.params,o,()=>e.createId());break;case`item/fileChange/outputDelta`:return`handled`;case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/summaryTextDelta`:case`item/reasoning/summaryPartAdded`:
+
+  [src-BJv5Mk7n.js @604880] autoApprovalReview/started
+    ,s);break;case`turn/started`:case`turn/completed`:case`turn/diff/updated`:case`turn/plan/updated`:case`model/safetyBuffering/updated`:case`model/rerouted`:case`hook/started`:case`hook/completed`:case`error`:if(MS(e,s,c,a,o)===`deferred`)return;break;case`item/started`:case`item/completed`:case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:case`autoApprovalReview/strictReviewRequired`:case`guardianWarning`:case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/summaryTextDelta`:case`item/reasoning/summaryPartAdded`:case`item/reasoning/textDelta`:case`
+
+  [src-BJv5Mk7n.js @604918] autoApprovalReview/completed
+    /completed`:case`turn/diff/updated`:case`turn/plan/updated`:case`model/safetyBuffering/updated`:case`model/rerouted`:case`hook/started`:case`hook/completed`:case`error`:if(MS(e,s,c,a,o)===`deferred`)return;break;case`item/started`:case`item/completed`:case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:case`autoApprovalReview/strictReviewRequired`:case`guardianWarning`:case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/summaryTextDelta`:case`item/reasoning/summaryPartAdded`:case`item/reasoning/textDelta`:case`item/commandExecution/outputDelta`:cas
+
+----------------------------------------------------------------------------
+-- strictReviewRequired
+
+  [src-BJv5Mk7n.js @583247] strictReviewRequired
+    StartedAtMs=r.firstTurnWorkItemStartedAtMs??Date.now()),c.type,a.w(r,l)}),(c.type===`collabAgentToolCall`&&c.tool===`spawnAgent`||c.type===`subAgentActivity`&&c.kind===`started`)&&s.subagentTopology.discoverForSpawn(f,c);break}case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:Kx(t.params,o);break;case`autoApprovalReview/strictReviewRequired`:qx(t.params,o);break;case`guardianWarning`:Jx(t.params,o,()=>e.createId());break;case`item/fileChange/outputDelta`:return`handled`;case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/summaryTextDelta`:case`item/reasoning/summaryPartAdded`:case`item/reasoning/textDelta`:case`item/commandExecution/outputDelta
+
+  [src-BJv5Mk7n.js @604972] strictReviewRequired
+    pleted`:case`turn/diff/updated`:case`turn/plan/updated`:case`model/safetyBuffering/updated`:case`model/rerouted`:case`hook/started`:case`hook/completed`:case`error`:if(MS(e,s,c,a,o)===`deferred`)return;break;case`item/started`:case`item/completed`:case`item/autoApprovalReview/started`:case`item/autoApprovalReview/completed`:case`autoApprovalReview/strictReviewRequired`:case`guardianWarning`:case`item/agentMessage/delta`:case`item/plan/delta`:case`item/reasoning/summaryTextDelta`:case`item/reasoning/summaryPartAdded`:case`item/reasoning/textDelta`:case`item/commandExecution/outputDelta`:case`item/commandExecution/terminalInteraction`:case`item/fileChange/outputDelta`:case`item/fileChange/patc
+
+  [src-CP7XXlpZ.js @101655] strictReviewRequired
+    nt/connected":!0,"thread/environment/disconnected":!0,"thread/settings/updated":!0,"thread/tokenUsage/updated":!0,"turn/started":!0,"hook/started":!0,"turn/completed":!0,"hook/completed":!0,"turn/diff/updated":!0,"turn/plan/updated":!0,"item/started":!0,"item/autoApprovalReview/started":!0,"item/autoApprovalReview/completed":!0,"autoApprovalReview/strictReviewRequired":!0,"item/completed":!0,"rawResponseItem/completed":!1,"item/agentMessage/delta":!0,"item/plan/delta":!0,"command/exec/outputDelta":!1,"process/outputDelta":!1,"process/exited":!1,"project/changed":!1,"item/commandExecution/outputDelta":!0,"item/commandExecution/terminalInteraction":!0,"item/fileChange/outputDelta":!0,"item/fil
+
+  [worker.js @899819] strictReviewRequired
+    nt/connected":!0,"thread/environment/disconnected":!0,"thread/settings/updated":!0,"thread/tokenUsage/updated":!0,"turn/started":!0,"hook/started":!0,"turn/completed":!0,"hook/completed":!0,"turn/diff/updated":!0,"turn/plan/updated":!0,"item/started":!0,"item/autoApprovalReview/started":!0,"item/autoApprovalReview/completed":!0,"autoApprovalReview/strictReviewRequired":!0,"item/completed":!0,"rawResponseItem/completed":!1,"item/agentMessage/delta":!0,"item/plan/delta":!0,"command/exec/outputDelta":!1,"process/outputDelta":!1,"process/exited":!1,"project/changed":!1,"item/commandExecution/outputDelta":!0,"item/commandExecution/terminalInteraction":!0,"item/fileChange/outputDelta":!0,"item/fil
+
+============================================================================
+== 5. requestApproval family (the actual gate)
+============================================================================
+
+----------------------------------------------------------------------------
+-- inbound approval notifications
+
+  [main-BklS_2Y2.js @2117596] item/commandExecution/requestApproval
+    on TY(e){return e.startsWith(`thread-browser-tabs-v1:`)||e.startsWith(`thread-tab-routes-v1:`)}function NMe(e,t){return process.platform!==`win32`||e.method!==`item/commandExecution/requestApproval`&&e.method!==`mcpServer/elicitation/request`||e.method===`mcpServer/elicitation/request`&&e.params.mode===`openai/userVeri
+
+  [main-BklS_2Y2.js @3353264] item/commandExecution/requestApproval
+    rning received`,{safe:{},sensitive:{backupFolder:n.backupFolder,databasePath:n.databasePath}}),e(n))})}return m.registerInternalServerRequestHandler({methods:[`item/commandExecution/requestApproval`,`mcpServer/elicitation/request`],handler:t=>(this.messageHandler.revealWindowsReviewRequest(e,t),null)}),m.registerIntern
+
+  [src-BJv5Mk7n.js @419099] item/commandExecution/requestApproval
+    );if(e==null)continue;if(s.params.turnId==null||s.params.turnId.length===0)a??=e.kind;else{let t=Mv(i,s.params.turnId);t.elicitationKind??=e.kind}continue}case`item/commandExecution/requestApproval`:case`item/fileChange/requestApproval`:Mv(i,s.params.turnId).approvalRequests.push(s);continue;case`item/permissions/reque
+
+  [src-BJv5Mk7n.js @419143] item/fileChange/requestApproval
+    ll||s.params.turnId.length===0)a??=e.kind;else{let t=Mv(i,s.params.turnId);t.elicitationKind??=e.kind}continue}case`item/commandExecution/requestApproval`:case`item/fileChange/requestApproval`:Mv(i,s.params.turnId).approvalRequests.push(s);continue;case`item/permissions/requestApproval`:Mv(i,s.params.turnId).hasPermiss
+
+  [src-BJv5Mk7n.js @419237] item/permissions/requestApproval
+    =e.kind}continue}case`item/commandExecution/requestApproval`:case`item/fileChange/requestApproval`:Mv(i,s.params.turnId).approvalRequests.push(s);continue;case`item/permissions/requestApproval`:Mv(i,s.params.turnId).hasPermissionRequest=!0;continue;case`item/tool/requestUserInput`:{let e=Mv(i,s.params.turnId);e.userInp
+
+  [src-BJv5Mk7n.js @420806] item/commandExecution/requestApproval
+    se`&&`completed`in n&&!n.completed&&`requestId`in n)return{kind:`userInput`,userInputRequestId:n.requestId}}for(let e of r?.approvalRequests??[])if(e.method===`item/commandExecution/requestApproval`||t.items.find(t=>t?.type===`fileChange`&&t.id===e.params.itemId)?.changes.some(e=>!n.o(e)||e.kind.type!==`delete`))return
+
+  [src-BJv5Mk7n.js @492022] item/commandExecution/requestApproval
+    quest(t,n);if(!a)return;if(a.method!==r){e.logger.error(`Unexpected approval request method`,{safe:{method:a.method},sensitive:{}});return}let o;switch(r){case`item/commandExecution/requestApproval`:o={id:n,result:{decision:i}};break;case`item/fileChange/requestApproval`:o={id:n,result:{decision:i}}}e.logger.info(`Send
+
+  [src-BJv5Mk7n.js @492101] item/fileChange/requestApproval
+    quest method`,{safe:{method:a.method},sensitive:{}});return}let o;switch(r){case`item/commandExecution/requestApproval`:o={id:n,result:{decision:i}};break;case`item/fileChange/requestApproval`:o={id:n,result:{decision:i}}}e.logger.info(`Sending server response`,{safe:{},sensitive:{id:n,method:a.method,response:o.result
+
+----------------------------------------------------------------------------
+-- exec-policy
+
+  [src-BJv5Mk7n.js @1175214] Execpolicy
+    t.h(t.O({type:t.N()})).nullish(),type:t.w(`commandExecution`)}),threadId:t.N(),turnId:t.N()}),Pz=t.O({item:t.O({type:t.d([`mcpToolCall`,`dynamicToolCall`,`collabAgentToolCall`])}),threadId:t.N(),turnId:t.N()}),Fz=class{enabled;pendingByStartId=new Map;startedByTurnId=new Map;approvalThreadIdByRequestId=new Map;widenedThreadIds=new Set;hasPersistentExecpolicyApproval=!1;constructor(e){this.enabled=e}track(e,t){this.enabled&&this.pendingByStartId.set(t,{cwds:this.hasPersistentExecpolicyApproval||this.widenedThreadIds.has(e.threadId)?null:Iz(e),threadId:e.threadId})}async trackStart(e,t,n){this.track(e,t);try{return await n()}catch(e){throw this.discard(t),e}}start(e,t){let n=this.pendingByStar
+
+  [src-BJv5Mk7n.js @1175343] Execpolicy
+    lCall`,`dynamicToolCall`,`collabAgentToolCall`])}),threadId:t.N(),turnId:t.N()}),Fz=class{enabled;pendingByStartId=new Map;startedByTurnId=new Map;approvalThreadIdByRequestId=new Map;widenedThreadIds=new Set;hasPersistentExecpolicyApproval=!1;constructor(e){this.enabled=e}track(e,t){this.enabled&&this.pendingByStartId.set(t,{cwds:this.hasPersistentExecpolicyApproval||this.widenedThreadIds.has(e.threadId)?null:Iz(e),threadId:e.threadId})}async trackStart(e,t,n){this.track(e,t);try{return await n()}catch(e){throw this.discard(t),e}}start(e,t){let n=this.pendingByStartId.get(e);n!=null&&(this.pendingByStartId.delete(e),this.startedByTurnId.set(Lz(n.threadId,t),n))}observeCommandStarted(e){if(!t
+
+  [src-BJv5Mk7n.js @1176833] Execpolicy
+    lyPatchApproval`)&&(this.approvalThreadIdByRequestId.set(e.id,e.params.conversationId),this.widen(e.params.conversationId))}}observeClientResponse(e){if(!this.enabled)return;let t=this.approvalThreadIdByRequestId.get(e.id);if(this.approvalThreadIdByRequestId.delete(e.id),t==null)return;let n=e.result?.decision;if(typeof n==`object`&&n&&(`acceptWithExecpolicyAmendment`in n||`approved_execpolicy_amendment`in n)){this.hasPersistentExecpolicyApproval=!0,this.widen();return}(n===`acceptForSession`||n===`approved_for_session`||e.result?.scope===`session`)&&(this.widenedThreadIds.add(t),this.widen(t))}take(e,t){let n=Lz(e,t),r=this.startedByTurnId.get(n);return r==null?(this.deletePending(e),null):
+
+  [src-BJv5Mk7n.js @1176869] execpolicy
+    eadIdByRequestId.set(e.id,e.params.conversationId),this.widen(e.params.conversationId))}}observeClientResponse(e){if(!this.enabled)return;let t=this.approvalThreadIdByRequestId.get(e.id);if(this.approvalThreadIdByRequestId.delete(e.id),t==null)return;let n=e.result?.decision;if(typeof n==`object`&&n&&(`acceptWithExecpolicyAmendment`in n||`approved_execpolicy_amendment`in n)){this.hasPersistentExecpolicyApproval=!0,this.widen();return}(n===`acceptForSession`||n===`approved_for_session`||e.result?.scope===`session`)&&(this.widenedThreadIds.add(t),this.widen(t))}take(e,t){let n=Lz(e,t),r=this.startedByTurnId.get(n);return r==null?(this.deletePending(e),null):(this.startedByTurnId.delete(n),r.cw
+
+  [src-BJv5Mk7n.js @1176915] Execpolicy
+    nId),this.widen(e.params.conversationId))}}observeClientResponse(e){if(!this.enabled)return;let t=this.approvalThreadIdByRequestId.get(e.id);if(this.approvalThreadIdByRequestId.delete(e.id),t==null)return;let n=e.result?.decision;if(typeof n==`object`&&n&&(`acceptWithExecpolicyAmendment`in n||`approved_execpolicy_amendment`in n)){this.hasPersistentExecpolicyApproval=!0,this.widen();return}(n===`acceptForSession`||n===`approved_for_session`||e.result?.scope===`session`)&&(this.widenedThreadIds.add(t),this.widen(t))}take(e,t){let n=Lz(e,t),r=this.startedByTurnId.get(n);return r==null?(this.deletePending(e),null):(this.startedByTurnId.delete(n),r.cwds)}takeCompleted(e){let t=UL(e),n=nz(e);retur
+
+----------------------------------------------------------------------------
+-- sandboxMode
+
+  [src-BJv5Mk7n.js @704044] SandboxMode
+    valsReviewer,derivedSandboxPolicy:PT(Ce.sandboxPolicy),derivedActivePermissionProfile:Ce.activePermissionProfile?.id??null,shouldSendPermissions:Me,shouldSendApprovalsReviewer:Ne,requestApprovalPolicy:Me?ke.approvalPolicy??null:null,requestApprovalsReviewer:Ne?ke.approvalsReviewer??null:null,requestSandboxMode:Me?ke.sandbox??null:null,requestPermissionProfile:Me?ke.permissions??null:null,responseApprovalPolicy:W.approvalPolicy,responseApprovalsReviewer:W.approvalsReviewer,responseSandboxPolicy:PT(W.sandbox),responseActivePermissionProfile:W.activePermissionProfile?.id??null,approvalPolicyChang
+
+  [src-CP7XXlpZ.js @23388] sandboxMode
+    In={granular:{sandbox_approval:!1,rules:!1,skill_approval:!1,request_permissions:!0,mcp_elicitations:!0}};function Ln(e,t){let n=(0,An.default)(t);return n.approval_policy=e?.approvalPolicy??n.approval_policy,n.approvals_reviewer=e?.approvalPolicy==null?n.approvals_reviewer:`user`,n.sandbox_mode=e?.sandboxMode??n.sandbox_mode,e?.networkAccess!=null&&(n.sandbox_workspace_write={writable_roots:n.sandbox_workspace_write?.writable_roots??[],exclude_slash_tmp:n.sandbox_workspace_write?.exclude_slash_tmp??!1,exclude_tmpdir_env_var:n.sandbox_workspace_write?.exclude_tmpdir_env_var??!1,network_access:
+
+  [src-CP7XXlpZ.js @24098] sandboxMode
+    dian_subagent`}function zn(e,t){let n=e?.[`features.${t}`];if(typeof n==`boolean`)return n;let r=e?.features;if(typeof r!=`object`||!r||Array.isArray(r))return;let i=Object.getOwnPropertyDescriptor(r,t)?.value;return typeof i==`boolean`?i:void 0}var Bn={"read-only":{permissionProfileId:`:read-only`,sandboxMode:`read-only`,approvalPolicy:`on-request`,approvalsReviewer:`user`},auto:{permissionProfileId:`:workspace`,sandboxMode:`workspace-write`,approvalPolicy:`on-request`,approvalsReviewer:`user`},granular:{permissionProfileId:`:workspace`,sandboxMode:`workspace-write`,approvalPolicy:In,approval
+
+  [src-CP7XXlpZ.js @24215] sandboxMode
+    f r!=`object`||!r||Array.isArray(r))return;let i=Object.getOwnPropertyDescriptor(r,t)?.value;return typeof i==`boolean`?i:void 0}var Bn={"read-only":{permissionProfileId:`:read-only`,sandboxMode:`read-only`,approvalPolicy:`on-request`,approvalsReviewer:`user`},auto:{permissionProfileId:`:workspace`,sandboxMode:`workspace-write`,approvalPolicy:`on-request`,approvalsReviewer:`user`},granular:{permissionProfileId:`:workspace`,sandboxMode:`workspace-write`,approvalPolicy:In,approvalsReviewer:`user`},"guardian-approvals":{permissionProfileId:`:workspace`,sandboxMode:`workspace-write`,approvalPolicy

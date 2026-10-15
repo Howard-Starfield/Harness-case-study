@@ -1,0 +1,231 @@
+
+########## resources\cowork-svc.exe ##########
+method: 13605200 bytes, ASCII + UTF-16LE sweep, strings >= 5 chars
+ascii strings>=5: 38016   utf16le strings>=5: 68
+--- ASCII hits: 1639 distinct ---
+  (1) AuthorizH9
+  (1) Www-AuthH9
+  (1) :authoriI99u.fA
+  (1) SSH-2.0-H
+  (1) :ssh-u{f
+  (1) ssh-u(f
+  (1) ssh-ed25H9
+  (1) ssh-u)f
+  (1) ssh-u+f
+  (1) ssh-ed25L9
+  (1) ssh-tunnH9
+  (1) Token
+  (1) token
+  (1) secret
+  (1) tokens
+  (1) Tokens
+  (1) nSecret
+  (1) Antenna
+  (1) Password
+  (1) AuthType
+  (1) password
+  (1) TokensAt
+  (1) userToken
+  (1) BasicAuth
+  (1) proxyAuth
+  (1) Authority
+  (1) SecretKey
+  (1) floatToken
+  (1) IsElevated
+  (1) tokenError
+  (1) tokenState
+  (1) tokenStack
+  (1) ClientAuth
+  (1) AuthHeader
+  (1) TsigSecret
+  (1) passwordSet
+  (1) stringToken
+  (1) Authorities
+  (1) authorities
+  (1) AuthPresent
+  (1) GetTokenUser
+  (1) SetUserToken
+  (1) SetBasicAuth
+  (1) Authenticate
+  (1) masterSecret
+  (1) seqnumSecret
+  (1) sharedSecret
+  (1) MasterSecret
+  (1) AuthCallback
+  (1) complexTokens
+  (1) maybeRunAsync
+  (1) tokenValueEnd
+  (1) Authoritative
+  (1) SkipAuthority
+  (1) trafficSecret
+  (1) Authenticator
+  (1) *ssh.noneAuth
+  (1) *windows.Token
+  (1) GetLinkedToken
+  (1) GetTokenGroups
+  (1) *syscall.Token
+  (1) AllAuthorities
+  (1) AuthorityKeyId
+  (1) tsOffsetSecret
+  (1) exporterSecret
+  (1) Authentication
+  (1) SendAuthBanner
+  (1) AuthorityHeader
+  (1) extMasterSecret
+  (1) preMasterSecret
+  (1) HandshakeSecret
+  (1) *ssh.AuthMethod
+  (1) *ssh.authResult
+  (1) setTrafficSecret
+  (1) resumptionSecret
+  (1) GetAuthorization
+  (1) userAuthComplete
+  (1) tokenValueAllowed
+  (1) quicSetReadSecret
+  (1) AuthenticatedData
+  (1) *[]ssh.AuthMethod
+  (1) SkipAllAuthorities
+  (1) quicSetWriteSecret
+  (1) *tls13.EarlySecret
+  (1) AuthenticationData
+  (1) durationFromTokens
+  (1) tokensFromDuration
+  (1) clientAuthenticate
+  (1) serverAuthenticate
+  (1) *tls.ClientAuthType
+  (1) *tls13.MasterSecret
+  (1) *layers.BFDAuthType
+  (1) *layers.BFDAuthData
+  (1) GetTokenPrimaryGroup
+  (1) extendedMasterSecret
+  (1) setReadTrafficSecret
+  (1) ExporterMasterSecret
+  (1) *layers.BFDAuthKeyID
+  (1) *ssh.passwordAuthMsg
+  (1) tokenPrepareForDecode
+  (1) *http.socksAuthMethod
+  (1) setWriteTrafficSecret
+  (1) *layers.BFDAuthHeader
+  (1) *ssh.passwordCallback
+  (1) *ssh.publickeyAuthMsg
+  (1) certificateAuthorities
+  (1) *tls13.HandshakeSecret
+  (1) ResumptionMasterSecret
+  (1) *layers.VRRPv2AuthType
+  (1) *ssh.ClientAuthContext
+  (1) *ssh.userAuthBannerMsg
+  (1) *ssh.userAuthGSSAPIMIC
+  (1) *[]http.socksAuthMethod
+  (1) *dns.tsigSecretProvider
+  (1) *ssh.ClientAuthCallback
+  (1) publicKeyAuthAlgorithms
+  (1) *ssh.userAuthFailureMsg
+  (1) ErrorToken
+  (1) *ssh.userAuthRequestMsg
+  (1) *ssh.userAuthSuccessMsg
+--- UTF16 hits: 0 distinct ---
+
+########## resources\claude-ssh-broker.exe ##########
+method: 2599248 bytes, ASCII + UTF-16LE sweep, strings >= 5 chars
+ascii strings>=5: 7778   utf16le strings>=5: 9
+--- ASCII hits: 33 distinct ---
+  (1) maybeRunAsync
+  (1) , size = bad prune, tail = recover:  not in [ctxt != 0, oldval=, newval= threads=: status= blocked= lockedg=atomicor8 runtime= m->curg=(unknown)total < 0traceba...
+  (1) sched={pc:, gp->status= pluginpath= : unknown pc  called from runtime: pid=level 3 resetsrmount errortimer expiredexchange fullGetTempPath2WRegDeleteKeyWRegEnum...
+  (1) stopm spinning nmidlelocked= needspinning= schedticks=[ randinit twicestore64 failedsemaRoot queuebad allocCountbad span statestack overflow untyped args  out o...
+  (1) morebuf={pc:: no frame (sp=runtime: frame ts set in timertraceback stuckunexpected kindadvertise errorkey has expirednetwork is downno medium foundno such proce...
+  (1) invalid exchangeno route to hostinvalid argumentmessage too longobject is remoteremote I/O errorSetFilePointerExRCodeFormatErrorGetModuleHandleWRtlVirtualUnwind...
+  (1) runtime.newosprocinternal/runtime/thread exhaustionlocked m0 woke upentersyscallblock spinningthreads=gp.waiting != niltaggedPointerPackunknown caller pcstack: ...
+  (1) , locked to thread, synctest bubble runtime.semacreateruntime.semawakeupoperation canceledno child processesconnection refusedRFS specific erroridentifier remov...
+  (1) mstartm not found in allmstopm holding lockssemaRoot rotateLeftbad notifyList sizeruntime: preempt g0runtime: pcdata is bad ABI descriptionbad file descriptordi...
+  (1) pacer: assist ratio=workbuf is not emptybad use of bucket.mpbad use of bucket.bpruntime: double waitpreempt off reason: forcegc: phase errorgopark: bad g status...
+  (1) the current g is not g0schedule: holding locksprocresize: invalid argspan has no free stacksstack growth after forkshrinkstack at bad timereflect.methodValueCal...
+  (1) pattern bits too long: exit hook invoked panic116415321826934814453125582076609134674072265625GetNamedPipeHandleStateWAllocateAndInitializeSidBuildSecurityDescr...
+  (1) bindm in unexpected GOOSruntime: mp.lockedInt = runqsteal: runq overflowgoroutine stack (system)unexpected syncgroup setdouble traceGCSweepStartbad use of trace...
+  (1) lock: lock countbad system huge page sizearena already initialized to unused region of span bytes failed with errno=runtime: VirtualAlloc of /sched/gomaxprocs:t...
+  (1) _cgo_pthread_key_created missingruntime: sudog with non-nil elemruntime: sudog with non-nil nextruntime: sudog with non-nil prevruntime: mcall function returned...
+  (1) updateMaxProcsGoroutine: phase errorruntime: bad notifyList size - sync=accessed data from freed user arena runtime: wrong goroutine in newstackruntime: invalid...
+  (1) runtime.Pinner: object already unpinnedsuspendG from non-preemptible goroutineruntime: casfrom_Gscanstatus failed gp=stack growth not allowed in system calltrac...
+  (1) on a locked thread with no template threadunexpected signal during runtime executionstop of synctest timer from outside bubbletraceStopReadCPU called with trace...
+  (1) github.com/anthropics/ssh-askpass/cmd/claude-ssh-broker
+  (1) github.com/anthropics/ssh-askpass
+  (1) runtime.(*timer).maybeRunAsync
+  (1) runtime.(*timer).maybeRunAsync.func1
+  (1) golang.org/x/sys/windows.Token.getInfo
+  (1) golang.org/x/sys/windows.GetTokenInformation
+  (1) golang.org/x/sys/windows.GetNamedPipeClientProcessId
+  (1) github.com/Microsoft/go-winio.connectNamedPipe
+  (1) github.com/Microsoft/go-winio.ntCreateNamedPipeFile
+  (1) golang.org/x/sys/windows.Token.GetTokenUser
+  (1) github.com/Microsoft/go-winio@v0.6.2/privilege.go
+  (1) github.com/anthropics/ssh-askpass/cmd/claude-ssh-broker/broker_windows.go
+  (1) github.com/anthropics/ssh-askpass/cmd/claude-ssh-broker/main.go
+  (1) Anthropic, PBC1
+  (1) Anthropic, PBC0
+--- UTF16 hits: 0 distinct ---
+
+########## resources\claude-ssh-proxy.exe ##########
+method: 1976144 bytes, ASCII + UTF-16LE sweep, strings >= 5 chars
+ascii strings>=5: 6228   utf16le strings>=5: 5
+--- ASCII hits: 24 distinct ---
+  (1) maybeRunAsync
+  (1) , size = bad prune, tail = recover:  not in [ctxt != 0, oldval=, newval= threads=: status= blocked= lockedg=atomicor8 runtime= m->curg=(unknown)total < 0traceba...
+  (1) sched={pc:, gp->status= pluginpath= : unknown pc  called from runtime: pid=level 3 resetsrmount errortimer expiredexchange fullcrypto/subtlegocacheverifyhtml/te...
+  (1) stopm spinning nmidlelocked= needspinning= schedticks=[ randinit twicestore64 failedsemaRoot queuebad allocCountbad span statestack overflow untyped args  out o...
+  (1) morebuf={pc:: no frame (sp=runtime: frame ts set in timertraceback stuckunexpected kindadvertise errorkey has expirednetwork is downno medium foundno such proce...
+  (1) invalid exchangeno route to hostinvalid argumentmessage too longobject is remoteremote I/O errorSetFilePointerExGODEBUG: value "allowmultiplevcshttpcookiemaxnum...
+  (1) runtime.newosprocinternal/runtime/thread exhaustionlocked m0 woke upentersyscallblock spinningthreads=taggedPointerPackunknown caller pcstack: frame={sp:trace a...
+  (1) , locked to thread, synctest bubble runtime.semacreateruntime.semawakeupoperation canceledno child processesconnection refusedRFS specific erroridentifier remov...
+  (1) mstartm not found in allmstopm holding lockssemaRoot rotateLeftbad notifyList sizeruntime: preempt g0runtime: pcdata is bad ABI descriptionbad file descriptordi...
+  (1) pacer: assist ratio=workbuf is not emptybad use of bucket.mpbad use of bucket.bpruntime: double waitpreempt off reason: forcegc: phase errorgopark: bad g status...
+  (1) exit hook invoked panicpattern bits too long: CLAUDE_SSH_ASKPASS_RELAYAllocateAndInitializeSidBuildSecurityDescriptorWCertFreeCertificateChainGetUnicastIpAddres...
+  (1) bindm in unexpected GOOSruntime: mp.lockedInt = runqsteal: runq overflowgoroutine stack (system)unexpected syncgroup setdouble traceGCSweepStartbad use of trace...
+  (1) lock: lock countbad system huge page sizearena already initialized to unused region of span bytes failed with errno=runtime: VirtualAlloc of /sched/gomaxprocs:t...
+  (1) claude-ssh-proxy: cannot place the command in its job (reflect: internal error: invalid use of makeMethodValuemheap.freeSpanLocked - invalid free of user arena ...
+  (1) malformed GOMEMLIMIT; see `go doc runtime/debug.SetMemoryLimit`runtime.SetFinalizer: first argument was allocated into an arenacompileCallback: expected functio...
+  (1) expected all size classes up to min size for malloc header to fit in one-page spansreflect.Value.Interface: cannot return value obtained from unexported field o...
+  (1) github.com/anthropics/ssh-askpass/cmd/claude-ssh-proxy
+  (1) github.com/anthropics/ssh-askpass
+  (1) runtime.(*timer).maybeRunAsync
+  (1) runtime.(*timer).maybeRunAsync.func1
+  (1) github.com/anthropics/ssh-askpass/cmd/claude-ssh-proxy/main.go
+  (1) github.com/anthropics/ssh-askpass/cmd/claude-ssh-proxy/proxy_windows.go
+  (1) Anthropic, PBC1
+  (1) Anthropic, PBC0
+--- UTF16 hits: 0 distinct ---
+
+########## resources\claude-ssh-askpass.exe ##########
+method: 2648912 bytes, ASCII + UTF-16LE sweep, strings >= 5 chars
+ascii strings>=5: 7941   utf16le strings>=5: 9
+--- ASCII hits: 30 distinct ---
+  (1) maybeRunAsync
+  (1) Token
+  (1) json:"token"
+  (1) , size = bad prune, tail = recover:  not in [ctxt != 0, oldval=, newval= threads=: status= blocked= lockedg=atomicor8 runtime= m->curg=(unknown)total < 0traceba...
+  (1) sched={pc:, gp->status= pluginpath= : unknown pc  called from runtime: pid=level 3 resetsrmount errortimer expiredexchange fullGetTempPath2WRegDeleteKeyWRegEnum...
+  (1) stopm spinning nmidlelocked= needspinning= schedticks=[ randinit twicestore64 failedsemaRoot queuebad allocCountbad span statestack overflow untyped args  out o...
+  (1) morebuf={pc:: no frame (sp=runtime: frame ts set in timertraceback stuckunexpected kindadvertise errorkey has expirednetwork is downno medium foundno such proce...
+  (1) invalid exchangeno route to hostinvalid argumentmessage too longobject is remoteremote I/O errorSetFilePointerExRCodeFormatErrorGetModuleHandleWRtlVirtualUnwind...
+  (1) runtime.newosprocinternal/runtime/thread exhaustionlocked m0 woke upentersyscallblock spinningthreads=gp.waiting != niltaggedPointerPackunknown caller pcstack: ...
+  (1) , locked to thread, synctest bubble runtime.semacreateruntime.semawakeupoperation canceledno child processesconnection refusedRFS specific erroridentifier remov...
+  (1) mstartm not found in allmstopm holding lockssemaRoot rotateLeftbad notifyList sizeruntime: preempt g0runtime: pcdata is bad ABI descriptionbad file descriptordi...
+  (1) pacer: assist ratio=workbuf is not emptybad use of bucket.mpbad use of bucket.bpruntime: double waitpreempt off reason: forcegc: phase errorgopark: bad g status...
+  (1) the current g is not g0schedule: holding locksprocresize: invalid argspan has no free stacksstack growth after forkshrinkstack at bad timereflect.methodValueCal...
+  (1) pattern bits too long: exit hook invoked panicCLAUDE_SSH_ASKPASS_RELAYcannot reach the relay: no answer from the relay116415321826934814453125582076609134674072...
+  (1) bindm in unexpected GOOSruntime: mp.lockedInt = runqsteal: runq overflowgoroutine stack (system)unexpected syncgroup setdouble traceGCSweepStartbad use of trace...
+  (1) lock: lock countbad system huge page sizearena already initialized to unused region of span bytes failed with errno=runtime: VirtualAlloc of /sched/gomaxprocs:t...
+  (1) updateMaxProcsGoroutine: phase errorruntime: bad notifyList size - sync=accessed data from freed user arena runtime: wrong goroutine in newstackruntime: invalid...
+  (1) crypto/aes: internal error: using generic implementation despite hardware supportthe pipe server's process is not the broker the app started (creation time diff...
+  (1) github.com/anthropics/ssh-askpass/cmd/claude-ssh-askpass
+  (1) github.com/anthropics/ssh-askpass
+  (1) runtime.(*timer).maybeRunAsync
+  (1) runtime.(*timer).maybeRunAsync.func1
+  (1) golang.org/x/sys/windows.GetNamedPipeServerProcessId
+  (1) github.com/Microsoft/go-winio.getNamedPipeInfo
+  (1) main.skipProgramToken
+  (1) github.com/Microsoft/go-winio@v0.6.2/privilege.go
+  (1) github.com/anthropics/ssh-askpass/cmd/claude-ssh-askpass/askpass_windows.go
+  (1) github.com/anthropics/ssh-askpass/cmd/claude-ssh-askpass/main.go
+  (1) Anthropic, PBC1
+  (1) Anthropic, PBC0
+--- UTF16 hits: 0 distinct ---

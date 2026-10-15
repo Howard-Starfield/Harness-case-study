@@ -1,0 +1,122 @@
+﻿==============================================================================
+== HRESULT DECODE (update-elevation gate)
+==============================================================================
+  decimal      : 2147958056
+  hex          : 0x80073d28
+  facility     : 7
+  severity     : 1  (0=success,1=error)
+  NTSTATUS     : 0x3d28
+  win32 code   : 15656 (0x3d28)
+  NOTE: check against Windows error tables before naming it.
+
+==============================================================================
+== webPreferences OBJECT LITERALS (MAIN)
+==============================================================================
+
+[1] .vite/build/bootstrap-487kJHw_.js @425706
+    webPreferences:{contextIsolation:!0,nodeIntegration:!1,sandbox:!0,spellcheck:!1,devTools:!1}
+
+[2] .vite/build/main-BklS_2Y2.js @1626366
+    webPreferences:{session:e,sandbox:!0,nodeIntegration:!1}
+
+[3] .vite/build/main-BklS_2Y2.js @1883789
+    webPreferences:{navigateOnDragDrop:!0,preload:e.browserPagePreloadPath}
+
+[4] .vite/build/main-BklS_2Y2.js @3140851
+    webPreferences:{sandbox:!0,contextIsolation:!0,nodeIntegration:!1,javascript:!1}
+
+[5] .vite/build/main-BklS_2Y2.js @3388669
+    webPreferences:{contextIsolation:!0,nodeIntegration:!1,sandbox:!0,spellcheck:!1,devTools:!1}
+
+[6] .vite/build/main-BklS_2Y2.js @3429461
+    webPreferences:{contextIsolation:!0,nodeIntegration:!1,sandbox:!0,spellcheck:!1,devTools:!1}
+
+[7] .vite/build/main-BklS_2Y2.js @3480646
+    webPreferences:{sandbox:!0,contextIsolation:!0,nodeIntegration:!1,javascript:!1}
+
+[8] .vite/build/main-BklS_2Y2.js @3740531
+    webPreferences:{contextIsolation:!0,nodeIntegration:!1,spellcheck:!0,devTools:this.options.allowDevtools}
+
+  TOTAL webPreferences literals in MAIN: 8 (of 15 'webPreferences' token hits)
+
+==============================================================================
+== `sandbox:` LITERALS (MAIN)
+==============================================================================
+
+[1] .vite/build/bootstrap-487kJHw_.js @425761  VALUE=!0
+    ...ew f.BrowserWindow({width:420,height:176,resizable:!1,maximizable:!1,fullscreenable:!1,closable:!1,show:!1,title:`Installing ${f.app.getName()}`,webPreferences:{contextIsolation:!0,nodeIntegration:!1,sandbox:!0,spellcheck:!1,devTools:!1}}),n=()=>{e=!0,t.setClosable(!0)};return t.setMenuBarVisibility(!1),t.on(`close`,t=>{e||t.preventDefault()}),t.on(`closed`,()=>{e&&f.app.quit()}),t.webContents.set...
+
+[2] .vite/build/main-BklS_2Y2.js @1626392  VALUE=!0
+    ...rtPoint}});return}}var Jwe=class{pending=new Map;download(e,t){let n=g.N(t.url);if(n==null)return Promise.resolve(!1);let r=new URL(n);r.hash=``;let i=new _.WebContentsView({webPreferences:{session:e,sandbox:!0,nodeIntegration:!1}});return new Promise(e=>{let n={options:{...t,url:r.href},view:i,finish:t=>{clearTimeout(a),this.pending.delete(i.webContents.id),!t&&!i.webContents.isDestroyed()&&i.web...
+
+[3] .vite/build/main-BklS_2Y2.js @3140867  VALUE=!0
+    ...ckgroundColor:`#00000000`,alwaysOnTop:!0,enableLargerThanScreen:process.platform===`darwin`,focusable:!1,show:!1,skipTaskbar:!0,resizable:!1,minimizable:!1,maximizable:!1,hasShadow:!0,webPreferences:{sandbox:!0,contextIsolation:!0,nodeIntegration:!1,javascript:!1}}),this.#e.setOpacity(0),process.platform===`darwin`&&this.#e.setVisibleOnAllWorkspaces(!0),this.#e.setIgnoreMouseEvents(!0),this.#e.on(...
+
+[4] .vite/build/main-BklS_2Y2.js @3388724  VALUE=!0
+    ...ideMenuBar:!0,backgroundColor:y?`#202020`:`#ffffff`,...d.windowIcon.isEmpty()?{}:{icon:d.windowIcon},...v==null?{}:{parent:v,...c?{}:{modal:!0}},webPreferences:{contextIsolation:!0,nodeIntegration:!1,sandbox:!0,spellcheck:!1,devTools:!1}});_7=b,b.setMenuBarVisibility(!1),process.platform!==`darwin`&&b.removeMenu(),v7(b,v),b.once(`closed`,()=>{_7===b&&(_7=null)}),b.webContents.setWindowOpenHandler(...
+
+[5] .vite/build/main-BklS_2Y2.js @3429516  VALUE=!0
+    ...BZe}),c=!1,u=!1,d=new _.BrowserWindow({width:420,height:176,resizable:!1,maximizable:!1,fullscreenable:!1,show:!1,title:o,...r==null?{}:{icon:r},webPreferences:{contextIsolation:!0,nodeIntegration:!1,sandbox:!0,spellcheck:!1,devTools:!1}});d.setMenuBarVisibility(!1),d.on(`close`,e=>{if(!(c||u)){e.preventDefault(),u=!0;try{n()}finally{u=!1}}}),d.webContents.setWindowOpenHandler(()=>({action:`deny`}...
+
+[6] .vite/build/main-BklS_2Y2.js @3480662  VALUE=!0
+    ...w=new _.BrowserWindow({width:1,height:1,frame:!1,transparent:!0,backgroundColor:`#00000000`,show:!1,focusable:!1,skipTaskbar:!0,resizable:!1,minimizable:!1,maximizable:!1,hasShadow:!1,webPreferences:{sandbox:!0,contextIsolation:!0,nodeIntegration:!1,javascript:!1}}),this.window.setAlwaysOnTop(!0,`floating`),this.window.setIgnoreMouseEvents(!0),process.platform===`darwin`&&this.window.setVisibleOnA...
+
+  TOTAL `sandbox:` literals in MAIN: 6
+
+==============================================================================
+== WINDOWS SANDBOX SETUP ORCHESTRATION (src chunk)
+==============================================================================
+
+--- setupCompleted handler ---
+
+  [1] @295472 setupCompleted
+    ...arams;this.mcpLoginCallbacks.forEach(e=>e({name:t,success:n,...r?{error:r}:{}})),n?this.logger.info(`MCP server OAuth login completed`,{safe:{},sensitive:{name:t}}):this.logger.debug(`MCP server OAuth login failed`,{safe:{},sensitive:{name:t,error:r}});return}case`account/updated`:{let{authMode:t}=e.params;this.notifyAuthStatusCallbacks(t??null);return}case`account/login/completed`:{let{loginId:t,success:n,error:r,onboardingEntrypoint:i}=e.params;this.logger.info(`account_login_completed`,{safe:{onboardingEntrypoint:i,success:n}});let a=this.activeLogin;a?.loginId===t&&a.complete({loginId:a.loginId,success:n,error:r??void 0,...i==null?{}:{onboardingEntrypoint:i}});return}case`windowsSandbox/setupCompleted`:{let{mode:t,success:n,error:r}=e.params,i=this.activeWindowsSandboxSetup;if(!i){this.clearTimedOutWindowsSandboxSetupMode(t),this.logger.warning(`Received windowsSandbox/setupCompleted without active setup`,{safe:{mode:t,success:n},sensitive:{error:r}});return}if(i.mode!==t){this.clearTimedOutWindowsSandboxSetupMode(t),this.logger.warning(`Received windowsSandbox/setupCompleted for wrong mode`,{safe:{expectedMode:i.mode,mode:t,success:n},sensitive:{error:r}});return}i.complete({mode:t,success:n,error:r});return}}}clearExpiredWindowsSandboxTimeouts(){if(this.timedOutWindowsSandboxSetup!=null){for(let e of[`elevated`,`unelevated`]){let t=this.timedOutWindowsSandboxSetup[e];t==n...
+
+  [2] @295658 setupCompleted
+    ...P server OAuth login failed`,{safe:{},sensitive:{name:t,error:r}});return}case`account/updated`:{let{authMode:t}=e.params;this.notifyAuthStatusCallbacks(t??null);return}case`account/login/completed`:{let{loginId:t,success:n,error:r,onboardingEntrypoint:i}=e.params;this.logger.info(`account_login_completed`,{safe:{onboardingEntrypoint:i,success:n}});let a=this.activeLogin;a?.loginId===t&&a.complete({loginId:a.loginId,success:n,error:r??void 0,...i==null?{}:{onboardingEntrypoint:i}});return}case`windowsSandbox/setupCompleted`:{let{mode:t,success:n,error:r}=e.params,i=this.activeWindowsSandboxSetup;if(!i){this.clearTimedOutWindowsSandboxSetupMode(t),this.logger.warning(`Received windowsSandbox/setupCompleted without active setup`,{safe:{mode:t,success:n},sensitive:{error:r}});return}if(i.mode!==t){this.clearTimedOutWindowsSandboxSetupMode(t),this.logger.warning(`Received windowsSandbox/setupCompleted for wrong mode`,{safe:{expectedMode:i.mode,mode:t,success:n},sensitive:{error:r}});return}i.complete({mode:t,success:n,error:r});return}}}clearExpiredWindowsSandboxTimeouts(){if(this.timedOutWindowsSandboxSetup!=null){for(let e of[`elevated`,`unelevated`]){let t=this.timedOutWindowsSandboxSetup[e];t==null||Date.now()<t||delete this.timedOutWindowsSandboxSetup[e]}Object.keys(this.timedOutWindowsSandboxSetup).length===0&&(this.timedOutWindowsSandboxSetup=void 0)}}clearTimedOutWindowsSan...
+
+  [3] @295854 setupCompleted
+    ...d`:{let{loginId:t,success:n,error:r,onboardingEntrypoint:i}=e.params;this.logger.info(`account_login_completed`,{safe:{onboardingEntrypoint:i,success:n}});let a=this.activeLogin;a?.loginId===t&&a.complete({loginId:a.loginId,success:n,error:r??void 0,...i==null?{}:{onboardingEntrypoint:i}});return}case`windowsSandbox/setupCompleted`:{let{mode:t,success:n,error:r}=e.params,i=this.activeWindowsSandboxSetup;if(!i){this.clearTimedOutWindowsSandboxSetupMode(t),this.logger.warning(`Received windowsSandbox/setupCompleted without active setup`,{safe:{mode:t,success:n},sensitive:{error:r}});return}if(i.mode!==t){this.clearTimedOutWindowsSandboxSetupMode(t),this.logger.warning(`Received windowsSandbox/setupCompleted for wrong mode`,{safe:{expectedMode:i.mode,mode:t,success:n},sensitive:{error:r}});return}i.complete({mode:t,success:n,error:r});return}}}clearExpiredWindowsSandboxTimeouts(){if(this.timedOutWindowsSandboxSetup!=null){for(let e of[`elevated`,`unelevated`]){let t=this.timedOutWindowsSandboxSetup[e];t==null||Date.now()<t||delete this.timedOutWindowsSandboxSetup[e]}Object.keys(this.timedOutWindowsSandboxSetup).length===0&&(this.timedOutWindowsSandboxSetup=void 0)}}clearTimedOutWindowsSandboxSetupMode(e){this.timedOutWindowsSandboxSetup?.[e]!=null&&(delete this.timedOutWindowsSandboxSetup[e],Object.keys(this.timedOutWindowsSandboxSetup).length===0&&(this.timedOutWindowsSandboxSetu...
+
+--- timedOutWindowsSandboxSetup ---
+
+  [1] @288080 timedOutWindowsSandboxSetup
+    ...tch(()=>void 0),e}}handleNotification(e){this.active!=null&&!this.active.cancelled&&e.status===`started`&&e.authUrl!=null&&this.active.authUrl.resolve(e.authUrl)}dispose(){this.active?.cancel()}};function Wp(){let e=Error(`Gateway sign-in was cancelled`);return e.name=`AbortError`,e}var Gp=t.N().brand(),Kp=class{requestClient;remoteLoginPortForward;logger;shouldForwardRemoteChatGptLogin;schedule;activeLogin;gatewayOAuth;activeWindowsSandboxSetup;timedOutWindowsSandboxSetup;authStatusCallbacks=[];mcpLoginCallbacks=[];removeRequestLifecycleListener;constructor(e,t,r,i,a){this.requestClient=e,this.remoteLoginPortForward=t,this.logger=r,this.shouldForwardRemoteChatGptLogin=i,this.schedule=a,this.gatewayOAuth=new Up(e),this.removeRequestLifecycleListener=this.requestClient.addRequestLifecycleListener(e=>{e.type===`failed`&&n.yr(e.error)&&(this.logger.warning(`cloud_requirements_auth_error`,{s...
+
+  [2] @293543 timedOutWindowsSandboxSetup
+    ...return u.aborted?d():u.addEventListener(`abort`,d,{once:!0}),s=()=>{u.removeEventListener(`abort`,d),this.activeLogin?.loginId===n&&(this.activeLogin=void 0)},{loginId:Gp.parse(n),verificationUrl:r,userCode:i,completion:c.promise}}async startWindowsSandboxSetup(e,t){if(this.clearExpiredWindowsSandboxTimeouts(),this.activeWindowsSandboxSetup&&!this.activeWindowsSandboxSetup.finished)throw Error(`Windows sandbox setup already in progress`);if(this.timedOutWindowsSandboxSetup?.[e]!=null)throw Error(`Cannot retry the same Windows sandbox setup mode immediately after a timeout`);let n=U(),r={mode:e,finished:!1,cancelTimeout:null,complete:e=>{i()&&n.resolve(e)},fail:e=>{i()&&n.reject(e)}},i=()=>!r.finished&&(r.finished=!0,r.cancelTimeout!=null&&(r.cancelTimeout(),r.cancelTimeout=null),this.activeWindowsSandboxSetup===r&&(this.activeWindowsSandboxSetup=void 0),!0);this.activeWindowsSandboxSetup...
+
+  [3] @294267 timedOutWindowsSandboxSetup
+    ...0,r.cancelTimeout!=null&&(r.cancelTimeout(),r.cancelTimeout=null),this.activeWindowsSandboxSetup===r&&(this.activeWindowsSandboxSetup=void 0),!0);this.activeWindowsSandboxSetup=r;let a;try{a=await this.requestClient.sendRequest(`windowsSandbox/setupStart`,{mode:e,cwd:t})}catch(e){throw this.activeWindowsSandboxSetup===r&&(this.activeWindowsSandboxSetup=void 0),r.finished=!0,e}return a.started?(r.finished||(r.cancelTimeout=this.schedule(()=>{this.timedOutWindowsSandboxSetup={...this.timedOutWindowsSandboxSetup,[e]:Date.now()+uo},r.fail(Error(co))},lo)),{started:!0,completion:n.promise}):(this.activeWindowsSandboxSetup===r&&(this.activeWindowsSandboxSetup=void 0),r.finished=!0,{started:!1})}logoutWithoutServer(){this.notifyAuthStatusCallbacks(null)}handleNotification(e){switch(e.method){case`account/gatewayOAuth/changed`:this.gatewayOAuth.handleNotification(e.params);break;case`mcpServer/o...
+
+--- windowsSandboxSetup / mode resolution ---
+
+  [1] @265175 WindowsSandboxSetup
+    ...this.#e().createChatGptLoginSession(...e)}get createChatGptDeviceCodeLoginSession(){return(...e)=>this.#e().createChatGptDeviceCodeLoginSession(...e)}get createGatewayOAuthLoginSession(){return()=>this.#e().createGatewayOAuthLoginSession()}get createWindowsSandboxSetupSession(){return(...e)=>this.#e().createWindowsSandboxSetupSession(...e)}get sendRequest(){return(...e)=>this.#e().sendRequest(...e)}async readSerializedConfig(e,t){return s.It(await this.#e().sendRequest(`config/read`,e,t))}get pr...
+
+  [2] @265234 WindowsSandboxSetup
+    ...DeviceCodeLoginSession(){return(...e)=>this.#e().createChatGptDeviceCodeLoginSession(...e)}get createGatewayOAuthLoginSession(){return()=>this.#e().createGatewayOAuthLoginSession()}get createWindowsSandboxSetupSession(){return(...e)=>this.#e().createWindowsSandboxSetupSession(...e)}get sendRequest(){return(...e)=>this.#e().sendRequest(...e)}async readSerializedConfig(e,t){return s.It(await this.#e().sendRequest(`config/read`,e,t))}get prepareThreadStart(){return(...e)=>this.#e().prepareThreadSta...
+
+  [3] @288060 WindowsSandboxSetup
+    ...ive?.cancel()}};function Wp(){let e=Error(`Gateway sign-in was cancelled`);return e.name=`AbortError`,e}var Gp=t.N().brand(),Kp=class{requestClient;remoteLoginPortForward;logger;shouldForwardRemoteChatGptLogin;schedule;activeLogin;gatewayOAuth;activeWindowsSandboxSetup;timedOutWindowsSandboxSetup;authStatusCallbacks=[];mcpLoginCallbacks=[];removeRequestLifecycleListener;constructor(e,t,r,i,a){this.requestClient=e,this.remoteLoginPortForward=t,this.logger=r,this.shouldForwardRemoteChatGptLogin=i,...
+
+--- sandbox-setup spawn (iV list) ---
+
+  [1] @143292 iv
+    ...`,bigtriangleup:`△`,biguplus:`⨄`,bigvee:`⋁`,bigwedge:`⋀`,bkarow:`⤍`,blacklozenge:`⧫`,blacksquare:`▪`,blacktriangle:`▴`,blacktriangledown:`▾`,blacktriangleleft:`◂`,blacktriangleright:`▸`,blank:`␣`,blk12:`▒`,blk14:`░`,blk34:`▓`,block:`█`,bne:`=⃥`,bnequiv:`≡⃥`,bnot:`⌐`,bopf:`𝕓`,bot:`⊥`,bottom:`⊥`,bowtie:`⋈`,boxDL:`╗`,boxDR:`╔`,boxDl:`╖`,boxDr:`╓`,boxH:`═`,boxHD:`╦`,boxHU:`╩`,boxHd:`╤`,boxHu:`╧`,boxUL:`╝`,boxUR:`╚`,boxUl:`╜`,boxUr:`╙`,boxV:`║`,boxVH:`╬`,boxVL:`╣`,boxVR:`╠`,boxVh:`╫`,boxVl:`╢`,boxVr...
+
+  [2] @145331 iv
+    ...,dash:`‐`,dashv:`⊣`,dbkarow:`⤏`,dblac:`˝`,dcaron:`ď`,dcy:`д`,dd:`ⅆ`,ddagger:`‡`,ddarr:`⇊`,ddotseq:`⩷`,deg:`°`,delta:`δ`,demptyv:`⦱`,dfisht:`⥿`,dfr:`𝔡`,dharl:`⇃`,dharr:`⇂`,diam:`⋄`,diamond:`⋄`,diamondsuit:`♦`,diams:`♦`,die:`¨`,digamma:`ϝ`,disin:`⋲`,div:`÷`,divide:`÷`,divideontimes:`⋇`,divonx:`⋇`,djcy:`ђ`,dlcorn:`⌞`,dlcrop:`⌍`,dollar:`$`,dopf:`𝕕`,dot:`˙`,doteq:`≐`,doteqdot:`≑`,dotminus:`∸`,dotplus:`∔`,dotsquare:`⊡`,doublebarwedge:`⌆`,downarrow:`↓`,downdownarrows:`⇊`,downharpoonleft:`⇃`,downharpo...
+
+  [3] @146125 iv
+    ...eg:`⪚`,egrave:`è`,egs:`⪖`,egsdot:`⪘`,el:`⪙`,elinters:`⏧`,ell:`ℓ`,els:`⪕`,elsdot:`⪗`,emacr:`ē`,empty:`∅`,emptyset:`∅`,emptyv:`∅`,emsp13:` `,emsp14:` `,emsp:` `,eng:`ŋ`,ensp:` `,eogon:`ę`,eopf:`𝕖`,epar:`⋕`,eparsl:`⧣`,eplus:`⩱`,epsi:`ε`,epsilon:`ε`,epsiv:`ϵ`,eqcirc:`≖`,eqcolon:`≕`,eqsim:`≂`,eqslantgtr:`⪖`,eqslantless:`⪕`,equals:`=`,equest:`≟`,equiv:`≡`,equivDD:`⩸`,eqvparsl:`⧥`,erDot:`≓`,erarr:`⥱`,escr:`ℯ`,esdot:`≐`,esim:`≂`,eta:`η`,eth:`ð`,euml:`ë`,euro:`€`,excl:`!`,exist:`∃`,expectation:`ℰ`,expon...
+
+--- CODEX_WINDOWS_SANDBOX ---
+    (no hits)
+
+==============================================================================
+== RENDERER `elevator` HIT (1 occurrence)
+==============================================================================
+
+  webview/assets/browser-e8c5f9aed22b.js @167390
+    ...on`],u:`1fa78`,a:`12`},{n:[`pill`,`sick`,`doctor`,`medicine`],u:`1f48a`,a:`0.6`},{n:[`bandage`,`adhesive bandage`],u:`1fa79`,a:`12`},{n:[`cane`,`hurt`,`stick`,`crutch`,`disability`,`mobility aid`],u:`1fa7c`,a:`14`},{n:[`heart`,`doctor`,`medicine`,`stethoscope`],u:`1fa7a`,a:`12`},{n:[`x ray`,`bones`,`doctor`,`medical`,`skeleton`],u:`1fa7b`,a:`14`},{n:[`door`],u:`1f6aa`,a:`0.6`},{n:[`lift`,`hoist`,`elevator`,`accessibility`],u:`1f6d7`,a:`13`},{n:[`mirror`,`speculum`,`reflector`,`reflection`],u:`1fa9e`,a:`13`},{n:[`view`,`frame`,`window`,`opening`,`fresh air`,`transparent`],u:`1fa9f`,a:`13`},{n:[`bed`,`hotel`,`sleep`],u:`1f6cf-fe0f`,a:`0.7`},{n:[`lamp`,`couch`,`hotel`,`couch and lamp`],u:`1f6cb-fe0f`,a:`0.7`},{n:[`sit`,`seat`,`chair`],u:`1fa91`,a:`12`},{n:[`toilet`],u:`1f6bd`,a:`0.6`},{n:[`to...

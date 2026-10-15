@@ -1,0 +1,110 @@
+﻿==========================================================================
+== IPC REGISTRATION SHAPES (allowlist vs raw passthrough)
+==========================================================================
+  ipcMain.handle             34
+  ipcMain.on                 34
+  ipcMain.handleOnce         34
+  ipcMain.removeHandler      34
+  .sendSync                  34
+  .invoke                    34
+
+==========================================================================
+== SENDER VALIDATION needles
+==========================================================================
+  senderFrame                  6
+  sender\.frame                0
+  event\.sender\b              0
+  \.getURL\(\)                 75
+  frame\.url                   4
+  isMainFrame                  52
+  topFrame                     0
+  webContents\.id===           14
+
+--------------------------------------------------------------------------
+-- ipcMain.handle() sites
+
+  [bootstrap-487kJHw_.js @43356] ipcMain.handle(
+    !1;sparkleQueryParams={beta:!1,planType:`unknown`};pendingSparkleQueryParams=null;productionSparkle=null;macExecutableIdentityAtLaunch=null;setAutomaticBackgroundDownloadsEnabledForMac=null;constructor(e){this.options=e}async initialize(){if(!this.options.enableUpdater){this.lastUnavailableReason=process.platform!==`darwin`&&process.platform!==`win32`?`unsupported platform`:`disabled for build flavor (${this.options.buildFlavor})`,this.inAppUpdatesLaunchPolicyResolution.resolve(void 0);return}f.ipcMain.handle(`codex_desktop:check-for-updates`,async e=>{this.options.isTrustedIpcEvent(e)&&await this.checkForUpdates()}),this.logger.info(`in_app_updates_policy_wait_started`,{safe:{timeoutMs:zn}}),this.inAppUpdatesLaunchPolicyTimer=setTimeout(()=>{this.inAppUpdatesLaunchPolicyTimer=null,this.logger.info(`in_app_updates_policy_timeout`,{safe:{timeoutMs:zn,policy:this.inAppUpdatesLaunchPolicy}}),this.allowInAppUpdatesForLaunch()},zn),this.inAppUpdatesLaunchPolicyTimer.unref()}async latchInApp
+
+  [main-BklS_2Y2.js @3364222] ipcMain.handle(
+    return process.platform===`darwin`&&n&&i.setTemplateImage(!0),i}if(e.startsWith(`file://`))return e7(_.nativeImage.createFromPath((0,E.fileURLToPath)(e)));if(e.startsWith(`/`)&&!e.startsWith(`/apps/`))return e7(_.nativeImage.createFromPath(e));for(let n of t){let t=e.startsWith(`/apps/`)?(0,C.join)(n,e.slice(1)):new URL(e,`file://${n.endsWith(`/`)?n:`${n}/`}`).pathname;if((0,y.existsSync)(t)){let e=_.nativeImage.createFromPath(t);if(!e.isEmpty())return e7(e)}}}catch{}}function xXe(e,t){return _.ipcMain.handle(g.jt,async(n,r,i)=>{if(!t(n))return{id:null};let a=_.BrowserWindow.fromWebContents(n.sender),o=i==null?1:n.sender.getZoomFactor(),s=a==null?1:_.screen.getDisplayMatching(a.getBounds()).scaleFactor,c=Number.isFinite(s)&&s>0?Math.max(1,Math.round(Q5*s))/Q5:1,l=await yXe(n.sender,r,c);return new Promise(t=>{let n=!1,s=e=>{n||(n=!0,t({id:e}))},u=t=>t.map(t=>t.type===`separator`?{type:`separator`}:{id:t.id,type:t.type,checked:t.checked,label:t.label.replaceAll(`&`,`&&`),role:t.role,acc
+
+  [main-BklS_2Y2.js @3375338] ipcMain.handle(
+    b,createFreshWindow:x,setDesktopFeatureAvailability:S,setAvatarOverlayFeedbackDiagnosticsEnabled:C,setAvatarOverlayOnDemandEnabled:w,setAutomaticBackgroundDownloadsEnabled:T,restoreAvatarOverlayOpenState:E,prewarmAvatarOverlay:D,reloadBundledPlugins:O,setMacMenuBarEnabled:k,navigateToRoute:A,setRemoteHostedPIPActiveThreadID:j,setRemoteHostedPIPHostLayout:M,getDockMenuController:N,getTrayController:ee,onAppEntrySource:P,isTrustedIpcEvent:F,requestDevRelaunch:te}=e;xXe(l,F);let I=!1,L=!1,R=null;_.ipcMain.handle(g.wt,async(n,i)=>{if(!F(n))return;if(i.type===`electron-avatar-overlay-restore-ready`){if(w(i.onDemandEnabled),I||(I=!0,await E(n.sender)),i.shouldPrewarmAvatarOverlay&&!L&&D!=null){L=!0;try{await D(n.sender).catch(()=>D(n.sender))}catch(e){throw L=!1,e}}return}if(i.type===`remote-hosted-pip-active-thread-changed`){j?.(n.sender,i.conversationId);return}if(i.type===`remote-hosted-pip-host-layout-changed`){M?.(n.sender,i.layout);return}if(i.type===`electron-avatar-overlay-feedback-d
+
+  [main-BklS_2Y2.js @3380270] ipcMain.handle(
+    t e=await b();if(!e)return;e.isMinimized()&&e.restore(),e.show(),e.focus(),A(e,`/settings/${i.section}`,i.state);return}if(i.type===`quit-app`){i.relaunch===!0?(e.quitState?.allowQuitTemporarily(),g.x(te)):_.app.quit();return}if(EXe(i)){R=i.trayMenuThreads,await Promise.all([ee()?.handleMessage(i),N?.()?.handleMessage(i)]);return}if(await a.handleMessage(n,i))return;let o=u(n.sender);if(!o){f.n().warning(`Message received for unknown window context`);return}await o.handleMessage(n.sender,i)}),_.ipcMain.handle(g.St,async(e,t)=>{let n=ywe.safeParse(t);if(!n.success){f.n().warning(`Invalid browser sidebar runtime message received`);return}let r=_.BrowserWindow.fromWebContents(e.sender);if(r==null){f.n().warning(`Browser sidebar runtime message received without owner window`);return}let i=u(r.webContents);if(i==null){f.n().warning(`Browser sidebar runtime message received for unknown window context`);return}await i.handleMessage(e.sender,n.data)}),_.ipcMain.on(g.xt,(e,t)=>{if(!_r(t)){f.n()
+  (5 shown)
+
+--------------------------------------------------------------------------
+-- contextBridge.exposeInMainWorld sites
+
+  [preload.js @931] exposeInMainWorld
+     Electron preload has already been run`);else{let t={sendRendererStart:()=>e.ipcRenderer.send(r.createKey(`start`)),sendScope:t=>e.ipcRenderer.send(r.createKey(`scope`),t),sendEnvelope:t=>e.ipcRenderer.send(r.createKey(`envelope`),t),sendStatus:t=>e.ipcRenderer.send(r.createKey(`status`),t),sendStructuredLog:t=>e.ipcRenderer.send(r.createKey(`structured-log`),t),sendMetric:t=>e.ipcRenderer.send(r.createKey(`metric`),t)};if(window.__SENTRY_IPC__[r.namespace]=t,e.contextBridge)try{e.contextBridge.exposeInMainWorld(`__SENTRY_IPC__`,window.__SENTRY_IPC__)}catch{}}}r();function i(e){return typeof e!=`object`||!e||!(`marker`in e)||e.marker!==`codex-host-chunked-message-v1`||!(`transferId`in e)||typeof e.transferId!=`string`||!(`sequence`in e)||typeof e.sequence!=`number`||!Number.isSafeInteger(e.sequence)||!(`kind`in e)?!1:e.kind===`chunk`?`tokens`in e&&Array.isArray(e.tokens)&&e.tokens.every(a):e.kind===`start`||e.kind===`end`}function a(e){return typeof e!=`object`||!e||!(`type`in e)?!1:e.
+
+  [preload.js @6599] exposeInMainWorld
+    rConfiguration!=null&&(r.configuration.length!==t.decoderConfiguration.length||!r.configuration.every((e,n)=>e===t.decoderConfiguration?.[n]))&&(r.decoder.reset(),r.decoder.configure({codec:t.codec,description:t.decoderConfiguration,hardwareAcceleration:`prefer-hardware`,optimizeForLatency:!0}),r.configuration=t.decoderConfiguration);r.decoder.state===`configured`&&r.decoder.decode(new EncodedVideoChunk({data:t.videoData,timestamp:t.timestamp,type:t.isKeyFrame?`key`:`delta`}))}),e.contextBridge.exposeInMainWorld(`codexWindowType`,T),e.contextBridge.exposeInMainWorld(`electronBridge`,z),typeof window<`u`&&window.addEventListener(`message`,t=>{if(t.source!==window||t.data?.type!==`connect-app-host`)return;let{port:n}=t.data;e.ipcRenderer.postMessage(_,void 0,[n])}); //# sourceMappingURL=preload.js.map
+
+  [preload.js @6654] exposeInMainWorld
+    erConfiguration.length||!r.configuration.every((e,n)=>e===t.decoderConfiguration?.[n]))&&(r.decoder.reset(),r.decoder.configure({codec:t.codec,description:t.decoderConfiguration,hardwareAcceleration:`prefer-hardware`,optimizeForLatency:!0}),r.configuration=t.decoderConfiguration);r.decoder.state===`configured`&&r.decoder.decode(new EncodedVideoChunk({data:t.videoData,timestamp:t.timestamp,type:t.isKeyFrame?`key`:`delta`}))}),e.contextBridge.exposeInMainWorld(`codexWindowType`,T),e.contextBridge.exposeInMainWorld(`electronBridge`,z),typeof window<`u`&&window.addEventListener(`message`,t=>{if(t.source!==window||t.data?.type!==`connect-app-host`)return;let{port:n}=t.data;e.ipcRenderer.postMessage(_,void 0,[n])}); //# sourceMappingURL=preload.js.map
+  (3 shown)
+
+--------------------------------------------------------------------------
+-- senderFrame usage
+
+  [main-BklS_2Y2.js @1515466] senderFrame
+    =`about:`||t.origin===GV()&&(tU(t)||t.pathname.startsWith(SCe)||t.pathname.startsWith(CCe)||t.pathname===wCe)}catch{return!1}}function tU(e){try{let t=typeof e==`string`?new URL(e,GV()):e;return t.origin===GV()&&(t.pathname===JH||t.pathname.startsWith(`${JH}/`))}catch{return!1}}function kCe(e,t,n,r,i){let a={enabled:!1,siteAnnotationFeaturesEnabled:!0,siteAnnotationPermissionGranted:!1,isAgentControllingBrowser:!1,isAnnotationModeActive:!1};if(e.senderFrame==null||e.senderFrame!==t.mainFrame){e.returnValue=a;return}let o=e.senderFrame.url,s=r(t,o);if(s!=null){e.returnValue=s;return}let c=i(()=>{let n=r(t,o);n!=null&&(l(),e.returnValue=n)}),l=()=>{c(),t.removeListener(`destroyed`,l),t.removeListener(`render-process-gone`,l),t.removeListener(`did-start-navigation`,d),n.removeListener(`destroyed`,u),n.removeListener(`render-process-gone`,u)},u=()=>{l(),e.returnValue=a},d=(t,n,r,i)=>{i&&!r&&
+
+  [main-BklS_2Y2.js @1515487] senderFrame
+    =GV()&&(tU(t)||t.pathname.startsWith(SCe)||t.pathname.startsWith(CCe)||t.pathname===wCe)}catch{return!1}}function tU(e){try{let t=typeof e==`string`?new URL(e,GV()):e;return t.origin===GV()&&(t.pathname===JH||t.pathname.startsWith(`${JH}/`))}catch{return!1}}function kCe(e,t,n,r,i){let a={enabled:!1,siteAnnotationFeaturesEnabled:!0,siteAnnotationPermissionGranted:!1,isAgentControllingBrowser:!1,isAnnotationModeActive:!1};if(e.senderFrame==null||e.senderFrame!==t.mainFrame){e.returnValue=a;return}let o=e.senderFrame.url,s=r(t,o);if(s!=null){e.returnValue=s;return}let c=i(()=>{let n=r(t,o);n!=null&&(l(),e.returnValue=n)}),l=()=>{c(),t.removeListener(`destroyed`,l),t.removeListener(`render-process-gone`,l),t.removeListener(`did-start-navigation`,d),n.removeListener(`destroyed`,u),n.removeListener(`render-process-gone`,u)},u=()=>{l(),e.returnValue=a},d=(t,n,r,i)=>{i&&!r&&(l(),e.returnValue=a)
+
+  [main-BklS_2Y2.js @1515545] senderFrame
+    tsWith(CCe)||t.pathname===wCe)}catch{return!1}}function tU(e){try{let t=typeof e==`string`?new URL(e,GV()):e;return t.origin===GV()&&(t.pathname===JH||t.pathname.startsWith(`${JH}/`))}catch{return!1}}function kCe(e,t,n,r,i){let a={enabled:!1,siteAnnotationFeaturesEnabled:!0,siteAnnotationPermissionGranted:!1,isAgentControllingBrowser:!1,isAnnotationModeActive:!1};if(e.senderFrame==null||e.senderFrame!==t.mainFrame){e.returnValue=a;return}let o=e.senderFrame.url,s=r(t,o);if(s!=null){e.returnValue=s;return}let c=i(()=>{let n=r(t,o);n!=null&&(l(),e.returnValue=n)}),l=()=>{c(),t.removeListener(`destroyed`,l),t.removeListener(`render-process-gone`,l),t.removeListener(`did-start-navigation`,d),n.removeListener(`destroyed`,u),n.removeListener(`render-process-gone`,u)},u=()=>{l(),e.returnValue=a},d=(t,n,r,i)=>{i&&!r&&(l(),e.returnValue=a)};t.on(`destroyed`,l),t.on(`render-process-gone`,l),t.on(`
+
+  [main-BklS_2Y2.js @3729570] senderFrame
+    tentsHostIds.get(e.id)??null}getRendererWindowLogFields(e){let t=_.BrowserWindow.fromWebContents(e),n=t!=null&&!t.isDestroyed();return{rendererWebContentsId:e.id,rendererWindowId:n?t.id:null,rendererWindowAppearance:n?this.windowAppearances.get(t.id)??null:null,rendererWindowVisible:n?t.isVisible():null,rendererWindowFocused:n?t.isFocused():null}}isTrustedIpcSender(e,t){return e.id!=null&&!this.registeredWebContentsIds.has(e.id)?!1:x1e({sender:e,senderFrame:t,moduleDir:this.options.moduleDir})}isMainProcessInspectorEnabled(){return me.url()!=null}async toggleMainProcessInspector(){throw Error(`Feature unavailable.`)}async createWindow(e={}){let n=(e.appearance??`primary`)===`primary`,r=n&&Y$e(e.initialRoute),a={width:Qge,height:820},o=process.platform===`win32`&&n?_.screen.getPrimaryDisplay().workArea:null;if(r){let e=this.getPrimaryWindow()?.getBounds()??_.screen.getPrimaryDisplay().wor
+  (5 shown)
+
+==========================================================================
+== NATIVE .node MODULES IN ASAR
+==========================================================================
+
+==========================================================================
+== APPROVAL / EXEC-POLICY needles
+==========================================================================
+  exec-?policy                 5
+  approvalPolicy               123
+  askForApproval               0
+  sandboxMode                  11
+  requestApproval              37
+  untrusted                    46
+  autoApprov                   12
+  workspace-?write             40
+  danger-full-access           10
+  read-only                    41
+
+--------------------------------------------------------------------------
+-- danger-full-access
+
+  [main-BklS_2Y2.js @206125] danger-full-access
+    ig;Ac({settingsStore:f,isPackaged:x,repoRoot:S});let i=await _c({appServerConnection:o,appVersion:t,desktopFeatureAvailability:s,cwd:e,isPackaged:x,repoRoot:S,shouldUseWslPaths:c.yt(n)}),a={model:_.model,modelProvider:null,cwd:e,approvalPolicy:I.approvalPolicy,approvalsReviewer:I.approvalsReviewer,sandbox:I.sandboxPolicy.type===`dangerFullAccess`?`danger-full-access`:I.sandboxPolicy.type===`readOnly`?`read-only`:`workspace-write`,config:{...i,...await Xc({hostConfig:n,appServerVersion:o.appServerVersion}),[r.hr(o.appServerVersion)]:v},developerInstructions:te,personality:null,ephemeral:null,threadSource:`automation`,dynamicTools:[],mockExperimentalField:null,experimentalRawEvents:!1,serviceT
+
+  [src-BJv5Mk7n.js @672391] danger-full-access
+    unction nT(e){let t=e.replaceAll(`\\`,`/`);for(;t.length>1&&t.endsWith(`/`)&&!iT(t);)t=t.slice(0,-1);return rT(t)?t.toLowerCase():t}function rT(e){return/^[a-zA-Z]:\//.test(e)||e.startsWith(`//`)}function iT(e){return/^[a-zA-Z]:\/$/.test(e)}function aT(e,t){let n=t?.activePermissionProfile;return t!=null&&e.activePermissionProfile==null&&n?.id===`:danger-full-access`?t:{activePermissionProfile:e.activePermissionProfile??(n!=null&&!n.id.startsWith(`:`)?n:null),runtimeWorkspaceRoots:e.runtimeWorkspaceRoots,approvalPolicy:e.approvalPolicy,approvalsReviewer:e.approvalsReviewer,sandboxPolicy:e.sandbox}}var oT=`0.146.0-alpha.7`,sT=`0.146.0-alpha.8`;async function cT({beforeConversationAdded:e,capa
+
+  [src-BJv5Mk7n.js @690275] danger-full-access
+    e.arePathsEquivalent(e,t)))))}let Se=vT(xe.sandboxPolicy,ce),Ce={...xe,sandboxPolicy:s.workspace.getSandboxPolicy({sandboxPolicy:Se,workspaceKind:C?.workspaceKind})},we=y!=null||L?.approvalPolicy!=null||L?.sandboxPolicy!=null||L?.permissions!=null||L?.activePermissionProfile!==void 0||M!=null||C?.currentPermissions?.activePermissionProfile?.id===`:danger-full-access`,Te=g;M?.serviceTier!==void 0&&(Te=M.serviceTier),L?.serviceTier!==void 0&&(Te=L.serviceTier);let Ee=z&&R&&S!=null;Ee&&e.updateConversationState(m,e=>{e.boundedCloudHistory=!0});let De=Ee?Hm(e,{conversationId:m,cwd:he,isCurrent:u,mapThreadTurns:c.mapThreadTurns,options:{limit:ne,itemLimit:re,itemsView:`summary`,requestOptions:V},
+  (5 shown)
+
+--------------------------------------------------------------------------
+-- approvalPolicy
+
+  [main-BklS_2Y2.js @191783] approvalPolicy
+    mmary="Ready for re-review; focus on auth edge case"}\`\r `,ol=`<heartbeat>\r <automation_id>{{AUTOMATION_ID}}</automation_id>\r <current_time_iso>{{NOW_ISO}}</current_time_iso>\r <instructions>\r {{AUTOMATION_PROMPT}}\r </instructions>\r </heartbeat>\r `;function sl(e,t){let n=[e.approvalsReviewer,...t?.allowedApprovalsReviewers??[]],i=[e.approvalPolicy,...t?.allowedApprovalPolicies??[]],a=[e.sandboxPolicy,r.ja().sandboxPolicy];for(let o of a)if(o.type!==`dangerFullAccess`&&t?.allowedPermissionProfiles==null){for(let a of n)for(let n of i)if((n!==`never`||e.approvalPolicy===`never`)&&r.za(t,r.Fa(o),n,a))return{...e,activePermissionProfile:null,sandboxPolicy:o,approvalPolicy:n,approv
+
+  [main-BklS_2Y2.js @192006] approvalPolicy
+    }\r </instructions>\r </heartbeat>\r `;function sl(e,t){let n=[e.approvalsReviewer,...t?.allowedApprovalsReviewers??[]],i=[e.approvalPolicy,...t?.allowedApprovalPolicies??[]],a=[e.sandboxPolicy,r.ja().sandboxPolicy];for(let o of a)if(o.type!==`dangerFullAccess`&&t?.allowedPermissionProfiles==null){for(let a of n)for(let n of i)if((n!==`never`||e.approvalPolicy===`never`)&&r.za(t,r.Fa(o),n,a))return{...e,activePermissionProfile:null,sandboxPolicy:o,approvalPolicy:n,approvalsReviewer:a}}throw Error(`No compatible automation permissions satisfy the managed requirements`)}function cl(e,t){if(t.type===`projectless`)return null;let n=r.rn(e.get(r.gs.LOCAL_PROJECTS))[t.projectId];if(n==null)throw
+
+  [main-BklS_2Y2.js @192110] approvalPolicy
+    alsReviewers??[]],i=[e.approvalPolicy,...t?.allowedApprovalPolicies??[]],a=[e.sandboxPolicy,r.ja().sandboxPolicy];for(let o of a)if(o.type!==`dangerFullAccess`&&t?.allowedPermissionProfiles==null){for(let a of n)for(let n of i)if((n!==`never`||e.approvalPolicy===`never`)&&r.za(t,r.Fa(o),n,a))return{...e,activePermissionProfile:null,sandboxPolicy:o,approvalPolicy:n,approvalsReviewer:a}}throw Error(`No compatible automation permissions satisfy the managed requirements`)}function cl(e,t){if(t.type===`projectless`)return null;let n=r.rn(e.get(r.gs.LOCAL_PROJECTS))[t.projectId];if(n==null)throw Error(`Automation project no longer exists`);return{projectId:t.projectId,roots:n.rootPaths.map(r.Nn)}}
+  (7 shown)

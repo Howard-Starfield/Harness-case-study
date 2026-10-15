@@ -1,0 +1,142 @@
+=== A. elevation_service.exe provenance ===
+  source paths (125):
+    ..\..\chrome\elevation_service\caller_validation.cc
+    ..\..\chrome\elevation_service\elevated_recovery_impl.cc
+    ..\..\chrome\elevation_service\elevator.cc
+    W..\..\chrome\elevation_service\elevation_service_delegate.cc
+    ..\..\third_party\perfetto\src\protozero\field.cc
+    ..\..\third_party\perfetto\src\protozero\proto_decoder.cc
+    ..\..\third_party\perfetto\src\protozero\scattered_heap_buffer.cc
+    ..\..\third_party\perfetto\src\protozero\static_buffer.cc
+    ..\..\third_party\perfetto\include\perfetto\ext\base\scoped_file.h
+    ..\..\third_party\perfetto\src\base\file_utils.cc
+    ..\..\third_party\perfetto\src\base\paged_memory.cc
+    ..\..\third_party\perfetto\src\base\periodic_task.cc
+    ..\..\third_party\perfetto\include\perfetto\ext\base\status_or.h
+    ..\..\third_party\perfetto\include\perfetto\base\status.h
+    ..\..\third_party\perfetto\src\base\time.cc
+    ..\..\third_party\perfetto\src\base\utils.cc
+    ..\..\third_party\perfetto\src\tracing\event_context.cc
+    ..\..\third_party\perfetto\include\perfetto\tracing\track_event_interned_data_index.h
+    ..\..\third_party\perfetto\src\tracing\internal\tracing_muxer_fake.cc
+    ..\..\third_party\perfetto\src\tracing\internal\tracing_muxer_impl.cc
+    ..\..\third_party\perfetto\include\perfetto\tracing\tracing.h
+    ..\..\third_party\perfetto\src\tracing\core\null_trace_writer.cc
+    ..\..\third_party\perfetto\src\tracing\core\shared_memory_abi.cc
+    ..\..\third_party\perfetto\src\tracing\core\shared_memory_arbiter_impl.cc
+    ..\..\third_party\perfetto\src\tracing\core\trace_packet.cc
+    ..\..\third_party\perfetto\src\tracing\core\trace_writer_impl.cc
+    ..\..\third_party\perfetto\src\tracing\service\trace_buffer_v1.cc
+    ..\..\third_party\perfetto\src\tracing\service\trace_buffer_v1.h
+    ..\..\third_party\perfetto\include\perfetto\ext\base\flat_hash_map_v1.h
+    ..\..\third_party\perfetto\src\tracing\service\trace_buffer_v2.cc
+    ..\..\third_party\perfetto\src\tracing\service\trace_buffer_v2.h
+    ..\..\third_party\perfetto\include\perfetto\ext\base\circular_queue.h
+    ..\..\third_party\perfetto\src\tracing\service\tracing_service_endpoints_impl.cc
+    ..\..\third_party\perfetto\src\tracing\service\tracing_service_impl.cc
+    ..\..\third_party\perfetto\include\perfetto\ext\tracing\core\priority_boost_config.h
+    ..\..\third_party\perfetto\src\base\regex\regex.cc
+    ..\..\third_party\perfetto\src\protovm\allocator.cc
+    ..\..\third_party\perfetto\src\protovm\slab_allocator.h
+    ..\..\third_party\perfetto\src\protovm\executor.cc
+    ..\..\third_party\perfetto\src\protovm\parser.cc
+  distinct source directories (0):
+  contains 'chrome\elevation_service' source paths: true
+  contains OpenAI/Codex-specific source paths: false
+  rust markers: false   pdb name present: true
+
+=== B. sandbox binaries: toolchain + provenance ===
+
+  --- resources\codex-windows-sandbox-service.exe (55,824,688 B) ---
+    go1.x marker : -
+    .rs sources  : 141   .cc/.cpp/.h sources: 0   .go sources: 0
+      /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860
+      cloud-config/src/cache.rs
+      cloud-config/src/backend.rs
+      Errorconfig/src/cloud_config_bundle.rs
+      config/src/thread_config.rs
+      config/src/config_requirements.rs
+      config/src/diagnostics.rs
+      shimmerwelcomeeffortprogresstitledefault_app_accessmacoswindowsbundle_idsaumidsexespublisher_nameproduct_namebinary_nameconfig/src/path_context.rs
+      utils/pty/src
+      exec-server/src/fs_sandbox.rs
+      exec-server/src/sandboxed_file_system.rs
+      exec-server/src/local_file_system.rs
+
+  --- resources\codex-windows-sandbox-setup.exe (17,725,744 B) ---
+    go1.x marker : -
+    .rs sources  : 66   .cc/.cpp/.h sources: 0   .go sources: 0
+      /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860
+      execpolicy/src/rule.rs
+      execpolicy/src/executable_name.rs
+      execpolicy/src/parser.rs
+      wsshttp-client/src/outbound_proxy.rs
+      http-client/src/route_aware_client_pool.rs
+      http-client/src/route_aware_client_pool
+      http-client/src/client.rs
+      http-client/src/network_policy.rs
+      http-client/src/outbound_proxy.rs
+      http-client/src/custom_ca.rs
+      otel/src/otlp.rs
+
+  --- resources\codex.exe (334,121,776 B) ---
+    go1.x marker : -
+    .rs sources  : 1408   .cc/.cpp/.h sources: 0   .go sources: 0
+      /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860
+      tui/src/dynamic_tools_mcp.rs
+      arg0/src/lib.rs
+      core/src/connectors.rs
+      core/src/exec_policy.rs
+      core/src/codex_thread.rs
+      core/src/thread_manager.rs
+      windowscore/src/agents_md_manager.rs
+      record_completed_response_itemcore/src/stream_events_utils.rs
+      core/src/environment_selection.rs
+      core/src/realtime_conversation.rs
+      core/src/mcp.rs
+
+  --- resources\codex-command-runner.exe (8,204,592 B) ---
+    go1.x marker : -
+    .rs sources  : 50   .cc/.cpp/.h sources: 0   .go sources: 0
+      /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860
+      execpolicy/src/rule.rs
+      execpolicy/src/executable_name.rs
+      execpolicy/src/parser.rs
+      protocol/src/permissions.rs
+      utils/path-uri/src
+      CreatePseudoConsoleResizePseudoConsoleClosePseudoConsoleutils/pty/src
+      windows-sandbox-rs/src/token.rs
+      0000000000000000000000000000000000000000000000000000000000000000/rustc/59807616e1fa2540724bfbac14d7976d7e4a3860
+
+  --- resources\codex-code-mode-host.exe (74,712,368 B) ---
+    go1.x marker : -
+    .rs sources  : 80   .cc/.cpp/.h sources: 0   .go sources: 0
+      /rustc/59807616e1fa2540724bfbac14d7976d7e4a3860
+      code-mode-runtime/src/session_runtime
+      code-mode-host/src/lib.rs
+      code-mode-host/src/grpc
+      code-mode-host/src/peer.rs
+      code-mode-runtime/src/cell_actor
+      code-mode-runtime/src/service.rs
+      code-mode-protocol/src/session.rs
+      code-mode-host/src/delegate.rs
+      traceparentcode-mode-host/src/grpc
+      typenoCompatibleVersionmissingRequiredCapabilitycapabilityinvalidHelloselectedVersioncapabilitiessession/readyexecution/startedwait
+      code-mode-host/src/grpc_transport.rs
+
+=== C. is elevation reachable from vendor JS? ===
+  corpus: 34 .js/.mjs files under %TEMP%\codex-src\.vite
+
+  "elevation_service" -> 0 occurrences across 0 files
+
+  "elevator" -> 0 occurrences across 0 files
+
+  "runas" -> 0 occurrences across 0 files
+
+  "ShellExecuteEx" -> 0 occurrences across 0 files
+
+  "isElevated" -> 0 occurrences across 0 files
+
+  "elevat" -> 3 occurrences across 2 files
+         2  .vite/build/src-BJv5Mk7n.js
+         1  .vite/build/bootstrap-487kJHw_.js

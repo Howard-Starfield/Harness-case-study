@@ -1,0 +1,96 @@
+﻿
+==========================================================================
+== (1) \brunas\b - word-bounded, with context
+==========================================================================
+
+  [1] RENDER webview/assets/bat-54ba94408a32.js @5467
+      ...ss|query|quser|qwinsta|rasdial|rcp|rd|rdpsign|regentc|recover|redircmp|redirusr|reg|regini|regsvr32|relog|ren|rename|rendom|repadmin|repair-bde|replace|reset session|rxec|risetup|rmdir|robocopy|route|rpcinfo|rpcping|rsh|runas|rundll32|rwinsta|sc|schtasks|scp|scwcmd|secedit|serverceipoptin|servrmanagercmd|serverweroptin|setspn|setx|sfc|sftp|shadow|shift|showmount|shutdown|sort|ssh|ssh-add|ssh-agent|ssh-keygen|ssh-keyscan|start|storrept|s...
+
+  [2] RENDER webview/assets/configuration-schedule-3024a2685e19.js @33906
+      ...>e.enabled).map(e=>e.id).sort(),d=r(Kr,{accountId:i,ids:u});if(d.isError)return{status:`error`};if(d.data==null||d.isFetching)return{status:`loading`};let f=c.data.links;return{status:`ready`,accountId:i,userId:a,team:s,runAs:n.data.name,versions:[c.dataUpdatedAt,l.dataUpdatedAt,d.dataUpdatedAt],plugins:[...d.data.filter(e=>er(e,t)).map(e=>{let t=e.connector_id;return{id:e.canonical_app_id??e.connector_id??e.id,name:e.release.display_na...
+
+  [3] RENDER webview/assets/configuration-schedule-3024a2685e19.js @34858
+      ...n,o),c=r(St,{accountId:i,hostId:o,roots:t,consumer:`executor`});return s.isError||c.isError?{status:`error`}:s.data==null||c.data==null||s.isFetching||c.isFetching?{status:`loading`}:{status:`ready`,accountId:i,userId:a,runAs:`Me`,team:null,versions:[s.dataUpdatedAt,c.dataUpdatedAt],plugins:[...s.data.map(e=>({id:e.id,name:e.name,description:e.description,available:e.isAccessible&&e.isEnabled})),...c.data.filter(({canonicalAppId:e})=>e=...
+
+  [4] RENDER webview/assets/lv-LV-82e2a86f41c8.js @1605952
+      ...jumi / gadījumu vadība`,"onboarding.health_department.social_worker":`Sociālais darbinieks`,"onboarding.health_department.speech_language_pathologist":`Audiologopēds (SLP)`,"onboarding.health_department.speech_therapy":`Runas terapija`,"onboarding.health_department.study_coordinator":`Pētījuma koordinators`,"onboarding.health_department.subspecialty_fellowship":`Pēcrezidentūras apmācība apakšspecialitātē`,"onboarding.health_department.s...
+
+  [5] RENDER webview/assets/lv-LV-82e2a86f41c8.js @1710985
+      ...pielādēt. Mēģini vēlreiz.`,"presentationEditor.innerBorders":`Iekšējās apmales`,"presentationEditor.insert.area":`Laukumu diagramma`,"presentationEditor.insert.bar":`Joslu diagramma`,"presentationEditor.insert.callout":`Runas burbulis`,"presentationEditor.insert.chart":`Diagramma`,"presentationEditor.insert.chevron":`Skujiņa`,"presentationEditor.insert.diamond":`Rombs`,"presentationEditor.insert.ellipse":`Aplis`,"presentationEditor.inse...
+
+  TOTAL word-bounded `runas`: 5
+  (compare: SUBSTRING `runas` = 138, all/most inside `runAsync`)
+
+==========================================================================
+== (2) REAL .exe literals (basename must not itself be a dotted minified chain)
+==========================================================================
+  plausible real filenames: 64   minifier-noise matches: 0
+
+  REAL .exe literals in the JS corpus:
+    wsl.exe                       29
+    cmd.exe                       21
+    powershell.exe                19
+    git-bash.exe                  13
+    chrome.exe                    12
+    msedge.exe                    12
+    brave.exe                     12
+    opera.exe                     12
+    vivaldi.exe                   12
+    GitHubDesktop.exe             10
+    pwsh.exe                      9
+    codex.exe                     9
+    bash.exe                      7
+    git.exe                       6
+    where.exe                     6
+    studio64.exe                  6
+    studio.exe                    6
+    devenv.exe                    6
+    node.exe                      5
+    ty.exe                        5
+    rust-analyzer.exe             5
+    Antigravity.exe               4
+    Cursor.exe                    4
+    explorer.exe                  4
+    idea64.exe                    4
+    idea.exe                      4
+    rider64.exe                   4
+    rider.exe                     4
+    pycharm64.exe                 4
+    pycharm.exe                   4
+    webstorm64.exe                4
+    webstorm.exe                  4
+    phpstorm64.exe                4
+    phpstorm.exe                  4
+    subl.exe                      4
+    sublime_text.exe              4
+    codex-code-mode-host.exe      3
+    codex-windows-sandbox-setup.exe3
+    codex-command-runner.exe      3
+    rg.exe                        3
+    extension-host.exe            3
+    node_repl.exe                 2
+    tar.exe                       2
+    vswhere.exe                   2
+    tectonic.exe                  2
+    antigravity.exe               2
+    wt.exe                        2
+    Cmder.exe                     2
+    cmder.exe                     2
+    cursor.exe                    2
+    github.exe                    2
+    Code.exe                      2
+    Insiders.exe                  2
+    zed.exe                       2
+    Zed.exe                       2
+    taskkill.exe                  2
+    codex-computer-use-arm64.exe  1
+    codex-computer-use.exe        1
+    codex-computer-use-swift.exe  1
+    python.exe                    1
+    intellij-server.exe           1
+    codex-chrome-native-host.exe  1
+    sh.exe                        1
+    zsh.exe                       1
+
+  security-relevant subset: codex-code-mode-host.exe, codex-windows-sandbox-setup.exe, codex-command-runner.exe, codex.exe, codex-computer-use-arm64.exe, codex-computer-use.exe, codex-computer-use-swift.exe, codex-chrome-native-host.exe
+  contains 'elevation_service.exe' ? false

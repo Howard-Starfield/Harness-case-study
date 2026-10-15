@@ -1,0 +1,18 @@
+﻿MAIN=34 files, RENDER=14782 files, total=14816
+
+==========================================================================
+== runas variant counts, split by corpus
+==========================================================================
+  substring, case-SENSITIVE  /runas/g          MAIN=   0  RENDER=  121  TOTAL=121
+  substring, case-INSENSITIVE /runas/gi        MAIN=   7  RENDER=  131  TOTAL=138
+  word-bounded, case-SENSITIVE  /\brunas\b/g   MAIN=   0  RENDER=    1  TOTAL=1
+  word-bounded, case-INSENSITIVE /\brunas\b/gi MAIN=   0  RENDER=    5  TOTAL=5
+  runAsync (the substring source)              MAIN=   7  RENDER=    1  TOTAL=8
+
+==========================================================================
+== where the RENDER substring 'runas' occurrences actually live
+==========================================================================
+  files containing 'runas': 3
+    webview/assets/lv-LV-82e2a86f41c8.js                       x116   [(standalone):116]
+    webview/assets/is-IS-742f099bdc9e.js                       x  4   [runasamskip:2, runaspjall:1, (standalone):1]
+    webview/assets/bat-54ba94408a32.js                         x  1   [(standalone):1]

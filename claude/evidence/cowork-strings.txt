@@ -1,0 +1,258 @@
+=== cowork-svc.exe targeted string groups ===
+file size 13605200 bytes; corpus = ASCII+UTF16LE printable runs >= 4 chars
+total distinct runs: 49596
+
+----- NAMED PIPES : 14 distinct -----
+  %s[%s]%s %-44s packetsReceivedmembershipQueryproxy not foundicmpRateLimiterrtrSolicitTimerinvalidationJobaddressEndpointneighborSolicit%T.Prefix(): %s%s unrecognizednetworkEndpointmaxHeaderLengthNetwo...
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/pipe/client_info.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/pipe/client_info_paths.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/pipe/protocol.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/pipe/server.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/pipe/signature.go
+  cannot trim past the end of a viewheader.ScopeForIPv6Address(%s): %spkg/tcpip/network/ipv6.endpointDADpkg/tcpip/network/ipv6.sharedStatsunexpected transport protocol = %d%s hook not supported for REDI...
+  dns index walked out of rangeInvalid Address TLV number %dInvalid Address TLV length %dS46Lightweight4Over6ContainerFailoverMaximumClientLeadTimeCisco CCX1 CKIP + Device NameMCCAOP Advertisement Overv...
+  github.com/Microsoft/go-winio.connectNamedPipe
+  github.com/Microsoft/go-winio.ntCreateNamedPipeFile
+  link local source addressMaxUnsolicitedReportDelayLink Selection Sub-optionAuthentication Sub-optionNetBIOS over TCP/IP ScopeMaximum DHCP Message SizeClient Machine IdentifierNetInfo Parent Server Tag...
+  overflow packing aAFSDB.Hostname: %wCDS.DigestType: %wCERT.Algorithm: %wDLV.DigestType: %wGPOS.Longitude: %wHTTPS.Priority: %wL32.Preference: %wL64.Preference: %wNID.Preference: %wNIMLOC.Locator: %wNX...
+  overflow unpacking aoverflow packing hexoverflow packing optCDNSKEY.Protocol: %wCERT.Certificate: %wCSYNC.TypeBitMap: %wDNSKEY.Algorithm: %wDNSKEY.PublicKey: %wNAPTR.Preference: %wNSEC3.Iterations: %w...
+  unsafe.String: len out of rangecannot assign requested address.lib section in a.out corruptedsotypeToNet unknown socket typejson: invalid number literal %qin literal true (expecting 'r')in literal tru...
+
+----- SOCKETS/LISTEN : 53 distinct -----
+   runqueue= stopwait= runqsize= gfreecnt= throwing= spinning=atomicand8float64nanfloat32nanException  ptrSize=  targetpc= until pc=active < 0unknown pcruntime: ggoroutine  (durable)LogonUserWReOpenFile...
+  *gonet.TCPListener
+  *net.TCPListener
+  *net.UnixListener
+  ; ESU: %s: (%s)PREREQ: UPDATE: ANSWER: AAAA: %wfirstFinshiftCntwasBoundassertedembedder2.5.4.102.5.4.112.5.4.17avx512cdavx512eravx512pfavx512dqNEC/PC98EFI IA32IEEE 802LocalNetMetricom3des-cbcpasswordh...
+  ; NSID: ;; flags:MB.Mb: %wMD.Md: %wMF.Mf: %wMG.Mg: %wMR.Mr: %wMX.Mx: %wNS.Ns: %wTupleOnlyCONNECTEDlocalListallWakersDEC AlphaEFI ARM32EFI ARM64LocalTalkTwinaxialhmac-sha1publickeyBlock64Kb0123456789wi...
+  ; REPORT-CHANNEL: bad header bits: %wAPL prefix too longAPL length too long%02d %02d %0.3f %s DNSKEY.Protocol: %wISDN.SubAddress: %wNSEC.NextDomain: %wNSEC.TypeBitMap: %wNSEC3PARAM.Hash: %wRRSIG.Algor...
+  C:/a/apps/apps/packages/desktop/third_party/gvisor-tap-vsock/pkg/transport/listen.go
+  Listen
+  [2;36menabledoptionsdroppedWarning0.0.0.0/exposeNDPDispconfigstupleIDsrcAddrdstAddrbucketsHandlerDstMaskSrcMaskdynamiclinkRescontextPrimarypacketsheadersVersionReserveMaxSizeNextHopnudDisprcvListINITI...
+  gvisor.dev/gvisor/pkg/tcpip/adapters/gonet.(*TCPListener).Accept
+  gvisor.dev/gvisor/pkg/tcpip/adapters/gonet.(*TCPListener).Accept.deferwrap1
+  gvisor.dev/gvisor/pkg/tcpip/adapters/gonet.(*TCPListener).Addr
+  gvisor.dev/gvisor/pkg/tcpip/adapters/gonet.(*TCPListener).Close
+  gvisor.dev/gvisor/pkg/tcpip/adapters/gonet.NewTCPListener
+  gvisor.dev/gvisor/pkg/tcpip/transport/icmp.(*endpoint).Listen
+  gvisor.dev/gvisor/pkg/tcpip/transport/internal/noop.(*endpoint).Listen
+  gvisor.dev/gvisor/pkg/tcpip/transport/packet.(*endpoint).Listen
+  gvisor.dev/gvisor/pkg/tcpip/transport/raw.(*endpoint).Listen
+  gvisor.dev/gvisor/pkg/tcpip/transport/tcp.(*Endpoint).Listen
+  gvisor.dev/gvisor/pkg/tcpip/transport/tcp.(*Endpoint).listen
+  gvisor.dev/gvisor/pkg/tcpip/transport/tcp.(*Endpoint).listen.deferwrap1
+  gvisor.dev/gvisor/pkg/tcpip/transport/tcp.(*Endpoint).listen.deferwrap2
+  gvisor.dev/gvisor/pkg/tcpip/transport/udp.(*endpoint).Listen
+  internal/syscall/windows.WSASocket
+  listen
+  net.(*ListenConfig).Listen
+  net.(*TCPListener).Accept
+  net.(*TCPListener).Close
+  net.(*TCPListener).SetDeadline
+  net.(*TCPListener).SyscallConn
+  net.(*TCPListener).accept
+  net.(*TCPListener).close
+  net.(*TCPListener).ok
+  net.(*UnixListener).Accept
+  net.(*UnixListener).Close
+  net.(*UnixListener).SetDeadline
+  net.(*UnixListener).SyscallConn
+  net.(*UnixListener).accept
+  net.(*UnixListener).close
+  net.(*UnixListener).close.func1
+  net.(*UnixListener).ok
+  net.Listen
+  net.isLocalhost
+  pkg/tcpip/transport/raw.rawPacketListbigmod: internal error: shrinking natcrypto/rsa: unsupported hash functioncrypto/rsa: public exponent too largeexplicitly tagged member didn't matchos/user: failed...
+  runtime.newosprocinternal/runtime/thread exhaustionlocked m0 woke upentersyscallblock spinningthreads=gp.waiting != niltaggedPointerPackunknown caller pcstack: frame={sp:trace arena allocruntime: name...
+  runtime: newstack at runtime: newstack sp=runtime: confused by  pcHeader.textStart= timer data corruptionNetUserGetLocalGroupsGetProfilesDirectoryWlink has been severedpackage not installedblock devic...
+  runtime: sp=abi mismatchout of rangewrong timerstrace bufferinvalid slothost is downillegal seeknot pollableLittleEndianmultipathtcp127.0.0.1:53pointtopointno such hostunknown portCIDR addressinvalid ...
+  syscall.Listen
+  syscall.listen
+  type:.eq.gvisor.dev/gvisor/pkg/tcpip/adapters/gonet.TCPListener
+  type:.eq.net.UnixListener
+  updateMaxProcsGoroutine: phase errorruntime: bad notifyList size - sync=accessed data from freed user arena runtime: wrong goroutine in newstackruntime: invalid pc-encoded table f=accessing a corrupte...
+
+----- ELEVATION : 497 distinct -----
+    install     Install the service (requires Administrator privileges)
+    uninstall   Uninstall the service (requires Administrator privileges)
+   (default %q) (default %v)v6OnlyEnabledRouterSolicitReceiveErrorspkg/tcpip.Jobfragmentationfd00:ec2::254OpaqueIIDOptsoffLinkRoutesslaacPrefixesrouterSolicitPullUp failedChangeAddressBuiltinChainsCheck...
+   already registeredunknown status codeexec: canceling Cmdmtu is out of rangeInitial_PunctuationParagraph_SeparatorCanadian_AboriginalKhitan_Small_Scriptembedfollowsymlinksgotestjsonbuildtextmultipartm...
+  %s[%s]%s %-44s packetsReceivedmembershipQueryproxy not foundicmpRateLimiterrtrSolicitTimerinvalidationJobaddressEndpointneighborSolicit%T.Prefix(): %s%s unrecognizednetworkEndpointmaxHeaderLengthNetwo...
+  **ipv4.icmpReasonAdministrativelyProhibited
+  **ipv6.icmpReasonAdministrativelyProhibited
+  , locked to thread, synctest bubble runtime.semacreateruntime.semawakeupoperation canceledno child processesconnection refusedRFS specific erroridentifier removedinput/output errormultihop attemptedfi...
+  C:/Users/runneradmin/go/pkg/mod/github.com/!microsoft/go-winio@v0.6.2/ea.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/!microsoft/go-winio@v0.6.2/file.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/!microsoft/go-winio@v0.6.2/internal/fs/zsyscall_windows.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/!microsoft/go-winio@v0.6.2/internal/socket/socket.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/!microsoft/go-winio@v0.6.2/internal/socket/zsyscall_windows.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/!microsoft/go-winio@v0.6.2/pipe.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/!microsoft/go-winio@v0.6.2/privilege.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/!microsoft/go-winio@v0.6.2/sd.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/!microsoft/go-winio@v0.6.2/zsyscall_windows.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/btree@v1.1.2/btree_generic.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/base.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/decode.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/flows.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layerclass.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/arp.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/asf.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/asf_presencepong.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/base.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/bfd.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/cdp.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/ctp.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/dhcpv4.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/dhcpv6.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/dhcpv6_options.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/dns.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/dot11.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/dot1q.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/eap.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/eapol.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/endpoints.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/enums.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/enums_generated.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/erspan2.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/etherip.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/ethernet.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/fddi.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/geneve.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/gre.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/gtp.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/iana_ports.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/icmp4.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/icmp6.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/icmp6msg.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/igmp.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/ip4.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/ip6.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/ipsec.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/layertypes.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/lcm.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/linux_sll.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/llc.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/lldp.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/loopback.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/mldv1.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/mldv2.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/modbustcp.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/mpls.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/ndp.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/ntp.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/ospf.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/pflog.go
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/ports.go
+  ... (+427 more)
+
+----- SERVICE CONTROL : 7 distinct -----
+   (default %q) (default %v)v6OnlyEnabledRouterSolicitReceiveErrorspkg/tcpip.Jobfragmentationfd00:ec2::254OpaqueIIDOptsoffLinkRoutesslaacPrefixesrouterSolicitPullUp failedChangeAddressBuiltinChainsCheck...
+  ; HIP.PublicKeyAlgorithm: %wed25519: invalid signaturebase 128 integer too largetruncated base 128 integerasn1: invalid UTF-8 stringnon sequence tagged as setchacha20: wrong nonce sizechacha20: counte...
+  crypto/rsa: decryption errorx509: invalid RSA public keyx509: invalid DSA public keyx509: invalid DSA parametersx509: negative serial numberx509: unknown elliptic curvecurrent time %s is before %spend...
+  golang.org/x/sys/windows.ControlService
+  golang.org/x/sys/windows.OpenSCManager
+  golang.org/x/sys/windows.RegisterServiceCtrlHandlerEx
+  golang.org/x/sys/windows.StartServiceCtrlDispatcher
+
+----- COM/DCOM/WMI : 3 distinct -----
+  %s[%s]%s %-44s packetsReceivedmembershipQueryproxy not foundicmpRateLimiterrtrSolicitTimerinvalidationJobaddressEndpointneighborSolicit%T.Prefix(): %s%s unrecognizednetworkEndpointmaxHeaderLengthNetwo...
+  cowork-vm-storeGetProcessTimesDuplicateHandle is not definedGetSecurityInfoImpersonateSelfOpenThreadTokenSetSecurityInfoGetAdaptersInfoAddDllDirectoryCreateHardLinkWDeviceIoControlFindNextVolumeWFindV...
+  exit hook invoked panicpattern bits too long: too many pointers (>10)segment length too longunpacking Question.Nameunpacking Question.Typeskipping Question ClassFIPS 140-3 PCT passed: bad karatsubaSqr...
+
+----- SSH BANNER : 15 distinct -----
+  %s[%s]%s %-44s packetsReceivedmembershipQueryproxy not foundicmpRateLimiterrtrSolicitTimerinvalidationJobaddressEndpointneighborSolicit%T.Prefix(): %s%s unrecognizednetworkEndpointmaxHeaderLengthNetwo...
+  *ssh.userAuthBannerMsg
+  *ssh.userAuthFailureMsg
+  *ssh.userAuthGSSAPIErrTok
+  *ssh.userAuthGSSAPIError
+  *ssh.userAuthGSSAPIMIC
+  *ssh.userAuthGSSAPIToken
+  *ssh.userAuthPubKeyOkMsg
+  *ssh.userAuthRequestMsg
+  *ssh.userAuthSuccessMsg
+  ; PADDING: bad rdlength<nil> MsgHdrADDITIONAL: bad SVCB keyCAA.Flag: %wHINFO.Os: %wLOC.Size: %wSOA.Mbox: %wSRV.Port: %wno extensionunregisteredLoadBalancednumEphemeralmulticastTTLicmpv6Filtermilliseco...
+  SSH-2.0-H
+  type:.eq.golang.org/x/crypto/ssh.userAuthBannerMsg
+  type:.eq.golang.org/x/crypto/ssh.userAuthGSSAPIError
+  userAuthComplete
+
+----- PROCESS LAUNCH : 5 distinct -----
+   (default %q) (default %v)v6OnlyEnabledRouterSolicitReceiveErrorspkg/tcpip.Jobfragmentationfd00:ec2::254OpaqueIIDOptsoffLinkRoutesslaacPrefixesrouterSolicitPullUp failedChangeAddressBuiltinChainsCheck...
+  ; PADDING: bad rdlength<nil> MsgHdrADDITIONAL: bad SVCB keyCAA.Flag: %wHINFO.Os: %wLOC.Size: %wSOA.Mbox: %wSRV.Port: %wno extensionunregisteredLoadBalancednumEphemeralmulticastTTLicmpv6Filtermilliseco...
+  ; REPORT-CHANNEL: bad header bits: %wAPL prefix too longAPL length too long%02d %02d %0.3f %s DNSKEY.Protocol: %wISDN.SubAddress: %wNSEC.NextDomain: %wNSEC.TypeBitMap: %wNSEC3PARAM.Hash: %wRRSIG.Algor...
+  syscall.CreateProcess
+  syscall.CreateProcessAsUser
+
+----- FILE/DIR : 801 distinct -----
+        AppData\Local\{parent}\{child} for a 1P profile moved out of its MSIX package,
+        Electron userData dir (AppData\Local\{appName} for 3P, AppData\Roaming\{appName} for 1P,
+      - VM bundle: {userData}\vm_bundles\claudevm.bundle\ where {userData} is the app's
+    The service does not require command-line configuration. Instead, the Claude Desktop
+   (default %q) (default %v)v6OnlyEnabledRouterSolicitReceiveErrorspkg/tcpip.Jobfragmentationfd00:ec2::254OpaqueIIDOptsoffLinkRoutesslaacPrefixesrouterSolicitPullUp failedChangeAddressBuiltinChainsCheck...
+   Boot mode: LinuxKernelDirect (x64)%s has multiple hard links, refusing to open[VM] Warning: failed to start RPC server: %vcannot add Plan9 shares without a user token[VM] mountPlan9Shares: unreadable...
+   the virtualization service cannot read EFS-encrypted files. Decrypt the bundle folder (cipher /d /s:) or ask IT to exempt it from the EFS policy6864797660130609714981900799081393217269435300143305409...
+  %s[%s]%s %-44s packetsReceivedmembershipQueryproxy not foundicmpRateLimiterrtrSolicitTimerinvalidationJobaddressEndpointneighborSolicit%T.Prefix(): %s%s unrecognizednetworkEndpointmaxHeaderLengthNetwo...
+  %sallocatedPortsfirstEphemeralmulticastNICIDrawPacketEntrydata truncatedInfinera Corp.IEEE 1394.1995connect failedssh-connectioncurve25519: %wCoworkVMServiceService %s: %s
+  *[]layers.TLSAppDataRecord
+  *layers.TLSAppDataRecord
+  -github.com/anthropics/cowork-win32-service/vm
+  /cpu/classes/total:cpu-seconds/gc/cycles/automatic:gc-cycles/sched/pauses/total/gc:seconds/sync/mutex/wait/total:seconds/godebug/non-default-behavior/bcryptprimitives.dll not foundpanic called with ni...
+  /github.com/anthropics/cowork-win32-service/pipe
+  2github.com/anthropics/cowork-win32-service/logsink
+  ; EDNS: version pkg/tcpip/transport/tcpconntrack.streampkg/tcpip/transport/raw.EndpointFactoryed25519: bad Ed25519ph context length: tags don't match (%d vs %+v) %+v %s @%dasn1: Unmarshal recipient va...
+  ; ESU: %s: (%s)PREREQ: UPDATE: ANSWER: AAAA: %wfirstFinshiftCntwasBoundassertedembedder2.5.4.102.5.4.112.5.4.17avx512cdavx512eravx512pfavx512dqNEC/PC98EFI IA32IEEE 802LocalNetMetricom3des-cbcpasswordh...
+  ; PADDING: bad rdlength<nil> MsgHdrADDITIONAL: bad SVCB keyCAA.Flag: %wHINFO.Os: %wLOC.Size: %wSOA.Mbox: %wSRV.Port: %wno extensionunregisteredLoadBalancednumEphemeralmulticastTTLicmpv6Filtermilliseco...
+  ; REPORT-CHANNEL: bad header bits: %wAPL prefix too longAPL length too long%02d %02d %0.3f %s DNSKEY.Protocol: %wISDN.SubAddress: %wNSEC.NextDomain: %wNSEC.TypeBitMap: %wNSEC3PARAM.Hash: %wRRSIG.Algor...
+  ; ZONEVERSION: APL.Prefixes: %wCNAME.Target: %wCSYNC.Serial: %wDHCID.Digest: %wDNAME.Target: %wDNSKEY.Flags: %wDS.Algorithm: %wEID.Endpoint: %wHTTPS.Target: %wISDN.Address: %wKEY.Protocol: %wKX.Exchan...
+  AppData
+  C:/Users/runneradmin/go/pkg/mod/github.com/google/gopacket@v1.1.19/layers/tls_appdata.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/cmd/cowork-svc/filelog.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/cmd/cowork-svc/main.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/cmd/cowork-svc/service.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/cmd/cowork-svc/variant.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/logsink/oneline.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/logsink/writer.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/pipe/client_info.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/pipe/client_info_paths.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/pipe/protocol.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/pipe/server.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/pipe/signature.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/certs.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/config.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/console_reader.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/diskdiag.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/guarded.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/hcn.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/hcs.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/hostinfo.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/hostproxy.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/hostproxy_attempts.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/hostproxy_memory.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/hostproxy_pac.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/hvsock.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/impersonate.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/logfile_security.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/manager.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/plan9_mount.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/plan9_shares.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/rpc_server.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/rpc_types.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/vhdx.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/virtualnet.go
+  C:/a/apps/apps/packages/desktop/cowork-win32-service/vm/write_path_chain.go
+  FFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD129024E088A67CC74020BBEA63B139B22514A08798E3404DDEF9519B3CD3A431B302B0A6DF25F14374FE1356D6D51C245E485B576625E7EC6F44C42E9A637ED6B0BFF5CB6F406B7EDEE386BFB...
+  bridgetuplesFilterconfigpushedoffsetCookedSourcefrozenCLOSEDLISTENackNumrcvWndsndWndhasherpausedBlockstxHashminRTOmaxRTOminRTTrcvWUPqFlagswindowEndSeqReoWndRTTSeqActiveRcvNxtRcvAccRTTVarSndWndSndUnaSn...
+  bytes.Buffer: reader returned negative count from Readbinary.Write: some values are not fixed-sized in type http: Request.Write on Request with no Host or URL setread loop ending; caller owns writable...
+  cannot trim past the end of a viewheader.ScopeForIPv6Address(%s): %spkg/tcpip/network/ipv6.endpointDADpkg/tcpip/network/ipv6.sharedStatsunexpected transport protocol = %d%s hook not supported for REDI...
+  cowork-vm-storeGetProcessTimesDuplicateHandle is not definedGetSecurityInfoImpersonateSelfOpenThreadTokenSetSecurityInfoGetAdaptersInfoAddDllDirectoryCreateHardLinkWDeviceIoControlFindNextVolumeWFindV...
+  crypto/rsa: decryption errorx509: invalid RSA public keyx509: invalid DSA public keyx509: invalid DSA parametersx509: negative serial numberx509: unknown elliptic curvecurrent time %s is before %spend...
+  dns index walked out of rangeInvalid Address TLV number %dInvalid Address TLV length %dS46Lightweight4Over6ContainerFailoverMaximumClientLeadTimeCisco CCX1 CKIP + Device NameMCCAOP Advertisement Overv...
+  github.com/anthropics/cowork-win32-service
+  github.com/anthropics/cowork-win32-service/cmd/cowork-svc
+  github.com/anthropics/cowork-win32-service/logsink.(*Writer).Close
+  github.com/anthropics/cowork-win32-service/logsink.(*Writer).Close.func1
+  github.com/anthropics/cowork-win32-service/logsink.(*Writer).SetDest
+  github.com/anthropics/cowork-win32-service/logsink.(*Writer).Write
+  github.com/anthropics/cowork-win32-service/logsink.(*Writer).drain
+  ... (+731 more)

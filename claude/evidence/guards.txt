@@ -1,0 +1,53 @@
+=== SENDER GUARD DEFINITIONS (verbatim from index.chunk-EzXl5k4A.js) ===
+
+----- tv -----
+function tv(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return!!(e.senderFrame?.parent===null&&((t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:
+
+----- Xh -----
+function Xh(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return!!(e.senderFrame?.parent===null&&((t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:
+
+----- Zua -----
+function Zua(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return!!(e.senderFrame?.parent===null&&((t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`
+
+----- Qot -----
+function Qot(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return e.senderFrame?.parent===null&&(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="app://localhost"}
+
+----- XLi -----
+function XLi(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return!!(e.senderFrame?.parent===null&&((t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`
+
+----- nba -----
+function nba(e){return e.senderFrame?.parent===null}
+
+----- twi -----
+function twi(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return!!(e.senderFrame?.parent===null&&((t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`
+
+----- vTi -----
+function vTi(e){return e.senderFrame?.parent===null}
+
+----- Ixe -----
+function Ixe(e){return e.senderFrame?.parent===null}
+
+----- $0i -----
+function $0i(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return t.protocol==="cowork-artifact:"&&e.senderFrame?.parent===null}
+
+----- PMr -----
+function PMr(e){return e.senderFrame?.parent===null}
+
+----- yTi -----
+function yTi(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return!!(e.senderFrame?.parent===null&&((t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`
+
+----- $lt -----
+function $lt(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return!!(e.senderFrame?.parent===null&&((t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&(t.origin
+
+----- nHn -----
+function nHn(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return!!(e.senderFrame?.parent===null&&((t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`
+
+----- owi -----
+function owi(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return!!(e.senderFrame?.parent===null&&((t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`
+
+----- $di -----
+function $di(e){if(!e.senderFrame||!e.senderFrame.url)return!1;let t;try{t=new URL(e.senderFrame.url)}catch{return!1}return!!(e.senderFrame?.parent===null&&((t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.ai"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://claude.com"||(t.origin==="null"||t.origin===null?`${t.protocol}//${t.host}`:t.origin)==="https://preview.claude.com"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.hostname==="localhost"||globalThis.isDeveloperApprovedDevUrlOverrideEnabled&&t.protoco
+
+
+----- Rya (used by Aka = validated ipcMain.handle wrapper) -----
+function Rya(e){if(!e)return!1;let t=new URL(e.url).host;return $A(t)}

@@ -1,0 +1,158 @@
+{
+  "corpus": {
+    "main": {
+      "files": 34,
+      "bytes": 10333165
+    },
+    "render": {
+      "files": 14782,
+      "bytes": 383489825
+    },
+    "bytes": 393822990,
+    "chars": 350841377,
+    "byteEqChar": false,
+    "nonAsciiFiles": 1948
+  },
+  "census": {
+    "elevation_service": {
+      "main": 0,
+      "render": 0,
+      "total": 0,
+      "mainFiles": 0,
+      "renderFiles": 0
+    },
+    "elevator": {
+      "main": 0,
+      "render": 1,
+      "total": 1,
+      "mainFiles": 0,
+      "renderFiles": 1
+    },
+    "runas": {
+      "main": 7,
+      "render": 131,
+      "total": 138,
+      "mainFiles": 1,
+      "renderFiles": 7
+    },
+    "ShellExecuteEx": {
+      "main": 0,
+      "render": 0,
+      "total": 0,
+      "mainFiles": 0,
+      "renderFiles": 0
+    },
+    "elevation (any)": {
+      "main": 10,
+      "render": 3220,
+      "total": 3230,
+      "mainFiles": 4,
+      "renderFiles": 254
+    },
+    "sandbox-setup bin": {
+      "main": 4,
+      "render": 0,
+      "total": 4,
+      "mainFiles": 2,
+      "renderFiles": 0
+    },
+    "sandbox-service bin": {
+      "main": 0,
+      "render": 0,
+      "total": 0,
+      "mainFiles": 0,
+      "renderFiles": 0
+    },
+    "codex-windows-sandbox": {
+      "main": 3,
+      "render": 0,
+      "total": 3,
+      "mainFiles": 2,
+      "renderFiles": 0
+    },
+    "command-runner": {
+      "main": 4,
+      "render": 0,
+      "total": 4,
+      "mainFiles": 2,
+      "renderFiles": 0
+    },
+    "ipcRenderer": {
+      "main": 41,
+      "render": 0,
+      "total": 41,
+      "mainFiles": 3,
+      "renderFiles": 0
+    },
+    "ipcMain": {
+      "main": 27,
+      "render": 0,
+      "total": 27,
+      "mainFiles": 2,
+      "renderFiles": 0
+    },
+    "contextBridge": {
+      "main": 7,
+      "render": 0,
+      "total": 7,
+      "mainFiles": 2,
+      "renderFiles": 0
+    },
+    "exposeInMainWorld": {
+      "main": 3,
+      "render": 0,
+      "total": 3,
+      "mainFiles": 1,
+      "renderFiles": 0
+    },
+    "webPreferences": {
+      "main": 15,
+      "render": 0,
+      "total": 15,
+      "mainFiles": 2,
+      "renderFiles": 0
+    },
+    "nodeIntegration": {
+      "main": 22,
+      "render": 0,
+      "total": 22,
+      "mainFiles": 2,
+      "renderFiles": 0
+    },
+    "contextIsolation": {
+      "main": 12,
+      "render": 1,
+      "total": 13,
+      "mainFiles": 2,
+      "renderFiles": 1
+    },
+    "sandbox: literal": {
+      "main": 6,
+      "render": 0,
+      "total": 6,
+      "mainFiles": 2,
+      "renderFiles": 0
+    },
+    "webSecurity": {
+      "main": 0,
+      "render": 0,
+      "total": 0,
+      "mainFiles": 0,
+      "renderFiles": 0
+    },
+    "no-sandbox": {
+      "main": 0,
+      "render": 0,
+      "total": 0,
+      "mainFiles": 0,
+      "renderFiles": 0
+    },
+    "appContainer / contained": {
+      "main": 7,
+      "render": 31,
+      "total": 38,
+      "mainFiles": 7,
+      "renderFiles": 31
+    }
+  }
+}

@@ -1,0 +1,68 @@
+=== PE INVENTORY (static file parse; nothing loaded or executed) ===
+
+########## resources\cowork-svc.exe  (13605200 bytes) ##########
+  machine=x86-64  imageBase=0x5368709120
+  sections:
+    .text      VA=0x00001000 VSize=   5745201 FileOff=      1536 RawSize=   5745664 chars=0x60000020
+    .rdata     VA=0x0057c000 VSize=   7086520 FileOff=   5747200 RawSize=   7086592 chars=0x40000040
+    .data      VA=0x00c3f000 VSize=   8328032 FileOff=  12833792 RawSize=    438784 chars=0xc0000040
+    .pdata     VA=0x01431000 VSize=    146172 FileOff=  13272576 RawSize=    146432 chars=0x40000040
+    .xdata     VA=0x01455000 VSize=       180 FileOff=  13419008 RawSize=       512 chars=0x40000040
+    .idata     VA=0x01456000 VSize=      1342 FileOff=  13419520 RawSize=      1536 chars=0xc0000040
+    .reloc     VA=0x01457000 VSize=    162408 FileOff=  13421056 RawSize=    162816 chars=0x42000040
+    .symtab    VA=0x0147f000 VSize=         4 FileOff=  13583872 RawSize=       512 chars=0x42000000
+  RVA->file-offset rule: file_offset = RVA - section.VA + section.FileOffset (verified against export dir)
+  NO EXPORT DIRECTORY
+
+########## resources\claude-ssh-broker.exe  (2599248 bytes) ##########
+  machine=x86-64  imageBase=0x5368709120
+  sections:
+    .text      VA=0x00001000 VSize=   1105393 FileOff=      1536 RawSize=   1105408 chars=0x60000020
+    .rdata     VA=0x0010f000 VSize=   1295232 FileOff=   1106944 RawSize=   1295360 chars=0x40000040
+    .data      VA=0x0024c000 VSize=    421064 FileOff=   2402304 RawSize=    119296 chars=0xc0000040
+    .pdata     VA=0x002b3000 VSize=     28344 FileOff=   2521600 RawSize=     28672 chars=0x40000040
+    .xdata     VA=0x002ba000 VSize=       180 FileOff=   2550272 RawSize=       512 chars=0x40000040
+    .idata     VA=0x002bb000 VSize=      1342 FileOff=   2550784 RawSize=      1536 chars=0xc0000040
+    .reloc     VA=0x002bc000 VSize=     25192 FileOff=   2552320 RawSize=     25600 chars=0x42000040
+    .symtab    VA=0x002c3000 VSize=         4 FileOff=   2577920 RawSize=       512 chars=0x42000000
+  RVA->file-offset rule: file_offset = RVA - section.VA + section.FileOffset (verified against export dir)
+  NO EXPORT DIRECTORY
+
+########## resources\claude-ssh-proxy.exe  (1976144 bytes) ##########
+  machine=x86-64  imageBase=0x5368709120
+  sections:
+    .text      VA=0x00001000 VSize=    796689 FileOff=      1536 RawSize=    797184 chars=0x60000020
+    .rdata     VA=0x000c4000 VSize=   1013248 FileOff=    798720 RawSize=   1013248 chars=0x40000040
+    .data      VA=0x001bc000 VSize=    397928 FileOff=   1811968 RawSize=     97280 chars=0xc0000040
+    .pdata     VA=0x0021e000 VSize=     22164 FileOff=   1909248 RawSize=     22528 chars=0x40000040
+    .xdata     VA=0x00224000 VSize=       180 FileOff=   1931776 RawSize=       512 chars=0x40000040
+    .idata     VA=0x00225000 VSize=      1342 FileOff=   1932288 RawSize=      1536 chars=0xc0000040
+    .reloc     VA=0x00226000 VSize=     20528 FileOff=   1933824 RawSize=     20992 chars=0x42000040
+    .symtab    VA=0x0022c000 VSize=         4 FileOff=   1954816 RawSize=       512 chars=0x42000000
+  RVA->file-offset rule: file_offset = RVA - section.VA + section.FileOffset (verified against export dir)
+  NO EXPORT DIRECTORY
+
+########## resources\claude-ssh-askpass.exe  (2648912 bytes) ##########
+  machine=x86-64  imageBase=0x5368709120
+  sections:
+    .text      VA=0x00001000 VSize=   1127537 FileOff=      1536 RawSize=   1127936 chars=0x60000020
+    .rdata     VA=0x00115000 VSize=   1321288 FileOff=   1129472 RawSize=   1321472 chars=0x40000040
+    .data      VA=0x00258000 VSize=    421288 FileOff=   2450944 RawSize=    119296 chars=0xc0000040
+    .pdata     VA=0x002bf000 VSize=     29052 FileOff=   2570240 RawSize=     29184 chars=0x40000040
+    .xdata     VA=0x002c7000 VSize=       180 FileOff=   2599424 RawSize=       512 chars=0x40000040
+    .idata     VA=0x002c8000 VSize=      1342 FileOff=   2599936 RawSize=      1536 chars=0xc0000040
+    .reloc     VA=0x002c9000 VSize=     25652 FileOff=   2601472 RawSize=     26112 chars=0x42000040
+    .symtab    VA=0x002d0000 VSize=         4 FileOff=   2627584 RawSize=       512 chars=0x42000000
+  RVA->file-offset rule: file_offset = RVA - section.VA + section.FileOffset (verified against export dir)
+  NO EXPORT DIRECTORY
+
+########## resources\chrome-native-host.exe  (1130832 bytes) ##########
+  machine=x86-64  imageBase=0x5368709120
+  sections:
+    .text      VA=0x00001000 VSize=    794110 FileOff=      1024 RawSize=    794112 chars=0x60000020
+    .rdata     VA=0x000c3000 VSize=    268990 FileOff=    795136 RawSize=    269312 chars=0x40000040
+    .data      VA=0x00105000 VSize=      1072 FileOff=   1064448 RawSize=      1024 chars=0xc0000040
+    .pdata     VA=0x00106000 VSize=     41016 FileOff=   1065472 RawSize=     41472 chars=0x40000040
+    .reloc     VA=0x00111000 VSize=      2620 FileOff=   1106944 RawSize=      3072 chars=0x42000040
+  RVA->file-offset rule: file_offset = RVA - section.VA + section.FileOffset (verified against export dir)
+  NO EXPORT DIRECTORY

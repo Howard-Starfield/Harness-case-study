@@ -1,0 +1,278 @@
+﻿
+--------------------------------------------------------------------------
+-- constant uo =
+
+  [application-network-startup-CfAQmSYg.js @133566] uo=
+    nk)`,"ff05::1:3/128":`Multicast (All DHCP servers in this site)`,"::/128":`Unspecified`,"::1/128":`Loopback`,"ff00::/8":`Multicast`,"fe80::/10":`Link-local unicast`},e.RE_BAD_CHARACTERS=/([^0-9a-f:/%])/gi,e.RE_BAD_ADDRESS=/([0-9a-f]{5,}|:{3,}|[^:]:$|^:[^:]|\/$)/gi,e.RE_SUBNET_STRING=/\/\d{1,3}(?=%|$)/,e.RE_ZONE_STRING=/%.*$/,e.RE_URL=/^\[{0,1}([0-9a-f:]+)\]{0,1}/,e.RE_URL_WITH_PORT=/\[([0-9a-f:]+)\]:([0-9]{1,5})/})),uo=e.t((e=>{Object.defineProperty(e,"__esModule",{value:!0}),e.spanAllZeroes=t,e.spanAll=n,e.spanLeadingZeroes=i,e.simpleGroup=a;function t(e){return e.replace(/(0+)/g,`<span class="zero">$1</span>`)}function n(e,n=0){return e.split(``).map((e,r)=>`<span class="digit value-${e} position-${r+n}">${t(e)}</span>`).join(``)}function r(e){return e.replace(/^(0+)/,`<span class="zero">$1</span>`)}function i(e){return e.spli
+
+  [browser-page-preload.js @67086] uo=
+    e,t)}),ro=f(`ZodULID`,(e,t)=>{pn.init(e,t),Ja.init(e,t)}),io=f(`ZodXID`,(e,t)=>{mn.init(e,t),Ja.init(e,t)}),ao=f(`ZodKSUID`,(e,t)=>{hn.init(e,t),Ja.init(e,t)}),oo=f(`ZodIPv4`,(e,t)=>{bn.init(e,t),Ja.init(e,t)}),so=f(`ZodIPv6`,(e,t)=>{xn.init(e,t),Ja.init(e,t)}),co=f(`ZodCIDRv4`,(e,t)=>{Sn.init(e,t),Ja.init(e,t)}),V=f(`ZodCIDRv6`,(e,t)=>{Cn.init(e,t),Ja.init(e,t)}),lo=f(`ZodBase64`,(e,t)=>{wn.init(e,t),Ja.init(e,t)}),uo=f(`ZodBase64URL`,(e,t)=>{Tn.init(e,t),Ja.init(e,t)}),fo=f(`ZodE164`,(e,t)=>{En.init(e,t),Ja.init(e,t)}),po=f(`ZodJWT`,(e,t)=>{Dn.init(e,t),Ja.init(e,t)}),mo=f(`ZodNumber`,(e,t)=>{On.init(e,t),Ga.init(e,t),e._zod.processJSONSchema=(t,n,r)=>bi(e,t,n,r),ha(e,`ZodNumber`,{gt(e,t){return this.check(Vr(e,t))},gte(e,t){return this.check(Hr(e,t))},min(e,t){return this.check(Hr(e,t))},lt(e,t){return this.check(zr(e,t))},lt
+
+  [browser-page-preload.js @219729] uo=
+    alOrder===`forwards`||t.memoizedProps.revealOrder===`backwards`||t.memoizedProps.revealOrder===`unstable_legacy-backwards`||t.memoizedProps.revealOrder===`together`)){if(t.flags&128)return t}else if(t.child!==null){t.child.return=t,t=t.child;continue}if(t===e)break;for(;t.sibling===null;){if(t.return===null||t.return===e)return null;t=t.return}t.sibling.return=t.return,t=t.sibling}return null}var co=0,V=null,lo=null,uo=null,fo=!1,po=!1,mo=!1,ho=0,go=0,_o=null,vo=0;function yo(){throw Error(i(321))}function bo(e,t){if(t===null)return!1;for(var n=0;n<t.length&&n<e.length;n++)if(!vr(e[n],t[n]))return!1;return!0}function xo(e,t,n,r,i,a){return co=a,V=t,t.memoizedState=null,t.updateQueue=null,t.lanes=0,k.H=e===null||e.memoizedState===null?Rs:zs,mo=!1,a=n(r,i),mo=!1,po&&(a=Co(t,n,r,i)),So(e),a}function So(e){k.H=Ls;var t=lo!==null&&lo
+
+  [browser-page-preload.js @220170] uo=
+    o=!1,ho=0,go=0,_o=null,vo=0;function yo(){throw Error(i(321))}function bo(e,t){if(t===null)return!1;for(var n=0;n<t.length&&n<e.length;n++)if(!vr(e[n],t[n]))return!1;return!0}function xo(e,t,n,r,i,a){return co=a,V=t,t.memoizedState=null,t.updateQueue=null,t.lanes=0,k.H=e===null||e.memoizedState===null?Rs:zs,mo=!1,a=n(r,i),mo=!1,po&&(a=Co(t,n,r,i)),So(e),a}function So(e){k.H=Ls;var t=lo!==null&&lo.next!==null;if(co=0,uo=lo=V=null,fo=!1,go=0,_o=null,t)throw Error(i(300));e===null||tc||(e=e.dependencies,e!==null&&Yi(e)&&(tc=!0))}function Co(e,t,n,r){V=e;var a=0;do{if(po&&(_o=null),go=0,po=!1,25<=a)throw Error(i(301));if(a+=1,uo=lo=null,e.updateQueue!=null){var o=e.updateQueue;o.lastEffect=null,o.events=null,o.stores=null,o.memoCache!=null&&(o.memoCache.index=0)}k.H=Bs,o=t(n,r)}while(po);return o}function wo(){var e=k.H,t=e.useState
+  (8 shown)
+
+--------------------------------------------------------------------------
+-- constant lo =
+
+  [src-BJv5Mk7n.js @125036] lo=1
+    n io(e){let[t,n]=await Promise.all([e.codexHome(),e.platformFamily()]);return!e.isLocal||process.platform===`win32`&&n!==`windows`?no({codexHome:e.isLocal&&n!==`windows`?o.Ut(t):t,platformFamily:n,spawn:e.spawn.bind(e)}):to({codexHome:t,homeDirectory:(0,y.homedir)(),localAppData:process.env.LOCALAPPDATA,platformFamily:n})}var ao=3e4,oo=`codex_cloud`,so=12e4,co=`Timed out waiting for Windows sandbox setup completion`,lo=12e5,uo=3e5,fo=`Please continue this conversation on the window where it was started.`,po=5e3;function mo(e){return e===`thread/start`||e===`thread/startAeon`||e===`thread/fork`||e===`thread/inject_items`||e===`thread/queue/add`||e===`turn/addUserMessage`||e===`turn/start`||e===`turn/steer`}var ho=class extends Error{},go=class extends Error{delivery;constructor(e,t){let n=`Codex app-server is not available`;t ins
+  (1 shown)
+
+--------------------------------------------------------------------------
+-- constant co = (error msg)
+
+  [src-BJv5Mk7n.js @124976] co=`
+    is.rootPromise}clear(){this.rootPromise=null}};async function io(e){let[t,n]=await Promise.all([e.codexHome(),e.platformFamily()]);return!e.isLocal||process.platform===`win32`&&n!==`windows`?no({codexHome:e.isLocal&&n!==`windows`?o.Ut(t):t,platformFamily:n,spawn:e.spawn.bind(e)}):to({codexHome:t,homeDirectory:(0,y.homedir)(),localAppData:process.env.LOCALAPPDATA,platformFamily:n})}var ao=3e4,oo=`codex_cloud`,so=12e4,co=`Timed out waiting for Windows sandbox setup completion`,lo=12e5,uo=3e5,fo=`Please continue this conversation on the window where it was started.`,po=5e3;function mo(e){return e===`thread/start`||e===`thread/startAeon`||e===`thread/fork`||e===`thread/inject_items`||e===`thread/queue/add`||e===`turn/addUserMessage`||e===`turn/start`||e===`turn/steer`}var ho=class extends Error{},go=class extends Error{delivery;cons
+  (1 shown)
+
+--------------------------------------------------------------------------
+-- timeout cooldown guard
+
+  [src-BJv5Mk7n.js @293595] Cannot retry the same Windows sandbox setup
+    d||(l.finished=!0,s(),c.resolve({success:e.success,error:e.error}))}};this.activeLogin=l;let u=e.signal,d=()=>{l.finished||(l.finished=!0,s(),this.cancelLogin(n),c.reject(this.createAbortError()))};return u.aborted?d():u.addEventListener(`abort`,d,{once:!0}),s=()=>{u.removeEventListener(`abort`,d),this.activeLogin?.loginId===n&&(this.activeLogin=void 0)},{loginId:Gp.parse(n),verificationUrl:r,userCode:i,completion:c.promise}}async startWindowsSandboxSetup(e,t){if(this.clearExpiredWindowsSandboxTimeouts(),this.activeWindowsSandboxSetup&&!this.activeWindowsSandboxSetup.finished)throw Error(`Windows sandbox setup already in progress`);if(this.timedOutWindowsSandboxSetup?.[e]!=null)throw Error(`Cannot retry the same Windows sandbox setup mode immediately after a timeout`);let n=U(),r={mode:e,finished:!1,cancelTimeout:null,complete:e=>{i()&&n.resolve(e)},fail:e=>{i()&&n.reject(e)}},i=()=>!r.finished&&(r.finished=!0,r.cancelTimeout!=null&&(r.cancelTimeout(),r.cancelTimeout=null),this.activeWindowsSandboxSetup===r&&(this.activeWindowsSandboxSetup=void 0),!0);this.activeWindowsSandboxSetup=r;let a;try{a=await this.requestClient.sendRequest(`windowsSandbox/setupStart`,{mode:e,cwd:t})}catch(e){throw this.activeWindowsSandboxSetup===r&&(this.activeWindowsSandboxSetup=void 0),r.finished=!0,e}return a.started?(r.finished||(r.cancelTimeout=this.schedule(()=>{this.timedOutWindowsSandboxSetup=
+  (1 shown)
+
+--------------------------------------------------------------------------
+-- startWindowsSandboxSetup definition + callers
+
+  [src-BJv5Mk7n.js @293330] startWindowsSandboxSetup(
+    length>0;if(!a||!o)throw this.logger.warning(`chatgpt_device_code_login_response_missing_fields`,{safe:{hostId:this.requestClient.hostId},sensitive:{loginId:n,hasVerificationUrl:a,hasUserCode:o}}),Error(`Missing verificationUrl or userCode in account/login/start response`);let s=()=>{},c=U(),l={loginId:Gp.parse(n),finished:!1,complete:e=>{e.loginId!==n||l.finished||(l.finished=!0,s(),c.resolve({success:e.success,error:e.error}))}};this.activeLogin=l;let u=e.signal,d=()=>{l.finished||(l.finished=!0,s(),this.cancelLogin(n),c.reject(this.createAbortError()))};return u.aborted?d():u.addEventListener(`abort`,d,{once:!0}),s=()=>{u.removeEventListener(`abort`,d),this.activeLogin?.loginId===n&&(this.activeLogin=void 0)},{loginId:Gp.parse(n),verificationUrl:r,userCode:i,completion:c.promise}}async startWindowsSandboxSetup(e,t){if(this.clearExpiredWindowsSandboxTimeouts(),this.activeWindowsSandboxSetup&&!this.activeWindowsSandboxSetup.finished)throw Error(`Windows sandbox setup already in progress`);if(this.timedOutWindowsSandboxSetup?.[e]!=null)throw Error(`Cannot retry the same Windows sandbox setup mode immediately after a timeout`);let n=U(),r={mode:e,finished:!1,cancelTimeout:null,complete:e=>{i()&&n.resolve(e)},fail:e=>{i()&&n.reject(e)}},i=()=>!r.finished&&(r.finished=!0,r.cancelTimeout!=null&&(r.cancelTimeout(),r.cancelTimeout=null),this.activeWindowsSandboxSetup===r&&(this.activeWindowsSandboxSetup=void 0),!0);this.activeWindowsSandboxSetup=r;let a;try{a=await this.requestClient.sendRequest(`windowsSandbox/setupStart`,{mode:e,cwd:t})}catch(e){throw this.activeWindowsSandboxS
+
+  [src-BJv5Mk7n.js @997879] startWindowsSandboxSetup(
+    hreadDeletion.bind(this)},e)}async deleteAllArchivedConversations(){return qS({hostId:this.hostId,runtime:this.runtime,handleThreadDeletion:this.handleThreadDeletion.bind(this)})}performArchiveConversation(e,t,n){return $S(this.archiveContext(n.useAppServerPins),e,t,n)}loginWithApiKey(e){return this.lifecycle.loginWithApiKey(e)}createChatGptLoginSession(e={}){let t=this.runtime.createAbortController();return new Cy(this.loginWithChatGpt(t,e),t)}createGatewayOAuthLoginSession(){let e=this.runtime.createAbortController(),t=this.lifecycle.gatewayOAuth.start(e.signal);return t.catch(()=>void 0),new Cy(t,e)}createChatGptDeviceCodeLoginSession(){let e=this.runtime.createAbortController();return new Cy(this.loginWithChatGptDeviceCode(e),e)}createWindowsSandboxSetupSession(e,t){return new Sy(this.startWindowsSandboxSetup(e,t))}loginWithChatGpt(e,t={}){return this.lifecycle.loginWithChatGpt(e,t)}loginWithChatGptDeviceCode(e){return this.lifecycle.loginWithChatGptDeviceCode(e)}async startWindowsSandboxSetup(e,t){return this.lifecycle.startWindowsSandboxSetup(e,t)}async logout(){await this.sendRequest(`account/logout`,void 0)}logoutWithoutServer(){this.turnStartObservations.clear(),this.lifecycle.logoutWithoutServer()}async getAccount(e){return this.sendRequest(`account/read`,{refreshToken:!1},e)}async getAuthMethod(e){let{authMethod:t}=await this.sendRequest(`getAuthStatus`,{includeToken:!1,refreshToken:!1},e);return t}setDefaultServiceTierConfig(e,t){return this.defaultTurnConfig.writeServiceTier(e,t)}listMcpServers(e,t){return fT(this,this.mcpServerStatusPromises,e,t,(t,n)=>{!this.
+
+  [src-BJv5Mk7n.js @998067] startWindowsSandboxSetup(
+    chiveConversation(e,t,n){return $S(this.archiveContext(n.useAppServerPins),e,t,n)}loginWithApiKey(e){return this.lifecycle.loginWithApiKey(e)}createChatGptLoginSession(e={}){let t=this.runtime.createAbortController();return new Cy(this.loginWithChatGpt(t,e),t)}createGatewayOAuthLoginSession(){let e=this.runtime.createAbortController(),t=this.lifecycle.gatewayOAuth.start(e.signal);return t.catch(()=>void 0),new Cy(t,e)}createChatGptDeviceCodeLoginSession(){let e=this.runtime.createAbortController();return new Cy(this.loginWithChatGptDeviceCode(e),e)}createWindowsSandboxSetupSession(e,t){return new Sy(this.startWindowsSandboxSetup(e,t))}loginWithChatGpt(e,t={}){return this.lifecycle.loginWithChatGpt(e,t)}loginWithChatGptDeviceCode(e){return this.lifecycle.loginWithChatGptDeviceCode(e)}async startWindowsSandboxSetup(e,t){return this.lifecycle.startWindowsSandboxSetup(e,t)}async logout(){await this.sendRequest(`account/logout`,void 0)}logoutWithoutServer(){this.turnStartObservations.clear(),this.lifecycle.logoutWithoutServer()}async getAccount(e){return this.sendRequest(`account/read`,{refreshToken:!1},e)}async getAuthMethod(e){let{authMethod:t}=await this.sendRequest(`getAuthStatus`,{includeToken:!1,refreshToken:!1},e);return t}setDefaultServiceTierConfig(e,t){return this.defaultTurnConfig.writeServiceTier(e,t)}listMcpServers(e,t){return fT(this,this.mcpServerStatusPromises,e,t,(t,n)=>{!this.disposed&&e.threadId==null&&this.events.emitMcpAuthenticationStatus({isCompleteInventory:e.serverName==null&&e.cursor==null&&t.nextCursor==null,statuses:t.data.map(({name:e,authStatus:t,se
+
+  [src-BJv5Mk7n.js @998119] startWindowsSandboxSetup(
+    xt(n.useAppServerPins),e,t,n)}loginWithApiKey(e){return this.lifecycle.loginWithApiKey(e)}createChatGptLoginSession(e={}){let t=this.runtime.createAbortController();return new Cy(this.loginWithChatGpt(t,e),t)}createGatewayOAuthLoginSession(){let e=this.runtime.createAbortController(),t=this.lifecycle.gatewayOAuth.start(e.signal);return t.catch(()=>void 0),new Cy(t,e)}createChatGptDeviceCodeLoginSession(){let e=this.runtime.createAbortController();return new Cy(this.loginWithChatGptDeviceCode(e),e)}createWindowsSandboxSetupSession(e,t){return new Sy(this.startWindowsSandboxSetup(e,t))}loginWithChatGpt(e,t={}){return this.lifecycle.loginWithChatGpt(e,t)}loginWithChatGptDeviceCode(e){return this.lifecycle.loginWithChatGptDeviceCode(e)}async startWindowsSandboxSetup(e,t){return this.lifecycle.startWindowsSandboxSetup(e,t)}async logout(){await this.sendRequest(`account/logout`,void 0)}logoutWithoutServer(){this.turnStartObservations.clear(),this.lifecycle.logoutWithoutServer()}async getAccount(e){return this.sendRequest(`account/read`,{refreshToken:!1},e)}async getAuthMethod(e){let{authMethod:t}=await this.sendRequest(`getAuthStatus`,{includeToken:!1,refreshToken:!1},e);return t}setDefaultServiceTierConfig(e,t){return this.defaultTurnConfig.writeServiceTier(e,t)}listMcpServers(e,t){return fT(this,this.mcpServerStatusPromises,e,t,(t,n)=>{!this.disposed&&e.threadId==null&&this.events.emitMcpAuthenticationStatus({isCompleteInventory:e.serverName==null&&e.cursor==null&&t.nextCursor==null,statuses:t.data.map(({name:e,authStatus:t,serverInfo:n})=>({name:e,authStatus:t,startupSucceeded
+  (4 shown)
+
+==========================================================================
+== REQUEST PROTOCOL METHODS (sendRequest targets)
+==========================================================================
+distinct sendRequest() methods: 57
+      account/gatewayOAuth/cancel                    src-BJv5Mk7n.js
+      account/gatewayOAuth/login                     src-BJv5Mk7n.js
+      account/login/cancel                           src-BJv5Mk7n.js
+      account/login/start                            src-BJv5Mk7n.js
+      account/logout                                 src-BJv5Mk7n.js
+      account/read                                   src-BJv5Mk7n.js
+      config/batchWrite                              src-BJv5Mk7n.js
+      config/read                                    src-BJv5Mk7n.js
+      configRequirements/read                        src-BJv5Mk7n.js
+      environment/info                               main-BklS_2Y2.js
+      fs/copy                                        src-BJv5Mk7n.js
+      fs/createDirectory                             src-BJv5Mk7n.js
+      fs/getMetadata                                 main-BklS_2Y2.js
+      fs/readDirectory                               main-BklS_2Y2.js
+      fs/readFile                                    src-BJv5Mk7n.js
+      fs/remove                                      src-BJv5Mk7n.js
+      fs/unwatch                                     src-BJv5Mk7n.js
+      fs/watch                                       src-BJv5Mk7n.js
+      fs/writeFile                                   src-BJv5Mk7n.js
+      getAuthStatus                                  src-BJv5Mk7n.js
+      ide-context                                    src-BJv5Mk7n.js
+      initialize                                     src-BJv5Mk7n.js
+      mcpServer/event/stream/stop                    src-BJv5Mk7n.js
+      mcpServer/tool/call                            src-BJv5Mk7n.js
+      mcpServerStatus/list                           src-BJv5Mk7n.js
+      model/list                                     src-BJv5Mk7n.js
+      ping                                           main-BklS_2Y2.js
+      thread-owner-discovery                         src-BJv5Mk7n.js
+      thread/archive                                 src-BJv5Mk7n.js
+      thread/backgroundTerminals/clean               src-BJv5Mk7n.js
+      thread/compact/start                           src-BJv5Mk7n.js
+      thread/delete                                  src-BJv5Mk7n.js
+      thread/fork                                    src-BJv5Mk7n.js
+      thread/goal/clear                              src-BJv5Mk7n.js
+      thread/goal/get                                src-BJv5Mk7n.js
+      thread/goal/set                                src-BJv5Mk7n.js
+      thread/inject_items                            src-BJv5Mk7n.js
+      thread/items/list                              src-BJv5Mk7n.js
+      thread/list                                    src-BJv5Mk7n.js
+      thread/metadata/update                         src-BJv5Mk7n.js
+      thread/name/set                                src-BJv5Mk7n.js
+      thread/read                                    src-BJv5Mk7n.js
+      thread/resume                                  src-BJv5Mk7n.js
+      thread/revert                                  src-BJv5Mk7n.js
+      thread/rollback                                src-BJv5Mk7n.js
+      thread/search                                  src-BJv5Mk7n.js
+      thread/settings/update                         src-BJv5Mk7n.js
+      thread/stop                                    src-BJv5Mk7n.js
+      thread/timeline/list                           src-BJv5Mk7n.js
+      thread/turns/list                              src-BJv5Mk7n.js
+      thread/unarchive                               src-BJv5Mk7n.js
+      thread/unsubscribe                             src-BJv5Mk7n.js
+      turn/interrupt                                 src-BJv5Mk7n.js
+      turn/settings/update                           src-BJv5Mk7n.js
+      turn/start                                     src-BJv5Mk7n.js
+      turn/steer                                     src-BJv5Mk7n.js
+  *** windowsSandbox/setupStart                      src-BJv5Mk7n.js
+
+==========================================================================
+== INBOUND NOTIFICATION METHODS (handleNotification cases)
+==========================================================================
+      account/chatgptAuthTokens/refresh
+      account/gatewayOAuth/changed
+      account/login/completed
+      account/rateLimits/read
+      account/read
+      account/updated
+      application/vnd.ms-excel.sheet.macroenabled
+      application/vnd.ms-excel.template.macroenabled
+      application/vnd.ms-powerpoint.presentation.macroenabled
+      application/vnd.ms-powerpoint.slideshow.macroenabled
+      application/vnd.ms-powerpoint.template.macroenabled
+      application/vnd.ms-visio.drawing
+      application/vnd.ms-word.document.macroenabled
+      application/vnd.ms-word.template.macroenabledtemplate
+      application/vnd.oasis.opendocument.graphics
+      application/vnd.oasis.opendocument.graphics-template
+      application/vnd.oasis.opendocument.presentation
+      application/vnd.oasis.opendocument.presentation-template
+      application/vnd.oasis.opendocument.spreadsheet
+      application/vnd.oasis.opendocument.spreadsheet-template
+      application/vnd.oasis.opendocument.text
+      application/vnd.oasis.opendocument.text-template
+      application/vnd.openxmlformats-officedocument.presentationml.presentation
+      application/vnd.openxmlformats-officedocument.presentationml.slideshow
+      application/vnd.openxmlformats-officedocument.presentationml.template
+      application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+      application/vnd.openxmlformats-officedocument.spreadsheetml.template
+      application/vnd.openxmlformats-officedocument.wordprocessingml.document
+      application/vnd.openxmlformats-officedocument.wordprocessingml.template
+      attestation/generate
+      audio/aac
+      audio/mpeg
+      audio/ogg
+      audio/wav
+      audio/wave
+      audio/x-wav
+  *** autoApprovalReview/strictReviewRequired
+      collaborationMode/list
+      configRequirements/read
+      currentTime/read
+      externalAgentConfig/import/completed
+      fs/changed
+      hook/completed
+      hook/started
+      item/agentMessage/delta
+  *** item/autoApprovalReview/completed
+  *** item/autoApprovalReview/started
+  *** item/commandExecution/outputDelta
+  *** item/commandExecution/requestApproval
+  *** item/commandExecution/terminalInteraction
+      item/completed
+      item/fileChange/outputDelta
+      item/fileChange/patchUpdated
+  *** item/fileChange/requestApproval
+      item/mcpToolCall/progress
+  *** item/permissions/requestApproval
+      item/plan/delta
+      item/plan/requestImplementation
+      item/reasoning/summaryPartAdded
+      item/reasoning/summaryTextDelta
+      item/reasoning/textDelta
+      item/started
+      item/tool/call
+      item/tool/requestOptionPicker
+      item/tool/requestSetupCodexContextPicker
+      item/tool/requestUserInput
+      mcpServer/elicitation/request
+      mcpServer/oauthLogin/completed
+      model/list
+      model/rerouted
+      model/safetyBuffering/updated
+      serverRequest/resolved
+      thread/archive
+      thread/archived
+      thread/closed
+      thread/deleted
+      thread/environment/connected
+      thread/environment/disconnected
+      thread/goal/cleared
+      thread/goal/updated
+      thread/items/list
+      thread/name/updated
+      thread/queue/add
+      thread/read
+      thread/realtime/closed
+      thread/realtime/error
+      thread/realtime/itemAdded
+      thread/realtime/listVoices
+      thread/realtime/started
+      thread/realtime/transcript/delta
+      thread/realtime/transcript/done
+      thread/resume
+      thread/settings/updated
+      thread/start
+      thread/startAeon
+      thread/started
+      thread/status/changed
+      thread/tokenUsage/updated
+      thread/turns/list
+      thread/unarchived
+      turn/addUserMessage
+      turn/completed
+      turn/diff/updated
+      turn/plan/updated
+      turn/start
+      turn/started
+  *** windowsSandbox/setupCompleted
+
+--------------------------------------------------------------------------
+-- allowServiceInstallElevation
+
+  [bootstrap-487kJHw_.js @21465] allowServiceInstallElevation
+    manual:!0})}}async installPreparedUpdate(){let e=await this.readStageState();if(e==null)throw Error(`Install requested without a staged Windows update.`);try{if(this.setUpdateReady(!1),this.setInstallProgressPercent(0),await Sn(),await this.options.onBeforeInstall?.(),!this.options.allowed()){this.setInstallProgressPercent(null),this.setUpdateLifecycleState(`idle`);return}throw await this.options.nativeAddon.activateStagedPackage(e.packagePath,e=>{this.setInstallProgressPercent(e)},this.options.allowServiceInstallElevation===!0),Error(`Windows completed the update without restarting the app.`)}catch(e){throw await this.reconcileLocalPreparedState(),this.setInstallProgressPercent(null),this.setUpdateLifecycleState(this.isUpdateReady?`ready`:`idle`),e}}async showManualCheckResult(e){if(e===`update-ready`){await f.dialog.showMessageBox({type:`info`,buttons:[`OK`],defaultId:0,noLink:!0,message:`${f.app.getName()} update is ready to install.`});return}await f.dialog.showMessageBox({type:`in
+
+  [bootstrap-487kJHw_.js @24399] allowServiceInstallElevation
+    update-ready`;r!=null&&await this.discardPreparedUpdate(),this.setUpdateLifecycleState(`downloading`);let i=await _n({...this.options,onDownloadProgressChanged:e=>this.setDownloadProgressPercent(e)},n);if(i==null||!this.options.allowed())return await this.discardPreparedUpdate(),this.setUpdateLifecycleState(`idle`),`up-to-date`;let a={buildVersion:t,packagePath:i.packagePath,length:i.length,sha256:i.sha256};try{await this.options.nativeAddon.stagePackage(a.packagePath)}catch(e){if(!this.options.allowServiceInstallElevation||!(e instanceof Error)||!(`hresult`in e)||e.hresult!==2147958056)throw await this.discardPreparedUpdate(),e}let o=this.getStageStatePath();return await m.default.writeFile(`${o}.tmp`,JSON.stringify(a,null,2)),await m.default.rename(`${o}.tmp`,o),this.options.allowed()?(this.setUpdateReady(!0),this.setUpdateLifecycleState(`ready`),`update-ready`):(await this.discardPreparedUpdate(),this.setUpdateLifecycleState(`idle`),`up-to-date`)}getStageStatePath(){return h.default
+
+  [bootstrap-487kJHw_.js @51513] allowServiceInstallElevation
+    ycleStateChanged:e=>{this.setUpdateLifecycleState(e)}},c;if(n!=null){let e=process.arch===`x64`||process.arch===`arm64`,i=new Mn({storeProductId:n.storeProductId,storeUpdateManifestUrl:n.storeUpdateManifestUrl,buildVersion:this.resolveWindowsStoreBuildVersion(),packageIdentity:t,checkIntervalMs:e?0:o,checkOnInitialize:!e,...s,onUpdateReadyChanged:e?void 0:s.onUpdateReadyChanged});c=e?new Nn({checkIntervalMs:o,storeUpdater:i,onUpdateReadyChanged:s.onUpdateReadyChanged,msixFallbackUpdater:new wn({allowServiceInstallElevation:!0,manifestUrl:n.storeUpdateManifestUrl,buildVersion:this.resolveWindowsStoreBuildVersion(),packageIdentity:t,packagePublisher:r,checkIntervalMs:0,checkForUpdatesOnInitialize:!1,...s,onUpdateReadyChanged:void 0})}):i}else c=new wn({manifestUrl:i,allowServiceInstallElevation:!0,buildVersion:this.resolveBuildVersion(),packageIdentity:t,packagePublisher:r,checkIntervalMs:o,...s});if(await c.initialize(),!c.hasUpdater()){this.lastUnavailableReason=c.getUnavailableReason(
+
+  [bootstrap-487kJHw_.js @51788] allowServiceInstallElevation
+    ty:t,checkIntervalMs:e?0:o,checkOnInitialize:!e,...s,onUpdateReadyChanged:e?void 0:s.onUpdateReadyChanged});c=e?new Nn({checkIntervalMs:o,storeUpdater:i,onUpdateReadyChanged:s.onUpdateReadyChanged,msixFallbackUpdater:new wn({allowServiceInstallElevation:!0,manifestUrl:n.storeUpdateManifestUrl,buildVersion:this.resolveWindowsStoreBuildVersion(),packageIdentity:t,packagePublisher:r,checkIntervalMs:0,checkForUpdatesOnInitialize:!1,...s,onUpdateReadyChanged:void 0})}):i}else c=new wn({manifestUrl:i,allowServiceInstallElevation:!0,buildVersion:this.resolveBuildVersion(),packageIdentity:t,packagePublisher:r,checkIntervalMs:o,...s});if(await c.initialize(),!c.hasUpdater()){this.lastUnavailableReason=c.getUnavailableReason();return}this.lastUnavailableReason=null,this.updater=c,this.setUpdateReady(c.getIsUpdateReady()),this.setInstallProgressPercent(null)}initializeLinuxPackageUpdater(){let e=new Ze({buildFlavor:this.options.buildFlavor,executablePath:process.execPath,isPackaged:this.options.i
+  (4 shown)
+
+--------------------------------------------------------------------------
+-- do-not-de-elevate switch
+
+  [bootstrap-487kJHw_.js @459027] do-not-de-elevate
+     xD()||!await iO(Uk,e.waitForInteractiveLaunch))return;let r=sk(),i=Tk($,process.platform),a=!1;if(r||i)try{let e=A(),t=e?.getCurrentPackageFamily();f.app.isPackaged&&t==null&&c.n().warning(`windows_runtime_framework_identity_unavailable`,{safe:{buildFlavor:$,appVersion:f.app.getVersion(),architecture:process.arch,failureReason:e==null?`native-addon-unavailable`:`no-package-identity`,appContainedCoreBuild:r,shouldUseWindowsRuntimeFrameworks:i,hasDoNotDeElevateSwitch:f.app.commandLine.hasSwitch(`do-not-de-elevate`)}}),t&&r&&(process.env.CODEX_WINDOWS_SANDBOX_PACKAGE_FAMILY=t);let n=fT(uT(o.ot()),await dk()!=null);a=t!=null&&n.core,o.Nt(n.core),Ck(n.primary)}catch(e){o.Nt(null),Ck(!1),c.n().warning(`windows_runtime_framework_gate_hydration_failed`,{safe:{buildFlavor:$,...pk(e)},sensitive:{error:e}})}let s={phase:`bootstrap-import-main`};try{if(await n.initialize(),r&&a&&ck(),r||i){let e=r&&a?`app-package`:`bundled`;c.n().info(`windows_core_runtime_launch_selected`,{safe:{buildFlavor:$,ar
+  (1 shown)
+
+--------------------------------------------------------------------------
+-- browser page window webPreferences
+
+  [main-BklS_2Y2.js @1528181] navigateOnDragDrop
+    ed`,t),p.on(`did-navigate`,t),p.on(`render-process-gone`,t),p.on(`will-attach-webview`,b),p.on(`did-attach-webview`,x),p.on(`before-input-event`,w),()=>{t(),T.removeListener(`current-render-view-deleted`,t),p.removeListener(`destroyed`,t),p.removeListener(`did-navigate`,t),p.removeListener(`render-process-gone`,t),p.removeListener(`will-attach-webview`,b),p.removeListener(`did-attach-webview`,x),p.removeListener(`before-input-event`,w),v.pendingBrowserSettingsWebviewsByInstanceId.clear();for(let e of v.browserSettingsWebviewNavigationDisposersByWebContentsId.values())e()}}function LCe({browserSession:e,params:t,preloadPath:n,webPreferences:r}){t.partition=af(`app`),r.session=e,r.preload=n,r.navigateOnDragDrop=!0,r.transparent=!1,cU(t,r)}function RCe({browserSession:e,params:t,webPreferences:n}){t.partition=af(`app`),n.session=e,delete n.preload,cU(t,n),t.allowpopups=``,Object.assign(n,{disablePopups:!1})}function cU(e,t){delete e.allowpopups,delete e.disablewebsecurity,delete e.webpreferences,t.sandbox=!0,t.devTools=!0,t.nodeIntegration=!1,t.nodeIntegrationInSubFrames=!1,t.nodeIntegrationInWorker=!1,t.contextIsolation=!0,t.webSecurity=!0,t.allowRunningInsecureContent=!1,t.webviewTag=!1,t.plugins=!1,Object.assign(t,{disablePopups:!0})}function zCe(e){let t=FCe.find(t=>e.partition===t.partition&&dU({allowedNavigationUrls:t.allowedNavigationUrls,navigationUrl:e.src}))??null;return
+
+  [main-BklS_2Y2.js @1883805] navigateOnDragDrop
+    destroyed`,V),l.on(uJ,ce),i.on(`render-process-gone`,fe),i.on(`unresponsive`,pe),i.on(`dom-ready`,me),i.on(`preload-error`,he),i.on(`found-in-page`,ge),i.on(`before-input-event`,Se),i.on(`context-menu`,Ce),l.on(fJ,we),l.on(pJ,Te),i.setWindowOpenHandler(({disposition:r,referrer:a,url:o})=>{if(ie(o))return{action:`deny`};let l=g.A(o);return l!=null&&e.windowManager.queueCodexDeepLinkUrl(l)||e.openBrowserExternalUrl({initiatorUrl:a?.url??null,pageState:n,url:o,webContents:i})||e.isRestrictedBrowserNavigation(i.id,o)||r===`other`?{action:`deny`}:$q(i)&&(r===`foreground-tab`||r===`background-tab`)?e.admitBrowserTab()?{action:`allow`,outlivesOpener:!0,overrideBrowserWindowOptions:{webPreferences:{navigateOnDragDrop:!0,preload:e.browserPagePreloadPath}},createWindow:i=>{let a=g.Gt(crypto.randomUUID()),l=`webContents`in i&&$q(i.webContents)?i.webContents:null;if(l==null)throw Error(`Owl browser sidebar window.open child WebContents missing`);l.setAgentActive(e.getThreadStateForWindow(t,n.conversationId,n.browserTabId)?.isBrowserUseActive??!1);let u=eJ(s,l,{browserTabId:a,conversationId:n.conversationId},null);return PAe(l),o!==``&&o!==`about:blank`&&lAe(l,()=>{let t=e.findPageForRuntimeSender(l),n=t?.windowState??s,r=t?.page??n.pendingAdoptedWebviewsByWebContentsId.get(l.id)?.route;r==null||n.isClosing||e.windowManager.sendMessageToWebContents(n.owner,{type:`close-browser-tab`,browserT
+  (2 shown)
+
+--------------------------------------------------------------------------
+-- devtools gate
+
+  [build-flavor-CYXpoCFI.js @3609] allowDevtools
+    ;return n?.kind===`store`?{storeProductId:n.storeProductId,storeUpdateManifestUrl:n.storeUpdateManifestUrl,storeReleaseFeedUrl:n.storeReleaseFeedUrl}:null},shouldIncludeWindowsAppContainedCore(e,t=null){let n=m.getWindowsDistributionFlavor(e,t);return n===m.Dev||n===m.Nightly||n===m.InternalAlpha||n===m.PublicBeta||n===m.Prod},shouldIncludeWindowsSandboxService(e,t=null){let n=m.getWindowsDistributionFlavor(e,t);return n===m.Nightly||n===m.Prod},allowDevtools(e){return m.isInternal(e)}};Object.defineProperty(exports,"n",{enumerable:!0,get:function(){return o}}),Object.defineProperty(exports,"t",{enumerable:!0,get:function(){return m}}); //# sourceMappingURL=build-flavor-CYXpoCFI.js.map
+
+  [main-BklS_2Y2.js @2037197] allowDevtools
+    upload-details":{messageId:`electron.appMenu.trace.awaitingDetails`,defaultMessage:`Waiting for Trace Details…`},uploading:{messageId:`electron.appMenu.trace.uploading`,defaultMessage:`Uploading Trace…`}},aY=`toggle-trace-recording`,sMe=process.env.CODEX_TRACE_SHORTCUT!=null,cMe=[`*`,`disabled-by-default-v8.cpu_profiler`,`disabled-by-default-v8.cpu_profiler.hires`],lMe=[`IndexedDB`,`toplevel.flow`],oY=`idle`,sY=null,cY=null,lY=null;function uMe({allowDevtools:e,accelerator:t,windowManager:n,traceRecordingUploadOptions:r}){let i=async(e,t=!1)=>{if(!(g.y()||oY===`awaiting-start-confirmation`||oY===`saving`||oY===`awaiting-upload-details`||oY===`uploading`))try{let a=null;if(oY===`idle`){if(dY(n,e,`awaiting-start-confirmation`),!await eMe()){dY(n,e,`idle`);return}{let e={excluded_categories:lMe,included_categories:cMe,recording_mode:`record-until-full`,excludeExtensionRenderers:!0,useJsonOu
+
+  [main-BklS_2Y2.js @3397098] allowDevtools
+    ppMenu.window.minimize`,defaultMessage:`Minimize`}),role:`minimize`},{label:e.formatMessage({messageId:`electron.appMenu.window.zoom`,defaultMessage:`Zoom`}),role:`zoom`},{type:`separator`},{label:e.formatMessage({messageId:`electron.appMenu.window.bringAllToFront`,defaultMessage:`Bring All to Front`}),role:`front`}]}}}var x7=f.i(`sparkle`),xZe=`/`,SZe=`/settings/general-settings`;function CZe({commandKeymapState:e=i.wt(),buildFlavor:t,isMacOS:n,allowDevtools:a,allowDebugMenu:o,allowWindowReload:s,enableUpdater:c,desktopFeatureAvailability:u,appUpdates:d,ensurePrimaryWindowVisible:f,createFreshWindow:m,getAuthenticatedUserId:h,queueCodexDeepLinkUrl:v,navigateToRoute:y,collapseHotkeyWindowToHome:b,getElectronMessageHandlerForWindow:x,windowManager:S,traceRecordingUploadOptions:C}){let w=l.p(),T=`CmdOrCtrl+Shift+C`,E=n?[`Command+F`,`Command+G`,`Command+Shift+G`]:[`Ctrl+F`,`Ctrl+G`,`Shift+F
+
+  [main-BklS_2Y2.js @3407605] allowDevtools
+    adWindow`,defaultMessage:`Reload Window`}),accelerator:`Command+Control+R`,click:async()=>{let e=await M();e&&e.reload()}},rt={...N(`toggleSidePanel`),click:async()=>{if(u.unifiedTabStrip){await _e(`toggleSidePanel`);return}let e=await M();e&&S.sendMessageToWindow(e,{type:`toggle-diff-panel`})}};u.unifiedTabStrip&&(rt.label=w.formatMessage({messageId:`codex.command.toggleWorkspaceTabs`,defaultMessage:`Switch between Chat and tabs`}));let it=uMe({allowDevtools:a,accelerator:N(`toggleTraceRecording`).accelerator,windowManager:S,traceRecordingUploadOptions:C}),at=async()=>{if(await oZ(`open`)||Ve({type:`open-find`}))return;let e=await M();e&&S.sendMessageToWindow(e,{type:`find-in-thread`})},ot={...N(`findInThread`),accelerator:E[0],click:at},ct={label:`Find Next`,accelerator:n?`Command+G`:`Ctrl+G`,acceleratorWorksWhenHidden:!0,visible:!1,click:async()=>{if(await oZ(`next`)||Ve({type:`find-n
+
+  [main-BklS_2Y2.js @3425482] allowDevtools
+    l-state-updated`,keys:[r.gs.LOCAL_PROJECTS,r.gs.PROJECT_ORDER,r.gs.SELECTED_PROJECT]}),{type:`local`,projectId:s.id})}function PZe({settingsStore:e,buildFlavor:t,globalState:n,errorReporter:a,appUpdates:o,requestGitWorker:s,getLocalAppServerClient:c,threadCatalog:l,hasAppServerConnection:u,projectsManager:d,applyCodexAppConfig:f,getLocalAppServerConnection:m,windowServices:h,createFreshWindow:v,ensureWindow:y,getElectronMessageHandlerForWindow:b,allowDevtools:x,allowDebugMenu:S,enableUpdater:C,isMacOS:w,appVersion:T,onDeepLinkReceived:E}){let D=(e,t,n)=>{h.sendMessageToWindow(e,{type:`navigate-to-route`,path:t,state:n})},O=async()=>y({forNavigation:!0}),k=g.P({app:_.app,isMacOS:w,ensurePrimaryWindowVisible:O,getPrimaryWindow:async()=>{let e=h.getPrimaryWindow();if(e==null)return null;let t=await h.windowManager.getOrCreateNavigationWindow(e);return t.isDestroyed()||t.webContents.isDestro
+  (7 shown)

@@ -1,0 +1,215 @@
+{
+  "corpus": {
+    "files": 356,
+    "bytes": 23047420,
+    "chars": 23047420,
+    "method": "raw-text regex",
+    "scope": "code only"
+  },
+  "channelCount": 10,
+  "namespaces": [
+    [
+      "claude.designPdf",
+      1
+    ],
+    [
+      "claude.internal.localExecConsent",
+      1
+    ],
+    [
+      "claude.skills",
+      1
+    ],
+    [
+      "electron_window",
+      7
+    ]
+  ],
+  "channels": [
+    {
+      "channel": "$eipc_message$_01f6379e-f452-45f6-85bb-4610ceef01b5_$_claude.designPdf_$_DesignPdf_$_printFrameToPdf",
+      "expose": "DesignPdf",
+      "iface": "printFrameToPdf",
+      "preloadRefs": [
+        [
+          ".vite/build/designWindow.js",
+          1
+        ]
+      ],
+      "mainRefs": [],
+      "kinds": [
+        "unknown"
+      ]
+    },
+    {
+      "channel": "$eipc_message$_01f6379e-f452-45f6-85bb-4610ceef01b5_$_claude.internal.localExecConsent_$_LocalExecConsent_$_choose",
+      "expose": "LocalExecConsent",
+      "iface": "choose",
+      "preloadRefs": [
+        [
+          ".vite/build/localExecConsent.js",
+          1
+        ]
+      ],
+      "mainRefs": [],
+      "kinds": [
+        "unknown"
+      ]
+    },
+    {
+      "channel": "$eipc_message$_01f6379e-f452-45f6-85bb-4610ceef01b5_$_claude.skills_$_Skills_$_previewSkillFile",
+      "expose": "Skills",
+      "iface": "previewSkillFile",
+      "preloadRefs": [
+        [
+          ".vite/build/mainView.js",
+          1
+        ]
+      ],
+      "mainRefs": [],
+      "kinds": [
+        "on"
+      ]
+    },
+    {
+      "channel": "$eipc_message$_fcb91d11-972d-4fd6-b90b-72739699bff5_$_electron_window_$_WindowManager_$_DestroyWindow",
+      "expose": "WindowManager",
+      "iface": "DestroyWindow",
+      "preloadRefs": [
+        [
+          ".vite/build/mainView.js",
+          1
+        ]
+      ],
+      "mainRefs": [
+        [
+          ".vite/build/index.chunk-EzXl5k4A.js",
+          2
+        ]
+      ],
+      "kinds": [
+        "invoke"
+      ]
+    },
+    {
+      "channel": "$eipc_message$_fcb91d11-972d-4fd6-b90b-72739699bff5_$_electron_window_$_WindowManager_$_GetWindowState",
+      "expose": "WindowManager",
+      "iface": "GetWindowState",
+      "preloadRefs": [
+        [
+          ".vite/build/mainView.js",
+          1
+        ]
+      ],
+      "mainRefs": [
+        [
+          ".vite/build/index.chunk-EzXl5k4A.js",
+          2
+        ]
+      ],
+      "kinds": [
+        "on"
+      ]
+    },
+    {
+      "channel": "$eipc_message$_fcb91d11-972d-4fd6-b90b-72739699bff5_$_electron_window_$_WindowManager_$_RegisterWindow",
+      "expose": "WindowManager",
+      "iface": "RegisterWindow",
+      "preloadRefs": [
+        [
+          ".vite/build/mainView.js",
+          1
+        ]
+      ],
+      "mainRefs": [
+        [
+          ".vite/build/index.chunk-EzXl5k4A.js",
+          2
+        ]
+      ],
+      "kinds": [
+        "invoke"
+      ]
+    },
+    {
+      "channel": "$eipc_message$_fcb91d11-972d-4fd6-b90b-72739699bff5_$_electron_window_$_WindowManager_$_UnregisterWindow",
+      "expose": "WindowManager",
+      "iface": "UnregisterWindow",
+      "preloadRefs": [
+        [
+          ".vite/build/mainView.js",
+          1
+        ]
+      ],
+      "mainRefs": [
+        [
+          ".vite/build/index.chunk-EzXl5k4A.js",
+          2
+        ]
+      ],
+      "kinds": [
+        "invoke"
+      ]
+    },
+    {
+      "channel": "$eipc_message$_fcb91d11-972d-4fd6-b90b-72739699bff5_$_electron_window_$_WindowManager_$_UpdateWindow",
+      "expose": "WindowManager",
+      "iface": "UpdateWindow",
+      "preloadRefs": [
+        [
+          ".vite/build/mainView.js",
+          1
+        ]
+      ],
+      "mainRefs": [
+        [
+          ".vite/build/index.chunk-EzXl5k4A.js",
+          2
+        ]
+      ],
+      "kinds": [
+        "invoke"
+      ]
+    },
+    {
+      "channel": "$eipc_message$_fcb91d11-972d-4fd6-b90b-72739699bff5_$_electron_window_$_WindowManager_$_WindowAction",
+      "expose": "WindowManager",
+      "iface": "WindowAction",
+      "preloadRefs": [
+        [
+          ".vite/build/mainView.js",
+          1
+        ]
+      ],
+      "mainRefs": [
+        [
+          ".vite/build/index.chunk-EzXl5k4A.js",
+          2
+        ]
+      ],
+      "kinds": [
+        "invoke"
+      ]
+    },
+    {
+      "channel": "$eipc_message$_fcb91d11-972d-4fd6-b90b-72739699bff5_$_electron_window_$_WindowManager_$_WindowEvent",
+      "expose": "WindowManager",
+      "iface": "WindowEvent",
+      "preloadRefs": [
+        [
+          ".vite/build/mainView.js",
+          2
+        ]
+      ],
+      "mainRefs": [
+        [
+          ".vite/build/index.chunk-EzXl5k4A.js",
+          1
+        ]
+      ],
+      "kinds": [
+        "unknown"
+      ]
+    }
+  ]
+}
